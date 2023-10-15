@@ -1,0 +1,743 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_Tienda.cshtml";
+    var idUsuario = ((ProyectoTest.Models.Usuario)Session["Usuario"]).IdUsuario;
+}
+
+
+<style>
+    *{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    #map {
+        position: relative;
+        height: 400px;
+    }
+
+    .autocomplete-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .pac-container {
+        z-index: 99999 !important;
+    }
+
+    footer {
+        background: #222434;
+        min-height: 100px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    #selectCategoria {
+        width: 200px;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        transition: revert;
+    }
+
+    #txtbuscarproducto {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+        border-color: #bdbdbd;
+        width: 500px;
+    }
+</style>
+
+
+@*----NAVBAR---*@
+<div class="container">
+    <div class="container-fluid mt-2 ">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+
+            <select id="selectCategoria" class="form-select " aria-label="Default select example" data-toggle="dropdown">
+                <option selected value="0"> Ver toda la carta </option>
+            </select>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+
+                    @*<div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="appointment.html" class="dropdown-item">Appointment</a>
+                            <a href="opening.html" class="dropdown-item">Open Hours</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                        </div>*@
+                </div>
+
+            </div>
+
+            <div class="container w-50 text-end">   @* --- BUSCADOR --- *@
+                @*<label for="exampleDataList" class="form-label">Datalist example</label>*@
+                <input class="form-control" id="txtbuscarproducto" placeholder="Busca tu plato preferido...">
+                @*<input class="form-control" list="buscarproducto" id="txtbuscarproducto" placeholder="Type to search...">*@
+                @*<datalist id="buscarproducto">
+                    <option value="San Francisco">
+                    </datalist>*@
+            </div>
+
+        </nav>
+    </div>
+</div>
+
+
+@*----LISTADO DE PRODUCTOS---*@
+<div class="row">
+
+    <div class="container ">
+
+
+        <div class="container mt-0">
+            <div class="container px-2 px-lg-2 mt-5">
+                <div id="catalogo-productos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Modal Inicial Delivery o recojo-->
+
+<!-- Modal Categorias -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Seleccione una Categoría</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row row-categoria">
+                    sss
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER PIE PAGINA-->
+
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+
+    
+    <a class="fs-7 px-3  p-3 "> &copy; Todos Los Derechos Reservados 2023</a>
+
+</footer>
+
+
+
+@section scripts{
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+
+    <script>
+
+        var idUsuarioGlobal = @idUsuario;
+
+        $(document).ready(function () {
+            jQuery.ajax({ //LLena las categorias
+                url: '@Url.Action("ListarCategoria", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $(".row-categoria").html("");
+                    $(".modal-body").LoadingOverlay("hide");
+                    console.log(data.data)
+                    if (data.data != null) {
+                        var html = '';
+                        data.data.forEach(t => {
+                            html = html + '<option value=" ' + t.IdCategoria + '">' + t.Descripcion + '</option>';
+                        });
+                        $("#selectCategoria").append(html);
+                        console.log()
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show");
+                },
+            });
+
+            $('#selectCategoria').on('change', () => {
+                var value = $('#selectCategoria').val();
+                console.log(value)
+                listarProductos(value, '');
+            });
+
+            $("#txtbuscarproducto").on("input", function () {
+                var valorInput = $(this).val();
+                console.log("Texto ingresado: " + valorInput);
+                var value = $('#selectCategoria').val();
+
+                console.log(value)
+                listarProductos(0, valorInput);
+                // Aquí puedes realizar otras acciones según el valor ingresado
+            });
+
+ 
+
+
+            var direc2 = null;
+
+            $("#divbtn").hide();
+            $("#divTienda").hide();
+            $("#divcasilla").hide();
+            $("#divAutoIngresoDirec").hide();
+            $('#selectTipo').val(0);
+            jQuery.ajax({
+                url: '@Url.Action("ListarTiendasActivo", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(data.data);
+                    $.each(data.data, function (i, item) {
+                        $('#ddlTiendas').append('<option value="' + item.IdTiendas + '">' + item.Descripcion + '</option>');
+                    });
+                    $(".modal-body").LoadingOverlay("hide");
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show");
+                },
+            });
+
+            listarProductos(0, '');
+            console.log(localStorage.getItem("direccion"))
+            //if (localStorage.getItem("direccion") == null) {
+            //    $('#modalInicial').modal('show');
+            //}
+
+            //ASI SE MUESTRA EL MODAL
+            $('#modalInicial').modal('show')
+
+            $('#selectTipo').on('change', () => {
+                $("#divBtnAceptar").addClass("d-none");
+                var value = $('#selectTipo').val();
+                console.log(value)
+                if (value == 1) {
+                    $("#divbtn").show();
+                    $("#divAutoIngresoDirec").hide();
+                    $("#divTienda").hide();
+                    $("#map").show();
+                    console.log(value)
+                }
+                else if (value == 2) {
+                    $("#map").hide();
+                    $("#divbtn").hide();
+                    $("#divcasilla").hide();
+                    $("#divAutoIngresoDirec").hide();
+                    $("#divTienda").show();
+                    $("#divBtnAceptar").removeClass('d-none');
+                    console.log(value)
+                }
+                else {
+                    $("#map").hide();
+                    $("#divbtn").hide();
+                    $("#divTienda").hide();
+                    $("#divAutoIngresoDirec").hide();
+                }
+            });
+
+            var polygon = new google.maps.Polygon({
+                paths: [
+                    { lat: -12.0408, lng: -76.9608 },
+                    { lat: -12.0478, lng: -76.9576 },
+                    { lat: -12.0449, lng: -76.9509 },
+                    { lat: -12.043502, lng: -76.9458 },
+                    { lat: -12.0310, lng: -76.9271 },
+                    { lat: -12.0394, lng: -76.9239 },
+                    { lat: -12.0410, lng: -76.9243 },
+                    { lat: -12.0419, lng: -76.9251 },
+                    { lat: -12.0434, lng: -76.9303 },
+                    { lat: -12.0440, lng: -76.9329 },
+                    { lat: -12.0566, lng: -76.9330 },
+                    { lat: -12.0677, lng: -76.9324 },
+                    { lat: -12.0717, lng: -76.9325 },
+                    { lat: -12.0709, lng: -76.9247 },
+                    { lat: -12.0703, lng: -76.9132 },
+                    { lat: -12.0708, lng: -76.9082 },
+                    { lat: -12.0860, lng: -76.9002 },
+                    { lat: -12.0861, lng: -76.9061 },
+                    { lat: -12.0859, lng: -76.9161 },
+                    { lat: -12.0854, lng: -76.9200 },
+                    { lat: -12.0917, lng: -76.9231 },
+                    { lat: -12.0921, lng: -76.9232 },
+                    { lat: -12.0999, lng: -76.9189 },
+                    { lat: -12.1032, lng: -76.9323 },
+                    { lat: -12.1153, lng: -76.9309 },
+                    { lat: -12.1220, lng: -76.9303 },
+                    { lat: -12.1161, lng: -76.9392 },
+                    { lat: -12.1102, lng: -76.9527 },
+                    { lat: -12.1182, lng: -76.9644 },
+                    { lat: -12.1355, lng: -76.9383 },
+                    { lat: -12.1518, lng: -76.9778 },
+                    { lat: -12.1609, lng: -76.9813 },
+                    { lat: -12.1663, lng: -77.0268 },
+                    { lat: -12.1622, lng: -77.0259 },
+                    { lat: -12.1576, lng: -77.0251 },
+                    { lat: -12.1550, lng: -77.0250 },
+                    { lat: -12.1528, lng: -77.0244 },
+                    { lat: -12.1507, lng: -77.0245 },
+                    { lat: -12.1491, lng: -77.0244 },
+                    { lat: -12.1456, lng: -77.0254 },
+                    { lat: -12.1424, lng: -77.0263 },
+                    { lat: -12.1383, lng: -77.0280 },
+                    { lat: -12.1329, lng: -77.0306 },
+                    { lat: -12.1267, lng: -77.0376 },
+                    { lat: -12.1217, lng: -77.0442 },
+                    { lat: -12.1185, lng: -77.0463 },
+                    { lat: -12.1097, lng: -77.0550 },
+                    { lat: -12.0976, lng: -77.0726 },
+                    { lat: -12.0916, lng: -77.0852 },
+                    { lat: -12.0833, lng: -77.1026 },
+                    { lat: -12.0778, lng: -77.1137 },
+                    { lat: -12.0744, lng: -77.1221 },
+                    { lat: -12.0666, lng: -77.1176 }, //Av la marina
+                    { lat: -12.0656, lng: -77.1187 },
+                    { lat: -12.0649, lng: -77.1189 },
+                    { lat: -12.0591, lng: -77.1147 },
+                    { lat: -12.0570, lng: -77.1146 },
+                    { lat: -12.0499, lng: -77.1152 },
+                    { lat: -12.0439, lng: -77.1157 },
+                    { lat: -12.0456, lng: -77.1072 },
+                    { lat: -12.0492, lng: -77.1064 },
+                    { lat: -12.0483, lng: -77.0969 },
+                    { lat: -12.0532, lng: -77.0957 },
+                    { lat: -12.0500, lng: -77.0780 },
+                    { lat: -12.0464, lng: -77.0428 },
+                    { lat: -12.0364, lng: -77.0436 },
+                    { lat: -12.0352, lng: -77.0488 },
+                    { lat: -12.0328, lng: -77.0603 },
+                    { lat: -12.0126, lng: -77.0798 },
+                    { lat: -12.0068, lng: -77.0823 },
+                    { lat: -11.9962, lng: -77.0847 },
+                    { lat: -11.9822, lng: -77.0902 },
+                    { lat: -11.9845, lng: -77.0650 },
+                    { lat: -11.9827, lng: -77.0536 },
+                    { lat: -12.0285, lng: -77.0443 },
+                    { lat: -12.0268, lng: -77.0400 },
+                    { lat: -12.0410, lng: -77.0191 },
+                    { lat: -12.0418, lng: -77.0217 },
+                    { lat: -12.0426, lng: -77.0240 },
+                    { lat: -12.0546, lng: -77.0303 },
+                    { lat: -12.0583, lng: -77.0245 },
+                    { lat: -12.0780, lng: -77.0222 },
+                    { lat: -12.0751, lng: -77.0111 },
+                    { lat: -12.0727, lng: -76.9929 },
+                    { lat: -12.0704, lng: -76.9886 },
+                    { lat: -12.0641, lng: -76.9871 },
+                    { lat: -12.0552, lng: -76.9804 },
+                    { lat: -12.0550, lng: -76.9781 },
+                    { lat: -12.0539, lng: -76.9755 },
+                    { lat: -12.0449, lng: -76.9742 },
+                    // {lat: -12.057905, lng: -76.963047}
+                ],
+
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35
+            });
+
+            //Mapa centrado en una ubicación específica
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -12.092715, lng: -77.022142 }, // CentroMapa
+                zoom: 14
+            });
+
+            var marker = null;
+
+            function geocodeLatLng(lat, lng) {
+                var geocoder = new google.maps.Geocoder();
+                var latlng = { lat: parseFloat(lat), lng: parseFloat(lng) };
+                geocoder.geocode({ 'location': latlng }, function (results, status) {
+                    if (status === 'OK') {
+                        console.log('results');
+                        console.log(results);
+                        if (results[0]) {
+                            var confirmedAddressInput = document.getElementById('confirmedAddress');
+                            // Iterar por los componentes de la dirección
+                            var addressComponents = results[0].address_components;
+                            var streetName = '';
+                            var streetNumber = '';
+                            var urb = '';
+                            var district = '';
+                            for (var i = 0; i < addressComponents.length; i++) {
+                                var component = addressComponents[i];
+                                if (component.types.includes('route')) {
+                                    streetName = component.long_name;
+                                }
+                                if (component.types.includes('street_number')) {
+                                    streetNumber = component.long_name;
+                                }
+                                if (component.types.includes('sublocality_level_1')) {
+                                    urb = component.long_name;
+                                }
+                                if (component.types.includes('locality')) {
+                                    district = component.long_name;
+                                }
+                            }
+                            var fullAddress = streetName + ' ' + streetNumber + ' ' + urb + ' ' + district;
+                            confirmedAddressInput.value = fullAddress;
+                        } else {
+                            console.warn('No se encontraron resultados de dirección.');
+                        }
+                    } else {
+                        console.warn('Geocode no fue exitoso por la siguiente razón:', status);
+                    }
+                });
+            }
+
+
+            function initMap(lat, long) {
+                marker = new google.maps.Marker({  // Crea un marcador para el punto
+                    position: { lat: lat, lng: long },
+                    map: map,
+                    draggable: true
+                });
+                var point2 = { lat: lat, lng: long }; //Actual
+                if (google.maps.geometry.poly.containsLocation(point2, polygon)) {
+                    console.log('El punto está dentro del polígono.');
+                    $("#divBtnAceptar").removeClass('d-none');
+                    $('#toast-carrito3').toast('show');
+                } else {
+                    $('#toast-carrito2').toast('show');
+                    $("#divBtnAceptar").addClass('d-none');
+                    console.log('El punto está fuera del polígono.');
+                }
+
+                marker.addListener('dragend', function () {
+                    var position = marker.getPosition();
+                    var lat2 = position.lat();
+                    var long2 = position.lng();
+                    console.log('Latitud:', lat2);
+                    console.log('Longitud:', long2);
+                    geocodeLatLng(lat2, long2);
+                    var point = { lat: lat2, lng: long2 }; //Actual
+                    if (google.maps.geometry.poly.containsLocation(point, polygon)) {
+                        console.log('El punto está dentro del polígono.');
+                        $("#divBtnAceptar").removeClass('d-none');
+                        $('#toast-carrito3').toast('show');
+                    } else {
+                        $('#toast-carrito2').toast('show');
+                        $("#divBtnAceptar").addClass('d-none');
+                        console.log('El punto está fuera del polígono.');
+                    }
+                });
+            }
+
+
+            $("#btnConsultaUbicacion").click(function () {
+                $('#autocompleteInput').val('');
+                $('#confirmedAddress').val('');
+                if (marker) {
+                    marker.setMap(null);
+                }
+                $("#divcasilla").show();
+                $("#divAutoIngresoDirec").hide();
+                navigator.geolocation.getCurrentPosition(geoposOK, geoposKO);
+                function geoposOK(pos) {//Obtenemos latitud y longitud
+                    var lat = pos.coords.latitude;
+                    var long = pos.coords.longitude;
+                    map.setCenter({ lat: lat, lng: long });
+                    map.setZoom(16);
+                    console.log(lat);
+                    console.log(long);
+                    initMap(lat, long);
+                    geocodeLatLng(lat, long);
+                }
+                $("#map").show();
+                function geoposKO(err) {
+                    console.warn(err.message);
+                    let msg;
+                    switch (err.code) {
+                        case err.PERMISSION_DENIED:
+                            msg = "No nos has dado permiso para obtener tu posición";
+                            break;
+                        case err.POSITION_UNAVAILABLE:
+                            msg = "Tu posición actual no está disponible";
+                            break;
+                        case err.TIMEOUT:
+                            msg = "No se ha podido obtener tu posición en un tiempo prudencial";
+                            break;
+                        default:
+                            msg = "Error desconocido";
+                            break;
+                    }
+                    console.log(msg);
+                }
+            });
+
+            $("#btnIngresaTuDireccion").click(function () {
+                $('#autocompleteInput').val('');
+                $('#confirmedAddress').val('');
+                if (marker) {
+                    marker.setMap(null);
+                }
+                $("#divcasilla").hide();
+                $("#divAutoIngresoDirec").show();
+            });
+
+            var autocompleteInput = document.getElementById('autocompleteInput');
+            var autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {
+                types: ['geocode'],
+                componentRestrictions: { country: 'PE' }
+            });
+
+            autocomplete.addListener('place_changed', function () {
+                var place = autocomplete.getPlace();
+                if (place.geometry) {
+                    var location = place.geometry.location;
+                    map.setCenter(location);
+                    map.setZoom(19);
+                    var lat = location.lat();
+                    var long = location.lng();
+                    initMap(lat, long);
+                }
+            });
+
+            $("#btnAceptar").click(function () {
+                var value = $('#selectTipo').val();
+
+                if (value == 1) {
+                    $('#idcompra').html("Delivery!... Realiza tu pedido");
+                    $("#modalInicial").modal("hide");
+                    //direccion tipo 1
+                    direc2 = $('#autocompleteInput').val();
+                    localStorage.setItem("direccion", direc2);
+                }
+                else if (value == 2) {
+                    var idubicacionTienda = $('select[name="ddlTiendas"] option:selected').text();
+                    console.log(idubicacionTienda);
+                    $('#encontroTienda').html(" " + idubicacionTienda);
+                    $('#idcompra').html("Recojo en tienda " + idubicacionTienda);
+                    $("#modalInicial").modal("hide");
+
+                    direc2 = $('#confirmedAddress').val();
+                    localStorage.setItem("direccion", direc2);
+                }
+            })
+            });
+
+
+
+
+        $(".btn-ver-categoria").click(function () {
+            $('#exampleModal').modal('show');
+        });
+
+
+        function listarCategorias(data) {
+            console.log(data);
+            $("#divCategoria").html("");
+            var html = '';
+            html = html + '<div class="col-md-12"> <ul class="nav nav-pills flex">';
+
+            var acordeon = '';
+            acordeon = '<div class="col-md-12">';
+            acordeon = acordeon + '<div class="accordion" id="accordionPanelsStayOpenExample">';
+
+            data.forEach(t => {
+                html = html + '<li class="nav-item"> ';
+                html = html + '<a class="nav-link active" data-bs-toggle="collapse" href="#panelsStayOpen-collapseOne' + t.IdCategoria + '" role="button" aria-expanded="true">"' + t.Descripcion + '"</a> ';
+                html = html + '</li> ';
+
+                acordeon = acordeon + '<div class="accordion-item">';
+                acordeon = acordeon + '<h2 class="accordion-header">';
+                acordeon = acordeon + '<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne' + t.IdCategoria + '" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne' + t.IdCategoria + '">';
+                acordeon = acordeon + t.Descripcion;
+                acordeon = acordeon + '</button > </h2> <div id="panelsStayOpen-collapseOne' + t.IdCategoria + '" class="accordion-collapse collapse" data-bs-parent="#accordionPanelsStayOpenExample">';
+                acordeon = acordeon + '<div class="accordion-body">';
+                acordeon = acordeon + '<div class="container px-2 px-lg-2 mt-5"> ';
+                acordeon = acordeon + '<div class="class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> ';
+
+                t.productos.forEach(t2 => {
+                    //var t222 = JSON.stringify(t2);
+                    var t222 = "";
+                    //acordeon = acordeon + '<div class="container px-2 px-lg-2 mt-5"> ';
+                    //acordeon = acordeon + '<div class="class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> ';
+                    acordeon = acordeon + '<div class="col mb-5"> ';
+                    acordeon = acordeon + '<div class="card h-100">';
+                    acordeon = acordeon + '<img class="card-img-top btn-imagen" src="data:image/' + t2.extension + ';base64,' + t2.base64 + '" data-elemento="' + t222 + '"  > ';
+                    acordeon = acordeon + '<div class="card-body p-4">';
+                    acordeon = acordeon + '<div class="text-center">';
+                    acordeon = acordeon + '<h5 class="fw-bolder">';
+                    acordeon = acordeon + t2.Nombre;
+                    acordeon = acordeon + '</h5>' + t2.Precio + '</h5> ';
+                    acordeon = acordeon + '<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">';
+                    acordeon = acordeon + '<button class="btn btn-outline-dark mt-auto btn-detalle"> Ver Detalles </button>';
+                    acordeon = acordeon + '<button class="btn btn-outline-dark mt-auto btn-agregar-carrito1"> Agregar al carrito </button>';
+                    acordeon = acordeon + '</div></div></div></div> </div></div></div></div>';
+                    acordeon = acordeon + ' ';
+                });
+
+                acordeon = acordeon + '';
+                acordeon = acordeon + '</div> </div> ';
+
+            });
+            html = html + '</ul></div>';
+            acordeon = acordeon + '</div> </div> ';
+
+            $("#divCategoria").append(html);
+            $("#divCategoria").append(acordeon);
+
+            //$('#exampleModal').modal('show');
+        }
+
+
+        $(document).on('click', '.btn-categoria', function (event) {
+            $('#exampleModal').modal('hide');
+        });
+
+
+        function listarProductos(_idcategoria, _nombre) {
+            jQuery.ajax({
+                url: '@Url.Action("ListarProducto", "Tienda")',
+                type: "POST",
+                data: JSON.stringify({ idcategoria: _idcategoria , nombre:_nombre}),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $("#catalogo-productos").html("");
+                    $("#catalogo-productos").LoadingOverlay("hide");
+                    if (data.data != null) {
+                        $.each(data.data, function (i, item) {
+                            //catalogo-productos
+                            $("<div>").addClass("col mb-5").append(
+                                $("<div>").addClass("card h-100").append(
+                                    $("<img>").addClass("card-img-top btn-imagen").attr({ "src": "data:image/" + item.extension + ";base64," + item.base64 }).attr({
+                                        "data-elemento": JSON.stringify(item)
+                                    }),
+                                    //Product details
+                                    $("<div>").addClass("card-body p-2").append(
+                                        $("<div>").addClass("text-center").append(
+                                            $("<h6>").addClass("fw-bolder").text(item.Nombre),
+                                            "S/. " + item.Precio
+                                        )
+                                    ),
+                                    //Product actions
+                                    $("<div>").addClass("card-footer p-2 pt-0 border-top-0 bg-transparent").append(
+                                        $("<div>").addClass("d-grid d-md-grid gap-2 d-md-block align-items-center text-center").append(
+                                            $("<button>").addClass("btn btn-danger mt-auto btn-detalle").text("Personalizar").attr({
+                                                "data-elemento": JSON.stringify(item)
+                                            }),  @{
+                                            if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
+                                            {
+                                                @:$("<button>").addClass("btn btn-danger mt-auto btn-agregar-carrito1").data("idproducto", item.IdProducto).data("precio", item.Precio).text("Agregar al carrito")
+                                            }
+                                            }
+                                        )
+                                    )
+                                )
+
+                            ).appendTo("#catalogo-productos");
+                        });
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $("#catalogo-productos").LoadingOverlay("show");
+                },
+            });
+        }
+
+        $(document).on('click', '.btn-detalle', function (event) {
+            var json = $(this).data("elemento")
+            window.location.href = "@Url.Action("Producto", "Tienda")" + "?idproducto=" + json.IdProducto;
+        });
+
+        $(document).on('click', '.btn-imagen', function (event) {
+            var json = $(this).data("elemento")
+            window.location.href = "@Url.Action("Producto", "Tienda")" + "?idproducto=" + json.IdProducto;
+        });
+
+
+        //CARRITO LOGICA
+        $(document).on('click', '.btn-agregar-carrito1', function (event) {
+
+            var idUsuario = idUsuarioGlobal;
+            var idProducto = $(this).data("idproducto");
+            var precio = $(this).data("precio");
+
+            $.ajax({
+                url: '@Url.Action("InsertarCarrito", "Tienda")', // Cambia "ControllerName" al nombre correcto de tu controlador
+                type: 'POST',
+                data: {
+                    IdUsuario: idUsuario, // Aquí asigna el valor correcto del usuario
+                    IdProducto: idProducto,
+                    Cantidad: 1, // Puedes ajustar esto según tus necesidades
+                    Adicionales: "",
+                    PrecioExtra: precio,
+                    Observaciones: $("#txtObservaciones").val() || "Sin observaciones"
+                },
+                beforeSend: function (xhr) {
+                        console.log("Valores enviados en la solicitud AJAX:");
+                        //console.log("IdUsuario:", idUsuario);
+                        console.log("IdProducto:", idProducto);
+                        console.log("Cantidad:", 1);
+                        console.log("Adicionales:", " ");
+                        console.log("Precio Extra:", precio);
+                        console.log("Observaciones:", $("#txtObservaciones").val() || "Sin observaciones"); // Imprime las observaciones en la consola
+                    },
+                success: function (data) {
+                        var actual = parseInt($(".contador-carrito").text());
+                        if (data.respuesta) {
+                            // El producto se agregó al carrito correctamente
+                            actual = actual + 1;
+                            $(".contador-carrito").text(actual);
+                            swal("Agregado al carrito", "Producto agregado al carrito correctamente", "success");
+
+                            console.log("Producto agregado al carrito");
+                        } else {
+                            // Hubo un problema al agregar el producto al carrito
+                            console.log("No se pudo agregar el producto al carrito");
+                        }
+                    },
+                error: function (error) {
+                        console.log("Error en la solicitud AJAX:", error);
+                    }
+                });
+
+        });
+
+    </script>
+
+}

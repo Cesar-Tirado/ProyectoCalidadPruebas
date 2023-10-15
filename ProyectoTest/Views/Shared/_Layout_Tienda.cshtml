@@ -1,0 +1,224 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tienda</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/PluginsCSS")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+
+<body>
+
+    <style>
+        nav {
+            min-height: 10px;
+            padding-top: 0.0rem;
+            padding-bottom: 0.0rem
+        }
+        .navbar-nav {
+            border-radius: 10px !important; /* Puedes ajustar el valor para controlar la cantidad de redondeo */
+        }
+        .nav-link {
+            color: white !important;
+        }
+
+    </style>
+
+    <header class="mt-0">
+        @*<div class="">
+            <a class="navbar-brand img-thumbnail" href="#">
+                <img src="@Url.Content("~/Imagenes/LongHorn/banner.jpg")" style="width:100%" />
+            </a>
+        </div>*@
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 py-lg-0 px-lg-5">
+        <div class="container">
+            <div class="container-fluid p-0">
+
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 py-lg-0 px-lg-5">
+
+                    <a href="index.html" class="navbar-brand ml-lg-3">
+                        <span> Sistema de Delivery </span>
+                    </a>
+
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav m-auto py-0">
+                            @*<a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="price.html" class="nav-item nav-link">Pricing</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                                        <a href="opening.html" class="dropdown-item">Open Hours</a>
+                                        <a href="team.html" class="dropdown-item">Our Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>*@
+
+
+                            @*<select id="selectCategoria" class="form-select " aria-label="Default select example">
+                                    <option selected value="0">Ver toda la carta</option>
+                                </select>*@
+
+                            <div class="p-2 mt-3">
+                                <p class="lead fw-normal text-danger fs-6" id="idcompra"> </p><!-- Nombre Recojo o Delivery -->
+                            </div>
+                        </div>
+
+                        <!-- Navbar-->
+                        @{if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
+
+                            {
+                                <form action="@Url.Action("Carrito","Tienda")" method="post" class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                                    <button class="btn btn-close-danger text-bg-danger" type="submit">
+                                        <i class="fas fa-shopping-cart bg-danger">
+                                        </i> <span class="badge bg-danger text-white ms-1 rounded-pill contador-carrito">0</span>
+                                    </button>
+                                </form>
+
+                                <ul class="navbar-nav me-2 ">
+                                    <li class="nav-item dropdown bg-danger ">
+                                        <a class="nav-link dropdown-toggle " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-user fa-fw"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end bg-light-subtle " aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="@Url.Action("Index","Tienda")">Ir a Tienda</a></li>
+                                            @*<li><a class="dropdown-item" href="@Url.Action("Compras","Tienda")">Mis Compras</a></li>*@
+                                            <li><hr class="dropdown-divider" /></li>
+                                            @*<li><a class="dropdown-item" href="@Url.Action("CerrarSesion","Tienda")">Cerrar Sesión</a></li>*@
+                                        </ul>
+                                    </li>
+                                </ul>
+                            }
+                        }
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="container-fluid p-0 m-0">
+        @RenderBody()
+    </main>
+
+    <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 5">
+        <div id="toast-carrito" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+            <div class="toast-body bg-success text-white">
+                <div class="d-flex">
+                    <i class="fas fa-check fa-2x"></i> <label style="margin-left: 10px !important">Se añadió al carrito!</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 5">
+        <div id="toast-alerta" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="toast-body bg-danger text-white">
+                <div class="d-flex">
+                    <i class="fas fa-exclamation-circle fa-2x"></i> <label id="mensaje-error" class="ml-2" style="margin-left: 10px !important">Error</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 9999;">
+        <div id="toast-carrito2" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="toast-body bg-warning  text-black">
+                <div class="d-flex">
+                    <i class="fas fa-check fa-2x"></i> <label style="margin-left: 10px !important"> ESTÁS FUERA DE COBERTURA DEL DELIVERY. <br> PUEDES UTILIZAR RECOJO EN TIENDA</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 9999">
+        <div id="toast-carrito3" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="toast-body bg-success text-white">
+                <div class="d-flex">
+                    <i class="fas fa-check fa-2x"></i> <label style="margin-left: 10px !important"> ESTÁS DENTRO DE COBERTURA. <br> PUEDES HACER TU PEDIDO</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/PluginsJS")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            obtenerCantidad();
+        })
+        function obtenerCantidad() {
+            jQuery.ajax({
+                url: '@Url.Action("CantidadCarrito", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $(".contador-carrito").text(data.respuesta);
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+
+                },
+            });
+
+        }
+        $(document).on('click', '.btn-agregar-carrito', function (event) {
+            var request = {
+                oCarrito: {
+                    oProducto: { IdProducto: $(this).data("idproducto")  }
+                }
+            }
+
+            jQuery.ajax({
+                url: '@Url.Action("InsertarCarrito", "Tienda")',
+                type: "POST",
+                data: JSON.stringify(request),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    var actual = parseInt($(".contador-carrito").text());
+                    if (data.respuesta != 0) {
+                        actual = actual + 1;
+                        $(".contador-carrito").text(actual);
+                        $('#toast-carrito').toast('show');
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+
+                },
+            });
+
+        });
+
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

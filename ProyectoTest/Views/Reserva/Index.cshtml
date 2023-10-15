@@ -1,0 +1,668 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_Tienda.cshtml";
+}
+
+
+<div class="row">
+
+    @*Carrusel LongHorn*@
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width: 1000px; margin: auto;">
+        <div class="carousel-inner" style="height: 500px;">
+            <div class="carousel-item active">
+                <img src="@Url.Content("~/Imagenes/Portada/01Parrilla americana.jpg")" class="d-block w-100 h-100"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="@Url.Content("~/Imagenes/Portada/02-min.jpeg")" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="@Url.Content("~/Imagenes/Portada/03-min.jpg")" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="@Url.Content("~/Imagenes/Portada/04-30-min.jpg")" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="@Url.Content("~/Imagenes/Portada/05-min.jpg")" class="d-block w-100 h-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="py-2">
+        <div class="container px-2 px-lg-2 mt-5">
+            <div id="catalogo-productos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@*Mapa ubicación*@
+<style>
+    * {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }
+
+    #map {
+        position: relative;
+        height: 400px;
+    }
+
+    .autocomplete-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .pac-container {
+        z-index: 99999 !important;
+    }
+
+    footer {
+        background: #ec1c24;
+        min-height: 100px;
+    }
+
+</style>
+
+
+<!-- Modal Inicial Delivery o recojo-->
+<div class="modal inicial" id="modalInicial" tabindex="-1" aria-labelledby="modalInicial" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="mt-1 mb-1" width="280" src="@Url.Content("~/Imagenes/LongHorn/02Logo650x150.png")" />
+                <span style="font-size: 32px"> Bienvenidos </span>
+                @*<h5 class="modal-title">Bienvenidos</h5>*@
+            </div>
+
+            <div class="modal-body">
+                <div class="row row-categoria">
+
+                    <div class="botones">
+                        <div>
+                            <div class="form-floating mt-0 mb-3 d-grid gap-2">
+                                <select class="h-110 btn btn-secondary dropdown-toggle " id="selectTipo" aria-label="Floating label select example">
+                                    <option selected="selected" value="0"> Selecciona tu forma de pedido </option>
+                                    <option value="1">Delivery</option>
+                                    <option value="2">Recojo en tienda</option>
+                                </select>
+                                @*<label for="floatingSelectGrid"> LONGHORN </label>*@
+                            </div>
+                        </div>
+
+                        <div id="divbtn" class="col-12 mb-2 text-center">
+                            <button id="btnConsultaUbicacion" class="btn btn-primary col-6 mb-2 mx-2" type="submit"> USAR MI UBICACIÓN ACTUAL </button>
+                            <button id="btnIngresaTuDireccion" class="btn btn-primary col-5 mb-2 mx-2" type="submit"> INGRESA TU DIRECCIÓN </button>
+                        </div>
+
+                        <div id="divcasilla">
+                            <label for="confirmedAddress" class=" mt-2 "> Dirección encontrada:  </label>
+                            <input type="text" class="form-control mb-2" id="confirmedAddress" readonly>
+
+                            <label for="placeType"> Por favor confirma: Casa/Departamento/Oficina</label>
+                            <select class="form-select mb-2 " id="placeType">
+                                <option value="casa">Casa</option>
+                                <option value="departamento">Departamento</option>
+                                <option value="oficina">Oficina</option>
+                            </select>
+
+                            <div>
+                                <label for="floorNumber" class=" "> Indicanos Nro piso / Nro departamento:</label>
+                                <input type="text" id="floorNumber" class="form-control mb-2" placeholder="Ingrese el número de piso o departamento">
+                            </div>
+                        </div>
+
+                        <div id="divAutoIngresoDirec" class="position-relative mt-3 mb-2" style="z-index: 10010;">
+                            <div class="autocomplete-container">
+                                <label for="autocompleteInput" class=" mb-2"> Ingresa tu dirección:</label>
+                                <input style="z-index: 10010;" type="text" class="form-control" id="autocompleteInput" placeholder="Escribe aquí...">
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <div id="map" style="display:none;"></div>
+
+                        <div id="divTienda">
+                            <label for="ddlTiendas" class="form-label">Escoge tu tienda preferida</label>
+                            <select class="form-select" name="ddlTiendas" id="ddlTiendas" required>
+                            </select>
+                        </div>
+
+                        <p></p>
+                        <div class="col-12 d-none" id="divBtnAceptar">
+                            <button class="btn btn-primary" type="submit" id="btnAceptar">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Categorias -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Seleccione una Categoría</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row row-categoria">
+                    sss
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER PIE PAGINA-->
+
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+
+    <p class="fs-5 mt-3 p-2 text-light">Siguenos en nuestras redes sociales</p>
+    <div id="iconos">
+
+        <a class="icon-link icon-link-hover p-2" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.facebook.com/LongHorn.Peru">
+            @*<svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>*@
+            <img class="" width="30" src="@Url.Content("~/Imagenes/LongHorn/facebook-logo.png")" />
+        </a>
+
+        <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.instagram.com/longhornperuoficial/">
+            @*<svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>*@
+            <img class="" width="30" src="@Url.Content("~/Imagenes/LongHorn/instagramlogo.png")" />
+        </a>
+
+    </div>
+    <section class="w-100">
+        <div class="row w-75 h-50 mx-auto" id="servicios-fila-1">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <div>
+                    <h6 class="mt-0 px-4">POLÍTICAS Y TÉRMINOS</h6>
+                    <a href="@Url.Action("Index", "Tienda")" target="_blank" class="text-decoration-none px-4 text-light">Términos y condiciones</a> <br>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Políticas de Privacidad</a> <br>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Libro de reclamaciones</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <div>
+                    <h6 class="mt-0 px-4">LONGHORN GRILL & DRINKS</h6>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Ubíquenos</a> <br>
+                    <a href="https://delivery.longhorn.com.pe/search/type/delivery/address/-12.083445371420742,-77.03625060260862" class="text-decoration-none px-4 text-light">Promociones</a> <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSemcoIos5_tKUQTTz9VUlxJ-3fbGJNdRDbjIZgEqpIVX8xRdA/viewform" class="text-decoration-none px-4 text-light">Soporte</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <div>
+                    <h6 class="mt-0 px-4">OTROS LOCALES</h6>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Promociones</a> <br>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Direcciones</a> <br>
+                    <a href="https://goo.gl/maps/u7car3eLK8yh66kg8" class="text-decoration-none px-4 text-light">Déjenos sus datos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="fs-7 px-3  p-3 text-light"> LongHorn &copy; Todos Los Derechos Reservados 2023</p>
+</footer>
+
+
+
+
+@section scripts{
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdaW2Kbm41GWklEgi7wE3FBIsBo4nObes&libraries=geometry,places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#divbtn").hide();
+            $("#divTienda").hide();
+            $("#divcasilla").hide();
+            $("#divAutoIngresoDirec").hide();
+            $('#selectTipo').val(0);
+            jQuery.ajax({
+                url: '@Url.Action("ListarTiendasActivo", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(data.data);
+                    $.each(data.data, function (i, item) {
+                        $('#ddlTiendas').append('<option value="' + item.IdTiendas + '">' + item.Descripcion + '</option>');
+                    });
+                    $(".modal-body").LoadingOverlay("hide");
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show");
+                },
+            });
+
+            listarProductos(0);
+            $('#modalInicial').modal('show');
+
+            $('#selectTipo').on('change', () => {
+                $("#divBtnAceptar").addClass("d-none");
+                var value = $('#selectTipo').val();
+                console.log(value)
+                if (value == 1) {
+                    $("#divbtn").show();
+                    $("#divAutoIngresoDirec").hide();
+                    $("#divTienda").hide();
+                    $("#map").show();
+                    console.log(value)
+                }
+                else if (value == 2) {
+                    $("#map").hide();
+                    $("#divbtn").hide();
+                    $("#divcasilla").hide();
+                    $("#divAutoIngresoDirec").hide();
+                    $("#divTienda").show();
+                    $("#divBtnAceptar").removeClass('d-none');
+                    console.log(value)
+                }
+                else {
+                    $("#map").hide();
+                    $("#divbtn").hide();
+                    $("#divTienda").hide();
+                    $("#divAutoIngresoDirec").hide();
+                }
+            });
+
+            var polygon = new google.maps.Polygon({
+                paths: [
+                    { lat: -12.0408, lng: -76.9608 },
+                    { lat: -12.0478, lng: -76.9576 },
+                    { lat: -12.0449, lng: -76.9509 },
+                    { lat: -12.043502, lng: -76.9458 },
+                    { lat: -12.0310, lng: -76.9271 },
+                    { lat: -12.0394, lng: -76.9239 },
+                    { lat: -12.0410, lng: -76.9243 },
+                    { lat: -12.0419, lng: -76.9251 },
+                    { lat: -12.0434, lng: -76.9303 },
+                    { lat: -12.0440, lng: -76.9329 },
+                    { lat: -12.0566, lng: -76.9330 },
+                    { lat: -12.0677, lng: -76.9324 },
+                    { lat: -12.0717, lng: -76.9325 },
+                    { lat: -12.0709, lng: -76.9247 },
+                    { lat: -12.0703, lng: -76.9132 },
+                    { lat: -12.0708, lng: -76.9082 },
+                    { lat: -12.0860, lng: -76.9002 },
+                    { lat: -12.0861, lng: -76.9061 },
+                    { lat: -12.0859, lng: -76.9161 },
+                    { lat: -12.0854, lng: -76.9200 },
+                    { lat: -12.0917, lng: -76.9231 },
+                    { lat: -12.0921, lng: -76.9232 },
+                    { lat: -12.0999, lng: -76.9189 },
+                    { lat: -12.1032, lng: -76.9323 },
+                    { lat: -12.1153, lng: -76.9309 },
+                    { lat: -12.1220, lng: -76.9303 },
+                    { lat: -12.1161, lng: -76.9392 },
+                    { lat: -12.1102, lng: -76.9527 },
+                    { lat: -12.1182, lng: -76.9644 },
+                    { lat: -12.1355, lng: -76.9383 },
+                    { lat: -12.1518, lng: -76.9778 },
+                    { lat: -12.1609, lng: -76.9813 },
+                    { lat: -12.1663, lng: -77.0268 },
+                    { lat: -12.1622, lng: -77.0259 },
+                    { lat: -12.1576, lng: -77.0251 },
+                    { lat: -12.1550, lng: -77.0250 },
+                    { lat: -12.1528, lng: -77.0244 },
+                    { lat: -12.1507, lng: -77.0245 },
+                    { lat: -12.1491, lng: -77.0244 },
+                    { lat: -12.1456, lng: -77.0254 },
+                    { lat: -12.1424, lng: -77.0263 },
+                    { lat: -12.1383, lng: -77.0280 },
+                    { lat: -12.1329, lng: -77.0306 },
+                    { lat: -12.1267, lng: -77.0376 },
+                    { lat: -12.1217, lng: -77.0442 },
+                    { lat: -12.1185, lng: -77.0463 },
+                    { lat: -12.1097, lng: -77.0550 },
+                    { lat: -12.0976, lng: -77.0726 },
+                    { lat: -12.0916, lng: -77.0852 },
+                    { lat: -12.0833, lng: -77.1026 },
+                    { lat: -12.0778, lng: -77.1137 },
+                    { lat: -12.0744, lng: -77.1221 },
+                    { lat: -12.0666, lng: -77.1176 }, //Av la marina
+                    { lat: -12.0656, lng: -77.1187 },
+                    { lat: -12.0649, lng: -77.1189 },
+                    { lat: -12.0591, lng: -77.1147 },
+                    { lat: -12.0570, lng: -77.1146 },
+                    { lat: -12.0499, lng: -77.1152 },
+                    { lat: -12.0439, lng: -77.1157 },
+                    { lat: -12.0456, lng: -77.1072 },
+                    { lat: -12.0492, lng: -77.1064 },
+                    { lat: -12.0483, lng: -77.0969 },
+                    { lat: -12.0532, lng: -77.0957 },
+                    { lat: -12.0500, lng: -77.0780 },
+                    { lat: -12.0464, lng: -77.0428 },
+                    { lat: -12.0364, lng: -77.0436 },
+                    { lat: -12.0352, lng: -77.0488 },
+                    { lat: -12.0328, lng: -77.0603 },
+                    { lat: -12.0126, lng: -77.0798 },
+                    { lat: -12.0068, lng: -77.0823 },
+                    { lat: -11.9962, lng: -77.0847 },
+                    { lat: -11.9822, lng: -77.0902 },
+                    { lat: -11.9845, lng: -77.0650 },
+                    { lat: -11.9827, lng: -77.0536 },
+                    { lat: -12.0285, lng: -77.0443 },
+                    { lat: -12.0268, lng: -77.0400 },
+                    { lat: -12.0410, lng: -77.0191 },
+                    { lat: -12.0418, lng: -77.0217 },
+                    { lat: -12.0426, lng: -77.0240 },
+                    { lat: -12.0546, lng: -77.0303 },
+                    { lat: -12.0583, lng: -77.0245 },
+                    { lat: -12.0780, lng: -77.0222 },
+                    { lat: -12.0751, lng: -77.0111 },
+                    { lat: -12.0727, lng: -76.9929 },
+                    { lat: -12.0704, lng: -76.9886 },
+                    { lat: -12.0641, lng: -76.9871 },
+                    { lat: -12.0552, lng: -76.9804 },
+                    { lat: -12.0550, lng: -76.9781 },
+                    { lat: -12.0539, lng: -76.9755 },
+                    { lat: -12.0449, lng: -76.9742 },
+                    // {lat: -12.057905, lng: -76.963047}
+                ],
+
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35
+            });
+
+            //Mapa centrado en una ubicación específica
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -12.092715, lng: -77.022142 }, // CentroMapa
+                zoom: 14
+            });
+
+            var marker = null;
+
+            function geocodeLatLng(lat, lng) {
+                var geocoder = new google.maps.Geocoder();
+                var latlng = { lat: parseFloat(lat), lng: parseFloat(lng) };
+                geocoder.geocode({ 'location': latlng }, function (results, status) {
+                    if (status === 'OK') {
+                        console.log('results');
+                        console.log(results);
+                        if (results[0]) {
+                            var confirmedAddressInput = document.getElementById('confirmedAddress');
+                            // Iterar por los componentes de la dirección
+                            var addressComponents = results[0].address_components;
+                            var streetName = '';
+                            var streetNumber = '';
+                            var urb = '';
+                            var district = '';
+                            for (var i = 0; i < addressComponents.length; i++) {
+                                var component = addressComponents[i];
+                                if (component.types.includes('route')) {
+                                    streetName = component.long_name;
+                                }
+                                if (component.types.includes('street_number')) {
+                                    streetNumber = component.long_name;
+                                }
+                                if (component.types.includes('sublocality_level_1')) {
+                                    urb = component.long_name;
+                                }
+                                if (component.types.includes('locality')) {
+                                    district = component.long_name;
+                                }
+                            }
+                            var fullAddress = streetName + ' ' + streetNumber + ' ' + urb + ' ' + district;
+                            confirmedAddressInput.value = fullAddress;
+                        } else {
+                            console.warn('No se encontraron resultados de dirección.');
+                        }
+                    } else {
+                        console.warn('Geocode no fue exitoso por la siguiente razón:', status);
+                    }
+                });
+            }
+
+
+            function initMap(lat, long) {
+                marker = new google.maps.Marker({  // Crea un marcador para el punto
+                    position: { lat: lat, lng: long },
+                    map: map,
+                    draggable: true
+                });
+                var point2 = { lat: lat, lng: long }; //Actual
+                if (google.maps.geometry.poly.containsLocation(point2, polygon)) {
+                    console.log('El punto está dentro del polígono.');
+                    $("#divBtnAceptar").removeClass('d-none');
+                    $('#toast-carrito3').toast('show');
+                } else {
+                    $('#toast-carrito2').toast('show');
+                    $("#divBtnAceptar").addClass('d-none');
+                    console.log('El punto está fuera del polígono.');
+                }
+
+                marker.addListener('dragend', function () {
+                    var position = marker.getPosition();
+                    var lat2 = position.lat();
+                    var long2 = position.lng();
+                    console.log('Latitud:', lat2);
+                    console.log('Longitud:', long2);
+                    geocodeLatLng(lat2, long2);
+                    var point = { lat: lat2, lng: long2 }; //Actual
+                    if (google.maps.geometry.poly.containsLocation(point, polygon)) {
+                        console.log('El punto está dentro del polígono.');
+                        $("#divBtnAceptar").removeClass('d-none');
+                        $('#toast-carrito3').toast('show');
+                    } else {
+                        $('#toast-carrito2').toast('show');
+                        $("#divBtnAceptar").addClass('d-none');
+                        console.log('El punto está fuera del polígono.');
+                    }
+                });
+            }
+
+
+            $("#btnConsultaUbicacion").click(function () {
+                $('#autocompleteInput').val('');
+                $('#confirmedAddress').val('');
+                if (marker) {
+                    marker.setMap(null);
+                }
+                $("#divcasilla").show();
+                $("#divAutoIngresoDirec").hide();
+                navigator.geolocation.getCurrentPosition(geoposOK, geoposKO);
+                function geoposOK(pos) {//Obtenemos latitud y longitud
+                    var lat = pos.coords.latitude;
+                    var long = pos.coords.longitude;
+                    map.setCenter({ lat: lat, lng: long });
+                    map.setZoom(16);
+                    console.log(lat);
+                    console.log(long);
+                    initMap(lat, long);
+                    geocodeLatLng(lat, long);
+                }
+                $("#map").show();
+                function geoposKO(err) {
+                    console.warn(err.message);
+                    let msg;
+                    switch (err.code) {
+                        case err.PERMISSION_DENIED:
+                            msg = "No nos has dado permiso para obtener tu posición";
+                            break;
+                        case err.POSITION_UNAVAILABLE:
+                            msg = "Tu posición actual no está disponible";
+                            break;
+                        case err.TIMEOUT:
+                            msg = "No se ha podido obtener tu posición en un tiempo prudencial";
+                            break;
+                        default:
+                            msg = "Error desconocido";
+                            break;
+                    }
+                    console.log(msg);
+                }
+            });
+
+            $("#btnIngresaTuDireccion").click(function () {
+                $('#autocompleteInput').val('');
+                $('#confirmedAddress').val('');
+                if (marker) {
+                    marker.setMap(null);
+                }
+                $("#divcasilla").hide();
+                $("#divAutoIngresoDirec").show();
+            });
+
+            var autocompleteInput = document.getElementById('autocompleteInput');
+            var autocomplete = new google.maps.places.Autocomplete(autocompleteInput, {
+                types: ['geocode'],
+                componentRestrictions: { country: 'PE' }
+            });
+
+            autocomplete.addListener('place_changed', function () {
+                var place = autocomplete.getPlace();
+                if (place.geometry) {
+                    var location = place.geometry.location;
+                    map.setCenter(location);
+                    map.setZoom(19);
+                    var lat = location.lat();
+                    var long = location.lng();
+                    initMap(lat, long);
+                }
+            });
+
+            $("#btnAceptar").click(function () {
+                var value = $('#selectTipo').val();
+                if (value == 1) {
+                    $('#idcompra').html("Delivery!... Realiza tu pedido");
+                    $("#modalInicial").modal("hide");
+                }
+                else if (value == 2) {
+                    var idubicacionTienda = $('select[name="ddlTiendas"] option:selected').text();
+                    console.log(idubicacionTienda);
+                    $('#encontroTienda').html(" " + idubicacionTienda);
+                    $('#idcompra').html("Recojo en tienda " + idubicacionTienda);
+                    $("#modalInicial").modal("hide");
+                }
+            });
+        });
+
+
+        $(".btn-ver-categoria").click(function () {
+            jQuery.ajax({
+                url: '@Url.Action("ListarCategoria", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                $(".row-categoria").html("");
+                    $(".modal-body").LoadingOverlay("hide");
+
+                if (data.data != null) {
+                $("<div>").addClass("col-4").append(
+                    $("<button>").addClass("btn btn-outline-primary btn-categoria m-1 w-100").text("Ver Todos").attr({
+                        "onclick": "listarProductos(0)"
+                    })).appendTo(".row-categoria")
+                    $.each(data.data, function (i, item) {
+                        $("<div>").addClass("col-4").append(
+                            $("<button>").addClass("btn btn-outline-primary btn-categoria m-1 w-100").text(item.Descripcion).attr({
+                                "onclick": "listarProductos(" + item.IdCategoria + ")"
+                            })
+                            ).appendTo(".row-categoria")
+                        });
+                    }
+                },
+
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show");
+                },
+            });
+
+            $('#exampleModal').modal('show');
+        });
+        $(document).on('click', '.btn-detalle', function (event) {
+            var json = $(this).data("elemento")
+            window.location.href = "@Url.Action("Producto", "Tienda")" + "?idproducto=" + json.IdProducto;
+        });
+
+        $(document).on('click', '.btn-categoria', function (event) {
+            $('#exampleModal').modal('hide');
+        });
+
+        function listarProductos(_idcategoria) {
+            jQuery.ajax({
+                url: '@Url.Action("ListarProducto", "Tienda")',
+                type: "POST",
+                data: JSON.stringify({ idcategoria: _idcategoria }),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $("#catalogo-productos").html("");
+                    $("#catalogo-productos").LoadingOverlay("hide");
+
+                    if (data.data != null) {
+                        $.each(data.data, function (i, item) {
+                            //catalogo-productos
+                            $("<div>").addClass("col mb-5").append(
+                                $("<div>").addClass("card h-100").append(
+                                    $("<img>").addClass("card-img-top").attr({ "src": "data:image/" + item.extension + ";base64," + item.base64 }),//Product details
+                                    $("<div>").addClass("card-body p-4").append(
+                                        $("<div>").addClass("text-center").append(
+                                            $("<h5>").addClass("fw-bolder").text(item.Nombre),
+                                            "S/. " + item.Precio)),//Product actions
+
+                                    $("<div>").addClass("card-footer p-4 pt-0 border-top-0 bg-transparent").append(
+                                        $("<div>").addClass("d-grid d-md-grid gap-2 d-md-block align-items-center text-center").append(
+                                            $("<button>").addClass("btn btn-outline-dark mt-auto btn-detalle").text("Ver Detalle").attr({ "data-elemento": JSON.stringify(item) }),
+                                            @{
+
+                                            if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false) {
+                                                    @:$("<button>").addClass("btn btn-outline-dark mt-auto btn-agregar-carrito").data("idproducto", item.IdProducto).text("Agregar al carrito")
+                                                    }
+                                                }
+                                        )
+                                    )
+                                )
+
+                            ).appendTo("#catalogo-productos");
+                        });
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $("#catalogo-productos").LoadingOverlay("show");
+                },
+            });
+        }
+
+    </script>
+
+}

@@ -1,0 +1,379 @@
+﻿@model ProyectoTest.Models.Producto
+@{
+    ViewBag.Title = "Producto";
+    Layout = "~/Views/Shared/_Layout_Tienda.cshtml";
+    int i = 0;
+}
+
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    legend {
+        margin-bottom: 0;
+    }
+
+    #btnizquierdo{
+
+    }
+
+</style>
+
+<section class="py-0">
+    <div class="container px-4 px-lg-5 my-2">
+
+        <div class=" row gx-4 gx-lg-5 align-items-start">
+
+            <div class="col-md-6">                    
+                <img class="card-img-top mb-5 mb-md-0 mt-3 rounded-3 border-light"
+                     src="data:image/@Html.DisplayTextFor(model => model.extension);base64,@Html.DisplayTextFor(model => model.base64)" alt="...">
+            </div>
+
+            <div class="col-md-6">
+                @*<div class="small mb-1">@Html.DisplayTextFor(model => model.oMarca.Descripcion)</div>*@
+                <div class="fs-5 fw-bolder">@Html.DisplayTextFor(model => model.Nombre)</div>
+                <div class="fs-5 mb-2">
+                    <span id="precioSpan">S/. @Html.DisplayTextFor(model => model.Precio)</span><br />
+                    <span>@Html.DisplayTextFor(model => model.Descripcion)</span>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.OpcionesSinCosto))
+                {
+                    <div class="mb-1">
+                        <label for="txtopciones" class="form-label mb-0"><b>Opciones Adicionales:</b></label>
+                        <div>
+                            @if (Model.MaxOpcionesSinCosto == 0)
+                            {
+                                <div>Elige opciones ilimitadas sin costo.</div>
+                            }
+                            else
+                            {
+                                <div>Elige máximo (@Model.MaxOpcionesSinCosto) opciones adicionales sin costo.</div>
+                            }
+                        </div>
+                        <div>
+
+                            @foreach (var opcion in Model.OpcionesSinCosto.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                            {
+                                try
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input opcion-checkboxSC" type="checkbox" id="opSinCosto@i">
+                                        <label class="form-check-label" for="opSinCosto@i">@opcion</label>
+                                    </div>
+                                    i++;
+                                }
+                                catch (Exception)
+                                {
+
+                                    <div class="form-check">
+                                        <p>Error: formato incorrecto</p>
+                                    </div>
+                                }
+
+                            }
+
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label mb-0"><b>Elige con qué acompañar tu orden:</b></label>
+                        <div>
+                            @foreach (var group in Model.OpcionExcluyente.Split(new[] { '-' }, StringSplitOptions.RemoveEmptyEntries))
+                            {
+                                try
+                                {
+                                    var groupParts = group.Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
+                                    var groupTitle = groupParts[0].Trim();
+                                    var groupOptions = groupParts[1].Trim().Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                                    <fieldset>
+                                        <div>@groupTitle</div>
+                                        @foreach (var option in groupOptions)
+                                        {
+
+                                            <div class="form-check mb-0 ">
+                                                <input class="form-check-input opcion-radiobutton" type="radio" name="@groupTitle" value="@option">
+                                                <label class="form-check-label" for="@groupTitle">@option</label>
+                                            </div>
+                                        }
+                                    </fieldset>
+                                }
+                                catch (Exception)
+                                {
+                                    <div class="form-check">
+                                        <p>Error: formato incorrecto</p>
+                                    </div>
+                                }
+
+
+                            }
+                        </div>
+                    </div>
+
+
+                    <div class="mb-2">
+                        <label class="form-label mb-0"><b>Opciones Adicionales (Con Precio):</b></label>
+                        <div>
+                            @foreach (var opcion in Model.OpcionesConCosto.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                            {
+                                try
+                                {
+                                    var opcionParts = opcion.Split(new[] { '+' }, StringSplitOptions.RemoveEmptyEntries);
+                                    var opcionText = opcionParts[0].Trim();
+                                    var opcionPrecio = decimal.Parse(opcionParts[1].Trim());
+
+                                    <div class="form-check">
+                                        <input class="form-check-input opcion-checkbox" type="checkbox" id="opConCosto" data-precio="@opcionPrecio">
+                                        <label class="form-check-label" for="chkOpcion@i">@opcionText &nbsp;+ S/. @opcionPrecio</label>
+                                    </div>
+                                    i++;
+                                }
+                                catch (Exception)
+                                {
+
+                                    <div class="form-check">
+                                        <p>Error: formato incorrecto</p>
+                                    </div>
+                                }
+
+                            }
+
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="txtObservaciones" class="form-label">Observaciones extras:</label>
+                        <textarea rows="3" class="form-control" id="txtObservaciones" name="observaciones" autocomplete="off"></textarea>
+                    </div>
+
+                }
+
+
+                <div class="d-flex mb-2">
+
+                    <div class="col-4 md-2">
+                        <label for="" class="form-label mb-0">Cantidad:</label>
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary btn-restar rounded-0" type="button">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="text"
+                                    class="form-control input-cantidad p-1 text-center rounded-0"
+                                    style="width: 20px"
+                                    disabled
+                                    value="1" />
+                            <button class="btn btn-outline-secondary btn-sumar rounded-0" type="button">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-8 md-9 ml-4">
+                        <div>
+                            <label for="" class="form-label mb-0">Precio Total:</label>
+                            <input type="text" id="txtPrecioTotal" class="form-control" readonly value="@Model.Precio">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <a id="btnizquierdo" href="@Url.Action("Index", "Tienda")" class="btn btn-danger w-50 text-center me-3">
+                        <i class="fas fa-undo-alt"></i> Volver
+                    </a>
+                    @{
+                        if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
+                        {
+                            var idUsuario = ((ProyectoTest.Models.Usuario)Session["Usuario"]).IdUsuario;
+                            <button class="btn btn-danger btn-agregar-carrito flex-shrink-0 w-50"
+                                    type="button"
+                                    data-idproducto="@Html.DisplayTextFor(model => model.IdProducto)"
+                                    data-idusuario="@idUsuario">
+                                <i class="fas fa-cart-plus"></i> Agregar al carrito
+                            </button>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@section scripts {
+    <script>
+
+        $(document).ready(function () {
+            var maxOpciones = @Model.MaxOpcionesSinCosto; // Obtén el valor de MaxOpcionesSinCosto desde el modelo
+            console.log("Valor de maxOpciones:", maxOpciones); // Imprime el valor en la consola
+
+            $(".opcion-checkboxSC").on("change", function () {
+                var totalSeleccionadas = $(".opcion-checkboxSC:checked").length;
+
+                if (maxOpciones !== 0 && totalSeleccionadas > maxOpciones) {
+                    $(this).prop("checked", false); // Desactiva la casilla de verificación seleccionada si se excede el límite
+                }
+
+                var totalDeshabilitar = maxOpciones !== 0 && totalSeleccionadas >= maxOpciones;
+
+                $(".opcion-checkboxSC:not(:checked)").prop("disabled", totalDeshabilitar); // Desactiva las casillas no seleccionadas si se alcanza el límite
+            });
+        });
+
+
+
+
+        const btnAgregarCarrito = document.querySelector(".btn-agregar-carrito");
+        btnAgregarCarrito.addEventListener("click", function () {
+            // Obtener el ID del producto desde el atributo data-idproducto
+            const idProducto = btnAgregarCarrito.getAttribute("data-idproducto");
+
+            var idUsuario = $(this).data("idusuario");
+
+            // Llamar a la función guardarEnCarrito() y pasar el ID del producto
+            guardarEnCarrito(idProducto, idUsuario);
+        });
+        function guardarEnCarrito(idProducto, idUsuario) {
+
+            const precioTotal = parseFloat(sessionStorage.getItem('precioTotalCarrito_' + idProducto)) || parseFloat($("#precioSpan").text().replace("S/. ", ""));
+            const inputCantidad = document.querySelector(".input-cantidad");
+            // Obtener la cantidad del campo de entrada
+            const cantidad = parseInt(inputCantidad.value)
+            var adicionalesTexto = "";
+
+
+            // Obtener opciones sin costo seleccionadas
+            $(".opcion-checkboxSC:checked").each(function () {
+                var opcion = $(this).next(".form-check-label").text();
+                adicionalesTexto += opcion + ", ";
+            });
+
+            // Obtener opciones con costo seleccionadas
+            $(".opcion-checkbox:checked").each(function () {
+                var opcion = $(this).next(".form-check-label").text();
+                adicionalesTexto += opcion + ", ";
+            });
+
+            // Obtener opción exclusiva seleccionada
+            $(".opcion-radiobutton:checked").each(function () {
+                var opcion = $(this).next(".form-check-label").text();
+                adicionalesTexto += opcion + ", ";
+            });
+
+            // Quitar la última coma si existe
+            if (adicionalesTexto.endsWith(", ")) {
+                adicionalesTexto = adicionalesTexto.slice(0, -2);
+            }
+
+            // Asignar el texto a un campo oculto o enviarlo directamente al servidor
+            $("#txtAdicionales").val(adicionalesTexto);
+            // Obtener el precio total del carrito
+
+
+            $.ajax({
+                url: '@Url.Action("InsertarCarrito", "Tienda")', // Cambia "ControllerName" al nombre correcto de tu controlador
+                type: 'POST',
+                data: {
+                    IdUsuario: idUsuario, // Aquí asigna el valor correcto del usuario
+                    IdProducto: idProducto,
+                    Cantidad: cantidad, // Puedes ajustar esto según tus necesidades
+                    Adicionales: adicionalesTexto,
+                    PrecioExtra: precioTotal,
+                    Observaciones: $("#txtObservaciones").val() || "Sin observaciones"
+                },
+                beforeSend: function (xhr) {
+                    console.log("Valores enviados en la solicitud AJAX:");
+                    console.log("IdUsuario:", idUsuario);
+                    console.log("IdProducto:", idProducto);
+                    console.log("Cantidad:", cantidad);
+                    console.log("Adicionales:", adicionalesTexto);
+                    console.log("Precio Extra:", precioTotal);
+                    console.log("Observaciones:", $("#txtObservaciones").val() || "Sin observaciones"); // Imprime las observaciones en la consola
+                },
+                success: function (data) {
+                    if (data.respuesta) {
+                        // El producto se agregó al carrito correctamente
+                        swal("Agregado al carrito", "Producto agregado al carrito correctamente", "success")
+                            .then((value) => {
+                                if (value) {
+                                    location.reload(); // Se ejecutará cuando se presione OK
+                                }
+                            });
+                    } else {
+                        // Hubo un problema al agregar el producto al carrito
+                        console.log("No se pudo agregar el producto al carrito");
+                    }
+                },
+                error: function (error) {
+                    console.log("Error en la solicitud AJAX:", error);
+                }
+            });
+
+        }
+
+        $(document).ready(function () {
+            $(".btn-restar").click(function () {
+                var inputCantidad = $(this).parent().find(".input-cantidad");
+                var cantidad = parseInt(inputCantidad.val());
+                if (cantidad > 1) {
+                    cantidad--;
+                    inputCantidad.val(cantidad);
+                }
+            });
+
+            $(".btn-sumar").click(function () {
+                var inputCantidad = $(this).parent().find(".input-cantidad");
+                var cantidad = parseInt(inputCantidad.val());
+                cantidad++;
+                inputCantidad.val(cantidad);
+            });
+        });
+
+        $(document).ready(function () {
+            // Handler para el cambio en los checkboxes de opciones adicionales
+            $('.opcion-checkbox').change(function () {
+                calcularPrecioTotal();
+            });
+
+            // Función para calcular el precio total
+            function calcularPrecioTotal() {
+                var precioProducto = parseFloat($("#precioSpan").text().replace("S/. ", ""));
+
+                var precioTotal = precioProducto;
+
+                // Recorrer los checkboxes y sumar los precios de las opciones seleccionadas
+                $('.opcion-checkbox:checked').each(function () {
+                    var opcionPrecio = parseFloat($(this).data('precio'));
+                    precioTotal += opcionPrecio;
+                });
+
+
+
+                // Recorrer los checkboxes y obtener el texto de las opciones seleccionadas
+                var opcionesSeleccionadas = [];
+                $('.opcion-checkbox:checked').each(function () {
+                    var opcionTexto = $(this).data('texto');
+                    opcionesSeleccionadas.push(opcionTexto);
+                });
+
+                // Si no se eligió ninguna opción, el precio total será el precio base del producto
+
+                if (precioTotal === precioProducto) {
+                    precioTotal = precioProducto;
+                }
+                // Actualizar el valor del cuadro de texto del precio total
+                $('#txtPrecioTotal').val(precioTotal.toFixed(2));
+
+                // Guardar el precio total y las opciones seleccionadas en sessionStorage con el identificador único del producto
+                var idProducto = "@Html.DisplayTextFor(model => model.IdProducto)";
+                sessionStorage.setItem('precioTotalCarrito_' + idProducto, precioTotal.toFixed(2));
+                sessionStorage.setItem('opcionesSeleccionadas_' + idProducto, JSON.stringify(opcionesSeleccionadas));
+            }
+        });
+
+
+
+    </script>
+}

@@ -1,0 +1,313 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<div class="row">
+    @*Agregado*@
+    <div class="row mt-5 pt-4">
+        <h1>Gestionar Pedidos</h1>
+        <div class="col-12">
+            <div class="mb-3">
+                <h5>Filtrar por estado:</h5>
+                <button class="btn btn-secondary estado-btn" data-estado="">Todos</button>
+                <button class="btn btn-success estado-btn" data-estado="estado: Aceptado">Aceptados</button>
+                <button class="btn btn-danger estado-btn" data-estado="estado: Rechazado">Rechazados</button>
+                <button class="btn btn-warning estado-btn" data-estado="estado: Pendiente">Pendientes</button>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+                <label for="txtBusqueda" class="form-label">Buscar por nombre de cliente:</label>
+                <input type="text" class="form-control" id="txtBusqueda">
+                <button class="btn btn-primary mt-2" id="btnBuscar">Buscar</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body bg-secondary">
+
+                    <div class="accordion" id="accordion_articulos">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+@section scripts{
+
+    <script>
+
+
+        //AGREGADO
+        function zeroFill(number, width) {
+            width -= number.toString().length;
+            if (width > 0) {
+                return new Array(width + (/\./.test(number) ? 2 : 1)).join('0') + number;
+            }
+            return number + ""; // always return a string
+        }
+
+        
+
+        // ...
+
+        // En el evento de clic del botón Rechazar
+        
+
+        $(document).ready(function () {
+            jQuery.ajax({
+                url: '@Url.Action("ObtenerCompra", "Tienda")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(data)
+                    if (data.lista != null) {
+                        // Invertir la lista de compras para mostrar los nuevos primero
+                        var reversedLista = data.lista.reverse();
+                        $.each(reversedLista, function (i, v) {
+                            var accordion_item = $("<div>").addClass("accordion-item");
+
+
+
+                            var fechaCompra = new Date(v.FechaTexto);
+
+                            var estado = v.Estado.toLowerCase(); // Convertir el estado a minúsculas
+                            var backgroundColor;
+
+                            if (estado === "aceptado") {
+                                backgroundColor = "#2ECC71";
+                            } else if (estado === "rechazado")
+                            {
+                                backgroundColor = "#E74C3C";
+                            } else
+                            {
+                                backgroundColor = "initial"; // Color de fondo por defecto
+                            }
+
+
+                            var accordion_header = $("<div>").addClass("accordion-header").append(
+
+
+                                $("<div>").addClass("accordion-button collapsed").css("background-color", backgroundColor).attr({ "data-bs-toggle": "collapse", "data-bs-target": "#collapse" + i, "aria-expanded": "false" }).append(
+                                    $("<div>").addClass("d-flex justify-content-between w-100").append(
+                                        $("<div>").text("N° " + zeroFill(i + 1, 8)),
+                                        $("<div>").addClass("me-4").text("Fecha: " + fechaCompra.toLocaleDateString()),
+                                        $("<div>").addClass("me-4").text("Hora: " + fechaCompra.toLocaleTimeString()),// Formatear fecha y hora
+                                        $("<div>").addClass("me-4 cliente-nombre").text("Cliente: " + v.Nombre), // Agrega la clase 'cliente-nombre'
+                                        $("<div>").addClass("me-4 pedido-estado").text("Estado: " + v.Estado), // Agrega la clase 'pedido-estado'
+                                        //$("<div>").addClass("me-4").text("Estado: " + v.IdCompra),
+
+                                    )
+                                )
+                            );
+                            var accordion_collapse = $("<div>").attr({ "id": "collapse" + i }).addClass("accordion-collapse collapse");
+
+                            var accordion_body = $("<div>").addClass("accordion-body").append(
+                                $("<div>").addClass("row").append(
+                                    // Columna de datos del cliente
+                                    $("<div>").addClass("col-md-6 mb-4").append(
+                                        $("<div>").addClass("font-weight-bold text-decoration-underline").text("Datos del cliente"),
+                                        $("<div>").text("Dirección: " + v.Direccion),
+                                        $("<div>").text("Correo: " + v.Correo),
+                                        $("<div>").text("Referencia: " + v.Referencia),
+                                        $("<div>").text("F.Pago: " + v.FormaPago),
+                                        $("<div>").text("Teléfono: " + v.Telefono),
+                                        $("<div>").text("Fact: " + v.DocumentoFacturacion)
+                                    ),
+                                    // Columna de detalles de compra
+                                    $("<div>").addClass("col-md-6 mb-4").append(
+                                        $("<div>").addClass("font-weight-bold text-decoration-underline").text("")
+                                    )
+                                )
+                            );
+
+                            $.each(v.oDetalleCompra, function (x, dc) {
+                                var d_flex = $("<div>").addClass("d-flex flex-column border p-2").append(
+                                    //$("<img>").attr({ "src": "data:image/" + dc.oProducto.extension + ";base64," + dc.oProducto.base64, "width": "50" }),
+                                    $("<div>").addClass("p-2 bd-highlight").text(dc.oProducto.Nombre),
+                                    $("<div>").addClass("p-2 bd-highlight").text("Cantidad: " + dc.Cantidad),
+                                    $("<div>").addClass("p-2 bd-highlight").text("Adicionales: " + dc.Adicionales)
+                                );
+                                accordion_body.find(".col-md-6:last-child").append(d_flex);
+                            });
+
+                            accordion_body.find(".col-md-6:last-child").append(
+                                $("<div>").addClass("d-flex justify-content-between bg-light border").append(
+                                    $("<div>").addClass("p-2 bd-highlight").text("Total Importe:"),
+                                    $("<div>").addClass("p-2 bd-highlight").text("S/. " + v.Total)
+                                )
+                            );
+
+                            var btnAceptar = $("<button>").addClass("btn btn-success me-2").text("Aceptar").on("click", function () {
+                                cambiarEstadoCompra(v.IdCompra, "Aceptado");
+                            });
+                            var btnRechazar = $("<button>").addClass("btn btn-danger").text("Rechazar").on("click", function () {
+                                if (confirm('¿Está seguro de rechazar el pedido?')) {
+                                    cambiarEstadoCompra(v.IdCompra, "Rechazado");
+                                    ocultarPedido(v.IdCompra); // Ocultar el pedido rechazado
+                                }
+                            });
+
+                            accordion_collapse.append(accordion_body);
+                            accordion_item.append(accordion_header);
+                            accordion_item.append(accordion_collapse);
+
+                            accordion_body.append(
+                                // ... otros detalles
+                                $("<div>").addClass("d-flex justify-content-between").append(
+                                    btnRechazar,
+                                    btnAceptar
+                                )
+                            );
+
+                            $("#accordion_articulos").prepend(accordion_item);
+
+                           
+                            // Agregar el evento de búsqueda
+                            $('#btnBuscar').click(function () {
+                                var searchTerm = $('#txtBusqueda').val().toLowerCase();
+                                $('.accordion-item').each(function () {
+                                    var clienteNombre = $(this).find('.cliente-nombre').text().toLowerCase();
+                                    if (clienteNombre.includes(searchTerm)) {
+                                        $(this).show();
+                                    } else {
+                                        $(this).hide();
+                                    }
+                                });
+                            });
+
+                            $('.estado-btn').click(function () {
+                                var estadoSeleccionado = $(this).attr('data-estado').toLowerCase();
+                                //console.log(estadoSeleccionado);
+                                $('.accordion-item').each(function () {
+                                    var pedidoEstado = $(this).find('.pedido-estado').text().toLowerCase();
+                                    //console.log(pedidoEstado);
+                                    if (estadoSeleccionado === '' || pedidoEstado === estadoSeleccionado) {
+                                        $(this).show();
+                                    } else {
+                                        $(this).hide();
+                                    }
+                                });
+                            });
+
+                          
+
+                        });
+
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show");
+                },
+            });
+        })
+
+
+
+        function cambiarEstadoCompra(idCompra, nuevoEstado) {
+            $.ajax({
+                url: '@Url.Action("CambiarEstadoCompra", "Tienda")',
+                type: 'POST',
+                data: JSON.stringify({ idCompra: idCompra, nuevoEstado: nuevoEstado }),
+                contentType: 'application/json',
+                success: function (response) {
+                    console.log("ESTADO CAMBIADO CORRECTAMENTE");
+                    location.reload();
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+
+
+        //AGREGADO 2
+        function obtenerPreciosPago() {
+            var total = 0;
+            $("input.input-cantidad").each(function (index) {
+                var idProducto = $(this).data("idproducto");
+                var precioTotalProducto = parseFloat(sessionStorage.getItem('precioTotalCarrito_' + idProducto));
+                var cantidad = parseInt($(this).val());
+                var precio = precioTotalProducto * cantidad;
+                total += precio;
+            });
+            $("#totalPagar").text("S/. " + total.toFixed(2)); // Utilizamos toFixed(2) para mostrar dos decimales en el total.
+        }
+
+        $(document).ready(function () {
+            jQuery.ajax({
+                url: '@Url.Action("ListarProducto", "Home")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+
+                    if (data.data != null) {
+                        $("#total-productos").text(data.data.length);
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+
+                },
+            });
+
+             jQuery.ajax({
+                url: '@Url.Action("ListarMarca", "Home")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.data != null) {
+                        $("#total-marcas").text(data.data.length);
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+
+                },
+            });
+
+             jQuery.ajax({
+                url: '@Url.Action("ListarCategoria", "Home")',
+                type: "GET",
+                data: null,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                   if (data.data != null) {
+                        $("#total-categorias").text(data.data.length);
+                    }
+                },
+                error: function (error) {
+                    console.log(error)
+                },
+                beforeSend: function () {
+
+                },
+            });
+
+
+        })
+    </script>
+
+}
