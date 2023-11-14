@@ -1,0 +1,196 @@
+
+OProyectoTest.Controllers.TiendaController.PostDataAsync(string, string, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csา) า(6"0*ฏ
+0
+ิ ิ(7LJ
+
+ิ' ิ(7 
+%0System.Net.Http.HttpClient"System.Net.Http.HttpClienti
+g
+
+ิ+ ิ(5
+
+%1void"'System.Net.Http.HttpClient.HttpClient()*$"
+ 
+%0System.Net.Http.HttpClient`
+^
+
+ิ ิ(7$
+clientSystem.Net.Http.HttpClient"__id*$"
+ 
+%0System.Net.Http.HttpClient*
+1*
+1
+ึ# ุ($w
+u
+
+ึD ึ(S 
+%2System.Net.Http.HttpMethod"#System.Net.Http.HttpMethod.Post.get* "
+System.Net.Http.HttpMethod\Z
+
+ึ- ึ(Y(
+%3"System.Net.Http.HttpRequestMessage""System.Net.Http.HttpRequestMessageÝ
+ฺ
+
+ึ1 ึ(C
+
+%4void"YSystem.Net.Http.HttpRequestMessage.HttpRequestMessage(System.Net.Http.HttpMethod, string)*,*
+(
+%3"System.Net.Http.HttpRequestMessage*$"
+ 
+%2System.Net.Http.HttpMethod*
+
+urlstringq
+o
+
+ึ# ึ(Y-
+request"System.Net.Http.HttpRequestMessage"__id*,*
+(
+%3"System.Net.Http.HttpRequestMessageค
+ก
+
+ื ื(0
+%5*System.Net.Http.Headers.HttpRequestHeaders".System.Net.Http.HttpRequestMessage.Headers.get*1/
+-
+request"System.Net.Http.HttpRequestMessageด
+ฑ
+
+ื ื(;
+
+%6void"7System.Net.Http.Headers.HttpHeaders.Add(string, string)*42
+0
+%5*System.Net.Http.Headers.HttpRequestHeaders*
+Authorization*
+
+tokenstringn
+l
+
+ุ ุ($
+
+%7bool""string.operator !=(string, string)*
+"
+string*
+
+postDatastring*
+""*
+2
+3*ü
+2
+ฺ ฺ(ce
+c
+
+ฺB ฺ(O
+%8System.Text.Encoding"System.Text.Encoding.UTF8.get*"
+System.Text.EncodingRP
+
+ฺ& ฺ(d#
+%9System.Net.Http.StringContent"System.Net.Http.StringContent่
+ๅ
+
+ฺ* ฺ(7
+%10void"QSystem.Net.Http.StringContent.StringContent(string, System.Text.Encoding, string)*'%
+#
+%9System.Net.Http.StringContent*
+
+postDatastring*
+
+%8System.Text.Encoding*
+application/jsonฟ
+ผ
+
+ฺ ฺ(d"
+%11System.Net.Http.HttpContent".System.Net.Http.HttpRequestMessage.Content.set*1/
+-
+request"System.Net.Http.HttpRequestMessage*'%
+#
+%9System.Net.Http.StringContent*
+3*฿
+3
+Ü$ Þ(0ใ
+เ
+
+Ü5 Ü(N+
+%12$System.Threading.Tasks.Task<TResult>"HSystem.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)*(&
+$
+clientSystem.Net.Http.HttpClient*1/
+-
+request"System.Net.Http.HttpRequestMessageO
+M
+
+Ü$ Ü(N/
+response#System.Net.Http.HttpResponseMessage"__id*
+""
+
+
+Þ Þ(0
+%13bool";System.Net.Http.HttpResponseMessage.IsSuccessStatusCode.get*31
+/
+response#System.Net.Http.HttpResponseMessage*
+4
+5*ู
+4
+เ เ(E
+–
+
+เ! เ(1"
+%14System.Net.Http.HttpContent"/System.Net.Http.HttpResponseMessage.Content.get*31
+/
+response#System.Net.Http.HttpResponseMessage•
+’
+
+เ! เ(E+
+%15$System.Threading.Tasks.Task<TResult>"/System.Net.Http.HttpContent.ReadAsStringAsync()*&$
+"
+%14System.Net.Http.HttpContent"
+
+เ เ(F
+""* 
+5
+ไ ไ(g
+—
+
+ไT ไ(g 
+%16System.Net.HttpStatusCode"2System.Net.Http.HttpResponseMessage.StatusCode.get*31
+/
+response#System.Net.Http.HttpResponseMessageซ
+จ
+
+ไ( ไ(i 
+%17System.Net.HttpStatusCode"__concat*<
+
+ไ* ไ(S.,
+*Error en la solicitud. Cรณdigo de estado: *0
+
+ไS ไ(h"
+ 
+%16System.Net.HttpStatusCode97
+
+ไ ไ(j
+%18System.Exception"System.Exception
+€
+
+ไ ไ('
+%19void""System.Exception.Exception(string)*
+
+%18System.Exception*$"
+ 
+%17System.Net.HttpStatusCode*
+6*
+7
+็	 ็(	*
+6*2
+6
+็	 ็(	"!
+
+็ ็(	
+implicit return:
+
+า7 า(A
+urlstring:
+
+าC า(O
+tokenstring: 
+
+าQ า(`
+postDatastringB-"+
+)ProyectoTest.Controllers.TiendaController

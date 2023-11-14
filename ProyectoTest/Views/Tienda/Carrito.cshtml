@@ -4,25 +4,86 @@
     Layout = "~/Views/Shared/_Layout_Tienda.cshtml";
 }
 
-<div class="row mt-5 pt-5 p-2">
+<style>
+    .btn-cambia img {
+        width: 200px !important;
+    }
+    .swal2-confirm {
+        display: none !important;
+    }
+    .swal-icon img{
+        width: 220px;
+    }
+    #CostoEnvio {
+        width: 350px;
+    }
+    .custom-line {
+        display: flex;
+        justify-content: space-between;
+        padding: 1px;
+    }    
+    .btnEliminar {
+        margin-right: -5px;
+    }
+    .precioderecha {
+        float: right;
+        text-align: right;
+    }
+</style>
+
+@*<link href="https://pocpaymentserve.s3.amazonaws.com/payform.min.css" rel="stylesheet" />*@
+
+<div class="row mt-0 pt-1 p-2">
+
     <div class="card">
         <div class="card-body">
-            <div class="row">
-                <div class="col-md-8">
+
+            <div class="row mt-1">
+                <div class="col-md-8 mt-3">
                     <div class="product-details mr-2">
                         <div class="d-flex justify-content-between">
-                            <span class="ml-2">Detalle Compra</span>
+                            <span class="ml-2 py-2">Detalle Compra</span>
                             <a class="btn btn-danger" href="@Url.Action("Index", "Tienda")">Seguir Comprando</a>
                         </div>
                         <hr class="mt-2 mb-2">
                         <div class="justify-content-start mb-2">
-                            Tienes <span id="cantidad-articulos" class="ml-1">estos</span> artículo(s) en tu carrito:
+                            Tienes <span id="cantidad-articulos" class="mx-0">estos</span> artículo(s) en tu carrito:
                         </div>
                         <div id="productos-seleccionados">
-
                         </div>
+                        <div id="" class="card d-block d-sm-none mb-2 p-3">
+                            <div class="custom-line">
+                                <span class="">Total Parcial:</span>
+                                <span id="totalParcial" class="pagoParcial"></span>
+                            </div>
+                            <div class="custom-line">
+                                <span class=""> Costos de Envío:</span>
+                                <span id="totalEnvio" class="totalEnvio "></span>
+                            </div>
+                            <div class="custom-line">
+                                <span class=" fs-5 fw-bold"> Total:</span>
+                                <span id="totalPago" class="pagoTotal  fs-5 fw-bold"></span>
+                            </div>
+                        </div>
+
+                        <div id="CostoEnvio" class="card d-none d-sm-block mb-2 p-3">
+                            <div class="custom-line">
+                                <span class="">Total Parcial:</span>
+                                <span id="totalParcialG" class="pagoParcial"></span>
+                            </div>
+                            <div class="custom-line">
+                                <span class=""> Costos de Envío:</span>
+                                <span id="totalEnvioG" class="totalEnvio "></span>
+                            </div>
+                            <div class="custom-line">
+                                <span class=" fs-5 fw-bold"> Total:</span>
+                                <span id="totalPagoG" class="pagoTotal  fs-5 fw-bold"></span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
 
                 <div class="col-md-4">
                     <div class="card bg-light">
@@ -30,14 +91,22 @@
                             <div class="row">
 
                                 <div class="col-12">
+                                    
                                     <div class="payment-info">
+                                        
+                                        <span class="type d-inline mt-3 mb-2 fw-bold fs-5"></span>
+                                        <div class="d-flex justify-content-center align-items-center mt-2"><span> <b><u>Datos del Pedido</u></b></span></div>
 
-                                        <div class="d-flex justify-content-center align-items-center"><span> <b><u>Datos del Pedido</u></b></span></div>
-                                        <span class="type d-block mt-3 mb-1">Dirección:</span>
-                                        <input type="text" class="form-control credit-inputs" placeholder="" id="trj_nombre">                                        
+                                        <span class="d-block mt-2 mb-1">Dirección:</span>
+                                        <input type="text" class="form-control credit-inputs" placeholder="" id="trj_nombre">
+                                        @*<button class="btn btn-danger btn-block mt-3" type="button">Cambiar Dirección</button>*@
                                         <div>
-                                            <label class="credit-card-label mb-1 mt-2">Referencia:</label>
+                                            <label class="credit-card-label mb-1 mt-2">Referencia: (opcional)</label>
                                             <input type="text" class="form-control credit-inputs" placeholder="" id="txtReferencia">
+                                        </div>
+                                        <div id="contenedorHoraRecojo">
+                                            <label id="lblRecojo" for="horaRecojo">Hora de Recojo:</label>
+                                            <input type="time" class="form-control credit-inputs" id="horaRecojo" name="horaRecojo">
                                         </div>
                                         <div>
                                             <label class="credit-card-label mb-1 mt-2">Nombre:</label>
@@ -88,6 +157,8 @@
                                                 <input type="text" class="form-control credit-inputs" placeholder="Ingrese su dirección">
                                             </div>
                                         </div>
+
+
                                         <br />
                                         <div> <label class="credit-card-label mb-1 mt-2">Formas de pago:</label></div>
                                         @{
@@ -102,12 +173,66 @@
                                                 <input class="form-check-input" type="radio" name="modoPago" id="radioPagoEfectivo" value="efectivo">
                                                 <label class="form-check-label" for="radioPagoEfectivo">Pago en efectivo</label>
                                             </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="modoPago" id="radioPagoTarjeta" value="tarjeta">
+                                                <label class="form-check-label" for="radioPagoTarjeta">Pago con tarjeta</label>
+                                            </div>
+                                            @*<button id="PagarContarjeta" class="btn">Pagar con tarjeta</button>*@
                                         </div>
+                                        <div class="mb-3"></div>
                                         <div id="pagoEfectivoField"></div>
+
+                                        <div id="datosTarjeta" class="d-none">
+
+                                            <div class="d-flex justify-content-center align-items-center"><span> <b><u>Formulario de Pago</u></b></span></div>
+                                            <div class="mb-3"></div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                                        <input type="text" class="form-control credit-inputs" placeholder="Nombre" id="nombreTarjeta">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                                        <input type="text" class="form-control credit-inputs" placeholder="Apellido" id="apellidoTarjeta">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3"></div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                                <input type="email" class="form-control credit-inputs" placeholder="Correo" id="correoTarjeta">
+                                            </div>
+                                            <div class="mb-3"></div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                                <input type="number" class="form-control credit-inputs" placeholder="DNI" id="dniTarjeta">
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input insertar" type="radio" name="tarjeta2" id="insertarTarjeta">
+                                                <label class="form-check-label" for="radioPagoTarjeta">Insertar tarjeta</label>
+                                            </div>
+
+                                            @*<button id="pagar">Pagar</button>*@
+
+                                        </div>
+                                        <br />
+                                        <div id="datosTarjeta2" class="d-none">
+                                            <div id="txtTarjeta"></div>
+                                            <div id="txtNumeroTarjeta"></div>
+                                            <div id="txtFechaVencimiento"></div>
+                                            <div id="txtCvv"></div>
+
+                                            <button class="btn btn-danger mt-3" type="button" id="pagar">Finalizar Compra</button>
+                                        </div>
+                                        <span class="d-none" id="textoProcesando"> Procesando pago ...</span>
                                         <hr class="line">
                                         <div class="d-flex justify-content-between information"><span>Total a Pagar</span><span id="totalPagar">S/. 0</span></div>
+                                        <span class="d-none" id="totalPagarInt">0.00</span>
 
-                                        <button class="btn btn-danger mt-3" id="btnConfirmarCompra" type="button">Realizar Pedido </button>
+                                        <button class="btn btn-danger mt-3" id="btnConfirmarCompra" type="button"> Procesar compra</button>
                                     </div>
                                 </div>
                             </div>
@@ -123,17 +248,32 @@
 
 </div>
 
-
+<script src="https://pocpaymentserve.s3.amazonaws.com/payform.min.js"></script>
 @section scripts{
+
     <script>
-        var detalle = [];
-        var tipoDocumentoSeleccionado = [];
-        var formaPagoDatos = [];
-        var precioTotalCarrito = sessionStorage.getItem('precioTotalCarrito_');
+        //DATOS PARA TARJETA
+
+        var apiUrl = 'https://apitestenv.vnforapps.com/api.security/v1/security'; // Reemplaza con la URL real de tu API
+
+        // Definir las credenciales de autenticación (usuario:contraseña)
+        var usuario = 'integraciones@niubiz.com.pe';
+        var contraseña = '_7z3@8fF';
+        var credenciales = btoa(usuario + ':' + contraseña);
+        var token = "";
+        var tokenAuthorize = "";
+        var tokenid = "";
+        var ip = "";
+        $.getJSON('https://api.ipify.org?format=json', function (data) {
+            console.log(data.ip);
+            ip = data.ip;
+        });
+        var tokenSesion = "";
+
+
 
         $(document).ready(function () {
             var direccion = localStorage.getItem("direccion");
-            console.log(direccion)
             $("#trj_nombre").val(direccion);
 
             $("input[name='modoPago']").change(function () {
@@ -145,8 +285,7 @@
                     var label = $("<label>").addClass("credit-card-label mb-1 mt-2").text("Ingrese el monto (Obligatorio):");
                     var input = $("<input>").attr({ "type": "text", "class": "form-control credit-inputs", "placeholder": "Ingrese el monto", "required": "true", "id": "montoField" });
 
-                    //formaPagoSeleccionada = $("input[name='modoPago']:checked").siblings("label").text() + " - Monto: " + monto;
-                    // Agregar el campo de entrada al div con el id "pagoEfectivoField"
+
                     montoField.append(label, input);
                     $("#pagoEfectivoField").html(montoField);
                 } else {
@@ -157,7 +296,183 @@
         });
 
 
+        $("#actualizarUbicacion2").click(function () {
+            localStorage.removeItem('direccion');
+            $('#modalInicial').modal('show');
+        });
+        var tipoEnvioSpan;
+        var mensajeHorario;
+
         $(document).ready(function () {
+
+
+            var inputHoraRecojo = $("#horaRecojo");
+
+
+            tipoEnvioSpan = $(".type");
+
+            if (parseInt(tipoEnvio) === 2) {
+
+
+                // Obtiene la hora actual
+                // Obtiene la hora actual
+                var horaActual = new Date();
+                var hora = horaActual.getHours();
+                var minutos = horaActual.getMinutes();
+
+                // Define la hora mínima y máxima permitida
+                var horaMinima = 20;
+                var minutosMinimos = 45;
+                var horaMaxima = 12; // Cambia la hora máxima a 12 (medianoche)
+                var minutosMaximos = 0; // Cambia los minutos máximos a 0
+
+                var btnConfirmarCompra = $("#btnConfirmarCompra");
+                var radioPagoTarjeta = $("#radioPagoTarjeta");
+
+                // Función para verificar si el horario está dentro de los límites permitidos
+                function esHorarioPermitido(hora, minutos, horaMinima, minutosMinimos, horaMaxima, minutosMaximos) {
+                    if (hora < horaMinima || hora > horaMaxima) {
+                        return false;
+                    }
+                    if (hora === horaMinima && minutos < minutosMinimos) {
+                        return false;
+                    }
+                    return true;
+                }
+
+                // Verifica si el horario está fuera del rango permitido y deshabilita los elementos
+
+
+
+
+                //if (!esHorarioPermitido(hora, minutos, horaMinima, minutosMinimos, horaMaxima, minutosMaximos)) {
+                //    btnConfirmarCompra.prop("disabled", true);
+                //    radioPagoTarjeta.prop("disabled", true);
+                //}
+
+
+                var horaActual = new Date();
+                var horaActualMasUnaHora = new Date(horaActual.getTime() + 45 * 60 * 1000);
+                var horaMinuto = horaActualMasUnaHora.getHours().toString().padStart(2, '0') + ':' + horaActualMasUnaHora.getMinutes().toString().padStart(2, '0');
+                console.log("Hora actual:", horaActual);
+                console.log(horaMinuto);
+               
+                $("#lblRecojo").text("Hora Recojo de: 12:00 - 20:45");
+                inputHoraRecojo.val(horaMinuto);
+                inputHoraRecojo.on("change", function () {
+                    var horaSeleccionada = inputHoraRecojo.val();
+                    if (horaSeleccionada < horaMinuto || horaSeleccionada >= '20:45') {
+                        swal({
+                            title: "Horario Inválido",
+                            text: "Nuestro horario de recojo es 45 minutos desde que realizas el pedido en un rango de 12:00 - 20:45",
+                        }).then((result) => {
+                            if (result) {
+                                // Recargar la página
+                                inputHoraRecojo.val(horaMinuto);
+                                location.reload();
+                            }
+                        });
+                    }
+                });
+
+
+            } else if (parseInt(tipoEnvio) != 2) {
+
+
+                // Obtiene la hora actual
+                var horaActual = new Date();
+                var hora = horaActual.getHours();
+                var minutos = horaActual.getMinutes();
+
+                // Define la hora mínima y máxima permitida
+                var horaMinima = 21;
+                var minutosMinimos = 0;
+                var horaMaxima = 12; // Cambia la hora máxima a 12 (medianoche)
+                var minutosMaximos = 0; // Cambia los minutos máximos a 0
+
+                var btnConfirmarCompra = $("#btnConfirmarCompra");
+                var radioPagoTarjeta = $("#radioPagoTarjeta");
+
+                // Función para verificar si el horario está dentro de los límites permitidos
+                function esHorarioPermitido(hora, minutos, horaMinima, minutosMinimos, horaMaxima, minutosMaximos) {
+                    if (hora < horaMinima || hora > horaMaxima) {
+                        return false;
+                    }
+                    if (hora === horaMinima && minutos < minutosMinimos) {
+                        return false;
+                    }
+                    return true;
+                }
+
+
+
+
+                // Verifica si el horario está fuera del rango permitido y deshabilita los elementos
+                //if (!esHorarioPermitido(hora, minutos, horaMinima, minutosMinimos, horaMaxima, minutosMaximos)) {
+                //    btnConfirmarCompra.prop("disabled", true);
+                //    radioPagoTarjeta.prop("disabled", true);
+                //}
+
+
+
+
+                var horaActual = new Date();
+                var horaActualMasUnaHora = new Date(horaActual.getTime() + 45 * 60 * 1000);
+                var horaMinuto = horaActualMasUnaHora.getHours().toString().padStart(2, '0') + ':' + horaActualMasUnaHora.getMinutes().toString().padStart(2, '0');
+                console.log("Hora actual:", horaActual);
+                console.log(horaMinuto);
+                
+                $("#lblRecojo").text("Hora Entrega de: 12:00 - 21:00");
+                inputHoraRecojo.val(horaMinuto);
+                inputHoraRecojo.on("change", function () {
+                    var horaSeleccionada = inputHoraRecojo.val();
+                    if (horaSeleccionada < horaMinuto || horaSeleccionada >= '21:00') {
+                        swal({
+                            title: "Horario Inválido",
+                            text: "Nuestro horario de recojo es 45 minutos desde que realizas el pedido en un rango de 12:00 - 20:45",
+                        }).then((result) => {
+                            if (result) {
+                                // Recargar la página
+                                inputHoraRecojo.val(horaMinuto);
+                                location.reload();
+                            }
+                        });
+                    }
+
+                });
+            }
+
+        });
+
+
+
+        $(document).ready(function () {
+
+
+
+            console.log(tipoEnvio);
+            // Utiliza el valor recuperado para mostrar u ocultar el campo de hora de recojo
+            if (parseInt(tipoEnvio) == 2 || parseInt(tipoEnvio) != 2) {
+                $('#contenedorHoraRecojo').show();
+
+            } else {
+                //$('#contenedorHoraRecojo').hide();
+                //$("#horaRecojo").val() = "";
+
+            }
+            console.log($("#horaRecojo").val());
+        });
+
+
+        $(document).ready(function () {
+            $('input[name="modoPago"]').change(function () {
+                if (this.value === 'tarjeta') {
+                    $('#datosTarjeta').removeClass('d-none'); // Muestra los datos de tarjeta
+                } else {
+                    $('#datosTarjeta').addClass('d-none'); // Oculta los datos de tarjeta
+                }
+            });
+
             // Mostrar u ocultar los botones según la selección del radio button
             $("input[name='tipoDocumento']").on("change", function () {
                 if ($(this).val() === "Boleta") {
@@ -173,6 +488,7 @@
 
             // Mostrar u ocultar el campo de DNI según el botón seleccionado
             $("#btnConDNI").on("click", function () {
+
                 $(this).addClass("active");
                 $("#btnSinDNI").removeClass("active");
                 $("#dniField").show();
@@ -184,7 +500,6 @@
                 $("#dniField").hide();
             });
 
-            // Ejecutar el evento una vez para mostrar u ocultar según el valor inicial
             if ($("#radioBoleta").prop("checked")) {
                 $("#tipoDocumentoButtons").show();
                 $("#dniField").show();
@@ -195,37 +510,28 @@
         });
 
         $(document).ready(function () {
-            // Evento de cambio para el radio button "Factura"
+
             $("#radioFactura").on("change", function () {
                 if ($(this).prop("checked")) {
-                    // Mostrar el contenedor cuando Factura esté seleccionado
                     $("#tipoDocumentoFields").show();
-
-                    // Marcar los dos primeros campos como obligatorios
                     $("#tipoDocumentoFields input").attr("required", true);
                 } else {
-                    // Ocultar el contenedor cuando se deseleccione Factura
                     $("#tipoDocumentoFields").hide();
-
-                    // Eliminar la propiedad required para los campos
                     $("#tipoDocumentoFields input").attr("required", false);
                 }
             });
         });
 
         $(document).ready(function () {
-            // Evento de cambio para el radio button "Boleta"
+
             $("#radioBoleta").on("change", function () {
                 if ($(this).prop("checked")) {
-                    // Ocultar el contenedor cuando Boleta esté seleccionado
-                    $("#tipoDocumentoFields").hide();
 
-                    // Eliminar la propiedad required para los campos
+                    $("#tipoDocumentoFields").hide();
                     $("#tipoDocumentoFields input").attr("required", false);
                 }
             });
 
-            // Evento de cambio para el radio button "Factura"
             $("#radioFactura").on("change", function () {
                 if ($(this).prop("checked")) {
                     // Mostrar el contenedor cuando Factura esté seleccionado
@@ -236,8 +542,10 @@
                 }
             });
         });
+
         $(document).ready(function () {
 
+            var mostradoCostoEnvio = false;
             jQuery.ajax({
                 url: '@Url.Action("ObtenerCarrito", "Tienda")',
                 type: "GET",
@@ -250,60 +558,61 @@
 
                         $.each(data.lista, function (i, item) {
                             var idProducto = item.oProducto.IdProducto;
-                            // Obtener el precioTotal específico del producto desde sessionStorage
-                            var precioTotalProducto = sessionStorage.getItem('precioTotalCarrito_' + idProducto);
                             var idProducto = item.oProducto.IdProducto;
                             var nombre = item.oProducto.Nombre;
                             var precioExtra = item.PrecioExtra;
+                            console.log("precioEXTRA:",precioExtra);
+                            var precioBaseI = item.oProducto.Precio;
                             var cantidad = item.Cantidad;
                             var adicionales = item.Adicionales;
                             var observaciones = item.Observaciones;
+                            var totalProd = item.oProducto.Precio;
+                            console.log("precioBASE PROD:", totalProd);
+
+                            var precioADD = precioExtra - totalProd;
+                            console.log("precio de ADCC: precioExtra-totalProd");
+
+                            var precioProdCant = precioBaseI * cantidad;
 
                             detalle.push({
                                 IdProducto: idProducto,
                                 Cantidad: cantidad,
+                                Total: totalProd,
                                 PrecioExtra: precioExtra,
                                 Nombre: nombre,
                                 Adicionales: adicionales,
-                                Observaciones: observaciones
+                                ObservacionesDC: observaciones
                             });
 
+                            console.log(detalle);
+
                             $("<div>").addClass("card mb-2 card-producto").append(
-
                                 $("<div>").addClass("card-body").append(
-
-                                    $("<div>").addClass("row").append(
-                                        $("<div>").addClass("col-1").append(
-                                            $("<img>").addClass("rounded").attr({ "src": "data:image/" + item.oProducto.extension + ";base64," + item.oProducto.base64, "width": "50" })
+                                    $("<div>").addClass("row ").append(
+                                        $("<div>").addClass("col-md-2 col-2  m-0  p-0").append(
+                                            $("<img>").addClass("img-fluid  rounded").attr({ "src": "data:image/" + item.oProducto.extension + ";base64," + item.oProducto.base64})
                                         ),
-                                        $("<div>").addClass("col-7").append(
-                                            $("<div>").addClass("ml-2").append(
-                                                $("<span>").addClass("font-weight-bold d-block").text(item.oProducto.Nombre),
-                                                //$("<span>").addClass("float-end").text("Precio : S./" + item.oProducto.Precio)
-                                                $("<span>").addClass("span-datos").text("-Precio: S./" + item.PrecioExtra).data("cantidadData", item.Cantidad).data("precioExtraData", item.PrecioExtra),
-                                                $("<span>").addClass("d-block").text("-Adicionales: " + item.Adicionales),
+                                        $("<div>").addClass("col-md-8 col-10  p-0").append(
+                                            $("<div>").addClass("ps-2").append(
+                                                $("<span>").addClass("col-6  fw-bold").text(cantidad + "  x  " + item.oProducto.Nombre),
+
+                                               /* $("<span>").addClass("col-4  fw-bold  precioderecha").after("<br>").text(" S./.  " + precioProdCant), $("<br>"),*/
+                                                $("<span>").addClass("col-6  fw-bold  precioderecha").after("<br>").text("S/. " + precioExtra.toFixed(2)), $("<br>"),
+                                                //No borrar este campo, está oculto sirve para cálculos
+                                                $("<span>").addClass("span-datos d-none").text("Precio: S./" + item.oProducto.Precio).data("cantidadData", item.Cantidad).data("precioBase", item.oProducto.Precio).data("precioExtraData", item.PrecioExtra).data("costoEnvio", item.PrecioEnvio),
+                                                $("<div>").addClass("d-flex  col-12 ").text("-Adicionales: " + item.Adicionales),
                                                 $("<span>").addClass("d-block").text("-Observaciones: " + item.Observaciones),
                                             )
                                         ),
-                                        $("<div>").addClass("col-3").append(
-                                            $("<div>").addClass("d-flex justify-content-end controles").append(
-                                                $("<span>").addClass("form-control p-1 text-center rounded-0").text("Cantidad"),
-                                                $("<input>").addClass("form-control input-cantidad p-1 text-center rounded-0").css({ "width": "40px" }).attr({ "disabled": "disabled" }).val(cantidad).data("precio", item.oProducto.Precio).data("idproducto", item.oProducto.IdProducto)
-
-                                            )
-                                        ),
-                                        $("<div>").addClass("col-1").append(
+                                        $("<div>").addClass("col-md-1 col-2 mt-1  btnEliminar").append(
                                             $("<button>").addClass("btn btn-outline-danger btn-eliminar").append($("<i>").addClass("far fa-trash-alt")).data("informacion", { _IdCarrito: item.IdCarrito, _IdProducto: item.oProducto.IdProducto }),
-                                        )
+                                        ),
                                     )
                                 )
                             ).appendTo("#productos-seleccionados");
 
-
                         })
-
                         obtenerPreciosPago();
-                        /*obtenerCantidadProductos();*/
                     }
                 },
                 error: function (error) {
@@ -314,13 +623,15 @@
                 },
             });
 
+
+
+
         })
 
 
         $(document).on('click', '.btn-eliminar', function (event) {
             var json = $(this).data("informacion");
             var card_producto = $(this).parents("div.card-producto");
-
 
             jQuery.ajax({
                 url: '@Url.Action("EliminarCarrito", "Tienda")',
@@ -331,9 +642,10 @@
                 success: function (data) {
                     if (data.resultado) {
                         card_producto.remove();
+                        location.reload();
                         obtenerPreciosPago();
-                        obtenerCantidadProductos();
                         obtenerCantidad();
+
                     } else {
                         alert("No se pudo eliminar")
                     }
@@ -342,52 +654,118 @@
                     console.log(error)
                 },
                 beforeSend: function () {
-
                 },
             });
+
+
 
         })
 
         function obtenerPreciosPago() {
             var total = 0;
+            var costoEnvioSumado = false;
+            var precio;
+            var precioEnvio;
+
             $(".span-datos").each(function (index) {
                 var cantidad = parseInt($(this).data("cantidadData"));
                 var precioExtra = parseFloat($(this).data("precioExtraData"));
+                var precioBase = parseFloat($(this).data("precioBase"));
+                var precioAdicCC = precioExtra - precioBase;
 
+                console.log("Preciobase: ", precioBase);
                 console.log("Cantidad:", cantidad);
                 console.log("Precio Extra:", precioExtra);
+
                 if (!isNaN(cantidad) && !isNaN(precioExtra)) {
-                    var precio = precioExtra * cantidad;
+                    precio = precioExtra;
+
+                    // Agrega el costo de envío solo una vez
+                    if (!costoEnvioSumado) {
+                        precioEnvio = parseFloat($(this).data("costoEnvio"));
+                        if (parseInt(tipoEnvio) == 2) {
+                            precioEnvio = 0;
+                        } else {
+                            precioEnvio = 0;
+                        }
+                        console.log("Costo envío", precioEnvio);
+                        // Añade el costo de envío al total
+                        if (!isNaN(precioEnvio)) {
+                            precio += precioEnvio;
+                            costoEnvioSumado = true;
+                        }
+                    }
                     total += precio;
                 }
             });
-            $("#totalPagar").text("S/. " + total.toFixed(2)); // Utilizamos toFixed(2) para mostrar dos decimales en el total.
+            $("#totalPagar").text("S/. " + total.toFixed(2));
+            $("#totalEnvio").text(" S./" + precioEnvio.toFixed(2));
+            $("#totalPago").text(" S./" + total.toFixed(2));
+            $("#totalParcial").text(" S./" + (total - precioEnvio).toFixed(2));
+            $("#totalPagarInt").text(total.toFixed(2));
+            $("#totalEnvioG").text(" S./" + precioEnvio.toFixed(2));
+            $("#totalPagoG").text(" S./" + total.toFixed(2));
+            $("#totalParcialG").text(" S./" + (total - precioEnvio).toFixed(2));
+
+            var totalApagar = parseFloat($("#totalPagarInt").text().trim());
+            console.log(totalApagar);
+            if (totalApagar < 45) {
+                swal(
+                    "Recuerda","El monto mínimo de consumo es S/. 45.00","warning",
+                ).then((result) => {
+                    if (result) {
+                        // Recargar la página
+                       /* location.reload();*/
+                    }
+                });
+            }
+
         }
-
-
-        $("#btnProcesarPago").on("click", function (e) {
-
-
-        })
-        //function limpiarSessionStorage() {
-        //    // Elimina todos los datos almacenados en el sessionStorage
-        //    sessionStorage.clear();
-        //}
-        //window.addEventListener('beforeunload', limpiarSessionStorage);
-
 
 
         $("#btnConfirmarCompra").on("click", function (e) {
 
-            //obtenerPreciosPago();
+            var tipoEnvioTexto;
+            var dniIgrs = false;
+            var dniSelecc = false;
+            var seguir = false;
             var formaPagoSeleccionada = $("input[name='modoPago']:checked").val();
-            //formaPagoDatos.push(formaPagoSeleccionada);
 
+            var totalApagar = parseFloat($("#totalPagarInt").text().trim());
+            var monto = parseFloat($("#montoField").val());
+            var montoFlo = parseFloat(monto);
+
+            if (tipoEnvio == 2) {
+                tipoEnvioTexto = "Recojo";
+            } else {
+                tipoEnvioTexto = "Delivery";
+            }
+            if (totalApagar < 45) {
+
+                swal( "Recuerda","El monto mínimo de consumo es S/. 45.00","warning").then((result) => {
+                if (result) {
+                    // Recargar la página
+                    location.reload();
+                }
+            });
+            return;
+            } else {
+
+
+            console.log("Tipo: ",tipoEnvioTexto);
+            //formaPagoDatos.push(formaPagoSeleccionada);
             if (formaPagoSeleccionada === "efectivo") {
                 formaPagoDatos.push("Con Efectivo");
                 // Obtén el valor del monto
                 var monto = $("#montoField").val();
-
+                if (montoFlo < totalApagar) {
+                    swal("Error","El monto ingresado es menor","warning");
+                    return;
+                }
+                if (montoFlo === "" || isNaN(montoFlo)) {
+                    swal("Error","No ingresó la cantidad","warning");
+                    return;
+                }
                 // Verifica si el monto no está vacío
                 if (monto.trim() !== "") {
                     formaPagoDatos.push("Monto: " + monto);
@@ -398,76 +776,588 @@
             var infoPagos = formaPagoDatos.join(", ");
             console.log(infoPagos);
 
-            // Resto de tu código para obtener los valores y detalles de la compra
-            var idUsuario = $(this).data("idusuario");
+
             var tipoDocumento = $("input[name='tipoDocumento']:checked").val();
             tipoDocumentoSeleccionado.push(tipoDocumento);
 
             if (tipoDocumento === "Boleta") {
                 if ($("#btnConDNI").hasClass("active")) {
-                    tipoDocumentoSeleccionado.push("CON DNI");
-
-                    var dniIngresado = $("#dniInput").val(); // Cambiado a "#dniInput"
+                    dniSelecc = true;
+                    tipoDocumentoSeleccionado = [];
+                    tipoDocumentoSeleccionado.push("BOLETA CON DNI");
+                    var dniIngresado = $("#dniInput").val();
                     if (dniIngresado.trim() !== "") {
-                        tipoDocumentoSeleccionado.push("DNI: " + dniIngresado);
+                        tipoDocumentoSeleccionado.push(" " + dniIngresado);
+                        dniIgrs = true;
                     }
                 } else if ($("#btnSinDNI").hasClass("active")) {
-                    tipoDocumentoSeleccionado.push("SIN DNI");
+                    tipoDocumentoSeleccionado = [];
+                    tipoDocumentoSeleccionado.push("BOLETA SIN DNI");
+                    dniSelecc = false;
                 }
             } else if (tipoDocumento === "Factura") {
-                tipoDocumentoSeleccionado.push($("#tipoDocumentoFields input[placeholder='Ingrese su RUC']").val());
-                tipoDocumentoSeleccionado.push($("#tipoDocumentoFields input[placeholder='Ingrese su Razón Social']").val());
-                tipoDocumentoSeleccionado.push($("#tipoDocumentoFields input[placeholder='Ingrese su dirección']").val());
+                var ruc = $("#tipoDocumentoFields input[placeholder='Ingrese su RUC']").val();
+                var razonSocial = $("#tipoDocumentoFields input[placeholder='Ingrese su Razón Social']").val();
+                var direccion = $("#tipoDocumentoFields input[placeholder='Ingrese su dirección']").val();
+
+                // Verifica si el RUC o la Razón Social están vacíos
+                if (ruc === "" || razonSocial === "") {
+                    swal("Campos Requeridos", "Debe completar el RUC y la Razón Social para la factura.", "warning");
+                    return;
+                }
+
+                tipoDocumentoSeleccionado.push("RUC: "+ruc);
+                tipoDocumentoSeleccionado.push("RS: "+razonSocial);
+                tipoDocumentoSeleccionado.push("DRC: "+direccion);
             }
+
+            if (dniSelecc == true){
+                if (dniIgrs == false){
+                    console.log("NO SE INGRESÓ DNI");
+                    seguir = false;
+                }
+            }
+             if (dniSelecc == true){
+         if (dniIgrs == true){
+                     console.log("SE INGRESÓ DNI");
+                     seguir = true;
+                 }
+             }
+
+             if(dniSelecc == false){
+                 seguir = true;
+             }
 
             var documentoFacturacion = tipoDocumentoSeleccionado.join(", ");
             console.log(documentoFacturacion);
 
             var request = {
                 oCompra: {
-
                     TotalProducto: $("#productos-seleccionados > div.card").length, // Cambia esto según la estructura de detalle
                     Total: $("#totalPagar").text().replace("S/. ", ""),
                     Direccion: $("#trj_nombre").val(),
                     Nombre: $("#txtNombre").val(), // Agrega el nombre
                     Telefono: $("#txtTelefono").val(),
                     Correo: $("#txtCorreo").val(), // Agrega el correo
-                    Referencia: $("#txtReferencia").val(), // Agrega la referencia
+                    Referencia: $("#txtReferencia").val() || " ", // Agrega la referencia
                     DocumentoFacturacion: documentoFacturacion, // Agrega el documento de facturación
-                    FormaPago: infoPagos, // Agrega la forma de pago
+                    FormaPago: infoPagos,
+                    HoraRecojo: $("#horaRecojo").val() || " ",// Agrega la forma de pago
+                    Tipo: tipoEnvioTexto,
                     oDetalleCompra: detalle
                 }
             };
 
-            jQuery.ajax({
-                url: '@Url.Action("RegistrarCompra", "Tienda")',
-                type: "POST",
-                data: JSON.stringify(request),
-                dataType: "json",
-                contentType: "application/json; charset=utf-8",
-                success: function (data) {
-                    console.log(data);
-                    if (data.resultado) {
-                        swal("Compra Realizada", "Pronto te informaremos la entrega de tu pedido", "success").then((value) => {
-                            window.location.href = "@Url.Action("Index", "Tienda")";
-                        });
-                    } else {
-                        swal("Lo sentimos", "No se pudo completar la compra", "warning");
-                    }
-                },
-                error: function (error) {
-                    console.log(error);
-                },
-                beforeSend: function () {
-                    // Agrega aquí cualquier lógica adicional antes de enviar la solicitud
-                    console.log(request);
-                },
-            });
-
+            //Cuando la compra sea por
+            if (infoPagos != "" && seguir == true) {
+                jQuery.ajax({
+                    url: '@Url.Action("RegistrarCompra", "Tienda")',
+                    type: "POST",
+                    data: JSON.stringify(request),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        console.log(data);
+                        if (data.resultado) {
+                            swal("Compra Realizada", "Pronto recibirá un correo con su pedido", "success")
+                                .then((value) => {
+                                    localStorage.removeItem('direccion');
+                                    window.location.href = "@Url.Action("Index", "Tienda")";
+                                });
+                        } else {
+                            swal("No se pudo completar la compra", "Debe completar todos los campos obligatorios", "warning");
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    },
+                    beforeSend: function () { // Agrega aquí cualquier lógica adicional antes de enviar la solicitud
+                        console.log(request);
+                    },
+                });
+            }else{
+                swal("No se pudo completar la compra", "Debe completar todos los campos obligatorios", "warning");
+                }
+            }
         })
 
 
     </script>
+    <script type="text/javascript">
+        var detalle = [];
+        var tipoDocumentoSeleccionado = [];
+        var formaPagoDatos = [];
+        var precioTotalCarrito = sessionStorage.getItem('precioTotalCarrito_');
+        var tipoEnvio = localStorage.getItem('tipoEnvio');
 
 
+        $(document).ready(function () {
+
+
+
+            $('input[name="modoPago"]').change(function () {
+
+                var totalPagarText = $("#totalPagar").text().replace("S/. ", ""); // Obtener el valor como texto
+                var totalPagar = parseFloat(totalPagarText);
+                if (totalPagar < 45) {
+
+                    swal( "Recuerda","El monto mínimo de consumo es S/. 45.00","warning").then((result) => {
+                        if (result) {
+                            // Recargar la página
+                            location.reload();
+                        }
+                    });
+                    return;
+                } else {
+
+                    if (!isNaN(totalPagar)) {
+                        totalPagar = totalPagar.toFixed(2);
+                        console.log("pago PARSEADO" + totalPagar);
+                    } else {
+                        console.log("El valor no es un número válido.");
+                    }
+
+
+                    if (this.value === 'tarjeta') {
+                        var formaPagoSeleccionada = $("input[name='modoPago']:checked").val();
+
+
+                        if (formaPagoSeleccionada == 'tarjeta') {
+                            formaPagoDatos.push("Pago con tarjeta");
+                        }
+                        var infoPagos = formaPagoDatos.join(", ");
+                        console.log(infoPagos);
+
+
+
+                        console.log($("#totalPagar").text().replace("S/. ", ""));
+                        //Esconder o mostrar los campos
+
+                        $('#datosTarjeta').removeClass('d-none');
+                        $('#btnConfirmarCompra').addClass('d-none');
+
+                    } else {
+                        $('#datosTarjeta').addClass('d-none');// Oculta los datos de tarjeta
+                        $('#btnConfirmarCompra').removeClass('d-none');
+                    }
+                }
+            });
+
+
+
+        });
+        // Genera un número único basado en la fecha actual
+        function generateUniqueNumber() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1; // Los meses comienzan desde 0
+            const day = now.getDate();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const milliseconds = now.getMilliseconds();
+
+            // Crea una cadena con la fecha y hora actual
+            const uniqueNumber = `${month}${day}${seconds}${milliseconds}`;
+
+            // Agrega una parte aleatoria para mayor unicidad
+            const randomPart = Math.floor(Math.random() * 99); // Número aleatorio entre 0 y 999
+
+            // Combina la parte aleatoria con la fecha y hora
+            const finalUniqueNumber = `${uniqueNumber}${randomPart}`;
+
+            return finalUniqueNumber;
+        }
+
+        // Uso del número único
+
+
+
+        $('#insertarTarjeta').change(function () {
+            var totalPagarText = $("#totalPagar").text().replace("S/. ", ""); // Obtener el valor como texto
+            var totalPagar = parseFloat(totalPagarText);
+            var correoTarjeta = $("#correoTarjeta").val();
+            var dniTarjeta = $("#dniTarjeta").val();
+            var nombreTarjeta = $("#nombreTarjeta").val();
+            var apellidoTarjeta = $("#apellidoTarjeta").val();
+            var tipoEnvioTexto;
+
+            console.log("correo", correoTarjeta);
+            console.log("dni", dniTarjeta);
+            console.log("nom", nombreTarjeta);
+            console.log("app", apellidoTarjeta);
+
+            const purchaseNumberUnico = generateUniqueNumber();
+            const nmrTransComp = parseInt(purchaseNumberUnico, 10);
+            console.log("purchaseNumber1:" + nmrTransComp);
+
+            if (tipoEnvio == 2) {
+                tipoEnvioTexto = "Recojo";
+            } else {
+                tipoEnvioTexto = "Delivery";
+            }
+
+            if (correoTarjeta!="" && dniTarjeta != "" && nombreTarjeta!="" && apellidoTarjeta!="") {
+
+
+            if ($(this).is(':checked')) {
+                // Este código se ejecutará cuando el radio button se marque
+
+                $('#datosTarjeta2').removeClass('d-none');
+
+
+                //----------------------- ACÁ INICIA EL PAGO CON TARJETA ----------------------------------------
+                var idCompra = 0; // Declarar una variable para guardar el valor de idCompra
+
+                $.ajax({
+                    url: '/Tienda/ObtenerProximoIdCompra',  // Asegúrate de que la URL coincida con la ruta del controlador
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (proximoIdCompra) {
+                        // Guarda el valor obtenido en la variable idCompra
+
+                        idCompra = proximoIdCompra;
+                        console.log("idCompra", idCompra);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+
+                $.ajax({
+
+                    type: "POST",
+                    //cambiar la url
+                    url: "/Tienda/Login",
+                    success: function (data) {
+                        console.log(data)
+                        tokenSesion = data;
+                        var datos = {
+                            //"token": tokenSesion,
+                            //{
+                            "channel": "web",
+                            "amount": totalPagar,
+                            //"recurrenceMaxAmount": 8.5,
+                            "antifraud": {
+                                "clientIp": ip,
+                                "merchantDefineData": {
+                                    "MDD4": correoTarjeta,
+                                    "MDD21": 0,
+                                    "MDD32": dniTarjeta,
+                                    "MDD75": "Invitado",
+                                    "MDD77": 365
+                                }
+                            }
+                        }
+
+
+                        $.ajax({
+                            type: "POST",
+                            //cambiar la url
+                            url: "/Tienda/Autorize?key=" + tokenSesion,
+                            contentType: 'application/json',
+                            data: JSON.stringify(datos),
+                            success: function (data2) {
+                                var data1 = JSON.parse(data2);
+                                console.log(data1);
+                                console.log(data1.sessionKey);
+                                console.log(data1["sessionKey"]);
+                                tokenAuthorize = data1.sessionKey;
+                                console.log("idCOMPRA", idCompra);
+                                console.log("purchaseNumber2: " + nmrTransComp);
+                                var configuration = {
+                                    callbackurl: '',
+                                    sessionkey: tokenAuthorize,
+                                    channel: 'web',
+                                    merchantid: '522591303',
+                                    purchasenumber: 2020100905,
+                                    amount: totalPagar,
+                                    language: 'es',
+                                    font: 'https://fonts.googleapis.com/css?family=Montserrat:400&display=swap',
+                                    //recurrencemaxamount: '8.5'
+                                };
+                                payform.setConfiguration(configuration);
+
+                                var elementStyles = {
+                                    base: {
+                                        color: '#666666',
+                                        fontWeight: 700,
+                                        fontFamily: "'Montserrat', sans-serif",
+                                        fontSize: '16px',
+                                        fontSmoothing: 'antialiased',
+                                        placeholder: {
+                                            color: '#999999',
+                                        },
+                                        autofill: {
+                                            color: '#e39f48',
+                                        },
+                                    },
+                                    invalid: {
+                                        color: '#E25950',
+                                        '::placeholder': {
+                                            color: '#FFCCA5',
+                                        },
+                                    },
+                                };
+
+                                /* Caso de uso: Controles independientes */
+                                var cardNumber = payform.createElement('card-number',
+                                    {
+                                        style: elementStyles,
+                                        placeholder: 'Número de tarjeta'
+                                    }
+                                    , 'txtNumeroTarjeta');
+                                cardNumber.then(element => {
+                                    element.on('bin', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                    element.on('change', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                    element.on('dcc', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                    element.on('installments', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                    element.on('lastFourDigits', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                });
+                                var cardExpiry = payform.createElement('card-expiry',
+                                    {
+                                        style: elementStyles,
+                                        placeholder: 'MM/YY'
+                                    }
+                                    , 'txtFechaVencimiento');
+                                cardExpiry.then(element => {
+                                    element.on('change', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                });
+                                var cardCvc = payform.createElement('card-cvc',
+                                    {
+                                        style: elementStyles,
+                                        placeholder: 'CVC'
+                                    }
+                                    , 'txtCvv');
+                                cardCvc.then(element => {
+                                    element.on('change', function (data) {
+                                        /* Tú código aquí */
+                                    });
+                                });
+
+                                var dataUser = {
+                                    name: nombreTarjeta,
+                                    lastName: apellidoTarjeta,
+                                    email: correoTarjeta,
+                                    alias: nombreTarjeta
+                                };
+
+                                $("#pagar").on("click", function () {
+
+                                    $("#textoProcesando").html('<i class="fas fa-clock"></i> Validando datos ...');
+                                    $("#textoProcesando").removeClass("d-none");
+                                    $("#pagar").prop("disabled", true);
+                                    var formaPagoSeleccionada = $("input[name='modoPago']:checked").val();
+                                    //formaPagoDatos.push(formaPagoSeleccionada);
+
+                                    if (formaPagoSeleccionada === "efectivo") {
+                                        formaPagoDatos.push("Con Efectivo");
+                                        // Obtén el valor del monto
+                                        var monto = $("#montoField").val();
+
+                                        // Verifica si el monto no está vacío
+                                        if (monto.trim() !== "") {
+                                            formaPagoDatos.push("Monto: " + monto);
+                                        }
+                                    } else if (formaPagoSeleccionada === "POS") {
+                                        formaPagoDatos.push("Con POS");
+                                    }
+                                    var infoPagos = formaPagoDatos.join(", ");
+                                    console.log(infoPagos);
+
+                                    // Resto de tu código para obtener los valores y detalles de la compra
+
+                                    var tipoDocumento = $("input[name='tipoDocumento']:checked").val();
+                                    tipoDocumentoSeleccionado.push(tipoDocumento);
+
+                                    if (tipoDocumento === "Boleta") {
+                                        if ($("#btnConDNI").hasClass("active")) {
+                                            tipoDocumentoSeleccionado.push("CON DNI");
+                                            var dniIngresado = $("#dniInput").val(); // Cambiado a "#dniInput"
+                                            if (dniIngresado.trim() !== "") {
+                                                tipoDocumentoSeleccionado.push("DNI: " + dniIngresado);
+                                            }
+                                        } else if ($("#btnSinDNI").hasClass("active")) {
+                                            tipoDocumentoSeleccionado.push("SIN DNI");
+                                        }
+                                    } else if (tipoDocumento === "Factura") {
+                                        var ruc = $("#tipoDocumentoFields input[placeholder='Ingrese su RUC']").val();
+                                        var razonSocial = $("#tipoDocumentoFields input[placeholder='Ingrese su Razón Social']").val();
+                                        var direccion = $("#tipoDocumentoFields input[placeholder='Ingrese su dirección']").val();
+
+                                        // Verifica si el RUC o la Razón Social están vacíos
+                                        if (ruc === "" || razonSocial === "") {
+                                            swal("Campos Requeridos", "Debe completar el RUC y la Razón Social para la factura.", "warning");
+                                            return;
+                                        }
+
+                                        tipoDocumentoSeleccionado.push("RUC: "+ruc);
+                                        tipoDocumentoSeleccionado.push("RS: "+razonSocial);
+                                        tipoDocumentoSeleccionado.push("DRC: "+direccion);
+                                    }
+
+
+
+                                    var documentoFacturacion = tipoDocumentoSeleccionado.join(", ");
+                                    console.log(documentoFacturacion);
+
+                                    var request = {
+                                        oCompra: {
+                                            TotalProducto: $("#productos-seleccionados > div.card").length, // Cambia esto según la estructura de detalle
+                                            Total: $("#totalPagar").text().replace("S/. ", ""),
+                                            Direccion: $("#trj_nombre").val(),
+                                            Nombre: $("#txtNombre").val(), // Agrega el nombre
+                                            Telefono: $("#txtTelefono").val(),
+                                            Correo: $("#txtCorreo").val(), // Agrega el correo
+                                            Referencia: $("#txtReferencia").val() || " ", // Agrega la referencia
+                                            DocumentoFacturacion: documentoFacturacion, // Agrega el documento de facturación
+                                            FormaPago: infoPagos,
+                                            HoraRecojo: $("#horaRecojo").val() || " ",// Agrega la forma de pago
+                                            Tipo: tipoEnvioTexto,
+                                            oDetalleCompra: detalle
+                                        }
+                                    };
+
+                                    console.log("Tokens");
+                                    console.log(tokenSesion);
+                                    console.log(tokenAuthorize);
+                                    console.log("Tokens");
+
+                                    payform.createToken([cardNumber, cardExpiry, cardCvc], dataUser).then(function (response) {
+                                        console.log(response);
+
+
+                                        var datospayload = data;
+                                        console.log(datospayload)
+                                        console.log("purchaseNumber3: " + nmrTransComp);
+                                        var datos = {
+                                            "channel": "web",
+                                            "captureType": "manual",
+                                            "countable": true,
+                                            "order": {
+                                                "tokenId": response.transactionToken,
+                                                "purchaseNumber": 2020100905,
+                                                "amount": totalPagar,
+                                                "currency": "PEN",
+                                                "installment": 0,
+                                                //"productId": "329"
+                                            }
+                                        };
+
+                                        $.ajax({
+                                            //cambiar la url
+                                            url: '/Tienda/Pay?key=' + tokenSesion,
+                                            type: 'POST',
+                                            contentType: 'application/json', // Indicar que el contenido es JSON
+                                            data: JSON.stringify(datos),
+                                            beforeSend: function (xhr) {
+                                                // Agregar encabezado de autorización con Basic Auth
+                                                xhr.setRequestHeader('Authorization', token);
+                                                $("#textoProcesando").html('');
+                                                $("#textoProcesando").addClass("d-none");
+                                            },
+                                            success: function (data33) {
+                                                console.log(data33);
+                                                jQuery.ajax({
+                                                    url: '@Url.Action("RegistrarCompra", "Tienda")',
+                                                    type: "POST",
+                                                    data: JSON.stringify(request),
+                                                    dataType: "json",
+                                                    contentType: "application/json; charset=utf-8",
+                                                    success: function (data) {
+                                                        console.log(data);
+
+                                                        if (data.resultado) {
+                                                            swal("Compra Realizada", "Pronto recibirá un correo con su pedido", "success")
+                                                                .then((value) => {
+                                                                    localStorage.removeItem('direccion');
+                                                                    window.location.href = "@Url.Action("Index", "Tienda")";
+
+                                                                });
+                                                        } else {
+                                                            location.reload();
+                                                            swal("Lo sentimos", "No se pudo completar la compra - Rellene todos los campos", "warning");
+
+                                                        }
+                                                    },
+                                                    error: function (error) {
+                                                        console.log(error);
+                                                        location.reload();
+                                                        swal("Lo sentimos", "No se pudo completar la compra", "warning");
+
+                                                    },
+                                                    beforeSend: function () { // Agrega aquí cualquier lógica adicional antes de enviar la solicitud
+                                                        console.log(request);
+                                                        $("#textoProcesando").html('<i class="fas fa-clock"></i> Procesando pago ...');
+                                                        $("#textoProcesando").removeClass("d-none");
+                                                    },
+                                                });
+                                            },
+                                            error: function (error33) {
+                                                // Manejar errores
+                                                console.error('Error al consultar la API33:', error33);
+                                                    swal("Lo sentimos","No se pudo procesar el pago","warning").then((result) => {
+                                                    if (result) {
+                                                        // Recargar la página
+                                                        location.reload();
+                                                    }
+                                                });
+                                                return;
+
+                                            }
+                                        });
+
+                                    })
+                                        .catch(function (error) {
+                                            //Tu código aquí
+                                        });
+                                });
+
+
+                            },
+
+                            error: function (error) {
+
+                                console.log(error);
+                                    swal("Lo sentimos","No se pudo procesar el pago","warning").then((result) => {
+                                        if (result) {
+                                            // Recargar la página
+                                            location.reload();
+                                        }
+                                    });
+                            },
+                        });
+
+                    }, error: function (error) {
+                        console.log(error)
+                        swal("Lo sentimos","No se pudo procesar el pago","warning").then((result) => {
+                            if (result) {
+                                // Recargar la página
+                                location.reload();
+                            }
+                        });
+                    }
+                });
+            //----------------------- ACÁ FINALIZA EL PAGO CON TARJETA ----------------------------------------
+                } else {
+                $('#datosTarjeta2').addClass('d-none');
+                }
+            } else {
+                swal("ADVERTENCIA", "completa los campos antes de seguir", "warning");
+                $('#insertarTarjeta').prop('checked', false);
+            }
+        });
+    </script>
 }

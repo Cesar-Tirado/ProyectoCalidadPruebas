@@ -1,0 +1,154 @@
+
+UProyectoTest.Logica.ProductoLogica.ActualizarRutaImagen(ProyectoTest.Models.Producto)q
+eC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\ProductoLogica.cs¸ ¸(("0*
+0
+º »(J1
+/
+
+º º(!
+	respuestabool"__id*
+""V
+T
+
+»? »(J
+%0string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring^\
+
+»- »(K)
+%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnection—
+”
+
+»1 »(>
+
+%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+
+%0stringu
+s
+
+»! »(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+1*‹
+1
+¿ Ä()XV
+
+¿% ¿(Y&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandö
+ó
+
+¿) ¿(3
+
+%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%3 System.Data.SqlClient.SqlCommand*
+sp_actualizarRutaImagen*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectioni
+g
+
+¿ ¿(Y'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%3 System.Data.SqlClient.SqlCommand¡
+ž
+
+À À("2
+%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandu
+s
+
+À> À(R	
+%6int"+ProyectoTest.Models.Producto.IdProducto.get*-+
+)
+	oProductoProyectoTest.Models.ProductoÚ
+×
+
+À À(S(
+%7"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%5,System.Data.SqlClient.SqlParameterCollection*
+
+IdProducto*
+	
+%6int¡
+ž
+
+Á Á("2
+%8,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandx
+v
+
+Á> Á(R
+%9string"+ProyectoTest.Models.Producto.RutaImagen.get*-+
+)
+	oProductoProyectoTest.Models.ProductoÞ
+Û
+
+Á Á(S)
+%10"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%8,System.Data.SqlClient.SqlParameterCollection*
+
+RutaImagen*
+
+%9string%
+#
+
+Â& Â(A
+%11"__id*
+""™
+–
+
+Â Â(A
+%12System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*	
+
+%11}
+{
+
+Ã Ã($
+%13void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnection{
+y
+
+Ä Ä()
+
+%14int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+2
+3*G
+2
+È È(%1
+/
+
+È È(%
+	respuestabool"__id*
+""*
+3*
+3
+Ì	 Ì(	*
+4*2
+4
+Ë Ë("!
+
+Ë Ë(
+
+	respuestabool*2
+5
+Ì	 Ì(	"!
+
+Ì Ì(	
+implicit return:7
+
+¸) ¸(;)
+	oProductoProyectoTest.Models.ProductoB&$
+"ProyectoTest.Logica.ProductoLogica

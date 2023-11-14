@@ -27,6 +27,8 @@ namespace ProyectoTest
                       "~/Content/bootstrap.min.css",
                       "~/Content/Site.css",
                       "~/Content/flickity.min.css",
+                      "~/Content/Style.css",
+                      "~/Content/calendar-gc.min.css",
                       "~/Content/select2.min.css"));
 
             bundles.Add(new StyleBundle("~/Content/PluginsCSS").Include(
@@ -55,7 +57,10 @@ namespace ProyectoTest
                    "~/Scripts/DataTables/jquery.dataTables.min.js",
                    "~/Scripts/DataTables/dataTables.responsive.min.js",
                     ////LOADING OVERLAY
-                    "~/Scripts/loadingoverlay.min.js"
+                    "~/Scripts/loadingoverlay.min.js",
+
+                   ////SWEET ALERT
+                   "~/Scripts/calendar-gc.min.js"
 
                     ));
         }

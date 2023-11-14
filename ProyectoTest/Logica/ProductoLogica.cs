@@ -86,26 +86,53 @@ namespace ProyectoTest.Logica
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("sp_registrarProducto", oConexion);
-                    cmd.Parameters.AddWithValue("Nombre", oProducto.Nombre);
-                    cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
-                    cmd.Parameters.AddWithValue("IdMarca", oProducto.oMarca.IdMarca);
-                    cmd.Parameters.AddWithValue("IdCategoria", oProducto.oCategoria.IdCategoria);
-                    cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
-                    cmd.Parameters.AddWithValue("RutaImagen", oProducto.RutaImagen);
-                    cmd.Parameters.AddWithValue("OpcionesConCosto", string.IsNullOrEmpty(oProducto.OpcionesConCosto) ? (object)DBNull.Value : oProducto.OpcionesConCosto);
-                    cmd.Parameters.AddWithValue("OpcionesSinCosto", string.IsNullOrEmpty(oProducto.OpcionesSinCosto) ? (object)DBNull.Value : oProducto.OpcionesSinCosto);
-                    cmd.Parameters.AddWithValue("OpcionExcluyente", string.IsNullOrEmpty(oProducto.OpcionExcluyente) ? (object)DBNull.Value : oProducto.OpcionExcluyente);
-                    cmd.Parameters.AddWithValue("MaxOpcionesSinCosto", oProducto.MaxOpcionesSinCosto); // Agregar el nuevo valor
-                    cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
-                    cmd.CommandType = CommandType.StoredProcedure;
 
                     oConexion.Open();
 
-                    cmd.ExecuteNonQuery();
+                        string sqlInsert = "INSERT INTO PRODUCTO (Nombre, Descripcion, IdMarca, IdCategoria, Precio, RutaImagen, OpcionesConCosto, OpcionesSinCosto, OpcionExcluyente, MaxOpcionesSinCosto) " +
+                                           "VALUES (@Nombre, @Descripcion, @IdMarca, @IdCategoria, @Precio, @RutaImagen, @OpcionesConCosto, @OpcionesSinCosto, @OpcionExcluyente, @MaxOpcionesSinCosto); " +
+                                           "SELECT SCOPE_IDENTITY()";
 
-                    respuesta = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
+                        using (SqlCommand command = new SqlCommand(sqlInsert, oConexion))
+                        {
+                            // Configura los parámetros
+                            command.Parameters.AddWithValue("@Nombre", oProducto.Nombre);
+                            command.Parameters.AddWithValue("@Descripcion", oProducto.Descripcion);
+                            command.Parameters.AddWithValue("@IdMarca", oProducto.oMarca.IdMarca);
+                            command.Parameters.AddWithValue("@IdCategoria", oProducto.oCategoria.IdCategoria);
+                            command.Parameters.AddWithValue("@Precio", oProducto.Precio);
+                            command.Parameters.AddWithValue("@RutaImagen", oProducto.RutaImagen);
+                            command.Parameters.AddWithValue("@OpcionesConCosto", string.IsNullOrEmpty(oProducto.OpcionesConCosto) ? (object)DBNull.Value : oProducto.OpcionesConCosto);
+                            command.Parameters.AddWithValue("@OpcionesSinCosto", string.IsNullOrEmpty(oProducto.OpcionesSinCosto) ? (object)DBNull.Value : oProducto.OpcionesSinCosto);
+                            command.Parameters.AddWithValue("@OpcionExcluyente", string.IsNullOrEmpty(oProducto.OpcionExcluyente) ? (object)DBNull.Value : oProducto.OpcionExcluyente);
+                            command.Parameters.AddWithValue("@MaxOpcionesSinCosto", oProducto.MaxOpcionesSinCosto);
 
+                            // Ejecuta la inserción y obtiene el ID del registro insertado
+                            int newProductId = Convert.ToInt32(command.ExecuteScalar());
+
+                            return  newProductId;
+                            //SqlCommand cmd = new SqlCommand("sp_registrarProducto", oConexion);
+                            //cmd.Parameters.AddWithValue("Nombre", oProducto.Nombre);
+                            //cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
+                            //cmd.Parameters.AddWithValue("IdMarca", oProducto.oMarca.IdMarca);
+                            //cmd.Parameters.AddWithValue("IdCategoria", oProducto.oCategoria.IdCategoria);
+                            //cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
+                            //cmd.Parameters.AddWithValue("RutaImagen", oProducto.RutaImagen);
+                            //cmd.Parameters.AddWithValue("OpcionesConCosto", string.IsNullOrEmpty(oProducto.OpcionesConCosto) ? (object)DBNull.Value : oProducto.OpcionesConCosto);
+                            //cmd.Parameters.AddWithValue("OpcionesSinCosto", string.IsNullOrEmpty(oProducto.OpcionesSinCosto) ? (object)DBNull.Value : oProducto.OpcionesSinCosto);
+                            //cmd.Parameters.AddWithValue("OpcionExcluyente", string.IsNullOrEmpty(oProducto.OpcionExcluyente) ? (object)DBNull.Value : oProducto.OpcionExcluyente);
+                            //cmd.Parameters.AddWithValue("MaxOpcionesSinCosto", oProducto.MaxOpcionesSinCosto); // Agregar el nuevo valor
+                            //cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
+                            //cmd.CommandType = CommandType.StoredProcedure;
+
+                            //oConexion.Open();
+
+                            //cmd.ExecuteNonQuery();
+
+                            //respuesta = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
+
+                        }
+                    
                 }
                 catch (Exception)
                 {

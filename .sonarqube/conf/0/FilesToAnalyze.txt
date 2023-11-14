@@ -1,0 +1,707 @@
+﻿C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\App_Start\BundleConfig.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\App_Start\FilterConfig.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\App_Start\RouteConfig.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\PublicController.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\AcercaController.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Global.asax.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CarritoLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CategoriaLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CompraLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\Conexion.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\MarcaLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\ProductoLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CorreoLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\TiendasLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbicacionTiendaLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbigeoLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UsuarioLogica.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\utilidades.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Carrito.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Categoria.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Departamento.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Distrito.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\FechaModel.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\tarjetaResponse.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Marca.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Producto.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Provincia.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Tiendas.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\UbicacionTienda.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Usuario.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Properties\AssemblyInfo.cs
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\Billete_LHG.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\calendar-gc.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\cachitorojo.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\Fondo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\sin imagen.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\calendar-gc.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\Style.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.rtl.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.rtl.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.rtl.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.rtl.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.rtl.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.rtl.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.rtl.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.rtl.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\autoFill.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\buttons.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\colReorder.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.material.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.material.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.uikit.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\dataTables.uikit.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedColumns.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\fixedHeader.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\jquery.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\jquery.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\jquery.dataTables_themeroller.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\keyTable.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\responsive.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowGroup.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\rowReorder.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\scroller.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.bootstrap.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.bootstrap.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.bootstrap4.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.bootstrap4.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.dataTables.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.dataTables.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.foundation.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.foundation.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.jqueryui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.jqueryui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.semanticui.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\select.semanticui.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\details_close.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\details_open.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\sort_asc.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\sort_asc_disabled.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\sort_both.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\sort_desc.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\images\sort_desc_disabled.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\swf\flashExport.swf
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\flickity.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\select2.min.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\favicon.ico
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Global.asax
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\Site.css
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\asado de tira con hueso 500g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\bife ancho 400g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\bife angosto 400g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\entraña fina 300g 600 x 600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\new york steak 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\american premium\picanha 500g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\argentina premium\bife ancho 400g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\argentina premium\bife angosto 400g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\cerveza-corona-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\cocacola-sabor-original-persona800x800-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\cusquena-dorada-personal-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\cusquena-malta-personal-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\fanta-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\incacola-sabor-original-persona800x800-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\Pilsen-800x800--768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Bebidas\sanluis.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\carne y pasta\apanado de lomo con fettuccine al pesto 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\carne y pasta\Fettuccine a la Huancaína con Lomitos Salteados 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\carne y pasta\Lomo Fino con Fetuccini al Alfredo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\carne y pasta\lomo fino con spaguetti al pesto.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\cortes selectos\colita de cuadril americana 300g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\cortes selectos\colita de cuadril americana 600g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\cortes selectos\colita-de-cuadril-768x528 (1).jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\cortes selectos\parrilla 4 carnes 600 x 600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\cortes selectos\picanha americana 600g  600x600 .jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\Ensalada Cesar 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\Ensalada cesar con pollo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\Ensalada de pollo crocante 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\Ensalada de quinua al estilo LongHorn 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\ensalada parrillera chica 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\ensaladas\Ensalada parrillera grande 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\apanado de Lomo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\apanado de pollo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\chuletas de cerdo a nuestro estilo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\Costillas LongHorn en salsa BBQ 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\estofado de la nonna 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\lomo a lo pobre lh 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\Pepper steak 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\pollo relleno de la casa 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\especialidades\salmón a la parrilla 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\2.-camote-asado-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\3253.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\3254-768x768.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\3255-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\8. legumbres-salteadas 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\Arroz de la Casa 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\camote al horno 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\camote asado 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\papa al horno 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\guarniciones\papas fritas02 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\3389-768x768.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\bondiola de cerdo 600g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\chateaubriand lomo fino 600g  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\festival del cerdo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\hamburguesa 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\lomito de cerdo 300g  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\lomito de cerdo 600g  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\media pechuga de pollo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\parrilla  2 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\mas del grill\pechuga de pollo  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\3315-1.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\alitas-picantes-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\colita-de-cuadril-768x528.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\fettuccine alfredo con gaseosa 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\hamburguesa lh con gaseosa 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\menú de niños\mediapechuga 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\nuestros clásicos\BabyB-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\nuestros clásicos\lomo fino  250 g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\nuestros clásicos\lomo fino  400g 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\nuestros clásicos\LOMO-CON-PAPAS-FRITAS-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\nuestros clásicos\Lomo-fino-con-alternativa-de-guarnicion.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\fettuccine alfredo 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\Fettuccine con Trozos de Lomo y Funghi Mixto 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\ravioles de alcachofa en salsa mediterranea  600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\Ravioles de la abuela 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\ravioles de lomo saltado 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\ravioles oxtail 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\risotto con funghi porcini 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\spaguetti 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\spaguetti putanesca600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\pasta\tagliatelle al prosciutto 600X600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\1-porcion-de-chorizos-chorizos-800x800-1-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\2952-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\alitas de pollo naturales 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\alitas de pollo picantes 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\anticuchos de corazón 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\champignones a la parrilla  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\champignones al ajillo 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\media porción de chorizos 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\media porción de morcillas 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\papas rústicas al aji picoso 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\porción de morcillas 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\tequeños de morcilla.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\tequeños mixtos.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\piqueos\tequeños parrilleros .jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3279-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3289-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3290-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3291-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3295-768x768.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\3296-768x768.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\colita-de-cuadril-768x528.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\saltados\lomo saltado 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\saltados\Lomo Saltado con Tacu Tacu 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\saltados\pollo saltado 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\saltados\saltado longhorn 600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\saltados\spaguetti saltado criollo  600x600.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\650x150 Logo.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\banner.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\facebook-logo.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\instagramlogo.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Extras\LongDelivery.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\alitas naturales.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\alitas picantes.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Asado de tira con hueso.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Bife angosto (2).jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Bife angosto.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Bife.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\canelones de la abuela 2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\canelones de ricota.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Chateaubraian.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\colita de cuadril americana.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\colita de cuadril.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Costillas BBQ.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\cuarto de pollo parrillero.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\ensalada de pollo crocante.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\ensalada de pollo crocante1.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\ensalada de quinua.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Ensalada de quinua2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\ensalada parrillera.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Entraña.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Estofado de la nonna 2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Estofado de la nonna 3.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Estofado de la nonna.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Festival del Cerdo 1.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\festival del cerdo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Fettuccine a la huancaína con trozos de lomo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\fettuccine al alfredo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Fettuccine al pesto con apanado 2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Fettuccine al pesto con apanado 3.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\fettuccini con trozos de lomo al funghi mixto 1.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\fettuccini con trozos de lomo al funghi mixto.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Hamburguesa.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Lomo Fino con Fetuccini al Alfredo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Lomo Saltado.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Long Horn Carta 23ago 361.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\papas fritas.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Parrilla 4 Carnes.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\parrilla Huanca.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\parrilla Norteña.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Parrilla para 2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Parrilla Ranchera.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Parrilla red meat.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\pechuga-de-pollo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Picanha.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Picaña americana.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Pisco sour.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Ravioles Oxtail.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Ravioles.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Spaguetti a la putanesca.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\spaguetti mediterraneo.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\Spaguetti Primavera.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\tagliatelle al prosciutto.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\carne.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\01imagen.JPG
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\02imagen.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\05imagen.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\burger.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\04imagen.JPG
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\10-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\11-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\13-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\17-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\18-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\20-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\21-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\22-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\23-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\24-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\25-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\27-min.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\28-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\31-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\03imagen.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\7-min.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\9-min.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Anticuchos.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Baby Beef.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Bife Ancho.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Bife.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Bife2.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\l3-min.JPG
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Lomo Fino.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Parrilla x2.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Parrilla.jpeg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Portada\Sin título.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\1.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\10.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\10.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\1010.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\1011.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\11.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\11.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\12.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\12.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\13.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\13.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\14.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\14.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\15.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\16.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\16.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\17.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\18.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\19.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\2.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\20.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\21.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\22.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\23.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\24.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\25.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\26.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\3.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\4.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\5.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\6.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\6.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\7.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\7.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\8.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\8.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\9.jpg
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Productos\9.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Tarjetas\master.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Tarjetas\visa.png
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap-confirmation.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.bundle.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.bundle.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.esm.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.esm.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.bootstrap.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.bootstrap.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.bootstrap4.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.bootstrap4.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.foundation.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.foundation.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.jqueryui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.jqueryui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.semanticui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\autoFill.semanticui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.bootstrap.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.bootstrap.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.bootstrap4.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.bootstrap4.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.colVis.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.colVis.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.flash.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.flash.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.foundation.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.foundation.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.html5.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.html5.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.jqueryui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.jqueryui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.print.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.print.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.semanticui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\buttons.semanticui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.autoFill.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.autoFill.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.bootstrap.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.bootstrap.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.bootstrap4.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.bootstrap4.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.buttons.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.buttons.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.colReorder.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.colReorder.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.fixedColumns.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.fixedColumns.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.fixedHeader.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.fixedHeader.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.foundation.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.foundation.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.jqueryui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.jqueryui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.keyTable.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.keyTable.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.material.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.material.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.responsive.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.responsive.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.rowGroup.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.rowGroup.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.rowReorder.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.rowReorder.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.scroller.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.scroller.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.select.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.select.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.semanticui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.semanticui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.uikit.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\dataTables.uikit.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\jquery.dataTables.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\jquery.dataTables.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.bootstrap.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.bootstrap.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.bootstrap4.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.bootstrap4.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.foundation.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.foundation.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.jqueryui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.jqueryui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.semanticui.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\DataTables\responsive.semanticui.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper-utils.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper-utils.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\index.js.flow
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper-utils.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\esm\popper-utils.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\semanticui.scss
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\mixins.scss
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\DataTables\css\common.scss
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Platos\photothumb.db
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\F071-39441.pdf
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\FACTURA CORRECTA CJA CON DETRACCION.pdf
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Imagenes\Carta\Prom Personal\pdfTmp2655689144870092691.pdf
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.slim.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.slim.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery.validate.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery.validate.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery.validate.unobtrusive.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery.validate.unobtrusive.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\loadingoverlay.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\modernizr-2.8.3.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper-utils.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper-utils.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\index.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\defaults.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\destroy.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\disableEventListeners.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\enableEventListeners.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\placements.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\methods\update.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\applyStyle.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\arrow.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\computeStyle.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\flip.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\hide.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\index.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\inner.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\keepTogether.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\offset.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\preventOverflow.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\modifiers\shift.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\clockwise.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\computeAutoPlacement.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\debounce.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\find.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\findCommonOffsetParent.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\findIndex.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getBordersSize.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getBoundaries.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getBoundingClientRect.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getClientRect.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getFixedPositionOffsetParent.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOffsetParent.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOffsetRect.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOppositePlacement.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOppositeVariation.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getOuterSizes.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getParentNode.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getPopperOffsets.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getReferenceNode.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getReferenceOffsets.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getRoot.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getRoundedOffsets.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getScroll.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getScrollParent.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getStyleComputedProperty.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getSupportedPropertyName.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getWindow.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\getWindowSizes.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\includeScroll.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\index.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isBrowser.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isFixed.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isFunction.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isIE.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isModifierEnabled.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isModifierRequired.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isNumeric.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\isOffsetContainer.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\removeEventListeners.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\runModifiers.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\setAttributes.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\setStyles.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\src\utils\setupEventListeners.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\SweetAlert\sweetalert.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper-utils.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper-utils.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper.min.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Tareas.txt
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Web.config
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Web.Debug.config
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Web.Release.config
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Web.config
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\_ViewStart.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\Error.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Index.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper.js.flow
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper-utils.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\umd\popper-utils.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\README.md
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper-utils.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\popper-utils.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Login\Index.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Categoria.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Marca.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Producto.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Tienda.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Tienda\Index.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Tienda\Producto.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Login\Registrarse.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Tienda\Carrito.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Tienda\Compras.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Tiendas.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Termino.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Politica.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Public\Index.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Public\Index2.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Home\Clientes.cshtml
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.rtl.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.rtl.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.rtl.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.rtl.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-utilities.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.rtl.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.rtl.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-reboot.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.rtl.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.rtl.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.min.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Content\bootstrap-grid.css.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.esm.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.esm.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.bundle.min.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\bootstrap.bundle.js.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.slim.min.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.min.map
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery-3.7.0.intellisense.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\jquery.validate-vsdoc.js
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\packages.config
+C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Scripts\index.d.ts

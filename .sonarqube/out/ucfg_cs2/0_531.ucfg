@@ -1,0 +1,54 @@
+
+;ProyectoTest.Controllers.TiendaController.ListarCategoria()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csx x()"2*ñ
+0z |(KZX
+z% z(:(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+z) z(8
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>n
+l
+z z(:,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>–
+“
+{ {(.)
+%2#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
+#ProyectoTest.Logica.CategoriaLogica”
+‘
+{ {(7(
+%3"System.Collections.Generic.List<T>",ProyectoTest.Logica.CategoriaLogica.Listar()*-+
+)
+%2#ProyectoTest.Logica.CategoriaLogican
+l
+{ {(7,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>"
+ 
+|/ |(K
+%4"__id*
+""¯
+¬
+| |(L
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%4"-
+| |(M!
+
+%5System.Web.Mvc.JsonResult*.
+1}	 }(	"
+} }(	
+implicit return*4
+2x+ x(+ 
+
+x x()
+%6"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

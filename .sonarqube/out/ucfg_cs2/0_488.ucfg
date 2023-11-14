@@ -1,0 +1,200 @@
+
+,ProyectoTest.Logica.CategoriaLogica.Listar()p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CategoriaLogica.cs   (%"0*ù
+0" #(JZX
+"0 "(E(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+"4 "(C
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>y
+w
+" "(E7
+rptListaCategoria"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+#? #(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+#- #(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+#1 #(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+#! #(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*Ç
+1% &(=VT
+%! %(Q&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand
+Ì
+%% %(/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*
+sp_obtenerCategoria*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+% %(Q'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand"
+ 
+&" &(=
+%7"__id*
+""ï
+í
+& &(=
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%7*
+2*
+2A	 A(	*
+3
+4*ò
+3* +(:z
+x
+* *($
+
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionò
+ï
++' +(:*
+%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
++" +(:)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%10#System.Data.SqlClient.SqlDataReader*
+5*ì
+5- -($|z
+- -($
+%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+6
+7*∆
+6/ 3(BQO
+/. 4($
+%12ProyectoTest.Models.Categoria"ProyectoTest.Models.Categorian
+l
+/2 /(;
+%13void")ProyectoTest.Models.Categoria.Categoria()*(&
+$
+%12ProyectoTest.Models.Categoria¶£
+1: 1(K
+%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdCategoria2this[string].getMK
+1: 1(V
+%15string"object.ToString()*
+
+%14object2
+ToString()a
+_
+1* 1(W
+
+%16int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%15stringÅ
+
+1 1(W
+
+%17int"-ProyectoTest.Models.Categoria.IdCategoria.set*(&
+$
+%12ProyectoTest.Models.Categoria*
+
+
+%16int¶£
+2* 2(;
+%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+2* 2(F
+%19string"object.ToString()*
+
+%18object2
+ToString()à
+Ö
+2 2(F
+%20string"-ProyectoTest.Models.Categoria.Descripcion.set*(&
+$
+%12ProyectoTest.Models.Categoria*
+
+%19string°û
+37 3(C
+%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Activo2this[string].getMK
+37 3(N
+%22string"object.ToString()*
+
+%21object2
+ToString()d
+b
+3% 3(O
+%23bool" System.Convert.ToBoolean(string)*"
+System.Convert*
+
+%22string~
+|
+3 3(O
+%24bool"(ProyectoTest.Models.Categoria.Activo.set*(&
+$
+%12ProyectoTest.Models.Categoria*
+
+%23bool≥
+∞
+/ 4(
+%25void"0System.Collections.Generic.ICollection<T>.Add(T)*;9
+7
+rptListaCategoria"System.Collections.Generic.List<T>*(&
+$
+%12ProyectoTest.Models.Categoria*
+5*‘
+76 8(,~|
+6 6(
+%26void"+System.Data.SqlClient.SqlDataReader.Close()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Close()"E
+8 8(-9
+7
+rptListaCategoria"System.Collections.Generic.List<T>*´
+4= >(,U
+S
+= =(,7
+rptListaCategoria"System.Collections.Generic.List<T>"__id*
+"""E
+> >(-9
+7
+rptListaCategoria"System.Collections.Generic.List<T>*
+8A	 A(	*
+9*.
+9A	 A(	"
+A A(	
+implicit returnB'%
+#ProyectoTest.Logica.CategoriaLogica

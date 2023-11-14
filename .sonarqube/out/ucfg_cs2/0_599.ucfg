@@ -1,0 +1,179 @@
+
+7ProyectoTest.Controllers.TiendaController.Producto(int)v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs) )($"5* 
+0+ +(*{
+y
++ +(%
+%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
++ +("
+%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%0System.Web.HttpSessionStateBase*	
+Usuario2this[string].getf
+d
++ +(*
+
+%2bool""object.operator ==(object, object)*
+"
+object*
+
+%1object*
+""*
+1
+2*ú
+1, ,(8°
+­
+, ,(9*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*	
+Login"8
+, ,(:,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*×
+2. .(5{
+y
+.$ .(+%
+%4System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
+.$ .(6
+%5object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%4System.Web.HttpSessionStateBase*	
+Usuario2this[string].get*
+(
+. .(6
+%6"__id*
+
+%5objectt
+r
+. .(6V+
+)ProyectoTest.Controllers.TiendaController"'
+oUsuarioProyectoTest.Models.Usuario"__id*
+
+%6*
+3*„
+30 H(!NL
+0! 0(/"
+%7ProyectoTest.Models.Producto"ProyectoTest.Models.Productoi
+g
+0% 0(-
+
+%8void"'ProyectoTest.Models.Producto.Producto()*&$
+"
+%7ProyectoTest.Models.Productoe
+c
+0 0(/)
+	oProductoProyectoTest.Models.Producto"__id*&$
+"
+%7ProyectoTest.Models.ProductoZX
+1$ 1(8(
+%9"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>r
+p
+1( 1(6
+%10void")System.Collections.Generic.List<T>.List()*,*
+(
+%9"System.Collections.Generic.List<T>n
+l
+1 1(8,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%9"System.Collections.Generic.List<T>”
+‘
+3 3(-)
+%11"ProyectoTest.Logica.ProductoLogica"0ProyectoTest.Logica.ProductoLogica.Instancia.get*(&"$
+"ProyectoTest.Logica.ProductoLogica”
+‘
+3 3(6)
+%12"System.Collections.Generic.List<T>"+ProyectoTest.Logica.ProductoLogica.Listar()*-+
+)
+%11"ProyectoTest.Logica.ProductoLogicao
+m
+3 3(6,
+oLista"System.Collections.Generic.List<T>"__id*-+
+)
+%12"System.Collections.Generic.List<T>»
+¸
+4 F(,#
+%13ProyectoTest.Models.Producto"_System.Linq.Enumerable.FirstOrDefault<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*
+""f
+d
+4 F(,)
+	oProductoProyectoTest.Models.Producto"__id*'%
+#
+%13ProyectoTest.Models.Producto¹
+¶
+H H("
+%14void""proyectotest/views/tienda/producto*	
+
+%15*-+
+)
+	oProductoProyectoTest.Models.Producto*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject´
+±
+H H("
+%16void"proyectotest/views/_viewstart*	
+
+%17*-+
+)
+	oProductoProyectoTest.Models.Producto*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject¿
+¼
+H H("
+%18void"(proyectotest/views/shared/_layout_tienda*	
+
+%19*-+
+)
+	oProductoProyectoTest.Models.Producto*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+H H(#
+
+%18void*.
+4I	 I(	"
+I I(	
+implicit return*?
+5)8 )(8+
+)
+) )($
+%20"__entrypoint*
+""*
+0:
+)% )(7
+
+idproductointB-+
+)ProyectoTest.Controllers.TiendaController

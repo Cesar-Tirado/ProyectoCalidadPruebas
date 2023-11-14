@@ -1,0 +1,64 @@
+
+=ProyectoTest.Controllers.HomeController.EliminarProducto(int)v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csõ õ(*"2*¦
+0
+÷ ù(S1
+/
+
+÷ ÷("
+	respuestabool"__id*
+""•
+’
+
+ø ø(0(
+%0"ProyectoTest.Logica.ProductoLogica"0ProyectoTest.Logica.ProductoLogica.Instancia.get*(&"$
+"ProyectoTest.Logica.ProductoLogica…
+‚
+
+ø ø(=
+
+%1bool"0ProyectoTest.Logica.ProductoLogica.Eliminar(int)*,*
+(
+%0"ProyectoTest.Logica.ProductoLogica*
+""7
+5
+
+ø ø(=
+	respuestabool"__id*
+
+
+%1bool$
+"
+
+ù7 ù(S
+%2"__id*
+""±
+®
+
+ù ù(T
+%3System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%2"/
+
+ù ù(U!
+
+%3System.Web.Mvc.JsonResult*2
+1
+ú	 ú(	"!
+
+ú ú(	
+implicit return*B
+2
+õ2 õ(2,
+*
+
+õ õ(*
+%4"__entrypoint*
+""*
+0:
+
+õ+ õ(1	
+idintB+)
+'ProyectoTest.Controllers.HomeController

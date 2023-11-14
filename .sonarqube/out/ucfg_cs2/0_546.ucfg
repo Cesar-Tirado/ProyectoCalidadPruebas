@@ -1,0 +1,114 @@
+
+bProyectoTest.Controllers.TiendaController.apiswebhook(string, ProyectoTest.Models.tarjetaResponse)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs© ©("3*ú
+0
+­ ®(8
+6
+
+­ ­(
+dataidstring"__id*
+
+idstring¦
+£
+
+® ®(^+
+)ProyectoTest.Controllers.TiendaController"/
+datosTar#ProyectoTest.Models.tarjetaResponse"__id*/-
++
+dato#ProyectoTest.Models.tarjetaResponse*
+1
+2*
+1
+°) °(+*
+2*2
+2
+±	 ±(	"!
+
+± ±(	
+implicit return*í
+3
+©@ ©(@k
+i
+
+© ©(M
++
+dato#ProyectoTest.Models.tarjetaResponse"
+<bin>k__BackingFieldstring"__entrypointZ
+X
+
+© ©(<
++
+dato#ProyectoTest.Models.tarjetaResponse"
+binstring"__entrypointo
+m
+
+© ©(Q
++
+dato#ProyectoTest.Models.tarjetaResponse""
+<channel>k__BackingFieldstring"__entrypoint^
+\
+
+© ©(@
++
+dato#ProyectoTest.Models.tarjetaResponse"
+channelstring"__entrypointx
+v
+
+© ©(Z
++
+dato#ProyectoTest.Models.tarjetaResponse"+
+!<transactionToken>k__BackingFieldstring"__entrypointg
+e
+
+© ©(I
++
+dato#ProyectoTest.Models.tarjetaResponse"
+transactionTokenstring"__entrypoint4
+2
+
+© ©(
+%0"__entrypoint*
+
+idstringn
+l
+
+¦	 ¦(
+%1"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+idstringz
+x
+
+§	 §(
+%2"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+idstringn
+l
+
+¨	 ¨(#
+%3"
+__annotate*:86
+4System.Web.Mvc.RouteAttribute.RouteAttribute(string)*
+
+idstringH
+F
+
+©  ©()
+idstring"__annotation*
+
+%1*
+
+%2*
+
+%3*
+0:
+
+©  ©()
+idstring:9
+
+©+ ©(?+
+dato#ProyectoTest.Models.tarjetaResponseB-+
+)ProyectoTest.Controllers.TiendaController

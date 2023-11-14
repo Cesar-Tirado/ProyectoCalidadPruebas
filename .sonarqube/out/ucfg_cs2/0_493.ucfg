@@ -1,0 +1,164 @@
+
+DProyectoTest.Logica.CompraLogica.ActualizarEstadoCompra(int, string)m
+cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CompraLogica.csO O(*"0*”
+0S% S(NT
+R
+SC S(N
+%0string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+S1 S(O)
+%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+S5 S(B
+
+%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+
+%0strings
+q
+S% S(O0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+1*Ç
+1U _($VT
+U% U([&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandˆ
+Û
+U) U(3
+
+%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%3 System.Data.SqlClient.SqlCommand*
+sp_actualizarEstadoCompra*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+U U(['
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%3 System.Data.SqlClient.SqlCommandü
+ú
+V V("2
+%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand—
+Œ
+V V(E(
+%6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%5,System.Data.SqlClient.SqlParameterCollection*
+
+IdCompra*
+""ü
+ú
+W W("2
+%7,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand‡
+›
+W W(F(
+%8"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%7,System.Data.SqlClient.SqlParameterCollection*
+
+Estado*
+
+nuevoEstadostringü
+ú
+X X("2
+%9,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand#
+!
+X4 X(A
+%10"__id*
+""⁄
+◊
+X X(B)
+%11"System.Data.SqlClient.SqlParameter"LSystem.Collections.Generic.ICollection<T>.Add(string, System.Data.SqlDbType)*64
+2
+%9,System.Data.SqlClient.SqlParameterCollection*
+	Resultado*	
+
+%10#
+!
+XO X(h
+%12"__id*
+""†
+ù
+X X(h%
+%13System.Data.ParameterDirection"0System.Data.SqlClient.SqlParameter.Direction.set*-+
+)
+%11"System.Data.SqlClient.SqlParameter*	
+
+%12#
+!
+Y& Y(A
+%14"__id*
+""ó
+î
+Y Y(A
+%15System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*	
+
+%14{
+y
+[ [($
+%16void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiony
+w
+\ \()
+
+%17int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+'
+cmd System.Data.SqlClient.SqlCommand†
+ù
+]7 ](E3
+%18,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandæ
+ª
+]7 ](R)
+%19"System.Data.SqlClient.SqlParameter":System.Collections.Generic.ICollection<T>.this[string].get*75
+3
+%18,System.Data.SqlClient.SqlParameterCollection*
+	Resultadox
+v
+]7 ](X
+%20object",System.Data.SqlClient.SqlParameter.Value.get*-+
+)
+%19"System.Data.SqlClient.SqlParameterd
+b
+]% ](Y
+%21bool" System.Convert.ToBoolean(object)*"
+System.Convert*
+
+%20object6
+4
+] ](Y
+	resultadobool"__id*
+
+%21bool"
+_ _(%
+
+	resultadobool*
+2g	 g(	*
+3*
+3g	 g(	*
+4
+5*
+4e e(*
+5*.
+5g	 g(	"
+g g(	
+implicit return:
+O+ O(7
+idCompraint:!
+O9 O(K
+nuevoEstadostringB$"
+ ProyectoTest.Logica.CompraLogica

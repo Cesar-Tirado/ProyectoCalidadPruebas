@@ -1,0 +1,240 @@
+
+@ProyectoTest.Logica.UbigeoLogica.ObtenerDistrito(string, string)m
+cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbigeoLogica.cs` `(-"0*è
+0b c(JZX
+b! b(5(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+b% b(3
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>k
+i
+b b(5)
+lst"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+c? c(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+c- c(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+c1 c(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+c! c(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*ˆ
+1g l(AWU
+	g% g(û&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandπ
+∂
+g) g(3
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*b`^
+\select * from DISTRITO where IdProvincia = @idprovincia and IdDepartamento = @iddepartamento*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionh
+f
+	g g(û'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommandü
+ú
+h h("2
+%7,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandÁ
+‰
+h h(M(
+%8"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%7,System.Data.SqlClient.SqlParameterCollection*
+@idprovincia*
+
+_idprovinciastringü
+ú
+i i("2
+%9,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandÓ
+Î
+i i(S)
+%10"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%9,System.Data.SqlClient.SqlParameterCollection*
+@iddepartamento*
+
+_iddepartamentostring#
+!
+j& j(6
+%11"__id*
+""ó
+î
+j j(6
+%12System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*	
+
+%11{
+y
+k k($
+%13void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionò
+ï
+l. l(A*
+%14#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
+l) l(A)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%14#System.Data.SqlClient.SqlDataReader*
+2*ì
+2n n((|z
+n n((
+%15bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+3
+4*ˇ
+3p u(DOM
+p$ v(#
+%16ProyectoTest.Models.Distrito"ProyectoTest.Models.Distritok
+i
+p( p(0
+%17void"'ProyectoTest.Models.Distrito.Distrito()*'%
+#
+%16ProyectoTest.Models.Distrito•¢
+r- r(=
+%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+IdDistrito2this[string].getMK
+r- r(H
+%19string"object.ToString()*
+
+%18object2
+ToString()Ö
+Ç
+r  r(H
+%20string"+ProyectoTest.Models.Distrito.IdDistrito.set*'%
+#
+%16ProyectoTest.Models.Distrito*
+
+%19string¶£
+s. s(?
+%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+s. s(J
+%22string"object.ToString()*
+
+%21object2
+ToString()Ü
+É
+s  s(J
+%23string",ProyectoTest.Models.Distrito.Descripcion.set*'%
+#
+%16ProyectoTest.Models.Distrito*
+
+%22string¶£
+t. t(?
+%24object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdProvincia2this[string].getMK
+t. t(J
+%25string"object.ToString()*
+
+%24object2
+ToString()Ü
+É
+t  t(J
+%26string",ProyectoTest.Models.Distrito.IdProvincia.set*'%
+#
+%16ProyectoTest.Models.Distrito*
+
+%25string©¶
+u1 u(E
+%27object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdDepartamento2this[string].getMK
+u1 u(P
+%28string"object.ToString()*
+
+%27object2
+ToString()â
+Ü
+u  u(P
+%29string"/ProyectoTest.Models.Distrito.IdDepartamento.set*'%
+#
+%16ProyectoTest.Models.Distrito*
+
+%28string§
+°
+p v(
+%30void"0System.Collections.Generic.ICollection<T>.Add(T)*-+
+)
+lst"System.Collections.Generic.List<T>*'%
+#
+%16ProyectoTest.Models.Distrito*
+2*
+4
+Å	 Å(	*
+5*
+5
+Å	 Å(	*
+6
+7*“
+6} }(.[Y
+} }(.)
+%31"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+} }(,
+%32void")System.Collections.Generic.List<T>.List()*-+
+)
+%31"System.Collections.Generic.List<T>l
+j
+} }(.)
+lst"System.Collections.Generic.List<T>"__id*-+
+)
+%31"System.Collections.Generic.List<T>*
+7*
+7
+Å	 Å(	*
+8*J
+8
+Ä Ä("9
+
+Ä Ä(+
+)
+lst"System.Collections.Generic.List<T>*2
+9
+Å	 Å(	"!
+
+Å Å(	
+implicit return:"
+`. `(A
+_idprovinciastring:%
+`C `(Y
+_iddepartamentostringB$"
+ ProyectoTest.Logica.UbigeoLogica

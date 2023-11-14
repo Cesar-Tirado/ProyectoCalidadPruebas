@@ -1,0 +1,110 @@
+
+8ProyectoTest.Controllers.HomeController.ListarProducto()v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs£ £(("2*å
+0
+¥ ¼(\Z
+
+¥$ ¥(8(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+¥( ¥(6
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+¥ ¥(8,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>•
+’
+
+¦ ¦(-(
+%2"ProyectoTest.Logica.ProductoLogica"0ProyectoTest.Logica.ProductoLogica.Instancia.get*(&"$
+"ProyectoTest.Logica.ProductoLogica”
+‘
+
+¦ ¦(6(
+%3"System.Collections.Generic.List<T>"+ProyectoTest.Logica.ProductoLogica.Listar()*,*
+(
+%2"ProyectoTest.Logica.ProductoLogicap
+n
+
+¦ ¦(6,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>º
+·
+
+§ ¸(!(
+%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*
+""p
+n
+
+§ ¸(!,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%4"System.Collections.Generic.List<T>€~
+
+¹ ¹(W:
+%54System.Web.Script.Serialization.JavaScriptSerializer"4System.Web.Script.Serialization.JavaScriptSerializer¨
+¥
+
+¹! ¹(U
+
+%6void"KSystem.Web.Script.Serialization.JavaScriptSerializer.JavaScriptSerializer()*><
+:
+%54System.Web.Script.Serialization.JavaScriptSerializer™
+–
+
+¹ ¹(WB
+
+serializer4System.Web.Script.Serialization.JavaScriptSerializer"__id*><
+:
+%54System.Web.Script.Serialization.JavaScriptSerializer$
+"
+
+º3 º(O
+%7"__id*
+""±
+®
+
+º º(P
+%8System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%7\
+Z
+
+º º(P!
+jsonSystem.Web.Mvc.JsonResult"__id*#!
+
+%8System.Web.Mvc.JsonResult‰
+†
+
+» »(*
+%9System.Nullable<T>"+System.Web.Mvc.JsonResult.MaxJsonLength.set*%#
+!
+jsonSystem.Web.Mvc.JsonResult*
+2€Êµî"1
+
+¼ ¼(#
+!
+jsonSystem.Web.Mvc.JsonResult*2
+1
+½	 ½(	"!
+
+½ ½(	
+implicit return*9
+2
+£* £(*#
+!
+
+£ £((
+%10"__entrypoint*
+0B+)
+'ProyectoTest.Controllers.HomeController

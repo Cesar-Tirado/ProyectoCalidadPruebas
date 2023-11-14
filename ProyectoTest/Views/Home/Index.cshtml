@@ -3,49 +3,122 @@
 
 }
 
-<div class="row">
-    @*Agregado*@
-    <div class="row mt-5 pt-4">
-        <h1>Gestionar Pedidos</h1>
-        <div class="col-12">
-            <div class="mb-3">
-                <h5>Filtrar por estado:</h5>
+<style>
+    #boton01 .btn {
+        font-size: 12px ;
+        margin:2px;
+    }
+
+    #BusquedaFecha {
+        justify-content:center;
+        align-content:center;
+        align-items:center;
+        font-size: 14px;       
+    }
+
+    #BusquedaFecha .btn {
+        font-size: 12px;
+    }
+    .form-control{
+        height:32px;
+    }
+    .input-group .btn {
+        height: 32px;
+    }
+    .compraHtml {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .precioderecha {
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .espaciado {
+        padding: 5px;
+    }
+
+</style>
+<div class="container-fluid w-100 p-0 m-0">
+
+    <h2 class="my-2">Gestionar Pedidos</h2>
+
+    <div class="row d-flex mb-2 justify-content-between align-items-center">
+
+        <div class="col-12 col-md-4" style="width:210px" >
+            <h6 class="my-3">Filtrar por estado:</h6>
+            <div class="btn-group" role="group" id="boton01">
                 <button class="btn btn-secondary estado-btn" data-estado="">Todos</button>
-                <button class="btn btn-success estado-btn" data-estado="estado: Aceptado">Aceptados</button>
-                <button class="btn btn-danger estado-btn" data-estado="estado: Rechazado">Rechazados</button>
-                <button class="btn btn-warning estado-btn" data-estado="estado: Pendiente">Pendientes</button>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-3">
-                <label for="txtBusqueda" class="form-label">Buscar por nombre de cliente:</label>
-                <input type="text" class="form-control" id="txtBusqueda">
-                <button class="btn btn-primary mt-2" id="btnBuscar">Buscar</button>
+                <button class="btn btn-success estado-btn" data-estado="Aceptado">Aceptados</button>
+                <button class="btn btn-danger estado-btn" data-estado="Rechazado">Rechazados</button>
+                <button class="btn btn-warning estado-btn" data-estado="Pendiente">Pendientes</button>
             </div>
         </div>
 
+        <div class="col-12 col-md-5 " id="BusquedaFecha" style="width:400px">
+            <h6>Busqueda de cliente por fecha</h6>
+            <div class="d-flex align-items-center">
+                <div>
+                    <label for="fechaInicio">Fecha de inicio:</label>
+                    <input type="date" id="fechaInicio" class="form-control">
+                </div>
+                <div class="ml-2 justify-content-center">
+                    <label for="fechaFin">Fecha de fin:</label>
+                    <input  type="date" id="fechaFin" class="form-control">
+                </div>
+                <div class="d-flex align-items-start ml-2">
+                    <button  id="btnFiltrarFechaIF" class="btn btn-primary mt-4 m-1" style="width:65px">Filtrar</button>
+                    <button id="btnBorrarFiltro" class="btn btn-danger mt-4" style="width:95px">Borrar Filtros</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3" style="width:250px"> 
+            <h6 class="my-3 ">Buscar Nombre de cliente</h6>
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" id="txtBusqueda" placeholder="Ingrese un nombre">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="btnBuscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+
     </div>
+
+    <table class="table text-center justify-content-center">
+    <thead>
+        <tr>
+            <th scope="col"># </th>
+            <th scope="col"> Fecha Pedido </th>
+            <th scope="col">Hora Pedido </th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    </table>
+
     <div class="row mt-2">
         <div class="col-12">
             <div class="card">
-                <div class="card-body bg-secondary">
-
+                <div class="card-body bg-secondary p-2">
                     <div class="accordion" id="accordion_articulos">
-
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>
+
+
 @section scripts{
 
     <script>
-
-
+        
         //AGREGADO
         function zeroFill(number, width) {
             width -= number.toString().length;
@@ -55,14 +128,9 @@
             return number + ""; // always return a string
         }
 
-        
-
-        // ...
-
-        // En el evento de clic del botón Rechazar
-        
 
         $(document).ready(function () {
+            
             jQuery.ajax({
                 url: '@Url.Action("ObtenerCompra", "Tienda")',
                 type: "GET",
@@ -72,23 +140,42 @@
                 success: function (data) {
                     console.log(data)
                     if (data.lista != null) {
-                        // Invertir la lista de compras para mostrar los nuevos primero
+                       
                         var reversedLista = data.lista.reverse();
                         $.each(reversedLista, function (i, v) {
+                            var precioEnvio = 0.00;             
+                            var fechaDeLaCompra = $("<div>").addClass("me-4 fecha-texto").text(v.FechaTexto);
+                            fechaDeLaCompra.hide();
                             var accordion_item = $("<div>").addClass("accordion-item");
+                           
+                            var fechaHoy = obtenerFechaActualEnFormatoDePedidos();
 
-
-
+                            //Asi mostramos los pedidos solo de hoy
+                            $('.accordion-item').each(function () {
+                                var fechaComprasTexto = $(this).find('.fecha-compra').text().toLowerCase();
+                                if (fechaComprasTexto === fechaHoy) {
+                                    $(this).show();
+                                } else {
+                                    $(this).hide();
+                                }
+                            });
+                            
                             var fechaCompra = new Date(v.FechaTexto);
-
-                            var estado = v.Estado.toLowerCase(); // Convertir el estado a minúsculas
+                            const hora = fechaCompra.getHours().toString().padStart(2, '0');
+                            const minutos = fechaCompra.getMinutes().toString().padStart(2, '0');                           
+                            const horaFormateada2 = `${hora}:${minutos}`;
+                            var estado = v.Estado.toLowerCase(); 
                             var backgroundColor;
 
                             if (estado === "aceptado") {
-                                backgroundColor = "#2ECC71";
+                                backgroundColor = "#0b5ed7";
                             } else if (estado === "rechazado")
                             {
                                 backgroundColor = "#E74C3C";
+                            } else if (estado === "en camino") {
+                                backgroundColor = "#ffca2c";
+                            } else if (estado === "entregado") {
+                                backgroundColor = "#2ECC71";
                             } else
                             {
                                 backgroundColor = "initial"; // Color de fondo por defecto
@@ -97,16 +184,16 @@
 
                             var accordion_header = $("<div>").addClass("accordion-header").append(
 
-
-                                $("<div>").addClass("accordion-button collapsed").css("background-color", backgroundColor).attr({ "data-bs-toggle": "collapse", "data-bs-target": "#collapse" + i, "aria-expanded": "false" }).append(
+                                $("<div>").addClass("accordion-button p-2 collapsed").css("background-color", backgroundColor).attr({ "data-bs-toggle": "collapse", "data-bs-target": "#collapse" + i, "aria-expanded": "false" }).append(
                                     $("<div>").addClass("d-flex justify-content-between w-100").append(
-                                        $("<div>").text("N° " + zeroFill(i + 1, 8)),
-                                        $("<div>").addClass("me-4").text("Fecha: " + fechaCompra.toLocaleDateString()),
-                                        $("<div>").addClass("me-4").text("Hora: " + fechaCompra.toLocaleTimeString()),// Formatear fecha y hora
-                                        $("<div>").addClass("me-4 cliente-nombre").text("Cliente: " + v.Nombre), // Agrega la clase 'cliente-nombre'
-                                        $("<div>").addClass("me-4 pedido-estado").text("Estado: " + v.Estado), // Agrega la clase 'pedido-estado'
+                                        $("<div>").text("N° " + zeroFill(v.IdCompra, 8)),
+                                        fechaDeLaCompra,//$("<div>").addClass("me-4 fecha-texto").text(v.FechaTexto),
+                                        $("<div>").addClass("me-4 fecha-compra").text(fechaCompra.toLocaleDateString()),
+                                        $("<div>").addClass("me-4").text(horaFormateada2),// Formatear fecha y hora
+                                        $("<div>").addClass("me-4 cliente-nombre").text(v.Nombre),// Agrega la clase 'cliente-nombre'
+                                        $("<div>").addClass("me-4").text(v.Tipo),
+                                        $("<div>").addClass("me-4 pedido-estado").text(v.Estado), // Agrega la clase 'pedido-estado'
                                         //$("<div>").addClass("me-4").text("Estado: " + v.IdCompra),
-
                                     )
                                 )
                             );
@@ -116,41 +203,62 @@
                                 $("<div>").addClass("row").append(
                                     // Columna de datos del cliente
                                     $("<div>").addClass("col-md-6 mb-4").append(
-                                        $("<div>").addClass("font-weight-bold text-decoration-underline").text("Datos del cliente"),
-                                        $("<div>").text("Dirección: " + v.Direccion),
-                                        $("<div>").text("Correo: " + v.Correo),
+                                        $("<div>").addClass("fw-bolder fs-5 text-decoration-underline").text("Datos del cliente"),
+                                        $("<div>").text("Nombre: " + v.Nombre),
+                                        $("<div>").text("Dirección "+v.Tipo+": " + v.Direccion),
                                         $("<div>").text("Referencia: " + v.Referencia),
-                                        $("<div>").text("F.Pago: " + v.FormaPago),
+                                        $("<div>").html("<b>Hora de Pedido: " + horaFormateada2 + "</b>"),
+                                        $("<div>").html("<b>Hora de Recojo: " + v.HoraRecojo + "</b>"),
+                                        $("<br><div>").text("Correo: " + v.Correo),
                                         $("<div>").text("Teléfono: " + v.Telefono),
-                                        $("<div>").text("Fact: " + v.DocumentoFacturacion)
+                                        $("<br><div>").text("Forma de Pago: " + v.FormaPago),                                       
+                                        $("<div>").text("Facturación: " + v.DocumentoFacturacion)
                                     ),
-                                    // Columna de detalles de compra
+                                    // Columna de detalles de compra                                  
+
                                     $("<div>").addClass("col-md-6 mb-4").append(
-                                        $("<div>").addClass("font-weight-bold text-decoration-underline").text("")
+                                        $("<div>").addClass("fw-bolder fs-5 text-decoration-underline").text("Datos del Pedido - " + v.Tipo).append(
+                                        $("<div>").addClass("font-weight-bold text-decoration-underline").text(""))
                                     )
                                 )
                             );
 
                             $.each(v.oDetalleCompra, function (x, dc) {
-                                var d_flex = $("<div>").addClass("d-flex flex-column border p-2").append(
-                                    //$("<img>").attr({ "src": "data:image/" + dc.oProducto.extension + ";base64," + dc.oProducto.base64, "width": "50" }),
-                                    $("<div>").addClass("p-2 bd-highlight").text(dc.oProducto.Nombre),
-                                    $("<div>").addClass("p-2 bd-highlight").text("Cantidad: " + dc.Cantidad),
-                                    $("<div>").addClass("p-2 bd-highlight").text("Adicionales: " + dc.Adicionales)
+                                var d_flex = $("<div>").addClass("compraHtml espaciado").append(
+                                    $("<div>").text(" " + dc.Cantidad + " x ").addClass("col-1"),
+                                    $("<div>").text(dc.oProducto.Nombre).addClass("col-9"),
+                                    /*$("<div>").text("pre Exttra:"+ dc.PrecioExtra).addClass("col-9"),*/
+                                    $("<div>").text("S/.  " + (dc.PrecioExtra).toFixed(2)).addClass("col-2 precioderecha")
                                 );
-                                accordion_body.find(".col-md-6:last-child").append(d_flex);
+                                var adicionales = $("<div>").text("Adicionales: " + dc.Adicionales).addClass("col-12 espaciado");
+                                var observaciones = $("<div>").text("Observaciones: " + dc.ObservacionesDC).addClass("col-12 espaciado");
+                                var row = $("<div>").addClass("row");
+                                row.append(d_flex);
+                                row.append(adicionales, observaciones);
+                                accordion_body.find(".col-md-6:last-child").append(row);
                             });
 
-                            accordion_body.find(".col-md-6:last-child").append(
-                                $("<div>").addClass("d-flex justify-content-between bg-light border").append(
+
+                            accordion_body.find(".col-md-6:last-child").append(                                
+                                $("<div>").addClass("p-2 bd-highlight").text("Costo de envío: S/. " + precioEnvio.toFixed(2)),
+                                $("<div>").addClass("d-flex justify-content-between bg-light border").append(                                   
                                     $("<div>").addClass("p-2 bd-highlight").text("Total Importe:"),
-                                    $("<div>").addClass("p-2 bd-highlight").text("S/. " + v.Total)
+                                    $("<div>").addClass("p-2 bd-highlight").text("S/. " + v.Total.toFixed(2))
                                 )
                             );
 
-                            var btnAceptar = $("<button>").addClass("btn btn-success me-2").text("Aceptar").on("click", function () {
+                            var btnAceptar = $("<button>").addClass("btn btn-primary").text("Aceptar").on("click", function () {
                                 cambiarEstadoCompra(v.IdCompra, "Aceptado");
                             });
+
+                            var btnEnCamino = $("<button>").addClass("btn btn-warning me-2").text("En Camino").on("click", function () {
+                                cambiarEstadoCompra(v.IdCompra, "En Camino");
+                            });
+
+                            var btnEntregado = $("<button>").addClass("btn btn-success me-2").text("Entregado").on("click", function () {
+                                cambiarEstadoCompra(v.IdCompra, "Entregado");
+                            }); 
+
                             var btnRechazar = $("<button>").addClass("btn btn-danger").text("Rechazar").on("click", function () {
                                 if (confirm('¿Está seguro de rechazar el pedido?')) {
                                     cambiarEstadoCompra(v.IdCompra, "Rechazado");
@@ -161,49 +269,77 @@
                             accordion_collapse.append(accordion_body);
                             accordion_item.append(accordion_header);
                             accordion_item.append(accordion_collapse);
-
                             accordion_body.append(
                                 // ... otros detalles
                                 $("<div>").addClass("d-flex justify-content-between").append(
                                     btnRechazar,
+                                    btnEnCamino,
+                                    btnEntregado,
                                     btnAceptar
                                 )
                             );
-
-                            $("#accordion_articulos").prepend(accordion_item);
-
-                           
-                            // Agregar el evento de búsqueda
-                            $('#btnBuscar').click(function () {
-                                var searchTerm = $('#txtBusqueda').val().toLowerCase();
-                                $('.accordion-item').each(function () {
-                                    var clienteNombre = $(this).find('.cliente-nombre').text().toLowerCase();
-                                    if (clienteNombre.includes(searchTerm)) {
-                                        $(this).show();
-                                    } else {
-                                        $(this).hide();
-                                    }
-                                });
-                            });
-
-                            $('.estado-btn').click(function () {
-                                var estadoSeleccionado = $(this).attr('data-estado').toLowerCase();
-                                //console.log(estadoSeleccionado);
-                                $('.accordion-item').each(function () {
-                                    var pedidoEstado = $(this).find('.pedido-estado').text().toLowerCase();
-                                    //console.log(pedidoEstado);
-                                    if (estadoSeleccionado === '' || pedidoEstado === estadoSeleccionado) {
-                                        $(this).show();
-                                    } else {
-                                        $(this).hide();
-                                    }
-                                });
-                            });
-
-                          
-
+                            $("#accordion_articulos").prepend(accordion_item);                            
                         });
 
+
+                        $('.estado-btn').click(function () {
+                            var estadoSeleccionado = $(this).attr('data-estado').toLowerCase();
+                            $('.accordion-item').each(function () {
+                                var pedidoEstado = $(this).find('.pedido-estado').text().toLowerCase();
+                                if (estadoSeleccionado === '' || pedidoEstado === estadoSeleccionado) {
+                                    $(this).show();
+                                } else {
+                                    $(this).hide();
+                                }
+                            });
+                        });
+
+                        
+                        $('#btnBuscar').click(function () {                // Agregar el evento de búsqueda
+                            var searchTerm = $('#txtBusqueda').val().toLowerCase();
+                            $('.accordion-item').each(function () {
+                                var clienteNombre = $(this).find('.cliente-nombre').text().toLowerCase();
+                                if (clienteNombre.includes(searchTerm)) {
+                                    $(this).show();
+                                } else {
+                                    $(this).hide();
+                                }
+                            });
+                        });
+                        
+                        
+                        $('#btnBorrarFiltro').click(function () {
+                            // Recargar la página
+                            location.reload();
+                        });
+                        $('#btnFiltrarFechaIF').click(function () {
+                            // Obtener las fechas de inicio y fin ingresadas por el usuario
+                            var fechaInicio = $('#fechaInicio').val();
+                            var fechaFin = $('#fechaFin').val();
+
+                           
+                            // Recorrer todos los elementos con la clase .accordion-item
+                            $('.accordion-item').each(function () {
+                                var fechaCompraTextoFil = $(this).find('.fecha-texto').text();
+                                console.log("Fecha de compra PREVIA:", fechaCompraTextoFil);
+
+                                // Convertir las fechas a objetos Date
+                                var fechaInicioObj = new Date(fechaInicio);
+                                var fechaFinObj = new Date(fechaFin);
+                                var fechaCompraObj = new Date (fechaCompraTextoFil);
+
+                                console.log("Fecha de inicio (objeto Date):", fechaInicioObj);
+                                console.log("Fecha de fin (objeto Date):", fechaFinObj);
+                                console.log("Fecha de compra (objeto Date):", fechaCompraObj);
+
+                                // Verificar si la fecha del pedido está dentro del rango especificado
+                                if (fechaCompraObj >= fechaInicioObj && fechaCompraObj <= fechaFinObj) {
+                                    $(this).show(); // Mostrar el pedido si está dentro del rango
+                                } else {
+                                    $(this).hide(); // Ocultar el pedido si está fuera del rango
+                                }
+                            });
+                        });                     
                     }
                 },
                 error: function (error) {
@@ -214,7 +350,45 @@
                 },
             });
         })
+       
 
+        // Función para validar una fecha como objeto Date
+        function validarFechaComoObjeto(fecha) {
+            try {
+                var partesFecha = fecha.split('/');
+                var dia = parseInt(partesFecha[0], 10);
+                var mes = parseInt(partesFecha[1], 10) - 1; // Los meses en JavaScript van de 0 a 11
+                var año = parseInt(partesFecha[2], 10);
+                var fechaObjeto = new Date(año, mes, dia);
+                // Verificar si la fecha es válida
+                if (isNaN(fechaObjeto.getTime())) {
+                    return false; // La fecha es inválida
+                }
+                return true; // La fecha es válida
+            } catch (error) {
+                return false; // Hubo un error al crear el objeto Date, la fecha es inválida
+            }
+        }
+
+
+        function obtenerFechaActualEnFormatoDePedidos() {
+            var fechaActual = new Date();
+            var día = fechaActual.getDate();
+            var mes = fechaActual.getMonth() + 1; // +1 porque los meses comienzan desde 0
+            var año = fechaActual.getFullYear();
+            // Formatea día y mes sin ceros adicionales
+            if (día < 10) {
+                día = día.toString();
+            } else {
+                día = día.toString().padStart(2, '0');
+            }
+            if (mes < 10) {
+                mes = mes.toString();
+            } else {
+                mes = mes.toString().padStart(2, '0');
+            }
+            return día + '/' + mes + '/' + año;
+        }
 
 
         function cambiarEstadoCompra(idCompra, nuevoEstado) {
@@ -232,7 +406,6 @@
                 }
             });
         }
-
 
         //AGREGADO 2
         function obtenerPreciosPago() {
@@ -264,7 +437,6 @@
                     console.log(error)
                 },
                 beforeSend: function () {
-
                 },
             });
 

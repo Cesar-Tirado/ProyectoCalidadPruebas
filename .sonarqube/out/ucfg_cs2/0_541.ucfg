@@ -1,0 +1,106 @@
+
+IProyectoTest.Controllers.TiendaController.EliminarCarrito(string, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs— —()"2*’
+0
+” ’(S1
+/
+
+” ”("
+	respuestabool"__id*
+""í
+è
+
+‘ ‘(/'
+%0!ProyectoTest.Logica.CarritoLogica"/ProyectoTest.Logica.CarritoLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.CarritoLogica∑
+¥
+
+‘ ‘(O
+
+%1bool":ProyectoTest.Logica.CarritoLogica.Eliminar(string, string)*+)
+'
+%0!ProyectoTest.Logica.CarritoLogica*
+
+	IdCarritostring*
+
+
+IdProductostring7
+5
+
+‘ ‘(O
+	respuestabool"__id*
+
+
+%1bool$
+"
+
+’7 ’(S
+%2"__id*
+""±
+Æ
+
+’ ’(T
+%3System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%2"/
+
+’ ’(U!
+
+%3System.Web.Mvc.JsonResult*2
+1
+÷	 ÷(	"!
+
+÷ ÷(	
+implicit return*’
+2
+—N —(NU
+S
+
+— —()
+%4"__entrypoint*
+
+	IdCarritostring*
+
+
+IdProductostringu
+s
+
+–	 –(
+%5"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+	IdCarritostring;
+9
+
+—* —(:
+	IdCarritostring"__annotation*
+
+%5v
+t
+
+–	 –(
+%6"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+
+IdProductostring<
+:
+
+—< —(M
+
+IdProductostring"__annotation*
+
+%6*
+0:!
+
+—* —(:
+	IdCarritostring:"
+
+—< —(M
+
+IdProductostringB-+
+)ProyectoTest.Controllers.TiendaController

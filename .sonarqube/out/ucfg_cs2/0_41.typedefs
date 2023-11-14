@@ -1,0 +1,13 @@
+Ç
+*ProyectoTest.Models.Niubiz.Consultas.Orderobject=
+Order()2ProyectoTest.Models.Niubiz.Consultas.Order.Order()C
+
+amount.get5ProyectoTest.Models.Niubiz.Consultas.Order.amount.getC
+
+amount.set5ProyectoTest.Models.Niubiz.Consultas.Order.amount.setG
+currency.get7ProyectoTest.Models.Niubiz.Consultas.Order.currency.getG
+currency.set7ProyectoTest.Models.Niubiz.Consultas.Order.currency.setS
+purchaseNumber.get=ProyectoTest.Models.Niubiz.Consultas.Order.purchaseNumber.getS
+purchaseNumber.set=ProyectoTest.Models.Niubiz.Consultas.Order.purchaseNumber.setE
+tokenId.get6ProyectoTest.Models.Niubiz.Consultas.Order.tokenId.getE
+tokenId.set6ProyectoTest.Models.Niubiz.Consultas.Order.tokenId.set

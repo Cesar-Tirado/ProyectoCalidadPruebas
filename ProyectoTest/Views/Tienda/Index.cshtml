@@ -7,9 +7,9 @@
 
 
 <style>
-    *{
+    * {
         font-family: 'Roboto', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     #map {
@@ -26,6 +26,41 @@
         z-index: 99999 !important;
     }
 
+    #txtbuscarproducto {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+        border-color: #bdbdbd;
+    }
+
+    .form-control {
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    }
+
+    #botonDR {
+        height: 40px;
+        border-radius: 10px;
+        font-size: 13px;
+        width: 140px;
+    }
+
+    #btnConsultaUbicacion {
+        height: 40px;
+        border-radius: 10px;
+        font-size: 13px;
+        width: 140px;
+    }
+
+    #btnIngresaTuDireccion {
+        height: 40px;
+        border-radius: 10px;
+        font-size: 13px;
+        width:140px;
+    }
+
+    #ddlTiendas {
+        font-size: 15px;
+    }
+
     footer {
         background: #222434;
         min-height: 100px;
@@ -33,136 +68,129 @@
 
     footer a {
         color: white;
+        font-size: 13px;
     }
 
-    #selectCategoria {
-        width: 200px;
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
+    .custom-card {
+        background-color: transparent;
         border: none;
-        transition: revert;
+        padding: 0;
     }
 
-    #txtbuscarproducto {
-        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
-        border-color: #bdbdbd;
-        width: 500px;
+    #BtnCambio {
+        margin-right: -10px;
     }
+    #FormBusca {
+        margin-right: 15px!important;
+    }
+
 </style>
 
 
-@*----NAVBAR---*@
-<div class="container">
-    <div class="container-fluid mt-2 ">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
 
-            <select id="selectCategoria" class="form-select " aria-label="Default select example" data-toggle="dropdown">
-                <option selected value="0"> Ver toda la carta </option>
-            </select>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-
-                    @*<div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="opening.html" class="dropdown-item">Open Hours</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                        </div>*@
+<!---- CATEGORIAS Y BUSCADOR ---->
+<div class="">
+    <div class="container w-100 text-center " id="Header1">
+        <div class="row py-3">
+            <div class="col-auto me-auto col-lg-2 col-md-12  col-6 mb-1">
+                <select id="selectCategoria" class="form-select" aria-label="Default select example" data-toggle="dropdown">
+                    <option selected value="0"> Ver toda la carta </option>
+                </select>
+            </div>
+            <div class="col-auto col-lg-4 col-md-12  col-12 m-0 ms-auto pt-2 pr-4" id="FormBusca">
+                <div class="input-group mb-1">
+                    <input class="form-control" id="txtbuscarproducto" placeholder="Busca tu plato preferido...">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search icon"></i></span>
                 </div>
-
             </div>
-
-            <div class="container w-50 text-end">   @* --- BUSCADOR --- *@
-                @*<label for="exampleDataList" class="form-label">Datalist example</label>*@
-                <input class="form-control" id="txtbuscarproducto" placeholder="Busca tu plato preferido...">
-                @*<input class="form-control" list="buscarproducto" id="txtbuscarproducto" placeholder="Type to search...">*@
-                @*<datalist id="buscarproducto">
-                    <option value="San Francisco">
-                    </datalist>*@
-            </div>
-
-        </nav>
+        </div>
     </div>
 </div>
 
-
-@*----LISTADO DE PRODUCTOS---*@
+<!---- LISTADO DE PRODUCTOS ---->
 <div class="row">
-
-    <div class="container ">
-
-
+    <div class="container">
         <div class="container mt-0">
-            <div class="container px-2 px-lg-2 mt-5">
-                <div id="catalogo-productos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                </div>
+            <div id="catalogo-productos" class="container px-2 px-lg-2 mt-3">
             </div>
         </div>
-
     </div>
 </div>
 
 
-
-
-
-
-<!-- Modal Inicial Delivery o recojo-->
-
-<!-- Modal Categorias -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-
+<!---- MODAL INICIAL DELIVERY RECOJO ---->
+<!--<div class="modal inicial" id="modalInicial" tabindex="-1" aria-labelledby="modalInicial" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Seleccione una Categoría</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row row-categoria">
-                    sss
-                </div>
-            </div>
+            <div class="modal-header justify-content-center">-->
+                @*<img class="mt-1 mb-1" width="200" src="@Url.Content("~/Imagenes/LongHorn/LongDelivery.png")" />*@
+            <!--</div>
 
-            <div class="modal-footer">
+            <div class="modal-body">
+                <div class="botones">
+
+                    <div id="selectTipo" class="col-12 mb-2 text-center" aria-label="Forma de pedido">
+                        <button type="submit" class="btn btn-danger m-1 mx-2 col-5 col-lg-5 " id="botonDR" data-value="1">Delivery</button>
+                        <button type="submit" class="btn btn-danger m-1 mx-2 col-5 col-lg-5 " id="botonDR" data-value="2">Recojo en tienda</button>
+                    </div>
+
+                    <div id="divbtn" class="col-12 mb-2 text-center">
+                        <button id="btnConsultaUbicacion" class="btn btn-danger col-5 col-lg-5 mb-2 mx-2" type="submit"> Ubicación actual </button>
+                        <button id="btnIngresaTuDireccion" class="btn btn-danger col-5 col-lg-5 mb-2 mx-2" type="submit"> Ingresa tu dirección </button>
+                    </div>
+
+                    <div id="divcasilla">
+                        <label for="confirmedAddress" class="mt-2"> Dirección encontrada:  </label>
+                        <input type="text" class="form-control mb-2" id="confirmedAddress" readonly>
+                    </div>
+
+                    <div id="divAutoIngresoDirec" class="position-relative mt-3 mb-2" style="z-index: 10010;">
+                        <div class="autocomplete-container">
+                            <label for="autocompleteInput" class=" mb-2"> Ingresa tu dirección:</label>
+                            <input style="z-index: 10010;" type="text" class="form-control" id="autocompleteInput" placeholder="Escribe aquí...">
+                        </div>
+                    </div>
+
+                    <p></p>
+                    <div id="map" style="display:none;"></div>
+
+                    <div id="divTienda">
+                        <label for="ddlTiendas" class="form-label">Escoge tu tienda preferida</label>
+                        <select class="form-select" name="ddlTiendas" id="ddlTiendas" required>
+                        </select>
+                    </div>
+
+                    <p></p>
+                    <div class="col-12 d-none d-grid justify-content-md-end" id="divBtnAceptar">
+                        <button class="btn btn-danger" type="submit" id="btnAceptar">Aceptar</button>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 
 <!--FOOTER PIE PAGINA-->
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap ">
 
-<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-
-    
-    <a class="fs-7 px-3  p-3 "> &copy; Todos Los Derechos Reservados 2023</a>
-
+    <p class="text-decoration-none text-light px-3 p-3"> Proyecto Delivery &copy; Todos Los Derechos Reservados 2023</p>
 </footer>
 
 
 
+
 @section scripts{
-   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdaW2Kbm41GWklEgi7wE3FBIsBo4nObes&libraries=geometry,places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
 
     <script>
 
         var idUsuarioGlobal = @idUsuario;
-
         $(document).ready(function () {
-            jQuery.ajax({ //LLena las categorias
+            jQuery.ajax({                                      //LLena las categorias
                 url: '@Url.Action("ListarCategoria", "Tienda")',
                 type: "GET",
                 data: null,
@@ -171,14 +199,12 @@
                 success: function (data) {
                     $(".row-categoria").html("");
                     $(".modal-body").LoadingOverlay("hide");
-                    console.log(data.data)
                     if (data.data != null) {
                         var html = '';
                         data.data.forEach(t => {
                             html = html + '<option value=" ' + t.IdCategoria + '">' + t.Descripcion + '</option>';
                         });
                         $("#selectCategoria").append(html);
-                        console.log()
                     }
                 },
                 error: function (error) {
@@ -191,25 +217,25 @@
 
             $('#selectCategoria').on('change', () => {
                 var value = $('#selectCategoria').val();
-                console.log(value)
+                var text = $('#selectCategoria option:selected').text();
+                var categoriaConcatenada = text;
+                if (value != 0) {
+                    $('#nombreCategoria').text(categoriaConcatenada);
+                }
+                else {
+                    $('#nombreCategoria').text('');
+                }
                 listarProductos(value, '');
             });
 
             $("#txtbuscarproducto").on("input", function () {
                 var valorInput = $(this).val();
-                console.log("Texto ingresado: " + valorInput);
-                var value = $('#selectCategoria').val();
-
-                console.log(value)
-                listarProductos(0, valorInput);
-                // Aquí puedes realizar otras acciones según el valor ingresado
+                if (valorInput.length > 2) {
+                    listarProductos(0, valorInput)
+                }
             });
 
- 
-
-
             var direc2 = null;
-
             $("#divbtn").hide();
             $("#divTienda").hide();
             $("#divcasilla").hide();
@@ -220,11 +246,10 @@
                 type: "GET",
                 data: null,
                 dataType: "json",
-                contentType: "application/json; charset=utf-8",
+                contentType: "application/json",
                 success: function (data) {
-                    console.log(data.data);
                     $.each(data.data, function (i, item) {
-                        $('#ddlTiendas').append('<option value="' + item.IdTiendas + '">' + item.Descripcion + '</option>');
+                        $('#ddlTiendas').append('<option value="' + item.IdTiendas + '">' + item.Descripcion + ' - ' + item.Direccion + '</option>');
                     });
                     $(".modal-body").LoadingOverlay("hide");
                 },
@@ -237,33 +262,31 @@
             });
 
             listarProductos(0, '');
-            console.log(localStorage.getItem("direccion"))
-            //if (localStorage.getItem("direccion") == null) {
-            //    $('#modalInicial').modal('show');
-            //}
+            if (localStorage.getItem("direccion") == null) {
+                $('#modalInicial').modal('show');
+            }
 
-            //ASI SE MUESTRA EL MODAL
-            $('#modalInicial').modal('show')
+            var valueBtn = null;
+            $("#actualizarUbicacion").click(function () {
+                $('#modalInicial').modal('show');
+            });
 
-            $('#selectTipo').on('change', () => {
+            $("#selectTipo").on("click", "button", function () {
                 $("#divBtnAceptar").addClass("d-none");
-                var value = $('#selectTipo').val();
-                console.log(value)
-                if (value == 1) {
+                valueBtn = $(this).data("value");
+                if (valueBtn == 1) {
                     $("#divbtn").show();
                     $("#divAutoIngresoDirec").hide();
                     $("#divTienda").hide();
                     $("#map").show();
-                    console.log(value)
                 }
-                else if (value == 2) {
+                else if (valueBtn == 2) {
                     $("#map").hide();
                     $("#divbtn").hide();
                     $("#divcasilla").hide();
                     $("#divAutoIngresoDirec").hide();
                     $("#divTienda").show();
                     $("#divBtnAceptar").removeClass('d-none');
-                    console.log(value)
                 }
                 else {
                     $("#map").hide();
@@ -375,7 +398,6 @@
                 fillOpacity: 0.35
             });
 
-            //Mapa centrado en una ubicación específica
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: -12.092715, lng: -77.022142 }, // CentroMapa
                 zoom: 14
@@ -388,11 +410,8 @@
                 var latlng = { lat: parseFloat(lat), lng: parseFloat(lng) };
                 geocoder.geocode({ 'location': latlng }, function (results, status) {
                     if (status === 'OK') {
-                        console.log('results');
-                        console.log(results);
                         if (results[0]) {
                             var confirmedAddressInput = document.getElementById('confirmedAddress');
-                            // Iterar por los componentes de la dirección
                             var addressComponents = results[0].address_components;
                             var streetName = '';
                             var streetNumber = '';
@@ -433,31 +452,25 @@
                 });
                 var point2 = { lat: lat, lng: long }; //Actual
                 if (google.maps.geometry.poly.containsLocation(point2, polygon)) {
-                    console.log('El punto está dentro del polígono.');
                     $("#divBtnAceptar").removeClass('d-none');
                     $('#toast-carrito3').toast('show');
                 } else {
                     $('#toast-carrito2').toast('show');
                     $("#divBtnAceptar").addClass('d-none');
-                    console.log('El punto está fuera del polígono.');
                 }
 
                 marker.addListener('dragend', function () {
                     var position = marker.getPosition();
                     var lat2 = position.lat();
                     var long2 = position.lng();
-                    console.log('Latitud:', lat2);
-                    console.log('Longitud:', long2);
                     geocodeLatLng(lat2, long2);
                     var point = { lat: lat2, lng: long2 }; //Actual
                     if (google.maps.geometry.poly.containsLocation(point, polygon)) {
-                        console.log('El punto está dentro del polígono.');
                         $("#divBtnAceptar").removeClass('d-none');
                         $('#toast-carrito3').toast('show');
                     } else {
                         $('#toast-carrito2').toast('show');
                         $("#divBtnAceptar").addClass('d-none');
-                        console.log('El punto está fuera del polígono.');
                     }
                 });
             }
@@ -533,29 +546,35 @@
             });
 
             $("#btnAceptar").click(function () {
-                var value = $('#selectTipo').val();
-
-                if (value == 1) {
+                //var value = $('#selectTipo').val();
+                console.log(valueBtn);
+                if (valueBtn == 1) {
                     $('#idcompra').html("Delivery!... Realiza tu pedido");
-                    $("#modalInicial").modal("hide");
-                    //direccion tipo 1
-                    direc2 = $('#autocompleteInput').val();
+
+                    if ($('#autocompleteInput').val() == '') {
+                        direc2 = $('#confirmedAddress').val();
+                    }
+                    else {
+                        direc2 = $('#autocompleteInput').val();
+                    }
+                    localStorage.setItem('tipoEnvio', valueBtn);
+                    console.log(direc2);
                     localStorage.setItem("direccion", direc2);
+                    $("#modalInicial").modal("hide");
                 }
-                else if (value == 2) {
+                else if (valueBtn == 2) {
                     var idubicacionTienda = $('select[name="ddlTiendas"] option:selected').text();
                     console.log(idubicacionTienda);
                     $('#encontroTienda').html(" " + idubicacionTienda);
                     $('#idcompra').html("Recojo en tienda " + idubicacionTienda);
                     $("#modalInicial").modal("hide");
-
-                    direc2 = $('#confirmedAddress').val();
+                    direc2 = idubicacionTienda;
                     localStorage.setItem("direccion", direc2);
+                    //Para la hora de recojo
+                    localStorage.setItem('tipoEnvio', valueBtn);
                 }
             })
-            });
-
-
+        });
 
 
         $(".btn-ver-categoria").click(function () {
@@ -588,10 +607,7 @@
                 acordeon = acordeon + '<div class="class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> ';
 
                 t.productos.forEach(t2 => {
-                    //var t222 = JSON.stringify(t2);
                     var t222 = "";
-                    //acordeon = acordeon + '<div class="container px-2 px-lg-2 mt-5"> ';
-                    //acordeon = acordeon + '<div class="class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> ';
                     acordeon = acordeon + '<div class="col mb-5"> ';
                     acordeon = acordeon + '<div class="card h-100">';
                     acordeon = acordeon + '<img class="card-img-top btn-imagen" src="data:image/' + t2.extension + ';base64,' + t2.base64 + '" data-elemento="' + t222 + '"  > ';
@@ -633,43 +649,54 @@
                 data: JSON.stringify({ idcategoria: _idcategoria , nombre:_nombre}),
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
+
                 success: function (data) {
                     $("#catalogo-productos").html("");
                     $("#catalogo-productos").LoadingOverlay("hide");
                     if (data.data != null) {
+                        console.log("data.data");
+                        console.log(data.data);
+
+                        var listCategoria = [];
+                        $.each(data.data, function (i, item) {
+                            if (!listCategoria.find(t => t.id == item.oCategoria.IdCategoria)) {
+                                listCategoria.push({ id: item.oCategoria.IdCategoria, name: item.oCategoria.Descripcion });
+                            }
+                        });
+                        console.log(listCategoria);
+
+
+                        $.each(listCategoria, function (i, item) {
+                            $("<div id='divContenedor" + item.id + "'>").addClass("row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center").append("<div class='col-xl-12 col-12'>  <h5 class='text-danger'> " + item.name +" </h5>  </div> ")
+                                .appendTo("#catalogo-productos");
+                        });
+
                         $.each(data.data, function (i, item) {
                             //catalogo-productos
                             $("<div>").addClass("col mb-5").append(
-                                $("<div>").addClass("card h-100").append(
-                                    $("<img>").addClass("card-img-top btn-imagen").attr({ "src": "data:image/" + item.extension + ";base64," + item.base64 }).attr({
-                                        "data-elemento": JSON.stringify(item)
-                                    }),
-                                    //Product details
-                                    $("<div>").addClass("card-body p-2").append(
-                                        $("<div>").addClass("text-center").append(
-                                            $("<h6>").addClass("fw-bolder").text(item.Nombre),
-                                            "S/. " + item.Precio
-                                        )
-                                    ),
-                                    //Product actions
-                                    $("<div>").addClass("card-footer p-2 pt-0 border-top-0 bg-transparent").append(
-                                        $("<div>").addClass("d-grid d-md-grid gap-2 d-md-block align-items-center text-center").append(
-                                            $("<button>").addClass("btn btn-danger mt-auto btn-detalle").text("Personalizar").attr({
-                                                "data-elemento": JSON.stringify(item)
-                                            }),  @{
-                                            if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
-                                            {
-                                                @:$("<button>").addClass("btn btn-danger mt-auto btn-agregar-carrito1").data("idproducto", item.IdProducto).data("precio", item.Precio).text("Agregar al carrito")
-                                            }
-                                            }
-                                        )
+                            $("<div>").addClass("card h-100").append(
+                                //$("<img>").addClass("card-img-top btn-imagen").attr({ "src": "data:image/" + item.extension + ";base64," + item.base64 }).attr({
+                                $("<img>").addClass("card-img-top btn-imagen").attr({ "src": item.RutaImagen.replace("~", "") }).attr({
+                                    "data-elemento": JSON.stringify(item)
+                                }),    //Product details
+                                $("<div>").addClass("card-body p-2").append(
+                                    $("<div>").addClass("text-center").append(
+                                        $("<h6>").addClass("fw-bolder").text(item.Nombre),
+                                        "S/. " + item.Precio
+                                    )
+                                ),    //Product actions
+                                $("<div>").addClass("card-footer p-2 pt-0 border-top-0 bg-transparent").append(
+                                    $("<div>").addClass("d-grid d-md-grid gap-2 d-md-block align-items-center text-center").append(
+                                        $("<button>").addClass("btn btn-danger mt-auto btn-detalle").text("Agregar").attr({
+                                            "data-elemento": JSON.stringify(item)
+                                        }),
                                     )
                                 )
-
-                            ).appendTo("#catalogo-productos");
+                                )).appendTo("#divContenedor" + item.oCategoria.IdCategoria +"");
                         });
                     }
                 },
+
                 error: function (error) {
                     console.log(error)
                 },

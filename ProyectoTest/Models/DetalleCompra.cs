@@ -13,7 +13,9 @@ namespace ProyectoTest.Models
         public Producto oProducto { get; set; }
         public int Cantidad { get; set; }
         public decimal Total { get; set; }
+        public decimal PrecioExtra { get; set; }
         public string Nombre { get; set; }
         public string Adicionales { get; set; }
+        public string ObservacionesDC { get; set; }
     }
 }

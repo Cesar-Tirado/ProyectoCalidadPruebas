@@ -1,0 +1,270 @@
+
+tProyectoTest.Controllers.LoginController.RegistrarCliente(string, string, string, string, string, string, int, bool)u
+kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs[ [(,"4*¥
+0] m('LJ
+] g(!
+%0ProyectoTest.Models.Cliente"ProyectoTest.Models.Clientef
+d
+]" ]()
+
+%1void"%ProyectoTest.Models.Cliente.Cliente()*%#
+!
+%0ProyectoTest.Models.Cliente
+}
+_ _(
+%2string"&ProyectoTest.Models.Cliente.Nombre.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+Nombrestring†
+ƒ
+` `(%
+%3string")ProyectoTest.Models.Cliente.Apellidos.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+	Apellidosstring}
+{
+a a(
+%4string"%ProyectoTest.Models.Cliente.Email.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+Emailstring„
+
+b b(#
+%5string"(ProyectoTest.Models.Cliente.Telefono.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+Telefonostringˆ
+…
+c c('
+%6string"*ProyectoTest.Models.Cliente.Cumpleanos.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+
+Cumpleanosstring„
+
+d d(#
+%7string"(ProyectoTest.Models.Cliente.Distrito.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+
+Distritostringv
+t
+e e(+	
+%8int",ProyectoTest.Models.Cliente.Calificacion.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+""}
+{
+f f(7
+
+%9bool"2ProyectoTest.Models.Cliente.RecibirPromociones.set*%#
+!
+%0ProyectoTest.Models.Cliente*
+""a
+_
+] g(&
+clienteProyectoTest.Models.Cliente"__id*%#
+!
+%0ProyectoTest.Models.ClienteYW
+j* j(=(
+%10!ProyectoTest.Logica.UsuarioLogica"!ProyectoTest.Logica.UsuarioLogicaz
+x
+j. j(;
+%11void"1ProyectoTest.Logica.UsuarioLogica.UsuarioLogica()*,*
+(
+%10!ProyectoTest.Logica.UsuarioLogicat
+r
+j j(=2
+clienteLogica!ProyectoTest.Logica.UsuarioLogica"__id*,*
+(
+%10!ProyectoTest.Logica.UsuarioLogicaÎ
+Ë
+k& k(M
+
+%12int"OProyectoTest.Logica.UsuarioLogica.RegistrarCliente(ProyectoTest.Models.Cliente)*64
+2
+clienteLogica!ProyectoTest.Logica.UsuarioLogica**(
+&
+clienteProyectoTest.Models.Cliente>
+<
+k k(M
+idClienteRegistradoint"__id*
+
+
+%12int*
+1
+2*Æ
+1o q(8Ž
+‹
+o o(&'
+%13 ProyectoTest.Logica.CorreoLogica".ProyectoTest.Logica.CorreoLogica.Instancia.get*&$""
+ ProyectoTest.Logica.CorreoLogica¶
+³
+o o(M
+%14bool"8ProyectoTest.Logica.CorreoLogica.EnviarVale(int, string)*+)
+'
+%13 ProyectoTest.Logica.CorreoLogica*
+
+idClienteRegistradoint*
+
+Emailstring±
+®
+q q(9+
+%15$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*	
+Login"9
+q q(:-
++
+%15$System.Web.Mvc.RedirectToRouteResult*Î
+2v w(/-
+v v(
+%ViewBagDataAllobject"object0.
+v v(
+%ViewBagDataHtmlobject"objectc
+a
+v v(4
+%16"__mapSet*
+
+%ViewBagDataAllobject*	
+Error*
+Error al registrarT
+R
+v v(4
+%17"__mapSet*
+
+%ViewBagDataHtmlobject*	
+Error*
+""q
+o
+w w( 
+%18System.Web.Mvc.ViewResult" System.Web.Mvc.Controller.View()*
+System.Web.Mvc.Controller".
+w w("
+ 
+%18System.Web.Mvc.ViewResult*.
+3y	 y(	"
+y y(	
+implicit return*ù	
+4
+[» [(»Ä
+Á
+[ [(,
+%19"__entrypoint*
+
+Nombrestring*
+
+	Apellidosstring*
+
+Emailstring*
+
+Telefonostring*
+
+
+Cumpleanosstring*
+
+Distritostring*
+""*
+""q
+o
+Z	 Z(
+%20"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+Nombrestring7
+5
+[- [(:
+Nombrestring"__annotation*	
+
+%20t
+r
+Z	 Z(
+%21"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+	Apellidosstring:
+8
+[< [(L
+	Apellidosstring"__annotation*	
+
+%21p
+n
+Z	 Z(
+%22"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+Emailstring6
+4
+[N [(Z
+Emailstring"__annotation*	
+
+%22s
+q
+Z	 Z(
+%23"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+Telefonostring9
+7
+[\ [(k
+Telefonostring"__annotation*	
+
+%23u
+s
+Z	 Z(
+%24"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+
+Cumpleanosstring;
+9
+[m [(~
+
+Cumpleanosstring"__annotation*	
+
+%24s
+q
+Z	 Z(
+%25"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+Distritostring;
+9
+
+[€ [(
+Distritostring"__annotation*	
+
+%25*
+0:
+[- [(:
+Nombrestring:
+[< [(L
+	Apellidosstring:
+[N [(Z
+Emailstring:
+[\ [(k
+Telefonostring: 
+[m [(~
+
+Cumpleanosstring: 
+
+[€ [(
+Distritostring:!
+
+[‘ [(¡
+Calificacionint:(
+
+[£ [(º
+RecibirPromocionesboolB,*
+(ProyectoTest.Controllers.LoginController

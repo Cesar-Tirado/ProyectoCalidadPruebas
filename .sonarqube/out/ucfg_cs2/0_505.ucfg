@@ -1,0 +1,161 @@
+
+DProyectoTest.Logica.MarcaLogica.Registrar(ProyectoTest.Models.Marca)l
+bC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\MarcaLogica.csF F("0*Ñ
+0H I(J/
+-
+H H(!
+	respuestabool"__id*
+""T
+R
+I? I(J
+%0string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+I- I(K)
+%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+I1 I(>
+
+%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+
+%0strings
+q
+I! I(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+1*’
+1M V(LVT
+M% M(S&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÓ
+Î
+M) M(3
+
+%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%3 System.Data.SqlClient.SqlCommand*
+sp_RegistrarMarca*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+M M(S'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%3 System.Data.SqlClient.SqlCommandü
+ú
+N N("2
+%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandn
+l
+N? N(Q
+%6string")ProyectoTest.Models.Marca.Descripcion.get*'%
+#
+oMarcaProyectoTest.Models.Marca‹
+Ÿ
+N N(R(
+%7"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%5,System.Data.SqlClient.SqlParameterCollection*
+Descripcion*
+
+%6stringü
+ú
+O O("2
+%8,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand"
+ 
+O4 O(A
+%9"__id*
+""Ÿ
+÷
+O O(B)
+%10"System.Data.SqlClient.SqlParameter"LSystem.Collections.Generic.ICollection<T>.Add(string, System.Data.SqlDbType)*64
+2
+%8,System.Data.SqlClient.SqlParameterCollection*
+	Resultado*
+
+%9#
+!
+OO O(h
+%11"__id*
+""†
+ù
+O O(h%
+%12System.Data.ParameterDirection"0System.Data.SqlClient.SqlParameter.Direction.set*-+
+)
+%10"System.Data.SqlClient.SqlParameter*	
+
+%11#
+!
+P& P(A
+%13"__id*
+""ó
+î
+P P(A
+%14System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*	
+
+%13{
+y
+R R($
+%15void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiony
+w
+T T()
+
+%16int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+'
+cmd System.Data.SqlClient.SqlCommand†
+ù
+V2 V(@3
+%17,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandæ
+ª
+V2 V(M)
+%18"System.Data.SqlClient.SqlParameter":System.Collections.Generic.ICollection<T>.this[string].get*75
+3
+%17,System.Data.SqlClient.SqlParameterCollection*
+	Resultadox
+v
+V2 V(S
+%19object",System.Data.SqlClient.SqlParameter.Value.get*-+
+)
+%18"System.Data.SqlClient.SqlParameterd
+b
+V  V(T
+%20bool" System.Convert.ToBoolean(object)*"
+System.Convert*
+
+%19object6
+4
+V V(T
+	respuestabool"__id*
+
+%20bool*
+2
+3*C
+2[ [(%/
+-
+[ [(%
+	respuestabool"__id*
+""*
+3*
+3_	 _(	*
+4*.
+4^ ^("
+^ ^(
+
+	respuestabool*.
+5_	 _(	"
+_ _(	
+implicit return:/
+F F(*#
+oMarcaProyectoTest.Models.MarcaB#!
+ProyectoTest.Logica.MarcaLogica

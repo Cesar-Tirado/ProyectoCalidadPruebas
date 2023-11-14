@@ -1,0 +1,28 @@
+à
+)ProyectoTest.Controllers.TiendaControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject<
+Index()1ProyectoTest.Controllers.TiendaController.Index()H
+Producto(int)7ProyectoTest.Controllers.TiendaController.Producto(int)@
+	Carrito()3ProyectoTest.Controllers.TiendaController.Carrito()@
+	Compras()3ProyectoTest.Controllers.TiendaController.Compras()d
+ListarProducto(int, string)EProyectoTest.Controllers.TiendaController.ListarProducto(int, string)P
+ListarCategoria();ProyectoTest.Controllers.TiendaController.ListarCategoria()L
+ListarTiendas()9ProyectoTest.Controllers.TiendaController.ListarTiendas()X
+ListarTiendasActivo()?ProyectoTest.Controllers.TiendaController.ListarTiendasActivo()œ
+7InsertarCarrito(int, int, int, string, decimal, string)aProyectoTest.Controllers.TiendaController.InsertarCarrito(int, int, int, string, decimal, string)P
+CantidadCarrito();ProyectoTest.Controllers.TiendaController.CantidadCarrito()N
+ObtenerCarrito():ProyectoTest.Controllers.TiendaController.ObtenerCarrito()l
+EliminarCarrito(string, string)IProyectoTest.Controllers.TiendaController.EliminarCarrito(string, string)J
+CerrarSesion()8ProyectoTest.Controllers.TiendaController.CerrarSesion()X
+ObtenerDepartamento()?ProyectoTest.Controllers.TiendaController.ObtenerDepartamento()^
+ObtenerProvincia(string)BProyectoTest.Controllers.TiendaController.ObtenerProvincia(string)l
+ObtenerDistrito(string, string)IProyectoTest.Controllers.TiendaController.ObtenerDistrito(string, string)„
++RegistrarCompra(ProyectoTest.Models.Compra)UProyectoTest.Controllers.TiendaController.RegistrarCompra(ProyectoTest.Models.Compra)n
+ CambiarEstadoCompra(int, string)JProyectoTest.Controllers.TiendaController.CambiarEstadoCompra(int, string)R
+ObtenerCompraUsr()<ProyectoTest.Controllers.TiendaController.ObtenerCompraUsr()L
+ObtenerCompra()9ProyectoTest.Controllers.TiendaController.ObtenerCompra()^
+ObtenerProximoIdCompra()BProyectoTest.Controllers.TiendaController.ObtenerProximoIdCompra()ž
+8apiswebhook(string, ProyectoTest.Models.tarjetaResponse)bProyectoTest.Controllers.TiendaController.apiswebhook(string, ProyectoTest.Models.tarjetaResponse)<
+Login()1ProyectoTest.Controllers.TiendaController.Login()f
+Autorize(NiubizData, string)FProyectoTest.Controllers.TiendaController.Autorize(NiubizData, string)N
+Pay(PAY, string):ProyectoTest.Controllers.TiendaController.Pay(PAY, string)R
+TiendaController()<ProyectoTest.Controllers.TiendaController.TiendaController()

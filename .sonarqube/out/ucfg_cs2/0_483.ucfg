@@ -1,0 +1,51 @@
+
+>ProyectoTest.Controllers.HomeController.EliminarCategoria(int)t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs` `(+"2*›
+0b d(S/
+-
+b b("
+	respuestabool"__id*
+""–
+“
+c c(1)
+%0#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
+#ProyectoTest.Logica.CategoriaLogica…
+‚
+c c(>
+
+%1bool"1ProyectoTest.Logica.CategoriaLogica.Eliminar(int)*-+
+)
+%0#ProyectoTest.Logica.CategoriaLogica*
+""5
+3
+c c(>
+	respuestabool"__id*
+
+
+%1bool"
+ 
+d7 d(S
+%2"__id*
+""¯
+¬
+d d(T
+%3System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%2"-
+d d(U!
+
+%3System.Web.Mvc.JsonResult*.
+1e	 e(	"
+e e(	
+implicit return*>
+2`3 `(3*
+(
+` `(+
+%4"__entrypoint*
+""*
+0:
+`, `(2	
+idintB+)
+'ProyectoTest.Controllers.HomeController

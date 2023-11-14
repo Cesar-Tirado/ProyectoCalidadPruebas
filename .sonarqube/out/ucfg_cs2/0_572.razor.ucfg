@@ -1,0 +1,215 @@
+
+proyectotest/views/acerca/index"0*Í>
+0	 ®(zΩ
+∫
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (
+%0"__mapSet*
+
+ViewBagDataAllobject*	
+Title*	
+Indexéã
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (4
+%1string"*System.Web.WebPages.WebPageBase.Layout.set*%#!
+System.Web.WebPages.WebPageBase**(&
+$~/Views/Shared/_Layout_Tienda.cshtml2
+Layout.set€
+ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (~
+%2System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageïí
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (~
+%3string"(System.Web.Mvc.UrlHelper.Content(string)*" 
+
+%2System.Web.Mvc.UrlHelper*1/-
++~/Imagenes/Portada/01Parrilla americana.jpg2Content(string)€
+ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (p
+%4System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageàÖ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (p
+%5string"(System.Web.Mvc.UrlHelper.Content(string)*" 
+
+%4System.Web.Mvc.UrlHelper*$" 
+~/Imagenes/Portada/02-min.jpeg2Content(string)€
+ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (o
+%6System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageáÑ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (o
+%7string"(System.Web.Mvc.UrlHelper.Content(string)*" 
+
+%6System.Web.Mvc.UrlHelper*#!
+~/Imagenes/Portada/03-min.jpg2Content(string)€
+ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (r
+%8System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageäá
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (r
+%9string"(System.Web.Mvc.UrlHelper.Content(string)*" 
+
+%8System.Web.Mvc.UrlHelper*&$"
+ ~/Imagenes/Portada/04-30-min.jpg2Content(string)‹
+Ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (o
+%10System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageâÜ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml (o
+%11string"(System.Web.Mvc.UrlHelper.Content(string)*#!
+
+%10System.Web.Mvc.UrlHelper*#!
+~/Imagenes/Portada/05-min.jpg2Content(string)‹
+Ÿ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlT T(q
+%12System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageëé
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlT T(q
+%13string"(System.Web.Mvc.UrlHelper.Content(string)*#!
+
+%12System.Web.Mvc.UrlHelper*+)'
+%~/Imagenes/LongHorn/02Logo650x150.png2Content(string)ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml∫ ∫(c
+%14System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageìê
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml∫ ∫(c
+%15string"(System.Web.Mvc.UrlHelper.Content(string)*#!
+
+%14System.Web.Mvc.UrlHelper*+)'
+%~/Imagenes/LongHorn/facebook-logo.png2Content(string)ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlø ø(c
+%16System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageìê
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlø ø(c
+%17string"(System.Web.Mvc.UrlHelper.Content(string)*#!
+
+%16System.Web.Mvc.UrlHelper*+)'
+%~/Imagenes/LongHorn/instagramlogo.png2Content(string)ﬂ
+‹
+s
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml… …(ô
+%18System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageêç
+s
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml… …(ô
+%19string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%18System.Web.Mvc.UrlHelper*	
+Index*
+
+Tienda2Action(string, string)ô
+ñ
+p
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlË Ë(
+%20void"!razor_sink*
+""ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlˆ ˆ(D
+%21System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageùö
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlˆ ˆ(D
+%22string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%21System.Web.Mvc.UrlHelper*
+ListarTiendasActivo*
+
+Tienda2Action(string, string)ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlø ø(@
+%23System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageôñ
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlø ø(@
+%24string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%23System.Web.Mvc.UrlHelper*
+ListarCategoria*
+
+Tienda2Action(string, string)ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml„ „(j
+%25System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageíè
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtml„ „(j
+%26string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%25System.Web.Mvc.UrlHelper*
+
+Producto*
+
+Tienda2Action(string, string)ﬁ
+€
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÏ Ï(?
+%27System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageòï
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÏ Ï(?
+%28string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%27System.Web.Mvc.UrlHelper*
+ListarProducto*
+
+Tienda2Action(string, string)íè
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÖ, Ö(}&
+%29System.Web.HttpSessionStateBase"4System.Web.WebPages.WebPageRenderingBase.Session.get*.,*
+(System.Web.WebPages.WebPageRenderingBase2Session.getèå
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÖ, Ö(}
+%30object":System.Collections.Generic.ICollection<T>.this[string].get**(
+&
+%29System.Web.HttpSessionStateBase*	
+Usuario2this[string].getó
+î
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÖ, Ö(}
+%31"__id*
+
+%30object¿
+Ω
+r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Acerca\Index.cshtmlÖ, Ö(}
+%32bool"/ProyectoTest.Models.Usuario.EsAdministrador.get*	
+
+%31*
+1
+2*
+1≠ Æ(∞*
+2*
+2
+∑ À(*
+3*&
+3
+Ã	 Ã(	"
+implicit return:
+Modeldynamic:
+ViewBagDataAllobject:
+ViewBagDataHtmlobject:
+TempDataAllobject:
+TempDataHtmlobject:
+HttpContextItemsAllobject: 
+HttpContextItemsHtmlobjectB 

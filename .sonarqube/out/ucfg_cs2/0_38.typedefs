@@ -1,0 +1,7 @@
+†
+!ProyectoTest.Logica.UsuarioLogicaobjectD
+UsuarioLogica()1ProyectoTest.Logica.UsuarioLogica.UsuarioLogica()T
+Obtener(string, string)9ProyectoTest.Logica.UsuarioLogica.Obtener(string, string)r
+&Registrar(ProyectoTest.Models.Usuario)HProyectoTest.Logica.UsuarioLogica.Registrar(ProyectoTest.Models.Usuario)F
+ListarClientes()2ProyectoTest.Logica.UsuarioLogica.ListarClientes()€
+-RegistrarCliente(ProyectoTest.Models.Cliente)OProyectoTest.Logica.UsuarioLogica.RegistrarCliente(ProyectoTest.Models.Cliente)

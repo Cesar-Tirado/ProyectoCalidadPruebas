@@ -70,7 +70,7 @@ export default function arrow(data, options) {
 
   // Compute the sideValue using the updated popper offsets
   // take popper margin in account because we don't have this info available
-  const css = getStyleComputedProperty(data.instance.popper);
+  const css = getStyleComputedProperty(data.instance.popper);JavaScriptSerializer
   const popperMarginSide = parseFloat(css[`margin${sideCapitalized}`]);
   const popperBorderSide = parseFloat(css[`border${sideCapitalized}Width`]);
   let sideValue =

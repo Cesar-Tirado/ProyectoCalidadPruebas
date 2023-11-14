@@ -1,0 +1,13 @@
+µ
+ProyectoTest.Models.Tiendasobject2
+	Tiendas()%ProyectoTest.Models.Tiendas.Tiendas():
+IdTiendas.get)ProyectoTest.Models.Tiendas.IdTiendas.get:
+IdTiendas.set)ProyectoTest.Models.Tiendas.IdTiendas.set>
+Descripcion.get+ProyectoTest.Models.Tiendas.Descripcion.get>
+Descripcion.set+ProyectoTest.Models.Tiendas.Descripcion.set:
+Direccion.get)ProyectoTest.Models.Tiendas.Direccion.get:
+Direccion.set)ProyectoTest.Models.Tiendas.Direccion.set4
+
+Activo.get&ProyectoTest.Models.Tiendas.Activo.get4
+
+Activo.set&ProyectoTest.Models.Tiendas.Activo.set

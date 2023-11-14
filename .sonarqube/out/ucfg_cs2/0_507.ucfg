@@ -1,0 +1,68 @@
+
+8ProyectoTest.Controllers.HomeController.ListarClientes()v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csâ â(("2*É
+0
+ã ç(K\Z
+
+ã# ã(6(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+ã' ã(4
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+ã ã(6,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>í
+è
+
+å å(,'
+%2!ProyectoTest.Logica.UsuarioLogica"/ProyectoTest.Logica.UsuarioLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.UsuarioLogicaö
+ó
+
+å å(=(
+%3"System.Collections.Generic.List<T>"2ProyectoTest.Logica.UsuarioLogica.ListarClientes()*+)
+'
+%2!ProyectoTest.Logica.UsuarioLogicap
+n
+
+å å(=,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>$
+"
+
+ç/ ç(K
+%4"__id*
+""±
+Æ
+
+ç ç(L
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%4"/
+
+ç ç(M!
+
+%5System.Web.Mvc.JsonResult*2
+1
+é	 é(	"!
+
+é é(	
+implicit return*8
+2
+â* â(*"
+ 
+
+â â((
+%6"__entrypoint*
+0B+)
+'ProyectoTest.Controllers.HomeController

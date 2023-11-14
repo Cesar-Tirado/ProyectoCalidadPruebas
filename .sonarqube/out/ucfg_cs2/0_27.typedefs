@@ -1,0 +1,23 @@
+¡	
+ProyectoTest.Models.Clienteobject2
+	Cliente()%ProyectoTest.Models.Cliente.Cliente():
+IdCliente.get)ProyectoTest.Models.Cliente.IdCliente.get:
+IdCliente.set)ProyectoTest.Models.Cliente.IdCliente.set4
+
+Nombre.get&ProyectoTest.Models.Cliente.Nombre.get4
+
+Nombre.set&ProyectoTest.Models.Cliente.Nombre.set:
+Apellidos.get)ProyectoTest.Models.Cliente.Apellidos.get:
+Apellidos.set)ProyectoTest.Models.Cliente.Apellidos.set2
+	Email.get%ProyectoTest.Models.Cliente.Email.get2
+	Email.set%ProyectoTest.Models.Cliente.Email.set8
+Telefono.get(ProyectoTest.Models.Cliente.Telefono.get8
+Telefono.set(ProyectoTest.Models.Cliente.Telefono.set<
+Cumpleanos.get*ProyectoTest.Models.Cliente.Cumpleanos.get<
+Cumpleanos.set*ProyectoTest.Models.Cliente.Cumpleanos.set8
+Distrito.get(ProyectoTest.Models.Cliente.Distrito.get8
+Distrito.set(ProyectoTest.Models.Cliente.Distrito.set@
+Calificacion.get,ProyectoTest.Models.Cliente.Calificacion.get@
+Calificacion.set,ProyectoTest.Models.Cliente.Calificacion.setL
+RecibirPromociones.get2ProyectoTest.Models.Cliente.RecibirPromociones.getL
+RecibirPromociones.set2ProyectoTest.Models.Cliente.RecibirPromociones.set

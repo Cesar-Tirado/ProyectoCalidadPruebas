@@ -1,0 +1,464 @@
+
++ProyectoTest.Logica.ProductoLogica.Listar()o
+eC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\ProductoLogica.cs" "($"0*ú
+0% &(JZX
+%. %(B(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+%2 %(@
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>x
+v
+% %(B6
+rptListaProducto"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+&? &(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+&- &(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+&1 &(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+&! &(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*Å
+1( )(=VT
+(! ((P&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÔ
+Ï
+(% ((/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*
+sp_obtenerProducto*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+( ((P'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand"
+ 
+)" )(=
+%7"__id*
+""ï
+í
+) )(=
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%7*
+2*
+2N	 N(	*
+3
+4*ò
+3- .(:z
+x
+- -($
+
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionò
+ï
+.' .(:*
+%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
+." .(:)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%10#System.Data.SqlClient.SqlDataReader*
+5*ì
+50 0($|z
+0 0($
+%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+6
+7*ﬂ9
+62 @(BOM
+2- A(#
+%12ProyectoTest.Models.Producto"ProyectoTest.Models.Productok
+i
+21 2(9
+%13void"'ProyectoTest.Models.Producto.Producto()*'%
+#
+%12ProyectoTest.Models.Producto•¢
+49 4(I
+%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+IdProducto2this[string].getMK
+49 4(T
+%15string"object.ToString()*
+
+%14object2
+ToString()a
+_
+4) 4(U
+
+%16int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%15string~
+|
+4 4(U
+
+%17int"+ProyectoTest.Models.Producto.IdProducto.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+
+%16int°û
+5% 5(1
+%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Nombre2this[string].getMK
+5% 5(<
+%19string"object.ToString()*
+
+%18object2
+ToString()Ä
+~
+5 5(<
+%20string"'ProyectoTest.Models.Producto.Nombre.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%19string¶£
+6* 6(;
+%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+6* 6(F
+%22string"object.ToString()*
+
+%21object2
+ToString()Ü
+É
+6 6(F
+%23string",ProyectoTest.Models.Producto.Descripcion.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%22string´®
+7/ 7(E
+%24object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+OpcionesConCosto2this[string].getMK
+7/ 7(P
+%25string"object.ToString()*
+
+%24object2
+ToString()ã
+à
+7 7(P
+%26string"1ProyectoTest.Models.Producto.OpcionesConCosto.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%25string´®
+8/ 8(E
+%27object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+OpcionesSinCosto2this[string].getMK
+8/ 8(P
+%28string"object.ToString()*
+
+%27object2
+ToString()ã
+à
+8 8(P
+%29string"1ProyectoTest.Models.Producto.OpcionesSinCosto.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%28string´®
+9/ 9(E
+%30object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+OpcionExcluyente2this[string].getMK
+9/ 9(P
+%31string"object.ToString()*
+
+%30object2
+ToString()ã
+à
+9 9(P
+%32string"1ProyectoTest.Models.Producto.OpcionExcluyente.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%31stringÆ´
+:B :([
+%33object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+MaxOpcionesSinCosto2this[string].getMK
+:B :(f
+%34string"object.ToString()*
+
+%33object2
+ToString()a
+_
+:2 :(g
+
+%35int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%34stringà
+Ö
+: :(g
+
+%36int"4ProyectoTest.Models.Producto.MaxOpcionesSinCosto.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+
+%35intJH
+	;% ;(ô 
+%37ProyectoTest.Models.Marca"ProyectoTest.Models.Marcab
+`
+;) ;(.
+%38void"!ProyectoTest.Models.Marca.Marca()*$"
+ 
+%37ProyectoTest.Models.Marca¢ü
+;M ;(Z
+%39object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*	
+IdMarca2this[string].getMK
+;M ;(e
+%40string"object.ToString()*
+
+%39object2
+ToString()a
+_
+;= ;(f
+
+%41int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%40stringu
+s
+;3 ;(f
+
+%42int"%ProyectoTest.Models.Marca.IdMarca.set*$"
+ 
+%37ProyectoTest.Models.Marca*
+
+
+%41int¨©
+	;v ;(å
+%43object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+DescripcionMarca2this[string].getNL
+	;v ;(ó
+%44string"object.ToString()*
+
+%43object2
+ToString()Ä
+~
+	;h ;(ó
+%45string")ProyectoTest.Models.Marca.Descripcion.set*$"
+ 
+%37ProyectoTest.Models.Marca*
+
+%44string®
+•
+	; ;(ô 
+%46ProyectoTest.Models.Marca"'ProyectoTest.Models.Producto.oMarca.set*'%
+#
+%12ProyectoTest.Models.Producto*$"
+ 
+%37ProyectoTest.Models.MarcaRP
+	<) <(≠$
+%47ProyectoTest.Models.Categoria"ProyectoTest.Models.Categorian
+l
+<- <(6
+%48void")ProyectoTest.Models.Categoria.Categoria()*(&
+$
+%47ProyectoTest.Models.Categoria¶£
+<Y <(j
+%49object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdCategoria2this[string].getMK
+<Y <(u
+%50string"object.ToString()*
+
+%49object2
+ToString()a
+_
+<I <(v
+
+%51int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%50stringÅ
+
+<; <(v
+
+%52int"-ProyectoTest.Models.Categoria.IdCategoria.set*(&
+$
+%47ProyectoTest.Models.Categoria*
+
+
+%51int±Æ
+
+<Ü <(†
+%53object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+DescripcionCategoria2this[string].getOM
+
+<Ü <(´
+%54string"object.ToString()*
+
+%53object2
+ToString()â
+Ü
+	<x <(´
+%55string"-ProyectoTest.Models.Categoria.Descripcion.set*(&
+$
+%47ProyectoTest.Models.Categoria*
+
+%54string¥
+±
+	< <(≠$
+%56ProyectoTest.Models.Categoria"+ProyectoTest.Models.Producto.oCategoria.set*'%
+#
+%12ProyectoTest.Models.Producto*(&
+$
+%47ProyectoTest.Models.Categoria°û
+=7 =(C
+%57object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Precio2this[string].getMK
+=7 =(N
+%58string"object.ToString()*
+
+%57object2
+ToString()WU
+=P =(h'
+%59 System.Globalization.CultureInfo" System.Globalization.CultureInfoä
+á
+=T =(_
+%60void"4System.Globalization.CultureInfo.CultureInfo(string)*+)
+'
+%59 System.Globalization.CultureInfo*	
+es-PE≠
+™
+=% =(i
+%61decimal"8System.Convert.ToDecimal(string, System.IFormatProvider)*"
+System.Convert*
+
+%58string*+)
+'
+%59 System.Globalization.CultureInfoÉ
+Ä
+= =(i
+%62decimal"'ProyectoTest.Models.Producto.Precio.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%61decimal•¢
+>) >(9
+%63object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+RutaImagen2this[string].getMK
+>) >(D
+%64string"object.ToString()*
+
+%63object2
+ToString()Ö
+Ç
+> >(D
+%65string"+ProyectoTest.Models.Producto.RutaImagen.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%64string°û
+@7 @(C
+%66object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Activo2this[string].getMK
+@7 @(N
+%67string"object.ToString()*
+
+%66object2
+ToString()d
+b
+@% @(O
+%68bool" System.Convert.ToBoolean(string)*"
+System.Convert*
+
+%67string|
+z
+@ @(O
+%69bool"'ProyectoTest.Models.Producto.Activo.set*'%
+#
+%12ProyectoTest.Models.Producto*
+
+%68bool±
+Æ
+2 A(
+%70void"0System.Collections.Generic.ICollection<T>.Add(T)*:8
+6
+rptListaProducto"System.Collections.Generic.List<T>*'%
+#
+%12ProyectoTest.Models.Producto*
+5*”
+7C E(+~|
+C C(
+%71void"+System.Data.SqlClient.SqlDataReader.Close()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Close()"D
+E E(,8
+6
+rptListaProducto"System.Collections.Generic.List<T>*©
+4J K(+T
+R
+J J(+6
+rptListaProducto"System.Collections.Generic.List<T>"__id*
+"""D
+K K(,8
+6
+rptListaProducto"System.Collections.Generic.List<T>*
+8N	 N(	*
+9*.
+9N	 N(	"
+N N(	
+implicit returnB&$
+"ProyectoTest.Logica.ProductoLogica

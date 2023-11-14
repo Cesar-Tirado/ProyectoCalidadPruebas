@@ -1,0 +1,70 @@
+
+1ProyectoTest.Controllers.TiendaController.Login()x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¶" ¶('"2*«
+0
+¸ º(Ih
+f
+
+¸ ¸(X
+urlstring"__id*CA?
+=https://apisandbox.vnforappstest.com/api.security/v1/securitye
+c
+
+¹9 ¹(F
+%0System.Text.Encoding"System.Text.Encoding.UTF8.get*"
+System.Text.Encodingª§
+
+¹9 ¹(
+%1byte[]"%System.Text.Encoding.GetBytes(string)*
+
+%0System.Text.Encoding*20.
+,integraciones.visanet@necomplus.com:d5e7nk$M2GetBytes(string)l
+j
+¹" ¹(€
+%2string"%System.Convert.ToBase64String(byte[])*"
+System.Convert*
+
+%1byte[]?
+=
+¹ ¹(€
+credencialesstring"__id*
+
+%2stringh
+f
+
+º, º(C
+%3string"__concat*
+
+º, º(4
+
+Basic *&
+
+º7 º(C
+
+credencialesstringì
+é
+
+º º(J*
+%4$System.Threading.Tasks.Task<TResult>"OProyectoTest.Controllers.TiendaController.PostDataAsync(string, string, string)*/-"+
+)ProyectoTest.Controllers.TiendaController*
+
+urlstring*
+
+%3string*
+"""
+
+º º(K
+""*2
+1
+»	 »(	"!
+
+» »(	
+implicit return*8
+2
+¶) ¶()"
+ 
+
+¶" ¶('
+%5"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

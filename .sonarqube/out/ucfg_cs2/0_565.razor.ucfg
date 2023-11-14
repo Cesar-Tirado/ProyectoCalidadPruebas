@@ -1,0 +1,279 @@
+
+(proyectotest/views/shared/_layout_tienda"0*ß
+0 [(dè
+å
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml	 	(#
+%0System.Web.IHtmlString"6System.Web.Optimization.Styles.Render(params string[])*$"" 
+System.Web.Optimization.Styles*
+~/Content/cssπ
+∂
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml	 	(#
+
+%1void"!razor_sink* 
+
+%0System.Web.IHtmlStringñ
+ì
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml
+ 
+(*
+%2System.Web.IHtmlString"6System.Web.Optimization.Styles.Render(params string[])*$"" 
+System.Web.Optimization.Styles*
+~/Content/PluginsCSSπ
+∂
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml
+ 
+(*
+
+%3void"!razor_sink* 
+
+%2System.Web.IHtmlStringó
+î
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml (*
+%4System.Web.IHtmlString"7System.Web.Optimization.Scripts.Render(params string[])*%#"!
+System.Web.Optimization.Scripts*
+~/bundles/modernizrπ
+∂
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml (*
+
+%5void"!razor_sink* 
+
+%4System.Web.IHtmlStringòï
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml: :(e%
+%6System.Web.HttpSessionStateBase"4System.Web.WebPages.WebPageRenderingBase.Session.get*.,*
+(System.Web.WebPages.WebPageRenderingBase2Session.getîë
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml: :(e
+%7object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%6System.Web.HttpSessionStateBase*	
+Usuario2this[string].getú
+ô
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml: :(e
+%8"__id*
+
+%7object≈
+¬
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml: :(e
+
+%9bool"/ProyectoTest.Models.Usuario.EsAdministrador.get*
+
+%8*
+1
+2*´
+1
+b ï(öÊ
+„
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml=( =(¢
+%10System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageôñ
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml=( =(¢
+%11string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%10System.Web.Mvc.UrlHelper*	
+Carrito*
+
+Tienda2Action(string, string)Ê
+„
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlI8 I(é
+%12System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageóî
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlI8 I(é
+%13string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%12System.Web.Mvc.UrlHelper*	
+Index*
+
+Tienda2Action(string, string)Ê
+„
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlJ8 J(ê
+%14System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageôñ
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlJ8 J(ê
+%15string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%14System.Web.Mvc.UrlHelper*	
+Compras*
+
+Tienda2Action(string, string)Ê
+„
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlL8 L(ó
+%16System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageûõ
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlL8 L(ó
+%17string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%16System.Web.Mvc.UrlHelper*
+CerrarSesion*
+
+Tienda2Action(string, string)*
+2*∑
+2
+ü ¢(côñ
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlU U(d&
+%18System.Web.HttpSessionStateBase"4System.Web.WebPages.WebPageRenderingBase.Session.get*.,*
+(System.Web.WebPages.WebPageRenderingBase2Session.getñì
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlU U(d
+%19object":System.Collections.Generic.ICollection<T>.this[string].get**(
+&
+%18System.Web.HttpSessionStateBase*	
+Usuario2this[string].getû
+õ
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlU U(d
+%20"__id*
+
+%19object«
+ƒ
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlU U(d
+%21bool"/ProyectoTest.Models.Usuario.EsAdministrador.get*	
+
+%20*
+3
+4*†
+3® ∆(±Â
+‚
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml`( `(~
+%22System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageñì
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml`( `(~
+%23string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%22System.Web.Mvc.UrlHelper*	
+Index*
+
+Tienda2Action(string, string)Ê
+„
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlc( c(á
+%24System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPageûõ
+z
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlc( c(á
+%25string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%24System.Web.Mvc.UrlHelper*
+CerrarSesion*
+
+Tienda2Action(string, string)*
+4*Ä
+4
+œ Î(5¸
+˘
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlr r('
+%26 System.Web.WebPages.HelperResult",System.Web.WebPages.WebPageBase.RenderBody()*%#!
+System.Web.WebPages.WebPageBase≈
+¬
+y
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlr r(
+%27void"!razor_sink*+)
+'
+%26 System.Web.WebPages.HelperResultó
+î
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlù ù('
+%28System.Web.IHtmlString"7System.Web.Optimization.Scripts.Render(params string[])*%#"!
+System.Web.Optimization.Scripts*
+~/bundles/jqueryΩ
+∫
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlù ù('
+%29void"!razor_sink*!
+
+%28System.Web.IHtmlStringö
+ó
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlû û(*
+%30System.Web.IHtmlString"7System.Web.Optimization.Scripts.Render(params string[])*%#"!
+System.Web.Optimization.Scripts*
+~/bundles/bootstrapΩ
+∫
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlû û(*
+%31void"!razor_sink*!
+
+%30System.Web.IHtmlStringö
+ó
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlü ü(*
+%32System.Web.IHtmlString"7System.Web.Optimization.Scripts.Render(params string[])*%#"!
+System.Web.Optimization.Scripts*
+~/Content/PluginsJSΩ
+∫
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlü ü(*
+%33void"!razor_sink*!
+
+%32System.Web.IHtmlStringÁ
+‰
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml´ ´(@
+%34System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPage¢ü
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml´ ´(@
+%35string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%34System.Web.Mvc.UrlHelper*
+CantidadCarrito*
+
+Tienda2Action(string, string)Á
+‰
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlƒ ƒ(@
+%36System.Web.Mvc.UrlHelper""System.Web.Mvc.WebViewPage.Url.get* 
+System.Web.Mvc.WebViewPage¢ü
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtmlƒ ƒ(@
+%37string"/System.Web.Mvc.UrlHelper.Action(string, string)*#!
+
+%36System.Web.Mvc.UrlHelper*
+InsertarCarrito*
+
+Tienda2Action(string, string)¶
+£
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml‹ ‹(.'
+%38 System.Web.WebPages.HelperResult";System.Web.WebPages.WebPageBase.RenderSection(string, bool)*%#!
+System.Web.WebPages.WebPageBase*	
+scripts*
+""«
+ƒ
+{
+oC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Views\Shared\_Layout_Tienda.cshtml‹ ‹(.
+%39void"!razor_sink*+)
+'
+%38 System.Web.WebPages.HelperResult*
+5*&
+5
+Ï	 Ï(	"
+implicit return:
+Modeldynamic:
+ViewBagDataAllobject:
+ViewBagDataHtmlobject:
+TempDataAllobject:
+TempDataHtmlobject:
+HttpContextItemsAllobject: 
+HttpContextItemsHtmlobjectB 

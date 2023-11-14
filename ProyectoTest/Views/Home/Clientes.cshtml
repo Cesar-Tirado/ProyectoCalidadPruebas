@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="index.html">Mantenedores</a></li>
+    <li class="breadcrumb-item active">Clientes</li>
+</ol>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i> Listado de Clientes
+    </div>
+    <div class="card-body">
+        <table id="tabla" class="display responsive" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Tel</th>
+                    <th>Cumpleaños</th>
+                    <th>Distrito</th>
+                    <th>Calificaciones</th>
+                    <th>Promociones</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var tabladata;
+
+        $(document).ready(function () {
+            tabladata = $('#tabla').DataTable({
+                responsive: true,
+                "ajax": {
+                    "url": '@Url.Action("ListarClientes", "Home")',
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "Nombre" },
+                    { "data": "Apellidos" },
+                    { "data": "Email" },
+                    { "data": "Telefono" },
+                    { "data": "Cumpleanos" },
+                    { "data": "Distrito" },
+                    { "data": "Calificacion" },
+                    {
+                        "data": "RecibirPromociones",
+                        "render": function (data) {
+                            return data ? 'Sí' : 'No';
+                        }
+                    },
+                    {
+                        "data": "IdCliente",
+                        "render": function (data, type, row) {
+                            return $("<button>").addClass("btn btn-primary btn-editar btn-sm").append(
+                                $("<i>").addClass("fas fa-pen")
+                            ).attr({ "data-informacion": JSON.stringify(row) })[0].outerHTML
+                                +
+                                $("<button>").addClass("btn btn-danger btn-eliminar btn-sm ms-2").append(
+                                    $("<i>").addClass("fas fa-trash")
+                                ).attr({ "data-informacion": JSON.stringify(row) })[0].outerHTML;
+                        },
+                        "orderable": false,
+                        "searchable": false,
+                        "width": "150px"
+                    }
+                ],
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json"
+                }
+            });
+        });
+
+        // Funciones para abrir el modal, eliminar cliente y guardar cliente
+        function abrirModal(id) {
+            // Lógica para abrir el modal con los datos del cliente (si es edición) o limpio (si es nuevo).
+        }
+
+        function eliminarCliente(id) {
+            // Lógica para eliminar el cliente con el ID proporcionado.
+        }
+    </script>
+}

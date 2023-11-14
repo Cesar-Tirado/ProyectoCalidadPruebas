@@ -1,0 +1,110 @@
+
+IProyectoTest.Controllers.TiendaController.ObtenerDistrito(string, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÚ Ú()"2*»
+0
+Ù ˆ(L\Z
+
+Ù$ Ù(8(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+Ù( Ù(6
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+Ù Ù(8,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>è
+å
+
+ı ı(+&
+%2 ProyectoTest.Logica.UbigeoLogica".ProyectoTest.Logica.UbigeoLogica.Instancia.get*&$""
+ ProyectoTest.Logica.UbigeoLogica‚
+ﬂ
+
+ı ı(Z(
+%3"System.Collections.Generic.List<T>"@ProyectoTest.Logica.UbigeoLogica.ObtenerDistrito(string, string)**(
+&
+%2 ProyectoTest.Logica.UbigeoLogica*
+
+_IdProvinciastring*
+
+_IdDepartamentostringp
+n
+
+ı ı(Z,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>$
+"
+
+ˆ0 ˆ(L
+%4"__id*
+""±
+Æ
+
+ˆ ˆ(M
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%4"/
+
+ˆ ˆ(N!
+
+%5System.Web.Mvc.JsonResult*2
+1
+˜	 ˜(	"!
+
+˜ ˜(	
+implicit return*Ì
+2
+ÚV Ú(V]
+[
+
+Ú Ú()
+%6"__entrypoint*
+
+_IdProvinciastring*
+
+_IdDepartamentostringx
+v
+
+Ò	 Ò(
+%7"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+_IdProvinciastring>
+<
+
+Ú* Ú(=
+_IdProvinciastring"__annotation*
+
+%7{
+y
+
+Ò	 Ò(
+%8"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+_IdDepartamentostringA
+?
+
+Ú? Ú(U
+_IdDepartamentostring"__annotation*
+
+%8*
+0:$
+
+Ú* Ú(=
+_IdProvinciastring:'
+
+Ú? Ú(U
+_IdDepartamentostringB-+
+)ProyectoTest.Controllers.TiendaController

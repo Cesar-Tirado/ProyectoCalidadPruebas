@@ -71,7 +71,8 @@ namespace ProyectoTest.Logica
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("select count(*) from carrito where idusuario = @idusuario", oConexion);
+                    //SqlCommand cmd = new SqlCommand("select count(*) from carrito where idusuario = @idusuario", oConexion);
+                    SqlCommand cmd = new SqlCommand("SELECT SUM(Cantidad) FROM carrito where idusuario = @idusuario", oConexion);
                     cmd.Parameters.AddWithValue("@idusuario", idusuario);
                     cmd.CommandType = CommandType.Text;
 
@@ -115,10 +116,12 @@ namespace ProyectoTest.Logica
                                     Precio = Convert.ToDecimal(dr["Precio"], CultureInfo.InvariantCulture),
                                     RutaImagen = dr["RutaImagen"].ToString()
                                 },
+                                
                                 Cantidad = Convert.ToInt32(dr["Cantidad"]),
                                 Adicionales = dr["Adicionales"].ToString(),
                                 PrecioExtra = Convert.ToDecimal(dr["PrecioExtra"], CultureInfo.InvariantCulture),
-                                Observaciones = dr["Observaciones"].ToString() // Agregar el nuevo campo Observaciones
+                                Observaciones = dr["Observaciones"].ToString(),// Agregar el nuevo campo Observaciones
+                                PrecioEnvio = Convert.ToDecimal(dr["PrecioEnvio"], CultureInfo.InvariantCulture)
                             });
                         }
                     }
@@ -132,10 +135,8 @@ namespace ProyectoTest.Logica
         }
 
 
-
         public bool Eliminar(string IdCarrito, string IdProducto)
         {
-
             bool respuesta = true;
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
@@ -143,16 +144,12 @@ namespace ProyectoTest.Logica
                 {
                     StringBuilder query = new StringBuilder();
                     query.AppendLine("delete from carrito where idcarrito = @idcarrito");
-
-
                     SqlCommand cmd = new SqlCommand(query.ToString(), oConexion);
                     cmd.Parameters.AddWithValue("@idcarrito", IdCarrito);
                     cmd.Parameters.AddWithValue("@idproducto", IdProducto);
                     cmd.CommandType = CommandType.Text;
-
                     oConexion.Open();
                     cmd.ExecuteNonQuery();
-
                 }
                 catch (Exception ex)
                 {
@@ -162,12 +159,13 @@ namespace ProyectoTest.Logica
             return respuesta;
         }
 
-        public List<Compra> ObtenerCompra()
+        public List<Compra> ObtenerCompraUsuario(int IdUsuario)
         {
             List<Compra> rptDetalleCompra = new List<Compra>();
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
-                SqlCommand cmd = new SqlCommand("sp_ObtenerCompra", oConexion);
+                SqlCommand cmd = new SqlCommand("sp_ObtenerCompraUsuario", oConexion);
+                cmd.Parameters.AddWithValue("@IdUsuario", IdUsuario);
                 cmd.CommandType = CommandType.StoredProcedure;
 
 
@@ -195,10 +193,11 @@ namespace ProyectoTest.Logica
                                                         Correo = c.Element("Correo").Value,
                                                         Total = Convert.ToDecimal(c.Element("Total").Value, new CultureInfo("es-PE")),
                                                         FechaTexto = c.Element("Fecha").Value,
+                                                        HoraRecojo = c.Element("HoraRecojo").Value,
+                                                        Tipo = c.Element("Tipo").Value,
                                                         oDetalleCompra = (from d in c.Element("DETALLE_PRODUCTO").Elements("PRODUCTO")
                                                                           select new DetalleCompra()
                                                                           {
-
                                                                               oProducto = new Producto()
                                                                               {
                                                                                   oMarca = new Marca() { Descripcion = d.Element("Descripcion").Value },
@@ -207,7 +206,9 @@ namespace ProyectoTest.Logica
                                                                               },
                                                                               Adicionales = d.Element("Adicionales").Value,
                                                                               Total = Convert.ToDecimal(d.Element("Total").Value, new CultureInfo("es-PE")),
-                                                                              Cantidad = Convert.ToInt32(d.Element("Cantidad").Value)
+                                                                              PrecioExtra = Convert.ToDecimal(d.Element("PrecioExtra").Value, new CultureInfo("es-PE")),
+                                                                              Cantidad = Convert.ToInt32(d.Element("Cantidad").Value),
+                                                                              ObservacionesDC = d.Element("ObservacionesDC").Value,
                                                                           }).ToList()
                                                     }).ToList();
                             }
@@ -216,11 +217,8 @@ namespace ProyectoTest.Logica
                                 rptDetalleCompra = new List<Compra>();
                             }
                         }
-
                         dr.Close();
-
                     }
-
                     return rptDetalleCompra;
                 }
                 catch (Exception ex)
@@ -231,7 +229,72 @@ namespace ProyectoTest.Logica
             }
         }
 
-
+        public List<Compra> ObtenerCompra()
+        {
+            List<Compra> rptDetalleCompra = new List<Compra>();
+            using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
+            {
+                SqlCommand cmd = new SqlCommand("sp_ObtenerCompra", oConexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    oConexion.Open();
+                    using (XmlReader dr = cmd.ExecuteXmlReader())
+                    {
+                        while (dr.Read())
+                        {
+                            XDocument doc = XDocument.Load(dr);
+                            if (doc.Element("DATA") != null)
+                            {
+                                rptDetalleCompra = (from c in doc.Element("DATA").Elements("COMPRA")
+                                                    select new Compra()
+                                                    {
+                                                        IdCompra = Convert.ToInt32(c.Element("IdCompra").Value),
+                                                        Estado = c.Element("Estado").Value,
+                                                        Referencia = c.Element("Referencia").Value,
+                                                        FormaPago = c.Element("FormaPago").Value,
+                                                        Nombre = c.Element("Nombre").Value,
+                                                        DocumentoFacturacion = c.Element("DocumentoFacturacion").Value,
+                                                        Telefono = c.Element("Telefono").Value,
+                                                        Direccion = c.Element("Direccion").Value,
+                                                        Correo = c.Element("Correo").Value,
+                                                        Total = Convert.ToDecimal(c.Element("Total").Value, new CultureInfo("es-PE")),
+                                                        FechaTexto = c.Element("Fecha").Value,
+                                                        HoraRecojo = c.Element("HoraRecojo").Value,
+                                                        Tipo = c.Element("Tipo").Value,
+                                                        oDetalleCompra = (from d in c.Element("DETALLE_PRODUCTO").Elements("PRODUCTO")
+                                                                          select new DetalleCompra()
+                                                                          {
+                                                                              oProducto = new Producto()
+                                                                              {
+                                                                                  oMarca = new Marca() { Descripcion = d.Element("Descripcion").Value },
+                                                                                  Nombre = d.Element("Nombre").Value,
+                                                                                  RutaImagen = d.Element("RutaImagen").Value
+                                                                              },
+                                                                              Adicionales = d.Element("Adicionales").Value,
+                                                                              Total = Convert.ToDecimal(d.Element("Total").Value, new CultureInfo("es-PE")),
+                                                                              PrecioExtra = Convert.ToDecimal(d.Element("PrecioExtra").Value, new CultureInfo("es-PE")),
+                                                                              Cantidad = Convert.ToInt32(d.Element("Cantidad").Value),
+                                                                              ObservacionesDC = d.Element("ObservacionesDC").Value,
+                                                                          }).ToList()
+                                                    }).ToList();
+                            }
+                            else
+                            {
+                                rptDetalleCompra = new List<Compra>();
+                            }
+                        }
+                        dr.Close();
+                    }
+                    return rptDetalleCompra;
+                }
+                catch (Exception ex)
+                {
+                    rptDetalleCompra = null;
+                    return rptDetalleCompra;
+                }
+            }
+        }
 
     }
 }

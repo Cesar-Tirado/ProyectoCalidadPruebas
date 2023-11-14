@@ -1,0 +1,7 @@
+ë
+#ProyectoTest.Logica.CategoriaLogicaobjectJ
+CategoriaLogica()5ProyectoTest.Logica.CategoriaLogica.CategoriaLogica()8
+Listar(),ProyectoTest.Logica.CategoriaLogica.Listar()x
+(Registrar(ProyectoTest.Models.Categoria)LProyectoTest.Logica.CategoriaLogica.Registrar(ProyectoTest.Models.Categoria)x
+(Modificar(ProyectoTest.Models.Categoria)LProyectoTest.Logica.CategoriaLogica.Modificar(ProyectoTest.Models.Categoria)B
+Eliminar(int)1ProyectoTest.Logica.CategoriaLogica.Eliminar(int)

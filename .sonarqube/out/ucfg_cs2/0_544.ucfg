@@ -1,0 +1,273 @@
+
+UProyectoTest.Controllers.TiendaController.RegistrarCompra(ProyectoTest.Models.Compra)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csû û()"4*Õ
+0
+ı (1
+/
+
+ı ı("
+	respuestabool"__id*
+""”
+‘
+
+ş  ş((!
+%0ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.TiendaController"'
+oUsuarioProyectoTest.Models.Usuariok
+i
+
+ş  ş(2	
+%1int")ProyectoTest.Models.Usuario.IdUsuario.get*%#
+!
+%0ProyectoTest.Models.Usuario}
+{
+
+ş ş(2	
+%2int"(ProyectoTest.Models.Compra.IdUsuario.set*)'
+%
+oCompraProyectoTest.Models.Compra*
+	
+%1int
+Œ
+
+ÿ ÿ(.&
+%3 ProyectoTest.Logica.CompraLogica".ProyectoTest.Logica.CompraLogica.Instancia.get*&$""
+ ProyectoTest.Logica.CompraLogicaº
+·
+
+ÿ ÿ(A
+
+%4bool"FProyectoTest.Logica.CompraLogica.Registrar(ProyectoTest.Models.Compra)**(
+&
+%3 ProyectoTest.Logica.CompraLogica*)'
+%
+oCompraProyectoTest.Models.Compra7
+5
+
+ÿ ÿ(A
+	respuestabool"__id*
+
+
+%4bool*
+1
+2*ñ
+1ƒ …(¦
+Œ
+
+ƒ ƒ(&&
+%5 ProyectoTest.Logica.CorreoLogica".ProyectoTest.Logica.CorreoLogica.Instancia.get*&$""
+ ProyectoTest.Logica.CorreoLogica½
+º
+
+ƒ ƒ(<
+
+%6bool"IProyectoTest.Logica.CorreoLogica.EnviarCorreo(ProyectoTest.Models.Compra)**(
+&
+%5 ProyectoTest.Logica.CorreoLogica*)'
+%
+oCompraProyectoTest.Models.Compra&
+$
+…Š …(¦
+%7"__id*
+""²
+¯
+… …(§
+%8System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%7"0
+… …(¨!
+
+%8System.Web.Mvc.JsonResult* 
+2‰ ‰(€%
+#
+‰d ‰(€
+%9"__id*
+""³
+°
+‰ ‰( 
+%10System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%9"1
+‰ ‰(‚"
+ 
+%10System.Web.Mvc.JsonResult*2
+3
+‹	 ‹(	"!
+
+‹ ‹(	
+implicit return*²
+4
+û9 û(9h
+f
+
+û û()J
+%
+oCompraProyectoTest.Models.Compra"!
+<Nombre>k__BackingFieldstring"__entrypointW
+U
+
+û û()9
+%
+oCompraProyectoTest.Models.Compra"
+Nombrestring"__entrypointj
+h
+
+û û()L
+%
+oCompraProyectoTest.Models.Compra"#
+<Telefono>k__BackingFieldstring"__entrypointY
+W
+
+û û();
+%
+oCompraProyectoTest.Models.Compra"
+Telefonostring"__entrypointh
+f
+
+û û()J
+%
+oCompraProyectoTest.Models.Compra"!
+<Correo>k__BackingFieldstring"__entrypointW
+U
+
+û û()9
+%
+oCompraProyectoTest.Models.Compra"
+Correostring"__entrypointk
+i
+
+û û()M
+%
+oCompraProyectoTest.Models.Compra"$
+<Direccion>k__BackingFieldstring"__entrypointZ
+X
+
+û û()<
+%
+oCompraProyectoTest.Models.Compra"
+	Direccionstring"__entrypointl
+j
+
+û û()N
+%
+oCompraProyectoTest.Models.Compra"%
+<Referencia>k__BackingFieldstring"__entrypoint[
+Y
+
+û û()=
+%
+oCompraProyectoTest.Models.Compra"
+
+Referenciastring"__entrypointv
+t
+
+û û()X
+%
+oCompraProyectoTest.Models.Compra"/
+%<DocumentoFacturacion>k__BackingFieldstring"__entrypointe
+c
+
+û û()G
+%
+oCompraProyectoTest.Models.Compra"
+DocumentoFacturacionstring"__entrypointk
+i
+
+û û()M
+%
+oCompraProyectoTest.Models.Compra"$
+<FormaPago>k__BackingFieldstring"__entrypointZ
+X
+
+û û()<
+%
+oCompraProyectoTest.Models.Compra"
+	FormaPagostring"__entrypointh
+f
+
+û û()J
+%
+oCompraProyectoTest.Models.Compra"!
+<Estado>k__BackingFieldstring"__entrypointW
+U
+
+û û()9
+%
+oCompraProyectoTest.Models.Compra"
+Estadostring"__entrypointl
+j
+
+û û()N
+%
+oCompraProyectoTest.Models.Compra"%
+<FechaTexto>k__BackingFieldstring"__entrypoint[
+Y
+
+û û()=
+%
+oCompraProyectoTest.Models.Compra"
+
+FechaTextostring"__entrypointl
+j
+
+û û()N
+%
+oCompraProyectoTest.Models.Compra"%
+<FormaEnvio>k__BackingFieldstring"__entrypoint[
+Y
+
+û û()=
+%
+oCompraProyectoTest.Models.Compra"
+
+FormaEnviostring"__entrypointl
+j
+
+û û()N
+%
+oCompraProyectoTest.Models.Compra"%
+<HoraRecojo>k__BackingFieldstring"__entrypoint[
+Y
+
+û û()=
+%
+oCompraProyectoTest.Models.Compra"
+
+HoraRecojostring"__entrypointf
+d
+
+û û()H
+%
+oCompraProyectoTest.Models.Compra"
+<Tipo>k__BackingFieldstring"__entrypointU
+S
+
+û û()7
+%
+oCompraProyectoTest.Models.Compra"
+Tipostring"__entrypoint
+Š
+
+û û()n
+%
+oCompraProyectoTest.Models.Compra"E
+<oDetalleCompra>k__BackingField"System.Collections.Generic.List<T>"__entrypoint{
+y
+
+û û()]
+%
+oCompraProyectoTest.Models.Compra"4
+oDetalleCompra"System.Collections.Generic.List<T>"__entrypoint#
+!
+
+û û()
+%11"__entrypoint*
+0:3
+
+û* û(8%
+oCompraProyectoTest.Models.CompraB-+
+)ProyectoTest.Controllers.TiendaController

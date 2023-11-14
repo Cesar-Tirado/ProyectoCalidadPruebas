@@ -20,7 +20,9 @@ namespace ProyectoTest.Models
         public string FormaPago { get; set; }
         public string Estado { get; set; } // Nueva propiedad para el estado de la compra
         public string FechaTexto { get; set; }
-
+        public string FormaEnvio { get; set; }
+        public string HoraRecojo { get; set; }
+        public string Tipo { get; set; }
         public List<DetalleCompra> oDetalleCompra { get; set; }
 
         public Compra()

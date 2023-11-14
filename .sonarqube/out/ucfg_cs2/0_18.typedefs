@@ -1,0 +1,26 @@
+º
+'ProyectoTest.Controllers.HomeControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject:
+Index()/ProyectoTest.Controllers.HomeController.Index()B
+Categoria()3ProyectoTest.Controllers.HomeController.Categoria():
+Marca()/ProyectoTest.Controllers.HomeController.Marca()>
+	Tiendas()1ProyectoTest.Controllers.HomeController.Tiendas()>
+	Reserva()1ProyectoTest.Controllers.HomeController.Reserva()@
+
+Producto()2ProyectoTest.Controllers.HomeController.Producto()<
+Tienda()0ProyectoTest.Controllers.HomeController.Tienda()@
+
+Clientes()2ProyectoTest.Controllers.HomeController.Clientes()N
+ListarCategoria()9ProyectoTest.Controllers.HomeController.ListarCategoria()Š
+/GuardarCategoria(ProyectoTest.Models.Categoria)WProyectoTest.Controllers.HomeController.GuardarCategoria(ProyectoTest.Models.Categoria)X
+EliminarCategoria(int)>ProyectoTest.Controllers.HomeController.EliminarCategoria(int)F
+ListarMarca()5ProyectoTest.Controllers.HomeController.ListarMarca()z
+'GuardarMarca(ProyectoTest.Models.Marca)OProyectoTest.Controllers.HomeController.GuardarMarca(ProyectoTest.Models.Marca)P
+EliminarMarca(int):ProyectoTest.Controllers.HomeController.EliminarMarca(int)J
+ListarTiendas()7ProyectoTest.Controllers.HomeController.ListarTiendas()L
+ListarClientes()8ProyectoTest.Controllers.HomeController.ListarClientes()‚
++GuardarTiendas(ProyectoTest.Models.Tiendas)SProyectoTest.Controllers.HomeController.GuardarTiendas(ProyectoTest.Models.Tiendas)T
+EliminarTiendas(int)<ProyectoTest.Controllers.HomeController.EliminarTiendas(int)L
+ListarProducto()8ProyectoTest.Controllers.HomeController.ListarProducto()˜
+6GuardarProducto(string, System.Web.HttpPostedFileBase)^ProyectoTest.Controllers.HomeController.GuardarProducto(string, System.Web.HttpPostedFileBase)V
+EliminarProducto(int)=ProyectoTest.Controllers.HomeController.EliminarProducto(int)L
+HomeController()8ProyectoTest.Controllers.HomeController.HomeController()

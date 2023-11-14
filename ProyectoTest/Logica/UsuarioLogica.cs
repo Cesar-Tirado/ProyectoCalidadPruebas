@@ -92,12 +92,89 @@ namespace ProyectoTest.Logica
                     respuesta = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     respuesta = 0;
                 }
             }
             return respuesta;
+        }
+
+        public List<Cliente> ListarClientes()
+        {
+            List<Cliente> rptListaTiendas = new List<Cliente>();
+            using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Clientes", oConexion);
+                cmd.CommandType = CommandType.Text;
+                try
+                {
+                    oConexion.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        rptListaTiendas.Add(new Cliente()
+                        {
+                            IdCliente = Convert.ToInt32(dr["IdCliente"].ToString()),
+                            Nombre = dr["Nombre"].ToString(),
+                            Apellidos = dr["Apellidos"].ToString(),
+                            Email = dr["Email"].ToString(),
+                            Telefono = dr["Telefono"].ToString(),
+                            Cumpleanos = dr["Cumpleanos"].ToString(),
+                            Distrito = dr["Distrito"].ToString(),
+                            Calificacion = Convert.ToInt32(dr["Calificacion"].ToString()),
+                            RecibirPromociones = Convert.ToBoolean(dr["RecibirPromociones"].ToString()),
+                        });
+                    }
+                    dr.Close();
+                    return rptListaTiendas;
+                }
+                catch (Exception ex)
+                {
+                    rptListaTiendas = null;
+                    return rptListaTiendas;
+                }
+            }
+        }
+
+        public int RegistrarCliente(Cliente cliente)
+        {
+            int resultado = 0;
+
+            using (SqlConnection conexion = new SqlConnection(Conexion.CN))
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("sp_RegistrarCliente", conexion);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Define los parámetros del procedimiento almacenado
+                    cmd.Parameters.AddWithValue("@Nombre", cliente.Nombre);
+                    cmd.Parameters.AddWithValue("@Apellidos", cliente.Apellidos);
+                    cmd.Parameters.AddWithValue("@Email", cliente.Email);
+                    cmd.Parameters.AddWithValue("@Telefono", cliente.Telefono);
+                    cmd.Parameters.AddWithValue("@Cumpleanos", cliente.Cumpleanos);
+                    cmd.Parameters.AddWithValue("@Distrito", cliente.Distrito);
+                    cmd.Parameters.AddWithValue("@Calificacion", cliente.Calificacion);
+                    cmd.Parameters.AddWithValue("@RecibirPromociones", cliente.RecibirPromociones);
+
+                    // Define el parámetro de salida para obtener el ID de cliente registrado
+                    cmd.Parameters.Add("@IdCliente", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                    conexion.Open();
+                    cmd.ExecuteNonQuery();
+
+                    // Obtiene el ID de cliente registrado
+                    resultado = Convert.ToInt32(cmd.Parameters["@IdCliente"].Value);
+                }
+                catch (Exception)
+                {
+                    resultado = 0;
+                }
+            }
+
+            return resultado;
         }
     }
 }

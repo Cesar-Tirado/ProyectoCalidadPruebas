@@ -21,30 +21,29 @@ namespace ProyectoTest.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public ActionResult Index(string NCorreo, string NContrasena)
-        {
-            
+        {            
             Usuario oUsuario = new Usuario();
-
             oUsuario = UsuarioLogica.Instancia.Obtener(NCorreo, NContrasena);
 
-            if (!String.IsNullOrEmpty(oUsuario.Mensaje))
+            if (oUsuario != null)
             {
-                ViewBag.Error = oUsuario.Mensaje;
+                FormsAuthentication.SetAuthCookie(oUsuario.Correo, false);
+                Session["Usuario"] = oUsuario;
+
+                if (oUsuario.EsAdministrador == true)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Tienda");
+                }
+            }
+            else
+            {
+                ViewBag.Error = "Usuario o contraseña incorrectos";
                 return View();
             }
-
-            FormsAuthentication.SetAuthCookie(oUsuario.Correo, false);
-            Session["Usuario"] = oUsuario;
-
-            if (oUsuario.EsAdministrador == true)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            else {
-                return RedirectToAction("Index", "Tienda");
-            }
-
-            
         }
 
         // GET: Login
@@ -85,6 +84,39 @@ namespace ProyectoTest.Controllers
                 else {
                     return RedirectToAction("Index", "Login");
                 }
+            }
+        }
+
+        [HttpPost]
+        public ActionResult RegistrarCliente(string Nombre, string Apellidos, string Email, string Telefono, string Cumpleanos, string Distrito, int Calificacion, bool RecibirPromociones)
+        {
+            Cliente cliente = new Cliente
+            {
+                Nombre = Nombre,
+                Apellidos = Apellidos,
+                Email = Email,
+                Telefono = Telefono,
+                Cumpleanos = Cumpleanos,
+                Distrito = Distrito,
+                Calificacion = Calificacion,
+                RecibirPromociones = RecibirPromociones
+            };
+
+            // Llama a la lógica de negocios para registrar al cliente
+            UsuarioLogica clienteLogica = new UsuarioLogica();
+            int idClienteRegistrado = clienteLogica.RegistrarCliente(cliente);
+
+            if (idClienteRegistrado > 0)
+            {
+                CorreoLogica.Instancia.EnviarVale(idClienteRegistrado, Email);
+                // El registro fue exitoso, redirige a una página de confirmación o a donde desees.
+                return RedirectToAction("Index", "Login");
+            }
+            else
+            {
+                // El registro falló, puedes manejar errores aquí.
+                ViewBag.Error = "Error al registrar";
+                return View(); // Puedes redirigir a la página de registro nuevamente.
             }
         }
 

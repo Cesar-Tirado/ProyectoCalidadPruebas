@@ -1,0 +1,83 @@
+
+OProyectoTest.Controllers.HomeController.GuardarMarca(ProyectoTest.Models.Marca)t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csq q(&"5*Ø
+0s t(,/
+-
+s s("
+	respuestabool"__id*
+""g
+e
+t t('	
+%0int"%ProyectoTest.Models.Marca.IdMarca.get*'%
+#
+objetoProyectoTest.Models.Marca*
+1
+2*’
+1t0 t(Vä
+á
+t0 t(E%
+%1ProyectoTest.Logica.MarcaLogica"-ProyectoTest.Logica.MarcaLogica.Instancia.get*%#"!
+ProyectoTest.Logica.MarcaLogica≥
+∞
+t0 t(W
+
+%2bool"DProyectoTest.Logica.MarcaLogica.Registrar(ProyectoTest.Models.Marca)*)'
+%
+%1ProyectoTest.Logica.MarcaLogica*'%
+#
+objetoProyectoTest.Models.Marca*
+3*◊
+2	tZ t(Ää
+á
+tZ t(o%
+%3ProyectoTest.Logica.MarcaLogica"-ProyectoTest.Logica.MarcaLogica.Instancia.get*%#"!
+ProyectoTest.Logica.MarcaLogica¥
+±
+	tZ t(Å
+
+%4bool"DProyectoTest.Logica.MarcaLogica.Modificar(ProyectoTest.Models.Marca)*)'
+%
+%3ProyectoTest.Logica.MarcaLogica*'%
+#
+objetoProyectoTest.Models.Marca*
+3*ƒ
+3t u(S0
+.
+	t t(Å
+	respuestabool"__id*
+"""
+ 
+u7 u(S
+%5"__id*
+""Ø
+¨
+u u(T
+%6System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%5"-
+u u(U!
+
+%6System.Web.Mvc.JsonResult*.
+4v	 v(	"
+v v(	
+implicit return*˘
+5q4 q(4i
+g
+q q(&M
+#
+objetoProyectoTest.Models.Marca"&
+<Descripcion>k__BackingFieldstring"__entrypointX
+V
+q q(&<
+#
+objetoProyectoTest.Models.Marca"
+Descripcionstring"__entrypoint 
+
+q q(&
+%7"__entrypoint*
+0:/
+q' q(3#
+objetoProyectoTest.Models.MarcaB+)
+'ProyectoTest.Controllers.HomeController

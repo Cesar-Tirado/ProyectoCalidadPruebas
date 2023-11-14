@@ -1,0 +1,195 @@
+
+2ProyectoTest.Logica.UbicacionTiendaLogica.Listar()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbicacionTiendaLogica.cs$% $(+"0*£
+0&" '(JZX
+&< &(W(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+&@ &(U
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>
+}
+&" &(W=
+rptListaUbicacionTienda"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+'? '(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+'- '(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnection•
+’
+'1 '(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+'! '(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*Œ
+1* +(2VT
+*! *([&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandú
+÷
+*% *(/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*#!
+SELECT * FROM UbicacionTienda*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+* *(['
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand"
+ 
++" +(2
+%7"__id*
+""•
+’
++ +(2
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%7*
+2*
+2F	 F(	*
+3
+4*˜
+3/ 0(:z
+x
+/ /($
+
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnection˜
+•
+0' 0(:*
+%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
+0" 0(:)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%10#System.Data.SqlClient.SqlDataReader*
+5*“
+52 2($|z
+2 2($
+%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+6
+7*¼
+64 8(4][
+44 9(*
+%12#ProyectoTest.Models.UbicacionTienda"#ProyectoTest.Models.UbicacionTienda€
+~
+48 4(G
+%13void"5ProyectoTest.Models.UbicacionTienda.UbicacionTienda()*.,
+*
+%12#ProyectoTest.Models.UbicacionTienda¬©
+6@ 6(W
+%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdUbicacionTienda2this[string].getMK
+6@ 6(b
+%15string"object.ToString()*
+
+%14object2
+ToString()a
+_
+60 6(c
+
+%16int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%15string”
+‘
+6 6(c
+
+%17int"9ProyectoTest.Models.UbicacionTienda.IdUbicacionTienda.set*.,
+*
+%12#ProyectoTest.Models.UbicacionTienda*
+
+
+%16int¡ž
+7% 7(1
+%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Nombre2this[string].getMK
+7% 7(<
+%19string"object.ToString()*
+
+%18object2
+ToString()
+Œ
+7 7(<
+%20string".ProyectoTest.Models.UbicacionTienda.Nombre.set*.,
+*
+%12#ProyectoTest.Models.UbicacionTienda*
+
+%19string£ 
+8' 8(5
+%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Distrito2this[string].getMK
+8' 8(@
+%22string"object.ToString()*
+
+%21object2
+ToString()‘
+Ž
+8 8(@
+%23string"0ProyectoTest.Models.UbicacionTienda.Distrito.set*.,
+*
+%12#ProyectoTest.Models.UbicacionTienda*
+
+%22string¿
+¼
+4 9(
+%24void"0System.Collections.Generic.ICollection<T>.Add(T)*A?
+=
+rptListaUbicacionTienda"System.Collections.Generic.List<T>*.,
+*
+%12#ProyectoTest.Models.UbicacionTienda*
+5*Ú
+7; =(2~|
+; ;(
+%25void"+System.Data.SqlClient.SqlDataReader.Close()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Close()"K
+= =(3?
+=
+rptListaUbicacionTienda"System.Collections.Generic.List<T>*·
+4B C(2[
+Y
+B B(2=
+rptListaUbicacionTienda"System.Collections.Generic.List<T>"__id*
+"""K
+C C(3?
+=
+rptListaUbicacionTienda"System.Collections.Generic.List<T>*
+8F	 F(	*
+9*.
+9F	 F(	"
+F F(	
+implicit returnB-+
+)ProyectoTest.Logica.UbicacionTiendaLogica

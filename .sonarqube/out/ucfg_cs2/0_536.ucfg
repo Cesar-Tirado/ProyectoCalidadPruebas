@@ -1,0 +1,235 @@
+
+;ProyectoTest.Logica.CarritoLogica.ObtenerCompraUsuario(int)p
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CarritoLogica.cs¢ ¢(0"0*¨
+0
+§ •(J\Z
+
+§, §(>(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+§0 §(<
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>z
+x
+
+§ §(>6
+rptDetalleCompra"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>V
+T
+
+•? •(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring^\
+
+•- •(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
+î
+
+•1 •(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2stringu
+s
+
+•! •(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*è
+1
+ß ©(=XV
+
+ß! ß(U&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandˆ
+Û
+
+ß% ß(/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*
+sp_ObtenerCompraUsuario*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectioni
+g
+
+ß ß(U'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand°
+û
+
+® ®(2
+%7,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand’
+“
+
+® ®(D(
+%8"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%7,System.Data.SqlClient.SqlParameterCollection*
+
+@IdUsuario*
+""$
+"
+
+©" ©(=
+%9"__id*
+""ò
+ï
+
+© ©(=
+%10System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%9*
+2*
+2
+Ê	 Ê(	*
+3
+4*˜
+3
+Æ Ø(@}
+{
+
+Æ Æ($
+%11void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectioné
+ã
+
+Ø* Ø(@
+%12System.Xml.XmlReader"3System.Data.SqlClient.SqlCommand.ExecuteXmlReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandQ
+O
+
+Ø% Ø(@
+drSystem.Xml.XmlReader"__id*
+
+%12System.Xml.XmlReader*
+5*q
+5
+± ±((X
+V
+
+± ±((
+%13bool"System.Xml.XmlReader.Read()*
+
+drSystem.Xml.XmlReader*
+6
+7*æ
+6
+≥& ¥(;®
+•
+
+≥, ≥(> 
+%14System.Xml.Linq.XDocument"4System.Xml.Linq.XDocument.Load(System.Xml.XmlReader)*"
+System.Xml.Linq.XDocument*
+
+drSystem.Xml.XmlReader\
+Z
+
+≥& ≥(> 
+docSystem.Xml.Linq.XDocument"__id*$"
+ 
+%14System.Xml.Linq.XDocumentù
+ö
+
+¥  ¥(3
+%15System.Xml.Linq.XElement"9System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)*$"
+ 
+docSystem.Xml.Linq.XDocument*
+
+DATA|
+z
+
+¥  ¥(;
+%16bool""object.operator !=(object, object)*
+"
+object*#!
+
+%15System.Xml.Linq.XElement*
+""*
+8
+9*œ
+8
+∂  ’(5ª
+∏
+
+∂3 ’(?)
+%17"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*
+""{
+y
+
+∂  ’(?6
+rptDetalleCompra"System.Collections.Generic.List<T>"__id*-+
+)
+%17"System.Collections.Generic.List<T>*
+5*Á
+9
+Ÿ  Ÿ(E][
+
+Ÿ3 Ÿ(E)
+%18"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>u
+s
+
+Ÿ7 Ÿ(C
+%19void")System.Collections.Generic.List<T>.List()*-+
+)
+%18"System.Collections.Generic.List<T>{
+y
+
+Ÿ  Ÿ(E6
+rptDetalleCompra"System.Collections.Generic.List<T>"__id*-+
+)
+%18"System.Collections.Generic.List<T>*
+5*y
+7
+‹ ‹("b`
+
+‹ ‹("
+%20void"System.Xml.XmlReader.Close()*
+
+drSystem.Xml.XmlReader2Close()*
+10*X
+10
+ﬁ ﬁ(+"F
+
+ﬁ ﬁ(,8
+6
+rptDetalleCompra"System.Collections.Generic.List<T>*Ø
+4
+‚ „(+V
+T
+
+‚ ‚(+6
+rptDetalleCompra"System.Collections.Generic.List<T>"__id*
+"""F
+
+„ „(,8
+6
+rptDetalleCompra"System.Collections.Generic.List<T>*
+11
+Ê	 Ê(	*
+12*3
+12
+Ê	 Ê(	"!
+
+Ê Ê(	
+implicit return:
+
+¢1 ¢(>
+	IdUsuariointB%#
+!ProyectoTest.Logica.CarritoLogica

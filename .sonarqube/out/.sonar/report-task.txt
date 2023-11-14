@@ -1,0 +1,6 @@
+projectKey=CATC
+serverUrl=https://sonarqube.bit2bitamericas.com
+serverVersion=10.1.0.73491
+dashboardUrl=https://sonarqube.bit2bitamericas.com/dashboard?id=CATC
+ceTaskId=AYvOKN7I0haiPv-hRe2Q
+ceTaskUrl=https://sonarqube.bit2bitamericas.com/api/ce/task?id=AYvOKN7I0haiPv-hRe2Q

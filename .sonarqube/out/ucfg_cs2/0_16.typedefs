@@ -1,0 +1,17 @@
+õ
+Orderobject
+Order()Order.Order() 
+tokenId.getOrder.tokenId.get 
+tokenId.setOrder.tokenId.set.
+purchaseNumber.getOrder.purchaseNumber.get.
+purchaseNumber.setOrder.purchaseNumber.set
+
+amount.getOrder.amount.get
+
+amount.setOrder.amount.set"
+currency.getOrder.currency.get"
+currency.setOrder.currency.set$
+productId.getOrder.productId.get$
+productId.setOrder.productId.set(
+installment.getOrder.installment.get(
+installment.setOrder.installment.set

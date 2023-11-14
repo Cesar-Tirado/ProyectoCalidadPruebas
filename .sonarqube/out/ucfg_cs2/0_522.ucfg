@@ -1,0 +1,324 @@
+
+2ProyectoTest.Logica.UsuarioLogica.ListarClientes()n
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UsuarioLogica.csg g(+"0*›
+0i j(JZX
+i, i(?(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+i0 i(=
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>w
+u
+i i(?5
+rptListaTiendas"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+j? j(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+j- j(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnection•
+’
+j1 j(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+j! j(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*…
+1l m(2VT
+l! l(T&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandó
+ð
+l% l(/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*
+SELECT * FROM Clientes*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+l l(T'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand"
+ 
+m" m(2
+%7"__id*
+""•
+’
+m m(2
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%7*
+2*
+2
+‹	 ‹(	*
+3
+4*˜
+3p q(:z
+x
+p p($
+
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnection˜
+•
+q' q(:*
+%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
+q" q(:)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%10#System.Data.SqlClient.SqlDataReader*
+5*“
+5s s($|z
+s s($
+%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+6
+7*ë
+6u (ZNL
+	u, €("
+%12ProyectoTest.Models.Cliente"ProyectoTest.Models.Clienteh
+f
+u0 u(7
+%13void"%ProyectoTest.Models.Cliente.Cliente()*&$
+"
+%12ProyectoTest.Models.Cliente¤¡
+w8 w(G
+%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	IdCliente2this[string].getMK
+w8 w(R
+%15string"object.ToString()*
+
+%14object2
+ToString()a
+_
+w( w(S
+
+%16int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%15string{
+y
+w w(S
+
+%17int")ProyectoTest.Models.Cliente.IdCliente.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+
+%16int¡ž
+x% x(1
+%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Nombre2this[string].getMK
+x% x(<
+%19string"object.ToString()*
+
+%18object2
+ToString()~
+|
+x x(<
+%20string"&ProyectoTest.Models.Cliente.Nombre.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%19string¤¡
+y( y(7
+%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	Apellidos2this[string].getMK
+y( y(B
+%22string"object.ToString()*
+
+%21object2
+ToString()
+
+y y(B
+%23string")ProyectoTest.Models.Cliente.Apellidos.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%22string 
+z$ z(/
+%24object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*	
+Email2this[string].getMK
+z$ z(:
+%25string"object.ToString()*
+
+%24object2
+ToString()}
+{
+z z(:
+%26string"%ProyectoTest.Models.Cliente.Email.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%25string£ 
+{' {(5
+%27object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Telefono2this[string].getMK
+{' {(@
+%28string"object.ToString()*
+
+%27object2
+ToString()€
+~
+{ {(@
+%29string"(ProyectoTest.Models.Cliente.Telefono.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%28string¥¢
+|) |(9
+%30object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Cumpleanos2this[string].getMK
+|) |(D
+%31string"object.ToString()*
+
+%30object2
+ToString()ƒ
+€
+| |(D
+%32string"*ProyectoTest.Models.Cliente.Cumpleanos.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%31string£ 
+}' }(5
+%33object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Distrito2this[string].getMK
+}' }(@
+%34string"object.ToString()*
+
+%33object2
+ToString()€
+~
+} }(@
+%35string"(ProyectoTest.Models.Cliente.Distrito.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%34string§¤
+~; ~(M
+%36object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Calificacion2this[string].getMK
+~; ~(X
+%37string"object.ToString()*
+
+%36object2
+ToString()a
+_
+~+ ~(Y
+
+%38int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%37string~
+|
+~ ~(Y
+
+%39int",ProyectoTest.Models.Cliente.Calificacion.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+
+%38int­ª
+C ([
+%40object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+RecibirPromociones2this[string].getMK
+C (f
+%41string"object.ToString()*
+
+%40object2
+ToString()d
+b
+1 (g
+%42bool" System.Convert.ToBoolean(string)*"
+System.Convert*
+
+%41string‡
+„
+ (g
+%43bool"2ProyectoTest.Models.Cliente.RecibirPromociones.set*&$
+"
+%12ProyectoTest.Models.Cliente*
+
+%42bool°
+­
+	u €(
+%44void"0System.Collections.Generic.ICollection<T>.Add(T)*97
+5
+rptListaTiendas"System.Collections.Generic.List<T>*&$
+"
+%12ProyectoTest.Models.Cliente*
+5*Ù
+7
+‚ ƒ(*€~
+
+‚ ‚(
+%45void"+System.Data.SqlClient.SqlDataReader.Close()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Close()"E
+
+ƒ ƒ(+7
+5
+rptListaTiendas"System.Collections.Generic.List<T>*­
+4
+‡ ˆ(*U
+S
+
+‡ ‡(*5
+rptListaTiendas"System.Collections.Generic.List<T>"__id*
+"""E
+
+ˆ ˆ(+7
+5
+rptListaTiendas"System.Collections.Generic.List<T>*
+8
+‹	 ‹(	*
+9*2
+9
+‹	 ‹(	"!
+
+‹ ‹(	
+implicit returnB%#
+!ProyectoTest.Logica.UsuarioLogica

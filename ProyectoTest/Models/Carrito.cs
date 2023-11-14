@@ -15,6 +15,6 @@ namespace ProyectoTest.Models
 
         public decimal PrecioExtra { get; set;}
         public string Observaciones { get; set; }
-
+        public decimal PrecioEnvio { get; set; }
     }
 }

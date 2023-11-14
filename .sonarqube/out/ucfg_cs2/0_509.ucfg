@@ -1,0 +1,113 @@
+
+SProyectoTest.Controllers.HomeController.GuardarTiendas(ProyectoTest.Models.Tiendas)v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csí í(("5*ª
+0
+î ï(.1
+/
+
+î î("
+	respuestabool"__id*
+""o
+m
+
+ï ï()	
+%0int")ProyectoTest.Models.Tiendas.IdTiendas.get*)'
+%
+objetoProyectoTest.Models.Tiendas*
+1
+2*È
+1
+ï2 ï(Zí
+è
+
+ï2 ï(I'
+%1!ProyectoTest.Logica.TiendasLogica"/ProyectoTest.Logica.TiendasLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.TiendasLogicaΩ
+∫
+
+ï2 ï([
+
+%2bool"HProyectoTest.Logica.TiendasLogica.Registrar(ProyectoTest.Models.Tiendas)*+)
+'
+%1!ProyectoTest.Logica.TiendasLogica*)'
+%
+objetoProyectoTest.Models.Tiendas*
+3*Î
+2ï^ ï(Üí
+è
+
+ï^ ï(u'
+%3!ProyectoTest.Logica.TiendasLogica"/ProyectoTest.Logica.TiendasLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.TiendasLogicaæ
+ª
+ï^ ï(á
+
+%4bool"HProyectoTest.Logica.TiendasLogica.Modificar(ProyectoTest.Models.Tiendas)*+)
+'
+%3!ProyectoTest.Logica.TiendasLogica*)'
+%
+objetoProyectoTest.Models.Tiendas*
+3*Œ
+3
+ï ñ(S2
+0
+ï ï(á
+	respuestabool"__id*
+""$
+"
+
+ñ7 ñ(S
+%5"__id*
+""±
+Æ
+
+ñ ñ(T
+%6System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%5"/
+
+ñ ñ(U!
+
+%6System.Web.Mvc.JsonResult*2
+4
+ó	 ó(	"!
+
+ó ó(	
+implicit return*Œ
+5
+í8 í(8m
+k
+
+í í((O
+%
+objetoProyectoTest.Models.Tiendas"&
+<Descripcion>k__BackingFieldstring"__entrypoint\
+Z
+
+í í((>
+%
+objetoProyectoTest.Models.Tiendas"
+Descripcionstring"__entrypointk
+i
+
+í í((M
+%
+objetoProyectoTest.Models.Tiendas"$
+<Direccion>k__BackingFieldstring"__entrypointZ
+X
+
+í í((<
+%
+objetoProyectoTest.Models.Tiendas"
+	Direccionstring"__entrypoint"
+ 
+
+í í((
+%7"__entrypoint*
+0:3
+
+í) í(7%
+objetoProyectoTest.Models.TiendasB+)
+'ProyectoTest.Controllers.HomeController

@@ -1,0 +1,207 @@
+
+7ProyectoTest.Logica.TiendasLogica.ListarTiendasActivo()n
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\TiendasLogica.cs@ @(0"0*õ
+0B C(JZX
+B, B(?(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+B0 B(=
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>w
+u
+B B(?5
+rptListaTiendas"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+C? C(J
+%2string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+C- C(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+C1 C(>
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2strings
+q
+C! C(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*Ñ
+1	E E(ãWU
+	E! E(å&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand´
+®
+E% E(/
+
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%5 System.Data.SqlClient.SqlCommand*TRP
+NSELECT IdTiendas, Descripcion, Direccion, Activo FROM Tiendas WHERE Activo = 1*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionh
+f
+	E E(å'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%5 System.Data.SqlClient.SqlCommand*
+2*
+2a	 a(	*
+3
+4*ñ
+3I J(:z
+x
+I I($
+
+%7void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectionó
+î
+J' J(:)
+%8#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandl
+j
+J" J(:)
+dr#System.Data.SqlClient.SqlDataReader"__id*-+
+)
+%8#System.Data.SqlClient.SqlDataReader*
+5*í
+5L L(${y
+L L($
+
+%9bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+6
+7*°
+6N S(BMK
+N, T("
+%10ProyectoTest.Models.Tiendas"ProyectoTest.Models.Tiendash
+f
+N0 N(7
+%11void"%ProyectoTest.Models.Tiendas.Tiendas()*&$
+"
+%10ProyectoTest.Models.Tiendas§°
+P8 P(G
+%12object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	IdTiendas2this[string].getMK
+P8 P(R
+%13string"object.ToString()*
+
+%12object2
+ToString()a
+_
+P( P(S
+
+%14int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%13string{
+y
+P P(S
+
+%15int")ProyectoTest.Models.Tiendas.IdTiendas.set*&$
+"
+%10ProyectoTest.Models.Tiendas*
+
+
+%14int¶£
+Q* Q(;
+%16object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+Q* Q(F
+%17string"object.ToString()*
+
+%16object2
+ToString()Ñ
+Å
+Q Q(F
+%18string"+ProyectoTest.Models.Tiendas.Descripcion.set*&$
+"
+%10ProyectoTest.Models.Tiendas*
+
+%17string§°
+R( R(7
+%19object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	Direccion2this[string].getMK
+R( R(B
+%20string"object.ToString()*
+
+%19object2
+ToString()Å
+
+R R(B
+%21string")ProyectoTest.Models.Tiendas.Direccion.set*&$
+"
+%10ProyectoTest.Models.Tiendas*
+
+%20string°û
+S7 S(C
+%22object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Activo2this[string].getMK
+S7 S(N
+%23string"object.ToString()*
+
+%22object2
+ToString()d
+b
+S% S(O
+%24bool" System.Convert.ToBoolean(string)*"
+System.Convert*
+
+%23stringz
+x
+S S(O
+%25bool"&ProyectoTest.Models.Tiendas.Activo.set*&$
+"
+%10ProyectoTest.Models.Tiendas*
+
+%24boolØ
+¨
+N T(
+%26void"0System.Collections.Generic.ICollection<T>.Add(T)*97
+5
+rptListaTiendas"System.Collections.Generic.List<T>*&$
+"
+%10ProyectoTest.Models.Tiendas*
+5*“
+7V X(*~|
+V V(
+%27void"+System.Data.SqlClient.SqlDataReader.Close()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Close()"C
+X X(+7
+5
+rptListaTiendas"System.Collections.Generic.List<T>*ß
+4] ^(*S
+Q
+] ](*5
+rptListaTiendas"System.Collections.Generic.List<T>"__id*
+"""C
+^ ^(+7
+5
+rptListaTiendas"System.Collections.Generic.List<T>*
+8a	 a(	*
+9*.
+9a	 a(	"
+a a(	
+implicit returnB%#
+!ProyectoTest.Logica.TiendasLogica

@@ -1,0 +1,285 @@
+
+9ProyectoTest.Logica.UsuarioLogica.Obtener(string, string)n
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UsuarioLogica.cs! !("0*˜
+0# $(JC
+A
+# #(!%
+objetoProyectoTest.Models.Usuario"__id*
+""T
+R
+$? $(J
+%0string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring\Z
+$- $(K)
+%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnection•
+’
+$1 $(>
+
+%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+
+%0strings
+q
+$! $(K0
+	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+1*’
+1( /(AVT
+(% ((S&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandî
+ë
+() ((3
+
+%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%3 System.Data.SqlClient.SqlCommand*
+sp_obtenerUsuario*42
+0
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+( ((S'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%3 System.Data.SqlClient.SqlCommandŸ
+œ
+) )("2
+%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandÜ
+Ù
+) )(B(
+%6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%5,System.Data.SqlClient.SqlParameterCollection*
+
+Correo*
+
+_correostringŸ
+œ
+* *("2
+%7,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandä
+á
+* *(J(
+%8"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%7,System.Data.SqlClient.SqlParameterCollection*
+
+Contrasena*
+
+_contrasenastring"
+ 
++& +(A
+%9"__id*
+""–
+“
++ +(A
+%10System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%9{
+y
+- -($
+%11void"*System.Data.SqlClient.SqlConnection.Open()*42
+0
+	oConexion#System.Data.SqlClient.SqlConnection˜
+•
+/. /(A*
+%12#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+'
+cmd System.Data.SqlClient.SqlCommandm
+k
+/) /(A)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%12#System.Data.SqlClient.SqlDataReader*
+2*“
+20 0((|z
+0 0((
+%13bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+3
+4*Ì
+31 8(XMK
+1% 9("
+%14ProyectoTest.Models.Usuario"ProyectoTest.Models.Usuarioh
+f
+1) 1(0
+%15void"%ProyectoTest.Models.Usuario.Usuario()*&$
+"
+%14ProyectoTest.Models.Usuario¤¡
+3< 3(K
+%16object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	IdUsuario2this[string].getMK
+3< 3(V
+%17string"object.ToString()*
+
+%16object2
+ToString()a
+_
+3, 3(W
+
+%18int"System.Convert.ToInt32(string)*"
+System.Convert*
+
+%17string{
+y
+3  3(W
+
+%19int")ProyectoTest.Models.Usuario.IdUsuario.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+
+%18int¢Ÿ
+4* 4(7
+%20object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*	
+Nombres2this[string].getMK
+4* 4(B
+%21string"object.ToString()*
+
+%20object2
+ToString()
+}
+4  4(B
+%22string"'ProyectoTest.Models.Usuario.Nombres.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+%21string¤¡
+5, 5(;
+%23object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+	Apellidos2this[string].getMK
+5, 5(F
+%24string"object.ToString()*
+
+%23object2
+ToString()
+
+5  5(F
+%25string")ProyectoTest.Models.Usuario.Apellidos.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+%24string¡ž
+6) 6(5
+%26object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Correo2this[string].getMK
+6) 6(@
+%27string"object.ToString()*
+
+%26object2
+ToString()~
+|
+6  6(@
+%28string"&ProyectoTest.Models.Usuario.Correo.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+%27string¥¢
+7- 7(=
+%29object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+
+Contrasena2this[string].getMK
+7- 7(H
+%30string"object.ToString()*
+
+%29object2
+ToString()ƒ
+€
+7  7(H
+%31string"*ProyectoTest.Models.Usuario.Contrasena.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+%30stringª§
+8D 8(Y
+%32object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+EsAdministrador2this[string].getMK
+8D 8(d
+%33string"object.ToString()*
+
+%32object2
+ToString()d
+b
+82 8(e
+%34bool" System.Convert.ToBoolean(string)*"
+System.Convert*
+
+%33string„
+
+8  8(e
+%35bool"/ProyectoTest.Models.Usuario.EsAdministrador.set*&$
+"
+%14ProyectoTest.Models.Usuario*
+
+%34boola
+_
+1 9(%
+objetoProyectoTest.Models.Usuario"__id*&$
+"
+%14ProyectoTest.Models.Usuario*
+2*
+4F	 F(	*
+5*
+5F	 F(	*
+6
+7*˜
+6A B(/MK
+A A(*"
+%36ProyectoTest.Models.Usuario"ProyectoTest.Models.Usuarioh
+f
+A! A((
+%37void"%ProyectoTest.Models.Usuario.Usuario()*&$
+"
+%36ProyectoTest.Models.Usuarioa
+_
+A A(*%
+objetoProyectoTest.Models.Usuario"__id*&$
+"
+%36ProyectoTest.Models.Usuariob`
+B% B(/
+%38string"System.Exception.Message.get*
+
+exSystem.Exception2Message.getƒ
+€
+B B(/
+%39string"'ProyectoTest.Models.Usuario.Mensaje.set*)'
+%
+objetoProyectoTest.Models.Usuario*
+
+%38string*
+7*
+7F	 F(	*
+8*B
+8E E("3
+E E('
+%
+objetoProyectoTest.Models.Usuario*.
+9F	 F(	"
+F F(	
+implicit return:
+! !(-
+_correostring:!
+!/ !(A
+_contrasenastringB%#
+!ProyectoTest.Logica.UsuarioLogica

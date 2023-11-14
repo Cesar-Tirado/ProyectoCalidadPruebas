@@ -9,6 +9,7 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/PluginsCSS")
     @Scripts.Render("~/bundles/modernizr")
+   
 </head>
 
 
@@ -20,96 +21,92 @@
             padding-top: 0.0rem;
             padding-bottom: 0.0rem
         }
+
         .navbar-nav {
-            border-radius: 10px !important; /* Puedes ajustar el valor para controlar la cantidad de redondeo */
+            border-radius: 2px !important;
         }
+
         .nav-link {
             color: white !important;
         }
 
+        .btn-personalizado {
+            border-radius: 7px !important;
+        }
+
+        .custom-col {
+            text-align: right;
+            padding-right: 10px;
+        }
     </style>
 
-    <header class="mt-0">
-        @*<div class="">
-            <a class="navbar-brand img-thumbnail" href="#">
-                <img src="@Url.Content("~/Imagenes/LongHorn/banner.jpg")" style="width:100%" />
-            </a>
-        </div>*@
-    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 py-lg-0 px-lg-5">
-        <div class="container">
-            <div class="container-fluid p-0">
+    <div class="bg-light" style="height:70px">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col col-lg-4 col-md-4 text-left">
+                    <span> Sistema delivery </span>
+                </div>
 
-                <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 py-lg-0 px-lg-5">
-
-                    <a href="index.html" class="navbar-brand ml-lg-3">
-                        <span> Sistema de Delivery </span>
-                    </a>
-
-                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="navbar-nav m-auto py-0">
-                            @*<a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="price.html" class="nav-item nav-link">Pricing</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                        <a href="opening.html" class="dropdown-item">Open Hours</a>
-                                        <a href="team.html" class="dropdown-item">Our Team</a>
-                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>*@
-
-
-                            @*<select id="selectCategoria" class="form-select " aria-label="Default select example">
-                                    <option selected value="0">Ver toda la carta</option>
-                                </select>*@
-
-                            <div class="p-2 mt-3">
-                                <p class="lead fw-normal text-danger fs-6" id="idcompra"> </p><!-- Nombre Recojo o Delivery -->
-                            </div>
-                        </div>
-
-                        <!-- Navbar-->
-                        @{if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
-
-                            {
-                                <form action="@Url.Action("Carrito","Tienda")" method="post" class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                                    <button class="btn btn-close-danger text-bg-danger" type="submit">
-                                        <i class="fas fa-shopping-cart bg-danger">
-                                        </i> <span class="badge bg-danger text-white ms-1 rounded-pill contador-carrito">0</span>
-                                    </button>
-                                </form>
-
-                                <ul class="navbar-nav me-2 ">
-                                    <li class="nav-item dropdown bg-danger ">
-                                        <a class="nav-link dropdown-toggle " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fas fa-user fa-fw"></i>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-end bg-light-subtle " aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="@Url.Action("Index","Tienda")">Ir a Tienda</a></li>
-                                            @*<li><a class="dropdown-item" href="@Url.Action("Compras","Tienda")">Mis Compras</a></li>*@
-                                            <li><hr class="dropdown-divider" /></li>
-                                            @*<li><a class="dropdown-item" href="@Url.Action("CerrarSesion","Tienda")">Cerrar Sesión</a></li>*@
-                                        </ul>
-                                    </li>
-                                </ul>
-                            }
-                        }
+                <div class="col col-lg-4 col-md-4 py-3 text-center d-none d-lg-block">
+                    <div class="">
+                        <p class="lead fw-normal text-danger fs-6" id="idcompra"> </p>
                     </div>
-                </nav>
+                </div>
+
+                <div class="col col-lg-4 col-md-4 custom-col">
+                    @{if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == false)
+
+                        {
+                                        <form action="@Url.Action("Carrito","Tienda")" method="post" class="form-inline me-0 me-md-1 my-1 my-md-0 p-0 text-white">
+                                            <button class="btn btn-close-danger text-bg-danger btn-personalizado" type="submit">
+                                                Pagar
+                                                <i class="fas fa-shopping-cart bg-danger" style="font-size:14px"></i>
+                                                <span class="badge ms-1 rounded-pill contador-carrito">0</span>
+                                            </button>
+                                            <ul class="col-3 d-inline-flex">
+                                                <li class="nav-item dropdown bg-danger">
+                                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fas fa-user"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end bg-light-subtle" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="@Url.Action("Index","Tienda")">Ir a Tienda</a></li>
+                                                        <li><a class="dropdown-item" href="@Url.Action("Compras","Tienda")">Mis Compras</a></li>
+                                                        <li><hr class="dropdown-divider" /></li>
+                                                        <li><a class="dropdown-item" href="@Url.Action("CerrarSesion","Tienda")">Cerrar Sesión</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </form>      
+                           
+                        }
+                    }
+
+                    @{if (((ProyectoTest.Models.Usuario)Session["Usuario"]).EsAdministrador == true)
+                        {
+                            <form class="col-6 d-inline-flex">
+                                <span class="badge bg-danger text-white ms-1 fs-6">Logueado como Administrador</span>
+                            </form>
+                            <ul class="col-3 d-inline-flex">
+                                <li class="nav-item dropdown bg-danger">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end bg-light-subtle" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="@Url.Action("Index","Tienda")">Ir a Tienda</a></li>
+                                        @*<li><a class="dropdown-item" href="@Url.Action("Compras","Tienda")">Mis Compras</a></li>*@
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li><a class="dropdown-item" href="@Url.Action("CerrarSesion","Tienda")">Cerrar Sesión</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        }
+                    }
+
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
 
 
@@ -168,6 +165,7 @@
         $(document).ready(function () {
             obtenerCantidad();
         })
+
         function obtenerCantidad() {
             jQuery.ajax({
                 url: '@Url.Action("CantidadCarrito", "Tienda")',
@@ -176,13 +174,13 @@
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
+                   
                     $(".contador-carrito").text(data.respuesta);
                 },
                 error: function (error) {
                     console.log(error)
                 },
                 beforeSend: function () {
-
                 },
             });
 

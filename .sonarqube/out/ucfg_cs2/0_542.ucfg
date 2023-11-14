@@ -1,0 +1,89 @@
+
+BProyectoTest.Controllers.TiendaController.ObtenerProvincia(string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÍ Í(*"2*•
+0
+Ï Ó(L\Z
+
+Ï% Ï(:(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+Ï) Ï(8
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+Ï Ï(:,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>è
+å
+
+Ì Ì(+&
+%2 ProyectoTest.Logica.UbigeoLogica".ProyectoTest.Logica.UbigeoLogica.Instancia.get*&$""
+ ProyectoTest.Logica.UbigeoLogicaø
+º
+
+Ì Ì(M(
+%3"System.Collections.Generic.List<T>"9ProyectoTest.Logica.UbigeoLogica.ObtenerProvincia(string)**(
+&
+%2 ProyectoTest.Logica.UbigeoLogica*
+
+_IdDepartamentostringp
+n
+
+Ì Ì(M,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>$
+"
+
+Ó0 Ó(L
+%4"__id*
+""±
+Æ
+
+Ó Ó(M
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%4"/
+
+Ó Ó(N!
+
+%5System.Web.Mvc.JsonResult*2
+1
+Ô	 Ô(	"!
+
+Ô Ô(	
+implicit return*ó
+2
+ÍB Í(BA
+?
+
+Í Í(*
+%6"__entrypoint*
+
+_IdDepartamentostring{
+y
+
+È	 È(
+%7"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+_IdDepartamentostringA
+?
+
+Í+ Í(A
+_IdDepartamentostring"__annotation*
+
+%7*
+0:'
+
+Í+ Í(A
+_IdDepartamentostringB-+
+)ProyectoTest.Controllers.TiendaController

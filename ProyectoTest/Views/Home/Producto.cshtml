@@ -3,6 +3,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .modal-content {
+        margin-left: -200px;
+        align-content: center !important;
+        justify-content: center !important;
+        width: 1200px;
+    }
+    textarea {
+        height: 100px;
+    }
+    
+</style>
+
 <ol class="breadcrumb mb-4 mt-4">
     <li class="breadcrumb-item"><a href="index.html">Mantenedores</a></li>
     <li class="breadcrumb-item active">Productos</li>
@@ -24,11 +37,11 @@
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Descripcion</th>
+                    @*<th>Descripcion</th>
                     <th>OP-CC</th>
                     <th>OP-SC</th>
                     <th>OP-EX</th>
-                    <th>NUM-ADC</th>
+                    <th>NUM-ADC</th>*@
                     <th>Grupo</th>
                     <th>SubGrupo</th>
                     <th>Precio</th>
@@ -56,79 +69,135 @@
                 <input id="txtid" type="hidden" value="0" />
                 <form id="formNivel">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <div class="mb-2">
                                 <img id="img_producto" height="198" width="200" class="border border-dark" />
                             </div>
                             <div class="mb-2">
                                 <input class="form-control" type="file" id="imgproducto" onchange="readURL(this);">
                             </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-2">
+                                        <label for="cbomarca" class="form-label">Grupo</label>
+                                        <select id="cbomarca" class="form-select"></select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mb-2">
+                                        <label for="cbocategoria" class="form-label">Sub-Grupo</label>
+                                        <select id="cbocategoria" class="form-select"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-2">
+                                        <label for="txtprecio" class="form-label">Precio</label>
+                                        <input type="text" class="form-control required" id="txtprecio" name="descripcion" placeholder="Ingrese el precio" autocomplete="off">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="cboEstado">Estado</label>
+                                        <select id="cboEstado" class="form-select">
+                                            <option value="1">Activo</option>
+                                            <option value="0">No Activo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <div class="mb-2">
                                 <label for="txtnombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control required" id="txtnombre" name="nombre" autocomplete="off">
+                                <input type="text" class="form-control required" id="txtnombre" name="nombre" placeholder="Ingrese el nombre del producto." autocomplete="off">
                             </div>
                             <div class="mb-2">
-                                <label for="txtdescripcion" class="form-label">Desc</label>
-                                <textarea rows="5" class="form-control required" id="txtdescripcion" name="descripcion" autocomplete="off"></textarea>
+                                <label for="txtdescripcion" class="form-label">Descripción</label>
+                                <textarea rows="5" class="form-control required" id="txtdescripcion" name="descripcion" placeholder="Ingrese la descripción del producto." autocomplete="off"></textarea>
                             </div>
                             <div class="mb-2">
-                                <label for="txtmaxopciones" class="form-label">Max-Opciones Sin Costo</label>
+                                <label for="txtmaxopciones" class="form-label">Opciones Máximas Sin Precio (0 = ilimitadas)</label>
                                 <input type="number" class="form-control" id="txtmaxopciones" name="maxOpcionesSinCosto" min="0">
                             </div>
                             <div class="mb-2">
-                                <label for="txtsincosto" class="form-label">Adicionales (Sin Precio)</label>
-                                <textarea rows="5" class="form-control required" id="txtsincosto" name="opcionesSinCosto" autocomplete="off"></textarea>
+                                <label for="txtexcluyente" class="form-label">Opción Excluyente</label>
+                                <textarea rows="5" class="form-control required" id="txtexcluyente"
+                                          placeholder="El cliente solo podrá elegir una sola de cada grupo ingresado" name="opcionExcluyente" autocomplete="off"></textarea>
                             </div>
                             <div class="mb-2">
-                                <label for="txtexcluyente" class="form-label">OP-EX</label>
-                                <textarea rows="5" class="form-control required" id="txtexcluyente" name="opcionExcluyente" autocomplete="off"></textarea>
+                                <label for="txtsincosto" class="form-label">Adicionales (Sin Precio)</label>
+                                <textarea rows="5" class="form-control required" id="txtsincosto"
+                                          placeholder="Opciones adicionales para el cliente sin precio"
+                                          name="opcionesSinCosto" autocomplete="off"></textarea>
                             </div>
+
                             <div class="mb-2">
                                 <label for="txtconcosto" class="form-label">Adicionales (Con Precio)</label>
-                                <textarea rows="5" class="form-control required" id="txtconcosto" name="opcionesConCosto" autocomplete="off"></textarea>
+                                <textarea rows="5" class="form-control required" id="txtconcosto" name="opcionesConCosto" placeholder="Opciones adicionales para el cliente que modifican el precio total" autocomplete="off"></textarea>
                             </div>
                         </div>
 
-                    </div>
+                        <div class="col-sm-4">
+                            @* ---- COLUMNA EJEMPLO ------ *@
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
 
-                    <div class="row">
-                        <div class="col-sm-6">
+
+                            @*<div class="mb-2">
+
+            <label for="txtmaxopciones" class="form-label"> Esta cantidad indica las opciones máximas a elegir SIN COSTO para el cliente.</label>
+            <label for="txtmaxopciones" class="form-label"> Sí se escribe el número 2, el cliente puede elegir 2 opciones (0 = ilimitadas). </label>
+            <label for="txtmaxopciones" class="form-label"> </label>
+        </div>*@
                             <div class="mb-2">
-                                <label for="cbomarca" class="form-label">Grupo</label>
-                                <select id="cbomarca" class="form-select"></select>
+                                <br />
+
+                                <label for="txtmaxopciones" class="form-label"><b>Ejemplo:</b></label>
+                                <label for="txtmaxopciones" class="form-label"> Término: Medio,Tres Cuartos,Bien Cocida - Elige el tipo de bebida: Sin azúcar,Normal</label>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
+                            <br />
+
+                            <br />
                             <div class="mb-2">
-                                <label for="cbocategoria" class="form-label">Sub-Grupo</label>
-                                <select id="cbocategoria" class="form-select"></select>
+                                <label for="txtsincosto" class="form-label"> <b>Ejemplo:</b> </label>
+                                <br />
+                                <label for="txtsincosto">Título: OP1,OP2,OP3 - Título 2: OP1,OP2 </label>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-sm-6">
+                            <br />
                             <div class="mb-2">
-                                <label for="txtprecio" class="form-label">Precio</label>
-                                <input type="text" class="form-control required" id="txtprecio" name="descripcion" autocomplete="off">
+                                <br />
+                                <br />
+                                <label for="txtmaxopciones" class="form-label"> <b>Ejemplo:</b></label>
+                                <br />
+                                <label for="txtmaxopciones" class="form-label">Crema Volteada + 10,Botella De Vino + 50</label>
                             </div>
+
                         </div>
 
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="cboEstado">Estado</label>
-                                <select id="cboEstado" class="form-select">
-                                    <option value="1">Activo</option>
-                                    <option value="0">No Activo</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </form>
 
             </div>
@@ -174,11 +243,11 @@
                     },
                     "columns": [
                         { "data": "Nombre" },
-                        { "data": "Descripcion" },
-                        { "data": "OpcionesConCosto" },
-                        { "data": "OpcionesSinCosto" },
-                        { "data": "OpcionExcluyente" },
-                        { "data": "MaxOpcionesSinCosto" },
+                        //{ "data": "Descripcion" },
+                        //{ "data": "OpcionesConCosto" },
+                        //{ "data": "OpcionesSinCosto" },
+                        //{ "data": "OpcionExcluyente" },
+                        //{ "data": "MaxOpcionesSinCosto" },
                         {
                             "data": "oMarca", render: function (data) {
 
@@ -280,9 +349,9 @@
             $("#img_producto").attr({ "src": "" });
             $("#txtnombre").val("");
             $("#txtdescripcion").val("");
-            $("#txtconcosto").val("") || null;
-            $("#txtsincosto").val("") || null;
-            $("#txtexcluyente").val("") || null;
+            $("#txtconcosto").val("");
+            $("#txtsincosto").val("");
+            $("#txtexcluyente").val("");
             $("#txtmaxopciones").val("0"); // Nuevo campo para MaxOpcionesSinCosto
             $("#cbomarca").val($("#cbomarca option:first").val());
             $("#cbocategoria").val($("#cbocategoria option:first").val());
@@ -353,8 +422,8 @@
                 MaxOpcionesSinCosto: $("#txtmaxopciones").val(), // Nuevo campo para MaxOpcionesSinCosto
                 oMarca: { IdMarca: $("#cbomarca option:selected").val() },
                 oCategoria: { IdCategoria: $("#cbocategoria option:selected").val() },
-                Precio: $("#txtprecio").val(),
-                RutaImagen: "",
+                Precio: $("#txtprecio").val() || 0,
+                RutaImagen: "" || "~/Imagenes/Platos/sin imagen.png",
                 Activo: parseInt($("#cboEstado").val()) == 1 ? true : false
             }
 

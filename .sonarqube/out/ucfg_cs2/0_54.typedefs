@@ -1,0 +1,13 @@
+Ë
+3ProyectoTest.Models.Niubiz.Consultas.PaymentRequestobjectX
+PaymentRequest()DProyectoTest.Models.Niubiz.Consultas.PaymentRequest.PaymentRequest()L
+
+amount.get>ProyectoTest.Models.Niubiz.Consultas.PaymentRequest.amount.getL
+
+amount.set>ProyectoTest.Models.Niubiz.Consultas.PaymentRequest.amount.setR
+antifraud.getAProyectoTest.Models.Niubiz.Consultas.PaymentRequest.antifraud.getR
+antifraud.setAProyectoTest.Models.Niubiz.Consultas.PaymentRequest.antifraud.setN
+channel.get?ProyectoTest.Models.Niubiz.Consultas.PaymentRequest.channel.getN
+channel.set?ProyectoTest.Models.Niubiz.Consultas.PaymentRequest.channel.setf
+recurrenceMaxAmount.getKProyectoTest.Models.Niubiz.Consultas.PaymentRequest.recurrenceMaxAmount.getf
+recurrenceMaxAmount.setKProyectoTest.Models.Niubiz.Consultas.PaymentRequest.recurrenceMaxAmount.set

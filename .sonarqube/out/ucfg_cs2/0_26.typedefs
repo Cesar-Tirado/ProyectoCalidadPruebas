@@ -1,0 +1,8 @@
+í
+"ProyectoTest.Logica.ProductoLogicaobjectG
+ProductoLogica()3ProyectoTest.Logica.ProductoLogica.ProductoLogica()7
+Listar()+ProyectoTest.Logica.ProductoLogica.Listar()u
+'Registrar(ProyectoTest.Models.Producto)JProyectoTest.Logica.ProductoLogica.Registrar(ProyectoTest.Models.Producto)u
+'Modificar(ProyectoTest.Models.Producto)JProyectoTest.Logica.ProductoLogica.Modificar(ProyectoTest.Models.Producto)‹
+2ActualizarRutaImagen(ProyectoTest.Models.Producto)UProyectoTest.Logica.ProductoLogica.ActualizarRutaImagen(ProyectoTest.Models.Producto)A
+Eliminar(int)0ProyectoTest.Logica.ProductoLogica.Eliminar(int)

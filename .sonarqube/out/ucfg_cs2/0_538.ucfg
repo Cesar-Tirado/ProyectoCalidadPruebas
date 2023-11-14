@@ -1,0 +1,48 @@
+
+8ProyectoTest.Controllers.TiendaController.CerrarSesion()x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÙ Ù(("2*°
+0
+Û Ý(5|
+z
+
+Û Û()
+
+%0void"1System.Web.Security.FormsAuthentication.SignOut()*-+")
+'System.Web.Security.FormsAuthentication}
+{
+
+Ü Ü(%
+%1System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller¯¬
+
+Ü Ü(%
+%2object":System.Collections.Generic.ICollection<T>.this[string].set*)'
+%
+%1System.Web.HttpSessionStateBase*	
+Usuario*
+""2this[string].set³
+°
+
+Ý Ý(6*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*
+
+Public":
+
+Ý Ý(7,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*2
+1
+Þ	 Þ(	"!
+
+Þ Þ(	
+implicit return*8
+2
+Ù* Ù(*"
+ 
+
+Ù Ù((
+%4"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

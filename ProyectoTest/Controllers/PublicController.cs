@@ -17,10 +17,15 @@ namespace ProyectoTest.Controllers
         public ActionResult Index()
         {
             oUsuario = new Usuario();
-            oUsuario.Correo = "cesar@admin.com";
-            oUsuario.IdUsuario = 2;
-            oUsuario.Nombres = "cesar";
+            oUsuario.Correo = "public@admin.com";
+            oUsuario.IdUsuario = 1;
+            oUsuario.Nombres = "public";
             Session["Usuario"] = oUsuario;
+            return View();
+        }
+
+        public ActionResult Index2()
+        {
             return View();
         }
 

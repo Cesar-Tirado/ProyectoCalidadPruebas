@@ -1,0 +1,105 @@
+
+/ProyectoTest.Controllers.HomeController.Marca()t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs (!"4* 
+0! !(*{
+y
+! !(%
+%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
+! !("
+%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%0System.Web.HttpSessionStateBase*	
+Usuario2this[string].getf
+d
+! !(*
+
+%2bool""object.operator ==(object, object)*
+"
+object*
+
+%1object*
+""*
+1
+2*ú
+1" "(8°
+­
+" "(9*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*	
+Login"8
+" "(:,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*ð
+2$ $(”
+‘
+$ $(
+
+%4void"proyectotest/views/home/marca*
+
+%5*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject”
+‘
+$ $(
+
+%6void"proyectotest/views/_viewstart*
+
+%7*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject˜
+•
+$ $(
+
+%8void"!proyectotest/views/shared/_layout*
+
+%9*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+$ $(
+
+
+%8void*.
+3%	 %(	"
+% %(	
+implicit return*5
+4# (#!
+
+ (!
+%10"__entrypoint*
+0B+)
+'ProyectoTest.Controllers.HomeController

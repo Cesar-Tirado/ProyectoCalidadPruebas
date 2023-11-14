@@ -1,0 +1,144 @@
+
+<ProyectoTest.Controllers.TiendaController.ObtenerCompraUsr()x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs• •(*"2*Ü
+0
+ß ‘(\Z
+
+ß" ß(4(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+ß& ß(2
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+ß ß(4,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>í
+è
+
+© ©(,'
+%2!ProyectoTest.Logica.CarritoLogica"/ProyectoTest.Logica.CarritoLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.CarritoLogicaî
+ë
+
+©B ©(J!
+%3ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.TiendaController"'
+oUsuarioProyectoTest.Models.Usuariok
+i
+
+©B ©(T	
+%4int")ProyectoTest.Models.Usuario.IdUsuario.get*%#
+!
+%3ProyectoTest.Models.Usuario≤
+Ø
+
+© ©(U(
+%5"System.Collections.Generic.List<T>";ProyectoTest.Logica.CarritoLogica.ObtenerCompraUsuario(int)*+)
+'
+%2!ProyectoTest.Logica.CarritoLogica*
+	
+%4intp
+n
+
+© ©(U,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%5"System.Collections.Generic.List<T>∫
+∑
+
+´ Ã(!(
+%6"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*
+""p
+n
+
+´ Ã(!,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%6"System.Collections.Generic.List<T>†
+ù
+
+Œ Œ(@.
+%7(System.Linq.IOrderedEnumerable<TElement>"ÑSystem.Linq.Enumerable.OrderByDescending<TSource, TKey>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>)*"
+System.Linq.Enumerable*0.
+,
+oLista"System.Collections.Generic.List<T>*
+""‰
+·
+
+Œ Œ(I(
+%8"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*20
+.
+%7(System.Linq.IOrderedEnumerable<TElement>p
+n
+
+Œ Œ(I,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%8"System.Collections.Generic.List<T>Ä~
+
+– –(W:
+%94System.Web.Script.Serialization.JavaScriptSerializer"4System.Web.Script.Serialization.JavaScriptSerializer©
+¶
+
+–! –(U
+%10void"KSystem.Web.Script.Serialization.JavaScriptSerializer.JavaScriptSerializer()*><
+:
+%94System.Web.Script.Serialization.JavaScriptSerializerô
+ñ
+
+– –(WB
+
+serializer4System.Web.Script.Serialization.JavaScriptSerializer"__id*><
+:
+%94System.Web.Script.Serialization.JavaScriptSerializer%
+#
+
+“4 “(P
+%11"__id*
+""≥
+∞
+
+“ “(Q 
+%12System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*	
+
+%11]
+[
+
+“ “(Q!
+jsonSystem.Web.Mvc.JsonResult"__id*$"
+ 
+%12System.Web.Mvc.JsonResultä
+á
+
+” ”(*
+%13System.Nullable<T>"+System.Web.Mvc.JsonResult.MaxJsonLength.set*%#
+!
+jsonSystem.Web.Mvc.JsonResult*
+2Ä µÓ"1
+
+‘ ‘(#
+!
+jsonSystem.Web.Mvc.JsonResult*2
+1
+’	 ’(	"!
+
+’ ’(	
+implicit return*9
+2
+•, •(,#
+!
+
+• •(*
+%14"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

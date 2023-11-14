@@ -30,13 +30,11 @@ namespace ProyectoTest.Logica
 
         public List<Tiendas> Listar()
         {
-
             List<Tiendas> rptListaTiendas = new List<Tiendas>();
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
-                SqlCommand cmd = new SqlCommand("sp_obtenerTiendas", oConexion);
-                cmd.CommandType = CommandType.StoredProcedure;
-
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Tiendas", oConexion);
+                cmd.CommandType = CommandType.Text;
                 try
                 {
                     oConexion.Open();
@@ -48,13 +46,12 @@ namespace ProyectoTest.Logica
                         {
                             IdTiendas = Convert.ToInt32(dr["IdTiendas"].ToString()),
                             Descripcion = dr["Descripcion"].ToString(),
+                            Direccion = dr["Direccion"].ToString(),
                             Activo = Convert.ToBoolean(dr["Activo"].ToString())
                         });
                     }
                     dr.Close();
-
                     return rptListaTiendas;
-
                 }
                 catch (Exception ex)
                 {
@@ -69,7 +66,7 @@ namespace ProyectoTest.Logica
             List<Tiendas> rptListaTiendas = new List<Tiendas>();
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
-                SqlCommand cmd = new SqlCommand("SELECT IdTiendas, Descripcion, Activo FROM Tiendas WHERE Activo = 1", oConexion);
+                SqlCommand cmd = new SqlCommand("SELECT IdTiendas, Descripcion, Direccion, Activo FROM Tiendas WHERE Activo = 1", oConexion);
 
                 try
                 {
@@ -82,6 +79,7 @@ namespace ProyectoTest.Logica
                         {
                             IdTiendas = Convert.ToInt32(dr["IdTiendas"].ToString()),
                             Descripcion = dr["Descripcion"].ToString(),
+                            Direccion = dr["Direccion"].ToString(),
                             Activo = Convert.ToBoolean(dr["Activo"].ToString())
                         });
                     }
@@ -99,7 +97,6 @@ namespace ProyectoTest.Logica
         }
 
 
-
         public bool Registrar(Tiendas oTiendas)
         {
             bool respuesta = true;
@@ -109,14 +106,12 @@ namespace ProyectoTest.Logica
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarTiendas", oConexion);
                     cmd.Parameters.AddWithValue("Descripcion", oTiendas.Descripcion);
+                    cmd.Parameters.AddWithValue("Direccion", oTiendas.Direccion); 
                     cmd.Parameters.AddWithValue("Activo", oTiendas.Activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
-
                     oConexion.Open();
-
                     cmd.ExecuteNonQuery();
-
                     respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
 
                 }
@@ -138,6 +133,7 @@ namespace ProyectoTest.Logica
                     SqlCommand cmd = new SqlCommand("sp_ModificarTiendas", oConexion);
                     cmd.Parameters.AddWithValue("IdTiendas", oTiendas.IdTiendas);
                     cmd.Parameters.AddWithValue("Descripcion", oTiendas.Descripcion);
+                    cmd.Parameters.AddWithValue("Direccion", oTiendas.Direccion); 
                     cmd.Parameters.AddWithValue("Activo", oTiendas.Activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
 
@@ -156,9 +152,7 @@ namespace ProyectoTest.Logica
                 }
 
             }
-
             return respuesta;
-
         }
 
         public bool Eliminar(int id)
@@ -168,26 +162,19 @@ namespace ProyectoTest.Logica
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("delete from Tiendas where idTiendas = @id", oConexion);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Tiendas WHERE idTiendas = @id", oConexion);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.CommandType = CommandType.Text;
-
                     oConexion.Open();
-
                     cmd.ExecuteNonQuery();
-
                     respuesta = true;
-
                 }
                 catch (Exception ex)
                 {
                     respuesta = false;
                 }
-
             }
-
             return respuesta;
-
         }
     }
 }

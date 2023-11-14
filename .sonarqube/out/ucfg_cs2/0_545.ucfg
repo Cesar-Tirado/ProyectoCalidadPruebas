@@ -1,0 +1,175 @@
+
+JProyectoTest.Controllers.TiendaController.CambiarEstadoCompra(int, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csè è(/"6*ﬁ
+0
+ì% ì(OV
+T
+
+ìD ì(O
+%0string"__id*20*.
+ProyectoTest.Logica.Conexion"
+CNstring^\
+
+ì2 ì(P)
+%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
+î
+
+ì6 ì(C
+
+%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+
+%0stringv
+t
+
+ì% ì(P1
+
+connection#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%1#System.Data.SqlClient.SqlConnection*
+1*“
+1
+ï õ(m}
+{
+
+ï ï(%
+
+%3void"*System.Data.SqlClient.SqlConnection.Open()*53
+1
+
+connection#System.Data.SqlClient.SqlConnectionXV
+
+ñ% ñ(\&
+%4 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand˘
+ˆ
+
+ñ) ñ(3
+
+%5void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+&
+%4 System.Data.SqlClient.SqlCommand*
+sp_actualizarEstadoCompra*53
+1
+
+connection#System.Data.SqlClient.SqlConnectioni
+g
+
+ñ ñ(\'
+cmd System.Data.SqlClient.SqlCommand"__id**(
+&
+%4 System.Data.SqlClient.SqlCommand$
+"
+
+ó& ó(A
+%6"__id*
+""ó
+î
+
+ó ó(A
+%7System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+'
+cmd System.Data.SqlClient.SqlCommand*
+
+%6°
+û
+
+ò ò("2
+%8,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommand‘
+—
+
+ò ò(F(
+%9"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%8,System.Data.SqlClient.SqlParameterCollection*
+	@IdCompra*
+""¢
+ü
+
+ô ô("3
+%10,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandÍ
+Á
+
+ô ô(L)
+%11"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*75
+3
+%10,System.Data.SqlClient.SqlParameterCollection*
+@NuevoEstado*
+
+nuevoEstadostring{
+y
+
+ö ö()
+
+%12int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+'
+cmd System.Data.SqlClient.SqlCommandÑ
+Å
+
+õ õ(o 
+%13System.Web.Mvc.JsonResult"&System.Web.Mvc.Controller.Json(object)*
+System.Web.Mvc.Controller*
+"""0
+
+õ õ(p"
+ 
+%13System.Web.Mvc.JsonResult*
+2
+¢	 ¢(	*
+3*
+3
+¢	 ¢(	*
+4
+5*»
+4
+† †(kÑ
+Å
+
+† †(m 
+%14System.Web.Mvc.JsonResult"&System.Web.Mvc.Controller.Json(object)*
+System.Web.Mvc.Controller*
+"""0
+
+† †(n"
+ 
+%14System.Web.Mvc.JsonResult*2
+5
+¢	 ¢(	"!
+
+¢ ¢(	
+implicit return*ò
+6
+èQ è(QH
+F
+
+è è(/
+%15"__entrypoint*
+""*
+
+nuevoEstadostringx
+v
+
+é	 é(
+%16"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+nuevoEstadostring>
+<
+
+è> è(P
+nuevoEstadostring"__annotation*	
+
+%16*
+0:
+
+è0 è(<
+idCompraint:#
+
+è> è(P
+nuevoEstadostringB-+
+)ProyectoTest.Controllers.TiendaController

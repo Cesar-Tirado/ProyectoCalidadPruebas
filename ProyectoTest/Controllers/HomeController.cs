@@ -44,6 +44,15 @@ namespace ProyectoTest.Controllers
             return View();
         }
 
+        public ActionResult Reserva()
+        {
+            if (Session["Usuario"] == null)
+                return RedirectToAction("Index", "Login");
+
+            return View();
+        }
+
+
         public ActionResult Producto()
         {
             if (Session["Usuario"] == null)
@@ -60,6 +69,13 @@ namespace ProyectoTest.Controllers
             return View();
         }
 
+        public ActionResult Clientes()
+        {
+            if (Session["Usuario"] == null)
+                return RedirectToAction("Index", "Login");
+
+            return View();
+        }
 
         [HttpGet]
         public JsonResult ListarCategoria() {
@@ -67,6 +83,7 @@ namespace ProyectoTest.Controllers
             oLista = CategoriaLogica.Instancia.Listar();
             return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
         }
+
         [HttpPost]
         public JsonResult GuardarCategoria(Categoria objeto)
         {
@@ -74,6 +91,7 @@ namespace ProyectoTest.Controllers
             respuesta = (objeto.IdCategoria == 0) ? CategoriaLogica.Instancia.Registrar(objeto) : CategoriaLogica.Instancia.Modificar(objeto);
             return Json(new { resultado = respuesta }, JsonRequestBehavior.AllowGet);
         }
+
         [HttpPost]
         public JsonResult EliminarCategoria(int id)
         {
@@ -83,7 +101,6 @@ namespace ProyectoTest.Controllers
         }
 
 
-
         [HttpGet]
         public JsonResult ListarMarca()
         {
@@ -91,6 +108,7 @@ namespace ProyectoTest.Controllers
             oLista = MarcaLogica.Instancia.Listar();
             return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
         }
+
         [HttpPost]
         public JsonResult GuardarMarca(Marca objeto)
         {
@@ -98,6 +116,7 @@ namespace ProyectoTest.Controllers
             respuesta = (objeto.IdMarca == 0) ? MarcaLogica.Instancia.Registrar(objeto) : MarcaLogica.Instancia.Modificar(objeto);
             return Json(new { resultado = respuesta }, JsonRequestBehavior.AllowGet);
         }
+
         [HttpPost]
         public JsonResult EliminarMarca(int id)
         {
@@ -106,7 +125,6 @@ namespace ProyectoTest.Controllers
             return Json(new { resultado = respuesta }, JsonRequestBehavior.AllowGet);
         }
 
-
         [HttpGet]
         public JsonResult ListarTiendas()
         {
@@ -114,6 +132,16 @@ namespace ProyectoTest.Controllers
             oLista = TiendasLogica.Instancia.Listar();
             return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
         }
+
+        [HttpGet]
+        public JsonResult ListarClientes()
+        {
+            List<Cliente> oLista = new List<Cliente>();
+            oLista = UsuarioLogica.Instancia.ListarClientes();
+            return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
+        }
+
+      
         [HttpPost]
         public JsonResult GuardarTiendas(Tiendas objeto)
         {
@@ -121,6 +149,8 @@ namespace ProyectoTest.Controllers
             respuesta = (objeto.IdTiendas == 0) ? TiendasLogica.Instancia.Registrar(objeto) : TiendasLogica.Instancia.Modificar(objeto);
             return Json(new { resultado = respuesta }, JsonRequestBehavior.AllowGet);
         }
+
+      
         [HttpPost]
         public JsonResult EliminarTiendas(int id)
         {
@@ -129,12 +159,10 @@ namespace ProyectoTest.Controllers
             return Json(new { resultado = respuesta }, JsonRequestBehavior.AllowGet);
         }
 
-
         [HttpGet]
         public JsonResult ListarProducto()
         {
             List<Producto> oLista = new List<Producto>();
-
             oLista = ProductoLogica.Instancia.Listar();
             oLista = (from o in oLista
                       select new Producto()
@@ -152,12 +180,13 @@ namespace ProyectoTest.Controllers
                           RutaImagen = o.RutaImagen,
                           base64 = utilidades.convertirBase64(Server.MapPath(o.RutaImagen)),
                           extension = Path.GetExtension(o.RutaImagen).Replace(".", ""),
-
                           Activo = o.Activo,
                       }).ToList();
-            return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
+            var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+            var json = Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
+            json.MaxJsonLength = 500000000;
+            return json;
         }
-
 
         [HttpPost]
         public JsonResult GuardarProducto(string objeto, HttpPostedFileBase imagenArchivo)
@@ -169,7 +198,7 @@ namespace ProyectoTest.Controllers
                 Producto oProducto = new Producto();
                 oProducto = JsonConvert.DeserializeObject<Producto>(objeto);
 
-                string GuardarEnRuta = "~/Imagenes/Productos/";
+                string GuardarEnRuta = "~/Imagenes/Productos";
                 string physicalPath = Server.MapPath("~/Imagenes/Productos");
 
                 if (!Directory.Exists(physicalPath))
@@ -180,16 +209,21 @@ namespace ProyectoTest.Controllers
                     int id = ProductoLogica.Instancia.Registrar(oProducto);
                     oProducto.IdProducto = id;
                     oresponse.resultado = oProducto.IdProducto == 0 ? false : true;
+                    if (oProducto.IdProducto == 0)
+                    {
+                        oresponse.mensaje = "Hubo un error en línea 183, no se encontró el producto" + oProducto.IdProducto;
+                    }
                 }
                 else
                 {
                     oresponse.resultado = ProductoLogica.Instancia.Modificar(oProducto);
+                    oresponse.mensaje = "Hubo un error en línea 188, no se encontró el producto" + oProducto.IdProducto;
                 }
 
                 if (imagenArchivo != null && oProducto.IdProducto != 0)
                 {
                     string extension = Path.GetExtension(imagenArchivo.FileName);
-                    GuardarEnRuta = GuardarEnRuta + oProducto.IdProducto.ToString() + extension;
+                    GuardarEnRuta = GuardarEnRuta+"/"+  oProducto.IdProducto.ToString() + extension;
                     oProducto.RutaImagen = GuardarEnRuta;
 
                     imagenArchivo.SaveAs(physicalPath + "/" + oProducto.IdProducto.ToString() + extension);

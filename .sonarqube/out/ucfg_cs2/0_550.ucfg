@@ -1,0 +1,131 @@
+
+:ProyectoTest.Controllers.TiendaController.Pay(PAY, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÉ" É(%"2*Ñ
+0
+Ì Î(Q;
+9
+
+Ì Ì(+
+
+merchantIdstring"__id*
+	522591303³
+°
+
+Í Í(z
+%0string"__concat*d
+
+Í Í(mVT
+Rhttps://apisandbox.vnforappstest.com/api.authorization/v3/authorization/ecommerce/*$
+
+Ím Í(y
+
+
+merchantIdstring5
+3
+
+Í Í(z
+urlstring"__id*
+
+%0string‡
+„
+
+Î1 Î(R
+%1string"4Newtonsoft.Json.JsonConvert.SerializeObject(object?)*!"
+Newtonsoft.Json.JsonConvert*
+
+dataPAYõ
+ò
+
+Î Î(S*
+%2$System.Threading.Tasks.Task<TResult>"OProyectoTest.Controllers.TiendaController.PostDataAsync(string, string, string)*/-"+
+)ProyectoTest.Controllers.TiendaController*
+
+urlstring*
+
+keystring*
+
+%1string"
+
+Î Î(T
+""*2
+1
+Ï	 Ï(	"!
+
+Ï Ï(	
+implicit return*®
+2
+ÉV É(VF
+D
+
+É" É(%
+%3"__entrypoint*
+
+dataPAY*
+
+keystringn
+l
+
+É' É(?
+%4"
+__annotate*;97
+5System.Web.Http.FromBodyAttribute.FromBodyAttribute()*
+
+dataPAYm
+k
+
+Ç	 Ç(
+%5"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+dataPAYy
+w
+
+È	 È(
+%6"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+dataPAYG
+E
+
+É& É(I
+dataPAY"__annotation*
+
+%4*
+
+%5*
+
+%6o
+m
+
+Ç	 Ç(
+%7"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+keystring{
+y
+
+È	 È(
+%8"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+keystring?
+=
+
+ÉK É(U
+keystring"__annotation*
+
+%7*
+
+%8*
+0:
+
+É& É(I
+dataPAY:
+
+ÉK É(U
+keystringB-+
+)ProyectoTest.Controllers.TiendaController

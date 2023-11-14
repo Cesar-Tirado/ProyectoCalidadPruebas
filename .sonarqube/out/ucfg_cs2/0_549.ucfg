@@ -1,0 +1,138 @@
+
+FProyectoTest.Controllers.TiendaController.Autorize(NiubizData, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¿" ¿(*"2*Ô
+0
+Â Ä(Q;
+9
+
+Â Â(+
+
+merchantIdstring"__id*
+	522591303¯
+¬
+
+Ã Ã(v
+%0string"__concat*`
+
+Ã Ã(iRP
+Nhttps://apisandbox.vnforappstest.com/api.ecommerce/v2/ecommerce/token/session/*$
+
+Ãi Ã(u
+
+
+merchantIdstring5
+3
+
+Ã Ã(v
+urlstring"__id*
+
+%0stringŽ
+‹
+
+Ä1 Ä(R
+%1string"4Newtonsoft.Json.JsonConvert.SerializeObject(object?)*!"
+Newtonsoft.Json.JsonConvert*
+
+data
+NiubizDataõ
+ò
+
+Ä Ä(S*
+%2$System.Threading.Tasks.Task<TResult>"OProyectoTest.Controllers.TiendaController.PostDataAsync(string, string, string)*/-"+
+)ProyectoTest.Controllers.TiendaController*
+
+urlstring*
+
+keystring*
+
+%1string"
+
+Ä Ä(T
+""*2
+1
+Å	 Å(	"!
+
+Å Å(	
+implicit return*Ò
+2
+¿b ¿(bM
+K
+
+¿" ¿(*
+%3"__entrypoint*
+
+data
+NiubizData*
+
+keystringu
+s
+
+¿, ¿(D
+%4"
+__annotate*;97
+5System.Web.Http.FromBodyAttribute.FromBodyAttribute()*
+
+data
+NiubizDatat
+r
+
+½	 ½(
+%5"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+data
+NiubizData€
+~
+
+¾	 ¾(
+%6"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+data
+NiubizDataN
+L
+
+¿+ ¿(U
+data
+NiubizData"__annotation*
+
+%4*
+
+%5*
+
+%6o
+m
+
+½	 ½(
+%7"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+keystring{
+y
+
+¾	 ¾(
+%8"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+keystring?
+=
+
+¿W ¿(a
+keystring"__annotation*
+
+%7*
+
+%8*
+0: 
+
+¿+ ¿(U
+data
+NiubizData:
+
+¿W ¿(a
+keystringB-+
+)ProyectoTest.Controllers.TiendaController

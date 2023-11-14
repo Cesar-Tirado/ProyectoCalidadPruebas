@@ -1,0 +1,133 @@
+
+1ProyectoTest.Controllers.PublicController.Index()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\PublicController.cs (!"2*‘
+0 (LJ
+ ($!
+%0ProyectoTest.Models.Usuario"ProyectoTest.Models.Usuariof
+d
+ ("
+
+%1void"%ProyectoTest.Models.Usuario.Usuario()*%#
+!
+%0ProyectoTest.Models.Usuarioí
+è
+ ($V+
+)ProyectoTest.Controllers.PublicController"'
+oUsuarioProyectoTest.Models.Usuario"__id*%#
+!
+%0ProyectoTest.Models.Usuarioí
+è
+ (!
+%2ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.PublicController"'
+oUsuarioProyectoTest.Models.UsuarioÅ
+
+ (0
+%3string"&ProyectoTest.Models.Usuario.Correo.set*%#
+!
+%2ProyectoTest.Models.Usuario*
+public@admin.comí
+è
+ (!
+%4ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.PublicController"'
+oUsuarioProyectoTest.Models.Usuarioq
+o
+ ("	
+%5int")ProyectoTest.Models.Usuario.IdUsuario.set*%#
+!
+%4ProyectoTest.Models.Usuario*2í
+è
+ (!
+%6ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.PublicController"'
+oUsuarioProyectoTest.Models.Usuariox
+v
+ ('
+%7string"'ProyectoTest.Models.Usuario.Nombres.set*%#
+!
+%6ProyectoTest.Models.Usuario*
+
+public{
+y
+ (%
+%8System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controllerí
+è
+! ()!
+%9ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.PublicController"'
+oUsuarioProyectoTest.Models.UsuarioÀ»
+ ()
+%10object":System.Collections.Generic.ICollection<T>.this[string].set*)'
+%
+%8System.Web.HttpSessionStateBase*	
+Usuario*%#
+!
+%9ProyectoTest.Models.Usuario2this[string].setò
+ï
+ (
+%11void"proyectotest/views/public/index*	
+
+%12*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectñ
+ì
+ (
+%13void"proyectotest/views/_viewstart*	
+
+%14*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectö
+ó
+ (
+%15void"!proyectotest/views/shared/_layout*	
+
+%16*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+ (
+
+%15void*.
+1	 (	"
+ (	
+implicit return*5
+2# (#!
+
+ (!
+%17"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.PublicController

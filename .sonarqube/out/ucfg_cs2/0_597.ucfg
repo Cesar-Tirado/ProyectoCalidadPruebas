@@ -1,0 +1,125 @@
+
+3ProyectoTest.Controllers.TiendaController.Compras()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csV V(#"5* 
+0X X(*{
+y
+X X(%
+%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
+X X("
+%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%0System.Web.HttpSessionStateBase*	
+Usuario2this[string].getf
+d
+X X(*
+
+%2bool""object.operator ==(object, object)*
+"
+object*
+
+%1object*
+""*
+1
+2*ú
+1Y Y(8°
+­
+Y Y(9*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*	
+Login"8
+Y Y(:,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*×
+2[ [(5{
+y
+[$ [(+%
+%4System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
+[$ [(6
+%5object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%4System.Web.HttpSessionStateBase*	
+Usuario2this[string].get*
+(
+[ [(6
+%6"__id*
+
+%5objectt
+r
+[ [(6V+
+)ProyectoTest.Controllers.TiendaController"'
+oUsuarioProyectoTest.Models.Usuario"__id*
+
+%6*
+3*ÿ
+3\ \(˜
+•
+\ \(
+
+%7void"!proyectotest/views/tienda/compras*
+
+%8*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject•
+’
+\ \(
+
+%9void"proyectotest/views/_viewstart*	
+
+%10*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject¡
+ž
+\ \(
+%11void"(proyectotest/views/shared/_layout_tienda*	
+
+%12*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+\ \(
+
+%11void*.
+4]	 ](	"
+] ](	
+implicit return*5
+5V% V(%!
+
+V V(#
+%13"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

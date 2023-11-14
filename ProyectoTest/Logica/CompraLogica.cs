@@ -41,7 +41,7 @@ namespace ProyectoTest.Logica
                     StringBuilder query = new StringBuilder();
                     foreach (DetalleCompra dc in oCompra.oDetalleCompra)
                     {
-                        query.AppendLine("INSERT INTO detalle_compra (IdCompra, IdProducto, Cantidad, Total, Nombre, Adicionales) VALUES (¡idcompra!," + dc.IdProducto + "," + dc.Cantidad + "," + dc.Total + ",'" + dc.Nombre + "','" + dc.Adicionales + "')");
+                        query.AppendLine("INSERT INTO detalle_compra (IdCompra, IdProducto, Cantidad, Total, Nombre, Adicionales, PrecioExtra, ObservacionesDC) VALUES (¡idcompra!," + dc.IdProducto + "," + dc.Cantidad + "," + dc.Total + ",'" + dc.Nombre + "','" + dc.Adicionales + "'," + dc.PrecioExtra + ",'" + dc.ObservacionesDC + "')");
                     }
 
                     SqlCommand cmd = new SqlCommand("sp_registrarCompra", oConexion);
@@ -55,13 +55,17 @@ namespace ProyectoTest.Logica
                     cmd.Parameters.AddWithValue("Referencia", oCompra.Referencia);
                     cmd.Parameters.AddWithValue("DocumentoFacturacion", oCompra.DocumentoFacturacion);
                     cmd.Parameters.AddWithValue("FormaPago", oCompra.FormaPago);
+                    cmd.Parameters.AddWithValue("HoraRecojo", oCompra.HoraRecojo);
+                    cmd.Parameters.AddWithValue("Tipo", oCompra.Tipo);
                     cmd.Parameters.AddWithValue("QueryDetalleCompra", query.ToString());
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("IdCompra", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     oConexion.Open();
                     cmd.ExecuteNonQuery();
                     respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
+                    oCompra.IdCompra = Convert.ToInt32(cmd.Parameters["IdCompra"].Value);
                 }
                 catch (Exception ex)
                 {
@@ -71,43 +75,6 @@ namespace ProyectoTest.Logica
             return respuesta;
         }
 
-        //public bool Registrar(Compra oCompra)
-        //{
-        //    bool respuesta = false;
-        //    using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
-        //    {
-        //        try
-        //        {
-        //            StringBuilder query = new StringBuilder();
-        //            foreach (DetalleCompra dc in oCompra.oDetalleCompra)
-        //            {
-        //                query.AppendLine("INSERT INTO detalle_compra (IdCompra, IdProducto, Cantidad, Total) VALUES (¡idcompra!," + dc.IdProducto + "," + dc.Cantidad + "," + dc.Total + ")");
-        //            }
-
-        //            SqlCommand cmd = new SqlCommand("sp_registrarCompra", oConexion);
-        //            cmd.Parameters.AddWithValue("IdUsuario", oCompra.IdUsuario);
-        //            cmd.Parameters.AddWithValue("TotalProducto", oCompra.TotalProducto);
-        //            cmd.Parameters.AddWithValue("Total", oCompra.Total);
-        //            cmd.Parameters.AddWithValue("Contacto", oCompra.Contacto);
-        //            cmd.Parameters.AddWithValue("Telefono", oCompra.Telefono);
-        //            cmd.Parameters.AddWithValue("Direccion", oCompra.Direccion);
-        //            cmd.Parameters.AddWithValue("IdDistrito", oCompra.IdDistrito);
-        //            //cmd.Parameters.AddWithValue("Estado", "PENDIENTE");// Estado por defecto es PENDIENTE
-        //            cmd.Parameters.AddWithValue("QueryDetalleCompra", query.ToString());
-        //            cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
-        //            cmd.CommandType = CommandType.StoredProcedure;
-
-        //            oConexion.Open();
-        //            cmd.ExecuteNonQuery();
-        //            respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            respuesta = false;
-        //        }
-        //    }
-        //    return respuesta;
-        //}
 
         public bool ActualizarEstadoCompra(int idCompra, string nuevoEstado)
         {

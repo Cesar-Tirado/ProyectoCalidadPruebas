@@ -1,0 +1,51 @@
+
+1ProyectoTest.Controllers.HomeController.Reserva()t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs/ /(#"4* 
+01 1(*{
+y
+1 1(%
+%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
+1 1("
+%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%0System.Web.HttpSessionStateBase*	
+Usuario2this[string].getf
+d
+1 1(*
+
+%2bool""object.operator ==(object, object)*
+"
+object*
+
+%1object*
+""*
+1
+2*ú
+12 2(8°
+­
+2 2(9*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*	
+Login"8
+2 2(:,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*®
+24 4(p
+n
+4 4(
+%4System.Web.Mvc.ViewResult" System.Web.Mvc.Controller.View()*
+System.Web.Mvc.Controller"-
+4 4(!
+
+%4System.Web.Mvc.ViewResult*.
+35	 5(	"
+5 5(	
+implicit return*4
+4/% /(% 
+
+/ /(#
+%5"__entrypoint*
+0B+)
+'ProyectoTest.Controllers.HomeController

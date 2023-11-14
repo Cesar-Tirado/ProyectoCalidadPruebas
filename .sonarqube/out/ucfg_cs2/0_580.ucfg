@@ -1,0 +1,74 @@
+
+0ProyectoTest.Controllers.LoginController.Index()u
+kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs (!"2*ñ
+0 (•
+’
+ (
+
+%0void"proyectotest/views/login/index*
+
+%1*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject”
+‘
+ (
+
+%2void"proyectotest/views/_viewstart*
+
+%3*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject˜
+•
+ (
+
+%4void"!proyectotest/views/shared/_layout*
+
+%5*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+ (
+
+
+%4void*.
+1	 (	"
+ (	
+implicit return*4
+2# (# 
+
+ (!
+%6"__entrypoint*
+0B,*
+(ProyectoTest.Controllers.LoginController

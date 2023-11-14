@@ -1,0 +1,5 @@
+Ë
+ ProyectoTest.Logica.CompraLogicaobjectA
+CompraLogica()/ProyectoTest.Logica.CompraLogica.CompraLogica()o
+%Registrar(ProyectoTest.Models.Compra)FProyectoTest.Logica.CompraLogica.Registrar(ProyectoTest.Models.Compra)k
+#ActualizarEstadoCompra(int, string)DProyectoTest.Logica.CompraLogica.ActualizarEstadoCompra(int, string)

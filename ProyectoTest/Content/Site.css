@@ -51,7 +51,7 @@
 
 body {
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs-font-sans-serif)!important;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -228,7 +228,7 @@ pre,
 code,
 kbd,
 samp {
-    font-family: var(--bs-font-monospace);
+    font-family: var(--bs-font-monospace)!important;
     font-size: 1em;
     direction: ltr /* rtl:ignore */;
     unicode-bidi: bidi-override;
@@ -6050,7 +6050,7 @@ textarea.form-control-lg {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs-font-sans-serif)!important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6163,7 +6163,7 @@ textarea.form-control-lg {
     z-index: 1070;
     display: block;
     max-width: 276px;
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs-font-sans-serif)!important;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
