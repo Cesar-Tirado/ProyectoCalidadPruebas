@@ -1,16 +1,18 @@
 
-Order.purchaseNumber.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csè  è(#"0*q
+PAY.channel.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs£! £($"0*Ç
 0
-è$ è($E
+£% £(%E
 C
 
-è  è($	
-%0int"__id*$"* 
-Order"
-purchaseNumberint"
+£! £(%
+PAY"
+channelstring"__id*
+
+valuestring"*
 
-è  è($
-	
-%0intB	
-Order
+£! £(%*
+PAY"
+channelstring:
+valuestringB
+PAY

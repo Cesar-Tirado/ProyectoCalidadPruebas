@@ -1,15 +1,13 @@
 
-8ProyectoTest.Models.Niubiz.Respuestas.DataMap.STATUS.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs$ ('"0*Î
-0( ((l
-j
-$ ((C/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-STATUSstring"__id*
-
-valuestring"Q
-$ ((E*C/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-STATUSstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+,ProyectoTest.Models.Distrito.IdProvincia.geti
+_C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Distrito.cs$ ('"0*ˆ
+0( ((]
+[
+$ ((
+%0string"__id*;9*7
+ProyectoTest.Models.Distrito"
+IdProvinciastring"
+$ ((
+
+%0stringB 
+ProyectoTest.Models.Distrito

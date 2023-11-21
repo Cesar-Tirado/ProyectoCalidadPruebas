@@ -1,13 +1,14 @@
 
-6ProyectoTest.Models.Niubiz.Consultas.Order.tokenId.get“
-ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs  (#"0*’
-0$ ($g
-e
-  ($
-%0string"__id*EC*A,
-*ProyectoTest.Models.Niubiz.Consultas.Order"
-tokenIdstring"
-  ($
+)ProyectoTest.Models.Compra.FechaTexto.getg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs# (&"0*…
+0' ('Z
+X
+# ('
+%0string"__id*86*4
+ProyectoTest.Models.Compra"
+
+FechaTextostring"
+# ('
 
-%0stringB.,
-*ProyectoTest.Models.Niubiz.Consultas.Order
+%0stringB
+ProyectoTest.Models.Compra

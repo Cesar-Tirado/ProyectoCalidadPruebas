@@ -1,15 +1,15 @@
 
-.ProyectoTest.Models.DetalleCompra.Cantidad.setn
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs# (&"0*±
-0' ('\
-Z
-# ('6#
-!ProyectoTest.Models.DetalleCompra"
-Cantidadint"__id*
-
-valueint"D
-# ('8*6#
-!ProyectoTest.Models.DetalleCompra"
-Cantidadint:
-valueintB%#
-!ProyectoTest.Models.DetalleCompra
+BProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_DATE.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs. (1"0*â
+02 (2v
+t
+. (2M/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+TRANSACTION_DATEstring"__id*
+
+valuestring"[
+. (2O*M/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+TRANSACTION_DATEstring:
+valuestringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

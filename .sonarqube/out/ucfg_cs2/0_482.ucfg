@@ -1,54 +1,54 @@
 
-9ProyectoTest.Controllers.HomeController.ListarCategoria()t
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csQ Q()"2*ñ
-0R T(KZX
-R% R(:(
+5ProyectoTest.Controllers.HomeController.ListarMarca()t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csi i(%"2*Ý
+0k m(KZX
+k! k(2(
 %0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
 o
-R) R(8
+k% k(0
 
 %1void")System.Collections.Generic.List<T>.List()*,*
 (
 %0"System.Collections.Generic.List<T>n
 l
-R R(:,
+k k(2,
 oLista"System.Collections.Generic.List<T>"__id*,*
 (
-%0"System.Collections.Generic.List<T>–
-“
-S S(.)
-%2#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
-#ProyectoTest.Logica.CategoriaLogica”
-‘
-S S(7(
-%3"System.Collections.Generic.List<T>",ProyectoTest.Logica.CategoriaLogica.Listar()*-+
-)
-%2#ProyectoTest.Logica.CategoriaLogican
+%0"System.Collections.Generic.List<T>Š
+‡
+l l(*%
+%2ProyectoTest.Logica.MarcaLogica"-ProyectoTest.Logica.MarcaLogica.Instancia.get*%#"!
+ProyectoTest.Logica.MarcaLogicaŒ
+‰
+l l(3(
+%3"System.Collections.Generic.List<T>"(ProyectoTest.Logica.MarcaLogica.Listar()*)'
+%
+%2ProyectoTest.Logica.MarcaLogican
 l
-S S(7,
+l l(3,
 oLista"System.Collections.Generic.List<T>"__id*,*
 (
 %3"System.Collections.Generic.List<T>"
  
-T/ T(K
+m/ m(K
 %4"__id*
 ""¯
 ¬
-T T(L
+m m(L
 %5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
 System.Web.Mvc.Controller*
 ""*
 
 %4"-
-T T(M!
+m m(M!
 
 %5System.Web.Mvc.JsonResult*.
-1U	 U(	"
-U U(	
+1n	 n(	"
+n n(	
 implicit return*4
-2Q+ Q(+ 
+2i' i(' 
 
-Q Q()
+i i(%
 %6"__entrypoint*
 0B+)
 'ProyectoTest.Controllers.HomeController

@@ -1,23 +1,13 @@
 
-&ProyectoTest.Models.Tiendas.Activo.seth
-^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Tiendas.cs
-" 
-(%"0*¤
-0
-& 
-(&V
-T
-
-" 
-(&/
-ProyectoTest.Models.Tiendas"
-Activobool"__id*
-
-valuebool"=
-
-" 
-(&1*/
-ProyectoTest.Models.Tiendas"
-Activobool:
-valueboolB
++ProyectoTest.Models.Tiendas.Descripcion.geth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Tiendas.cs$ ('"0*‡
+0( ((\
+Z
+$ ((
+%0string"__id*:8*6
+ProyectoTest.Models.Tiendas"
+Descripcionstring"
+$ ((
+
+%0stringB
 ProyectoTest.Models.Tiendas

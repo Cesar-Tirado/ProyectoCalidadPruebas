@@ -1,15 +1,15 @@
 
-5ProyectoTest.Models.Niubiz.Respuestas.DataMap.ECI.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs! ($"0*È
-0% (%i
-g
-! (%@/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ECIstring"__id*
-
-valuestring"N
-! (%B*@/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ECIstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+%ProyectoTest.Models.Marca.IdMarca.setf
+\C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Marca.cs" (%"0*Ÿ
+0& (&S
+Q
+" (&-
+ProyectoTest.Models.Marca"
+IdMarcaint"__id*
+
+valueint";
+" (&/*-
+ProyectoTest.Models.Marca"
+IdMarcaint:
+valueintB
+ProyectoTest.Models.Marca

@@ -1,15 +1,15 @@
 
-8ProyectoTest.Models.Niubiz.Respuestas.Order.currency.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs-& -()"0*Î
-0-* -(*l
+8ProyectoTest.Models.Niubiz.Consultas.Recurrence.type.set“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs "  (%"0*Î
+0 &  (&l
 j
--& -(*C-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-currencystring"__id*
+ "  (&C1
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence"
+typestring"__id*
 
 valuestring"Q
--& -(*E*C-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-currencystring:
-valuestringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+ "  (&E*C1
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence"
+typestring:
+valuestringB31
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence

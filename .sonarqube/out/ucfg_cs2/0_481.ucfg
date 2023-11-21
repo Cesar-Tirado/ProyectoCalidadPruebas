@@ -1,9 +1,83 @@
 
-3ProyectoTest.Logica.ProductoLogica.ProductoLogica()o
-eC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\ProductoLogica.cs ("1*
-1	 (	*
-0*.
-0	 (	"
- (	
-implicit returnB&$
-"ProyectoTest.Logica.ProductoLogica
+WProyectoTest.Controllers.HomeController.GuardarCategoria(ProyectoTest.Models.Categoria)t
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csX X(*"5*ª
+0Z [(0/
+-
+Z Z("
+	respuestabool"__id*
+""s
+q
+[ [(+	
+%0int"-ProyectoTest.Models.Categoria.IdCategoria.get*+)
+'
+objetoProyectoTest.Models.Categoria*
+1
+2*Ò
+1[4 [(^ñ
+ì
+[4 [(M)
+%1#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
+#ProyectoTest.Logica.CategoriaLogica√
+¿
+[4 [(_
+
+%2bool"LProyectoTest.Logica.CategoriaLogica.Registrar(ProyectoTest.Models.Categoria)*-+
+)
+%1#ProyectoTest.Logica.CategoriaLogica*+)
+'
+objetoProyectoTest.Models.Categoria*
+3*Û
+2	[b [(åñ
+ì
+[b [({)
+%3#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
+#ProyectoTest.Logica.CategoriaLogicaƒ
+¡
+	[b [(ç
+
+%4bool"LProyectoTest.Logica.CategoriaLogica.Modificar(ProyectoTest.Models.Categoria)*-+
+)
+%3#ProyectoTest.Logica.CategoriaLogica*+)
+'
+objetoProyectoTest.Models.Categoria*
+3*ƒ
+3[ \(S0
+.
+	[ [(ç
+	respuestabool"__id*
+"""
+ 
+\7 \(S
+%5"__id*
+""Ø
+¨
+\ \(T
+%6System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
+
+%5"-
+\ \(U!
+
+%6System.Web.Mvc.JsonResult*.
+4]	 ](	"
+] ](	
+implicit return*Å
+5X< X(<m
+k
+X X(*Q
+'
+objetoProyectoTest.Models.Categoria"&
+<Descripcion>k__BackingFieldstring"__entrypoint\
+Z
+X X(*@
+'
+objetoProyectoTest.Models.Categoria"
+Descripcionstring"__entrypoint 
+
+X X(*
+%7"__entrypoint*
+0:3
+X+ X(;'
+objetoProyectoTest.Models.CategoriaB+)
+'ProyectoTest.Controllers.HomeController

@@ -1,15 +1,15 @@
 
-:ProyectoTest.Models.Niubiz.Respuestas.DataMap.CURRENCY.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs& ()"0*Ò
-0* (*n
-l
-& (*E/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-CURRENCYstring"__id*
-
-valuestring"S
-& (*G*E/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-CURRENCYstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+5ProyectoTest.Models.Niubiz.Consultas.Order.amount.set“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs% (("0*Ë
+0) ()k
+i
+% ()A,
+*ProyectoTest.Models.Niubiz.Consultas.Order"
+amountdecimal"__id*
+
+valuedecimal"O
+% ()C*A,
+*ProyectoTest.Models.Niubiz.Consultas.Order"
+amountdecimal:
+valuedecimalB.,
+*ProyectoTest.Models.Niubiz.Consultas.Order

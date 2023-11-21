@@ -1,11 +1,7 @@
-Æ
-IProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccionobject˜
-%RespuestaAAutorizacionDeTransaccion()oProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.RespuestaAAutorizacionDeTransaccion()b
-
-header.getTProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.header.getb
-
-header.setTProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.header.set`
-	order.getSProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.order.get`
-	order.setSProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.order.setd
-dataMap.getUProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.dataMap.getd
-dataMap.setUProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.dataMap.set
+†
+!ProyectoTest.Logica.UsuarioLogicaobjectD
+UsuarioLogica()1ProyectoTest.Logica.UsuarioLogica.UsuarioLogica()T
+Obtener(string, string)9ProyectoTest.Logica.UsuarioLogica.Obtener(string, string)r
+&Registrar(ProyectoTest.Models.Usuario)HProyectoTest.Logica.UsuarioLogica.Registrar(ProyectoTest.Models.Usuario)F
+ListarClientes()2ProyectoTest.Logica.UsuarioLogica.ListarClientes()€
+-RegistrarCliente(ProyectoTest.Models.Cliente)OProyectoTest.Logica.UsuarioLogica.RegistrarCliente(ProyectoTest.Models.Cliente)

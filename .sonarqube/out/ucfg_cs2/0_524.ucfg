@@ -1,25 +1,25 @@
 
-HProyectoTest.Logica.TiendasLogica.Modificar(ProyectoTest.Models.Tiendas)n
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\TiendasLogica.cs~ ~("0*ê
+0ProyectoTest.Logica.ProductoLogica.Eliminar(int)q
+eC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\ProductoLogica.csŒ Œ("0*ê
 0
-Ä Å(J1
+– —(J1
 /
 
-Ä Ä(!
+– –(!
 	respuestabool"__id*
 ""V
 T
 
-Å? Å(J
+—? —(J
 %0string"__id*20*.
 ProyectoTest.Logica.Conexion"
 CNstring^\
 
-Å- Å(K)
+—- —(K)
 %1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
 î
 
-Å1 Å(>
+—1 —(>
 
 %2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
 )
@@ -28,232 +28,104 @@ T
 %0stringu
 s
 
-Å! Å(K0
+—! —(K0
 	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
 )
 %1#System.Data.SqlClient.SqlConnection*
-1*Ò 
+1*Ã
+
 1
-Ö í(LXV
+’ ›($XV
 
-Ö% Ö(U&
-%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÚ
-Ô
+’% ’(m&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandä
+á
 
-Ö) Ö(3
+’) ’(3
 
 %4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
 &
-%3 System.Data.SqlClient.SqlCommand*
-sp_ModificarTiendas*42
+%3 System.Data.SqlClient.SqlCommand*1/-
++delete from Producto where idProducto = @id*42
 0
 	oConexion#System.Data.SqlClient.SqlConnectioni
 g
 
-Ö Ö(U'
+’ ’(m'
 cmd System.Data.SqlClient.SqlCommand"__id**(
 &
 %3 System.Data.SqlClient.SqlCommand°
 û
 
-Ü Ü("2
+÷ ÷("2
 %5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
 '
-cmd System.Data.SqlClient.SqlCommandq
-o
+cmd System.Data.SqlClient.SqlCommandŒ
+À
 
-Ü= Ü(O	
-%6int")ProyectoTest.Models.Tiendas.IdTiendas.get*+)
-'
-oTiendasProyectoTest.Models.TiendasŸ
-÷
-
-Ü Ü(P(
-%7"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+÷ ÷(:(
+%6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
 2
-%5,System.Data.SqlClient.SqlParameterCollection*
-	IdTiendas*
-	
-%6int°
-û
+%5,System.Data.SqlClient.SqlParameterCollection*	
+@id*
+""$
+"
 
-á á("2
-%8,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+◊& ◊(6
+%7"__id*
+""ó
+î
+
+◊ ◊(6
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
 '
-cmd System.Data.SqlClient.SqlCommandv
-t
+cmd System.Data.SqlClient.SqlCommand*
+
+%7|
+z
 
-á? á(S
-%9string"+ProyectoTest.Models.Tiendas.Descripcion.get*+)
-'
-oTiendasProyectoTest.Models.Tiendasﬂ
-‹
+Ÿ Ÿ($
 
-á á(T)
-%10"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
-2
-%8,System.Data.SqlClient.SqlParameterCollection*
-Descripcion*
-
-%9string¢
-ü
-
-à à("3
-%11,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommandu
-s
-
-à= à(O
-%12string")ProyectoTest.Models.Tiendas.Direccion.get*+)
-'
-oTiendasProyectoTest.Models.Tiendasﬂ
-‹
-
-à à(P)
-%13"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*75
-3
-%11,System.Data.SqlClient.SqlParameterCollection*
-	Direccion*
-
-%12string¢
-ü
-
-â â("3
-%14,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommandp
-n
-
-â: â(I
-%15bool"&ProyectoTest.Models.Tiendas.Activo.get*+)
-'
-oTiendasProyectoTest.Models.Tiendas⁄
-◊
-
-â â(J)
-%16"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*75
-3
-%14,System.Data.SqlClient.SqlParameterCollection*
-
-Activo*
-
-%15bool¢
-ü
-
-ä ä("3
-%17,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommand%
-#
-
-ä4 ä(A
-%18"__id*
-""›
-⁄
-
-ä ä(B)
-%19"System.Data.SqlClient.SqlParameter"LSystem.Collections.Generic.ICollection<T>.Add(string, System.Data.SqlDbType)*75
-3
-%17,System.Data.SqlClient.SqlParameterCollection*
-	Resultado*	
-
-%18%
-#
-
-äO ä(h
-%20"__id*
-""¢
-ü
-
-ä ä(h%
-%21System.Data.ParameterDirection"0System.Data.SqlClient.SqlParameter.Direction.set*-+
-)
-%19"System.Data.SqlClient.SqlParameter*	
-
-%20%
-#
-
-å& å(A
-%22"__id*
-""ô
-ñ
-
-å å(A
-%23System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
-'
-cmd System.Data.SqlClient.SqlCommand*	
-
-%22}
-{
-
-é é($
-%24void"*System.Data.SqlClient.SqlConnection.Open()*42
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
 0
 	oConexion#System.Data.SqlClient.SqlConnection{
 y
 
-ê ê()
+€ €()
 
-%25int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+%10int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
 '
-cmd System.Data.SqlClient.SqlCommand¢
-ü
+cmd System.Data.SqlClient.SqlCommand1
+/
 
-í2 í(@3
-%26,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommand¿
-Ω
-
-í2 í(M)
-%27"System.Data.SqlClient.SqlParameter":System.Collections.Generic.ICollection<T>.this[string].get*75
-3
-%26,System.Data.SqlClient.SqlParameterCollection*
-	Resultadoz
-x
-
-í2 í(S
-%28object",System.Data.SqlClient.SqlParameter.Value.get*-+
-)
-%27"System.Data.SqlClient.SqlParameterf
-d
-
-í  í(T
-%29bool" System.Convert.ToBoolean(object)*"
-System.Convert*
-
-%28object8
-6
-
-í í(T
-	respuestabool"__id*
-
-%29bool*
+› ›($
+	respuestabool"__id*
+""*
 2
 3*G
 2
-ó ó(%1
+‚ ‚(%1
 /
 
-ó ó(%
+‚ ‚(%
 	respuestabool"__id*
 ""*
 3*
 3
-ú	 ú(	*
+È	 È(	*
 4*2
 4
-õ õ("!
+Á Á("!
 
-õ õ(
+Á Á(
 
 	respuestabool*2
 5
-ú	 ú(	"!
+È	 È(	"!
 
-ú ú(	
-implicit return:3
-~ ~(.'
-oTiendasProyectoTest.Models.TiendasB%#
-!ProyectoTest.Logica.TiendasLogica
+È È(	
+implicit return:
+
+Œ Œ(#	
+idintB&$
+"ProyectoTest.Logica.ProductoLogica

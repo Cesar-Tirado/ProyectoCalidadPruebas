@@ -1,13 +1,15 @@
 
--ProyectoTest.Models.Carrito.Observaciones.geth
-^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Carrito.cs& ()"0*‰
-0* (*^
-\
-& (*
-%0string"__id*<:*8
-ProyectoTest.Models.Carrito"
-Observacionesstring"
-& (*
-
-%0stringB
-ProyectoTest.Models.Carrito
+'ProyectoTest.Models.Producto.Activo.geti
+_C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Producto.cs ( "0*}
+0! (!T
+R
+ (!
+
+%0bool"__id*42*0
+ProyectoTest.Models.Producto"
+Activobool"
+ (!
+
+
+%0boolB 
+ProyectoTest.Models.Producto

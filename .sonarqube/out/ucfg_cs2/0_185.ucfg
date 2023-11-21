@@ -1,15 +1,23 @@
 
-(ProyectoTest.Models.Categoria.Activo.setj
-`C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Categoria.cs" (%"0*¨
-0& (&X
-V
-" (&1
-ProyectoTest.Models.Categoria"
-Activobool"__id*
-
-valuebool"?
-" (&3*1
-ProyectoTest.Models.Categoria"
-Activobool:
-valueboolB!
-ProyectoTest.Models.Categoria
+)ProyectoTest.Models.Carrito.IdCarrito.seth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Carrito.cs
+$ 
+('"0*§
+0
+( 
+((W
+U
+
+$ 
+((1
+ProyectoTest.Models.Carrito"
+	IdCarritoint"__id*
+
+valueint"?
+
+$ 
+((3*1
+ProyectoTest.Models.Carrito"
+	IdCarritoint:
+valueintB
+ProyectoTest.Models.Carrito

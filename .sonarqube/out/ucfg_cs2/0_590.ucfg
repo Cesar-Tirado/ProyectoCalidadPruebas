@@ -1,18 +1,18 @@
 
-0ProyectoTest.Controllers.HomeController.Tienda()t
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs@ @(""4* 
-0B B(*{
+4ProyectoTest.Controllers.AcercaController.Politica()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\AcercaController.cs& &($"5* 
+0( ((*{
 y
-B B(%
+( ((%
 %0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
 System.Web.Mvc.Controller£ 
-B B("
+( (("
 %1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
 %
 %0System.Web.HttpSessionStateBase*	
 Usuario2this[string].getf
 d
-B B(*
+( ((*
 
 %2bool""object.operator ==(object, object)*
 "
@@ -22,23 +22,64 @@ d
 ""*
 1
 2*ú
-1C C(8°
+1) )(8°
 ­
-C C(9*
+) )(9*
 %3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
 System.Web.Mvc.Controller*	
 Index*	
 Login"8
-C C(:,
+) )(:,
 *
-%3$System.Web.Mvc.RedirectToRouteResult*ñ
-2E E(•
+%3$System.Web.Mvc.RedirectToRouteResult*×
+2+ +(5{
+y
++$ +(+%
+%4System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller£ 
++$ +(6
+%5object":System.Collections.Generic.ICollection<T>.this[string].get*)'
+%
+%4System.Web.HttpSessionStateBase*	
+Usuario2this[string].get*
+(
++ +(6
+%6"__id*
+
+%5objectt
+r
++ +(6V+
+)ProyectoTest.Controllers.AcercaController"'
+oUsuarioProyectoTest.Models.Usuario"__id*
+
+%6*
+3*€
+3- -(™
+–
+- -(
+
+%7void""proyectotest/views/acerca/politica*
+
+%8*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject•
 ’
-E E(
+- -(
 
-%4void"proyectotest/views/home/tienda*
-
-%5*
+%9void"proyectotest/views/_viewstart*	
+
+%10*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -51,13 +92,12 @@ d
 
 %HttpContextItemsAllobject*#!
 
-%HttpContextItemsHtmlobject”
-‘
-E E(
-
-%6void"proyectotest/views/_viewstart*
-
-%7*
+%HttpContextItemsHtmlobject¡
+ž
+- -(
+%11void"(proyectotest/views/shared/_layout_tienda*	
+
+%12*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -70,36 +110,16 @@ d
 
 %HttpContextItemsAllobject*#!
 
-%HttpContextItemsHtmlobject˜
-•
-E E(
-
-%8void"!proyectotest/views/shared/_layout*
-
-%9*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
-E E(
-
-
-%8void*.
-3F	 F(	"
-F F(	
+%HttpContextItemsHtmlobject"
+- -(
+
+%11void*.
+4.	 .(	"
+. .(	
 implicit return*5
-4@$ @($!
+5&& &(&!
 
-@ @("
-%10"__entrypoint*
-0B+)
-'ProyectoTest.Controllers.HomeController
+& &($
+%13"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.AcercaController

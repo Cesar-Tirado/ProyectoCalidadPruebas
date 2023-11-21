@@ -1,13 +1,13 @@
 
-7ProyectoTest.Models.Niubiz.Respuestas.DataMap.BRAND.get—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs (!"0*“
-0" ("h
-f
- ("
-%0string"__id*FD*B/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-BRANDstring"
- ("
+@ProyectoTest.Models.Niubiz.Consultas.CardHolder.documentType.get“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs% (("0*œ
+0) ()q
+o
+% ()
+%0string"__id*OM*K1
+/ProyectoTest.Models.Niubiz.Consultas.CardHolder"
+documentTypestring"
+% ()
 
-%0stringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+%0stringB31
+/ProyectoTest.Models.Niubiz.Consultas.CardHolder

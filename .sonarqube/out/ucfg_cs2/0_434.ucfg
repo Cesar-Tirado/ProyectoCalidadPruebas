@@ -1,22 +1,47 @@
 
-dataEnviadaDesdeFront.Data.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csü" ü(%"0*¬
-0
-ü& ü(&\
-Z
+/ProyectoTest.MvcApplication.Application_Start()e
+[C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Global.asax.cs (("0*ú
+0 (<s
+q
+ (/
 
-ü" ü(&-
-dataEnviadaDesdeFront"
-Data
-NiubizData"__id*
-
-value
-NiubizData"=
+%0void"2System.Web.Mvc.AreaRegistration.RegisterAllAreas()*%#"!
+System.Web.Mvc.AreaRegistrationˆ
+…
+/ (D+
+%1%System.Web.Mvc.GlobalFilterCollection"(System.Web.Mvc.GlobalFilters.Filters.get*" "
+System.Web.Mvc.GlobalFiltersÃ
+À
+ (E
 
-ü" ü(&/*-
-dataEnviadaDesdeFront"
-Data
-NiubizData:
-value
-NiubizDataB
-dataEnviadaDesdeFront
+%2void"VProyectoTest.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)*"
+ProyectoTest.FilterConfig*/-
++
+%1%System.Web.Mvc.GlobalFilterCollection†
+ƒ
+' (8(
+%3"System.Web.Routing.RouteCollection"(System.Web.Routing.RouteTable.Routes.get*#!"
+System.Web.Routing.RouteTable´
+±
+ (9
+
+%4void"KProyectoTest.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)*"
+ProyectoTest.RouteConfig*,*
+(
+%3"System.Web.Routing.RouteCollection™
+–
+) (<.
+%5(System.Web.Optimization.BundleCollection"/System.Web.Optimization.BundleTable.Bundles.get*)'"%
+#System.Web.Optimization.BundleTableÃ
+À
+ (=
+
+%6void"SProyectoTest.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)*"
+ProyectoTest.BundleConfig*20
+.
+%5(System.Web.Optimization.BundleCollection*
+1*.
+1	 (	"
+ (	
+implicit returnB
+ProyectoTest.MvcApplication

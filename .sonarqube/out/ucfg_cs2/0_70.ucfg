@@ -1,16 +1,21 @@
 
-PAY.order.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¦ ¦("0*l
+Recurrence.maxAmount.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs# (&"0*”
 0
-¦ ¦(>
-<
+' ('N
+L
 
-¦ ¦(
-%0Order"__id**
-PAY"
-orderOrder"
+# ('#
 
-¦ ¦(
-
-%0OrderB
-PAY
+Recurrence"
+	maxAmountdouble"__id*
+
+valuedouble"3
+
+# ('%*#
+
+Recurrence"
+	maxAmountdouble:
+valuedoubleB
+
+Recurrence

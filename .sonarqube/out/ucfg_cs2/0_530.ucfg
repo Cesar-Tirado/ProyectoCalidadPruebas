@@ -1,64 +1,54 @@
 
-=ProyectoTest.Controllers.HomeController.EliminarProducto(int)v
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csõ õ(*"2*¦
-0
-÷ ù(S1
-/
+;ProyectoTest.Controllers.TiendaController.ListarCategoria()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csx x()"2*ñ
+0z |(KZX
+z% z(:(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+z) z(8
 
-÷ ÷("
-	respuestabool"__id*
-""•
-’
-
-ø ø(0(
-%0"ProyectoTest.Logica.ProductoLogica"0ProyectoTest.Logica.ProductoLogica.Instancia.get*(&"$
-"ProyectoTest.Logica.ProductoLogica…
-‚
-
-ø ø(=
-
-%1bool"0ProyectoTest.Logica.ProductoLogica.Eliminar(int)*,*
+%1void")System.Collections.Generic.List<T>.List()*,*
 (
-%0"ProyectoTest.Logica.ProductoLogica*
-""7
-5
-
-ø ø(=
-	respuestabool"__id*
-
-
-%1bool$
-"
-
-ù7 ù(S
-%2"__id*
-""±
-®
-
-ù ù(T
-%3System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+%0"System.Collections.Generic.List<T>n
+l
+z z(:,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>–
+“
+{ {(.)
+%2#ProyectoTest.Logica.CategoriaLogica"1ProyectoTest.Logica.CategoriaLogica.Instancia.get*)'"%
+#ProyectoTest.Logica.CategoriaLogica”
+‘
+{ {(7(
+%3"System.Collections.Generic.List<T>",ProyectoTest.Logica.CategoriaLogica.Listar()*-+
+)
+%2#ProyectoTest.Logica.CategoriaLogican
+l
+{ {(7,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>"
+ 
+|/ |(K
+%4"__id*
+""¯
+¬
+| |(L
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
 System.Web.Mvc.Controller*
 ""*
 
-%2"/
-
-ù ù(U!
+%4"-
+| |(M!
 
-%3System.Web.Mvc.JsonResult*2
-1
-ú	 ú(	"!
-
-ú ú(	
-implicit return*B
-2
-õ2 õ(2,
-*
-
-õ õ(*
-%4"__entrypoint*
-""*
-0:
-
-õ+ õ(1	
-idintB+)
-'ProyectoTest.Controllers.HomeController
+%5System.Web.Mvc.JsonResult*.
+1}	 }(	"
+} }(	
+implicit return*4
+2x+ x(+ 
+
+x x()
+%6"__entrypoint*
+0B-+
+)ProyectoTest.Controllers.TiendaController

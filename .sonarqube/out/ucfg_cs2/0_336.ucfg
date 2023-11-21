@@ -1,15 +1,13 @@
 
-BProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_DATE.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs. (1"0*â
-02 (2v
-t
-. (2M/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-TRANSACTION_DATEstring"__id*
-
-valuestring"[
-. (2O*M/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-TRANSACTION_DATEstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+7ProyectoTest.Models.Niubiz.Consultas.Order.currency.get“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs! ($"0*“
+0% (%h
+f
+! (%
+%0string"__id*FD*B,
+*ProyectoTest.Models.Niubiz.Consultas.Order"
+currencystring"
+! (%
+
+%0stringB.,
+*ProyectoTest.Models.Niubiz.Consultas.Order

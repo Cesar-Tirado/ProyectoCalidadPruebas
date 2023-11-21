@@ -1,13 +1,17 @@
 
-.ProyectoTest.Models.UbicacionTienda.Nombre.getp
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\UbicacionTienda.cs (""0*Š
-0# (#_
-]
- (#
-%0string"__id*=;*9%
-#ProyectoTest.Models.UbicacionTienda"
-Nombrestring"
- (#
-
-%0stringB'%
-#ProyectoTest.Models.UbicacionTienda
+*ProyectoTest.Models.Usuario.Contrasena.seth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Usuario.cs( (+"0*²
+0, (,^
+\
+( (,5
+ProyectoTest.Models.Usuario"
+
+Contrasenastring"__id*
+
+valuestring"C
+( (,7*5
+ProyectoTest.Models.Usuario"
+
+Contrasenastring:
+valuestringB
+ProyectoTest.Models.Usuario

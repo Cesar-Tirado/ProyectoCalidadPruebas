@@ -1,66 +1,128 @@
 
-4ProyectoTest.Controllers.AcercaController.Politica()v
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\AcercaController.cs& &($"5*†
-0( ((*{
-y
-( ((%
-%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
-System.Web.Mvc.Controller£†
-( (("
-%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
-%
-%0System.Web.HttpSessionStateBase*	
-Usuario2this[string].getf
+>ProyectoTest.Controllers.LoginController.Index(string, string)u
+kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs (!"6*˜
+0 ( LJ
+ (,!
+%0ProyectoTest.Models.Usuario"ProyectoTest.Models.Usuariof
 d
-( ((*
+# (*
 
-%2bool""object.operator ==(object, object)*
+%1void"%ProyectoTest.Models.Usuario.Usuario()*%#
+!
+%0ProyectoTest.Models.Usuariob
+`
+ (,'
+oUsuarioProyectoTest.Models.Usuario"__id*%#
+!
+%0ProyectoTest.Models.Usuarioê
+ç
+ (.'
+%2!ProyectoTest.Logica.UsuarioLogica"/ProyectoTest.Logica.UsuarioLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.UsuarioLogica 
+«
+ (L!
+%3ProyectoTest.Models.Usuario"9ProyectoTest.Logica.UsuarioLogica.Obtener(string, string)*+)
+'
+%2!ProyectoTest.Logica.UsuarioLogica*
+
+NCorreostring*
+
+NContrasenastringb
+`
+ (L'
+oUsuarioProyectoTest.Models.Usuario"__id*%#
+!
+%3ProyectoTest.Models.UsuarioÅ
+
+ ( 
+
+%4bool""object.operator !=(object, object)*
 "
-object*
-
-%1object*
+object*+)
+'
+oUsuarioProyectoTest.Models.Usuario*
 ""*
 1
-2*˙
-1) )(8∞
-≠
-) )(9*
-%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
-System.Web.Mvc.Controller*	
-Index*	
-Login"8
-) )(:,
-*
-%3$System.Web.Mvc.RedirectToRouteResult*◊
-2+ +(5{
-y
-+$ +(+%
-%4System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
-System.Web.Mvc.Controller£†
-+$ +(6
-%5object":System.Collections.Generic.ICollection<T>.this[string].get*)'
-%
-%4System.Web.HttpSessionStateBase*	
-Usuario2this[string].get*
-(
-+ +(6
-%6"__id*
+2*˙
+1 !(4o
+m
+2 (A
+%5string"&ProyectoTest.Models.Usuario.Correo.get*+)
+'
+oUsuarioProyectoTest.Models.Usuario©
+¶
+ (I
+
+%6void"CSystem.Web.Security.FormsAuthentication.SetAuthCookie(string, bool)*-+")
+'System.Web.Security.FormsAuthentication*
 
-%5objectt
-r
-+ +(6V+
-)ProyectoTest.Controllers.AcercaController"'
-oUsuarioProyectoTest.Models.Usuario"__id*
-
-%6*
-3*Ä
-3- -(ô
-ñ
-- -(
+%5string*
+""{
+y
+ (%
+%7System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
+System.Web.Mvc.Controller–Õ
+ (-
+%8object":System.Collections.Generic.ICollection<T>.this[string].set*)'
+%
+%7System.Web.HttpSessionStateBase*	
+Usuario*+)
+'
+oUsuarioProyectoTest.Models.Usuario2this[string].setv
+t
+! !(,
 
-%7void""proyectotest/views/acerca/politica*
-
-%8*
+%9bool"/ProyectoTest.Models.Usuario.EsAdministrador.get*+)
+'
+oUsuarioProyectoTest.Models.Usuario*
+3
+4*˚
+3# #(;∞
+≠
+# #(<+
+%10$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*
+
+Home"9
+# #(=-
++
+%10$System.Web.Mvc.RedirectToRouteResult*˝
+4' '(=≤
+Ø
+' '(>+
+%11$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*
+
+Tienda"9
+' '(?-
++
+%11$System.Web.Mvc.RedirectToRouteResult*•	
+2, -(/-
+, ,(
+%ViewBagDataAllobject"object0.
+, ,(
+%ViewBagDataHtmlobject"objectr
+p
+, ,(B
+%12"__mapSet*
+
+%ViewBagDataAllobject*	
+Error*'%#
+!Usuario o contrase√±a incorrectosT
+R
+, ,(B
+%13"__mapSet*
+
+%ViewBagDataHtmlobject*	
+Error*
+""ó
+î
+- -(
+%14void"proyectotest/views/login/index*	
+
+%15*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -73,13 +135,12 @@ r
 
 %HttpContextItemsAllobject*#!
 
-%HttpContextItemsHtmlobjectï
-í
-- -(
-
-%9void"proyectotest/views/_viewstart*	
+%HttpContextItemsHtmlobjectñ
+ì
+- -(
+%16void"proyectotest/views/_viewstart*	
 
-%10*
+%17*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -92,12 +153,12 @@ r
 
 %HttpContextItemsAllobject*#!
 
-%HttpContextItemsHtmlobject°
-û
-- -(
-%11void"(proyectotest/views/shared/_layout_tienda*	
+%HttpContextItemsHtmlobjectö
+ó
+- -(
+%18void"!proyectotest/views/shared/_layout*	
 
-%12*
+%19*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -111,15 +172,83 @@ r
 %HttpContextItemsAllobject*#!
 
 %HttpContextItemsHtmlobject"
-- -(
+- -(
 
-%11void*.
-4.	 .(	"
-. .(	
-implicit return*5
-5&& &(&!
-
-& &($
-%13"__entrypoint*
-0B-+
-)ProyectoTest.Controllers.AcercaController
+%18void*.
+5/	 /(	"
+/ /(	
+implicit return*≠
+6E (ES
+Q
+ (!
+%20"__entrypoint*
+
+NCorreostring*
+
+NContrasenastringr
+p
+	 (
+%21"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+NCorreostring~
+|
+	 (
+%22"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+NCorreostringì
+ê
+	 (!
+%23"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+NCorreostringN
+L
+" (0
+NCorreostring"__annotation*	
+
+%21*	
+
+%22*	
+
+%23v
+t
+	 (
+%24"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+NContrasenastringÉ
+Ä
+	 (
+%25"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+NContrasenastringó
+î
+	 (!
+%26"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+NContrasenastringR
+P
+2 (D
+NContrasenastring"__annotation*	
+
+%24*	
+
+%25*	
+
+%26*
+0:
+" (0
+NCorreostring:!
+2 (D
+NContrasenastringB,*
+(ProyectoTest.Controllers.LoginController

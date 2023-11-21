@@ -1,105 +1,348 @@
 
-2ProyectoTest.Controllers.HomeController.Producto()t
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs8 8($"4* 
-0: :(*{
-y
-: :(%
-%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
-System.Web.Mvc.Controller£ 
-: :("
-%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
-%
-%0System.Web.HttpSessionStateBase*	
-Usuario2this[string].getf
+\ProyectoTest.Controllers.LoginController.Registrarse(string, string, string, string, string)u
+kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs8 8('"6*õ	
+0: D(3LJ
+: B(!
+%0ProyectoTest.Models.Usuario"ProyectoTest.Models.Usuariof
 d
-: :(*
+:# :(*
 
-%2bool""object.operator ==(object, object)*
+%1void"%ProyectoTest.Models.Usuario.Usuario()*%#
+!
+%0ProyectoTest.Models.Usuarioƒ
+€
+< <("
+%2string"'ProyectoTest.Models.Usuario.Nombres.set*%#
+!
+%0ProyectoTest.Models.Usuario*
+
+NNombresstring‡
+„
+= =(&
+%3string")ProyectoTest.Models.Usuario.Apellidos.set*%#
+!
+%0ProyectoTest.Models.Usuario*
+
+
+NApellidosstring€
+~
+> >( 
+%4string"&ProyectoTest.Models.Usuario.Correo.set*%#
+!
+%0ProyectoTest.Models.Usuario*
+
+NCorreostring‰
+†
+? ?((
+%5string"*ProyectoTest.Models.Usuario.Contrasena.set*%#
+!
+%0ProyectoTest.Models.Usuario*
+
+NContrasenastring›
+˜
+@ @(:
+%6string"3ProyectoTest.Models.Usuario.ConfirmarContrasena.set*%#
+!
+%0ProyectoTest.Models.Usuario*" 
+
+NConfirmarContrasenastringz
+x
+A A('
+
+%7bool"/ProyectoTest.Models.Usuario.EsAdministrador.set*%#
+!
+%0ProyectoTest.Models.Usuario*
+""b
+`
+: B('
+oUsuarioProyectoTest.Models.Usuario"__id*%#
+!
+%0ProyectoTest.Models.UsuarioŠ
+‡
+D D(3
+
+%8bool""string.operator !=(string, string)*
 "
-object*
-
-%1object*
-""*
+string*
+
+NContrasenastring*" 
+
+NConfirmarContrasenastring*
 1
-2*ú
-1; ;(8°
-­
-; ;(9*
-%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+2*ú	
+1F G($/-
+F F(
+%ViewBagDataAllobject"object0.
+F F(
+%ViewBagDataHtmlobject"objectm
+k
+F F(>
+%9"__mapSet*
+
+%ViewBagDataAllobject*	
+Error*#!
+Las contraseÃ±as no coincidenT
+R
+F F(>
+%10"__mapSet*
+
+%ViewBagDataHtmlobject*	
+Error*
+""¹
+¶
+G G(%
+%11void"$proyectotest/views/login/registrarse*	
+
+%12*+)
+'
+oUsuarioProyectoTest.Models.Usuario*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject²
+¯
+G G(%
+%13void"proyectotest/views/_viewstart*	
+
+%14*+)
+'
+oUsuarioProyectoTest.Models.Usuario*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject¶
+³
+G G(%
+%15void"!proyectotest/views/shared/_layout*	
+
+%16*+)
+'
+oUsuarioProyectoTest.Models.Usuario*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+G G(&
+
+%15void*ª
+2L N(,‘
+Ž
+L* L(A(
+%17!ProyectoTest.Logica.UsuarioLogica"/ProyectoTest.Logica.UsuarioLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.UsuarioLogica¾
+»
+L* L(U
+
+%18int"HProyectoTest.Logica.UsuarioLogica.Registrar(ProyectoTest.Models.Usuario)*,*
+(
+%17!ProyectoTest.Logica.UsuarioLogica*+)
+'
+oUsuarioProyectoTest.Models.Usuario>
+<
+L L(U
+idusuario_respuestaint"__id*
+
+
+%18int*
+3
+4*¹
+3P Q(!c
+a
+P P(8
+%19"__mapSet*
+
+%ViewBagDataAllobject*	
+Error*
+Error al registrarT
+R
+P P(8
+%20"__mapSet*
+
+%ViewBagDataHtmlobject*	
+Error*
+""
+š
+Q Q(!
+%21void"$proyectotest/views/login/registrarse*	
+
+%22*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject–
+“
+Q Q(!
+%23void"proyectotest/views/_viewstart*	
+
+%24*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectš
+—
+Q Q(!
+%25void"!proyectotest/views/shared/_layout*	
+
+%26*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+Q Q("
+
+%25void*ü
+4U U(<±
+®
+U U(=+
+%27$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
 System.Web.Mvc.Controller*	
 Index*	
-Login"8
-; ;(:,
-*
-%3$System.Web.Mvc.RedirectToRouteResult*ó
-2= =(—
-”
-= =(
+Login"9
+U U(>-
++
+%27$System.Web.Mvc.RedirectToRouteResult*.
+5X	 X(	"
+X X(	
+implicit return*Ò
+6
+8Œ 8(Œª
+§
+8 8('
+%28"__entrypoint*
+
+NNombresstring*
+
 
-%4void" proyectotest/views/home/producto*
-
-%5*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
+NApellidosstring*
+
+NCorreostring*
+
+NContrasenastring*" 
 
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject”
-‘
-= =(
+NConfirmarContrasenastrings
+q
+7	 7(
+%29"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+NNombresstring9
+7
+8( 8(7
+NNombresstring"__annotation*	
+
+%29u
+s
+7	 7(
+%30"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
 
-%6void"proyectotest/views/_viewstart*
-
-%7*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
+NApellidosstring;
+9
+89 8(J
+
+NApellidosstring"__annotation*	
+
+%30r
+p
+7	 7(
+%31"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+NCorreostring8
+6
+8L 8(Z
+NCorreostring"__annotation*	
+
+%31v
+t
+7	 7(
+%32"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+NContrasenastring<
+:
+8\ 8(n
+NContrasenastring"__annotation*	
+
+%32
+}
+7	 7(
+%33"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*" 
 
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject˜
-•
-= =(
+NConfirmarContrasenastringF
+D
+	8p 8(‹
+NConfirmarContrasenastring"__annotation*	
+
+%33*
+0:
+8( 8(7
+NNombresstring: 
+89 8(J
 
-%8void"!proyectotest/views/shared/_layout*
-
-%9*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
-= =(
-
-
-%8void*.
-3>	 >(	"
-> >(	
-implicit return*5
-48& 8(&!
-
-8 8($
-%10"__entrypoint*
-0B+)
-'ProyectoTest.Controllers.HomeController
+NApellidosstring:
+8L 8(Z
+NCorreostring:!
+8\ 8(n
+NContrasenastring:+
+	8p 8(‹
+NConfirmarContrasenastringB,*
+(ProyectoTest.Controllers.LoginController

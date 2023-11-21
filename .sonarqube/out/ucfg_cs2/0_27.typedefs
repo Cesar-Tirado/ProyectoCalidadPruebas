@@ -1,23 +1,43 @@
-¡	
-ProyectoTest.Models.Clienteobject2
-	Cliente()%ProyectoTest.Models.Cliente.Cliente():
-IdCliente.get)ProyectoTest.Models.Cliente.IdCliente.get:
-IdCliente.set)ProyectoTest.Models.Cliente.IdCliente.set4
+»
+ProyectoTest.Models.Compraobject/
+Compra()#ProyectoTest.Models.Compra.Compra()7
+IdCompra.get'ProyectoTest.Models.Compra.IdCompra.get7
+IdCompra.set'ProyectoTest.Models.Compra.IdCompra.set9
+IdUsuario.get(ProyectoTest.Models.Compra.IdUsuario.get9
+IdUsuario.set(ProyectoTest.Models.Compra.IdUsuario.setA
+TotalProducto.get,ProyectoTest.Models.Compra.TotalProducto.getA
+TotalProducto.set,ProyectoTest.Models.Compra.TotalProducto.set1
+	Total.get$ProyectoTest.Models.Compra.Total.get1
+	Total.set$ProyectoTest.Models.Compra.Total.set3
 
-Nombre.get&ProyectoTest.Models.Cliente.Nombre.get4
+Nombre.get%ProyectoTest.Models.Compra.Nombre.get3
 
-Nombre.set&ProyectoTest.Models.Cliente.Nombre.set:
-Apellidos.get)ProyectoTest.Models.Cliente.Apellidos.get:
-Apellidos.set)ProyectoTest.Models.Cliente.Apellidos.set2
-	Email.get%ProyectoTest.Models.Cliente.Email.get2
-	Email.set%ProyectoTest.Models.Cliente.Email.set8
-Telefono.get(ProyectoTest.Models.Cliente.Telefono.get8
-Telefono.set(ProyectoTest.Models.Cliente.Telefono.set<
-Cumpleanos.get*ProyectoTest.Models.Cliente.Cumpleanos.get<
-Cumpleanos.set*ProyectoTest.Models.Cliente.Cumpleanos.set8
-Distrito.get(ProyectoTest.Models.Cliente.Distrito.get8
-Distrito.set(ProyectoTest.Models.Cliente.Distrito.set@
-Calificacion.get,ProyectoTest.Models.Cliente.Calificacion.get@
-Calificacion.set,ProyectoTest.Models.Cliente.Calificacion.setL
-RecibirPromociones.get2ProyectoTest.Models.Cliente.RecibirPromociones.getL
-RecibirPromociones.set2ProyectoTest.Models.Cliente.RecibirPromociones.set
+Nombre.set%ProyectoTest.Models.Compra.Nombre.set7
+Telefono.get'ProyectoTest.Models.Compra.Telefono.get7
+Telefono.set'ProyectoTest.Models.Compra.Telefono.set3
+
+Correo.get%ProyectoTest.Models.Compra.Correo.get3
+
+Correo.set%ProyectoTest.Models.Compra.Correo.set9
+Direccion.get(ProyectoTest.Models.Compra.Direccion.get9
+Direccion.set(ProyectoTest.Models.Compra.Direccion.set;
+Referencia.get)ProyectoTest.Models.Compra.Referencia.get;
+Referencia.set)ProyectoTest.Models.Compra.Referencia.setO
+DocumentoFacturacion.get3ProyectoTest.Models.Compra.DocumentoFacturacion.getO
+DocumentoFacturacion.set3ProyectoTest.Models.Compra.DocumentoFacturacion.set9
+FormaPago.get(ProyectoTest.Models.Compra.FormaPago.get9
+FormaPago.set(ProyectoTest.Models.Compra.FormaPago.set3
+
+Estado.get%ProyectoTest.Models.Compra.Estado.get3
+
+Estado.set%ProyectoTest.Models.Compra.Estado.set;
+FechaTexto.get)ProyectoTest.Models.Compra.FechaTexto.get;
+FechaTexto.set)ProyectoTest.Models.Compra.FechaTexto.set;
+FormaEnvio.get)ProyectoTest.Models.Compra.FormaEnvio.get;
+FormaEnvio.set)ProyectoTest.Models.Compra.FormaEnvio.set;
+HoraRecojo.get)ProyectoTest.Models.Compra.HoraRecojo.get;
+HoraRecojo.set)ProyectoTest.Models.Compra.HoraRecojo.set/
+Tipo.get#ProyectoTest.Models.Compra.Tipo.get/
+Tipo.set#ProyectoTest.Models.Compra.Tipo.setC
+oDetalleCompra.get-ProyectoTest.Models.Compra.oDetalleCompra.getC
+oDetalleCompra.set-ProyectoTest.Models.Compra.oDetalleCompra.set

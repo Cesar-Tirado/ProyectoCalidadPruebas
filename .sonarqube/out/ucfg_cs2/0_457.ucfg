@@ -1,25 +1,13 @@
 
-#ProyectoTest.Models.Compra.Compra()g
-]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs ("1*
-1	 (	*
-0*š
-0 (6ZX
- (6(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
-o
-! (4
-
-%1void")System.Collections.Generic.List<T>.List()*,*
-(
-%0"System.Collections.Generic.List<T>¶
-³
- (6(
-%2"System.Collections.Generic.List<T>"-ProyectoTest.Models.Compra.oDetalleCompra.set* 
-ProyectoTest.Models.Compra*,*
-(
-%0"System.Collections.Generic.List<T>*
-2*.
-2	 (	"
- (	
-implicit returnB
-ProyectoTest.Models.Compra
+,ProyectoTest.Models.Cliente.Calificacion.geth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs" (%"0*
+0& (&W
+U
+" (&	
+%0int"__id*86*4
+ProyectoTest.Models.Cliente"
+Calificacionint"
+" (&
+	
+%0intB
+ProyectoTest.Models.Cliente

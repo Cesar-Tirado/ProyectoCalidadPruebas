@@ -1,21 +1,18 @@
 
-CardHolder.documentNumber.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs‰( ‰(+"0*ž
+dataEnviadaDesdeFront.Token.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csû û(""0*¢
 0
-‰, ‰(,S
-Q
+û# û(#U
+S
 
-‰( ‰(,(
-
-CardHolder"
-documentNumberstring"__id*
+û û(#*
+dataEnviadaDesdeFront"
+Tokenstring"__id*
 
-valuestring"8
+valuestring":
 
-‰( ‰(,**(
-
-CardHolder"
-documentNumberstring:
-valuestringB
-
-CardHolder
+û û(#,**
+dataEnviadaDesdeFront"
+Tokenstring:
+valuestringB
+dataEnviadaDesdeFront

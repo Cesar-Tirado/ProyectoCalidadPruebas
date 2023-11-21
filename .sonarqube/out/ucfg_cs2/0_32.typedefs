@@ -1,25 +1,13 @@
-¹
-!ProyectoTest.Models.DetalleCompraobjectD
-DetalleCompra()1ProyectoTest.Models.DetalleCompra.DetalleCompra()L
-IdDetalleCompra.get5ProyectoTest.Models.DetalleCompra.IdDetalleCompra.getL
-IdDetalleCompra.set5ProyectoTest.Models.DetalleCompra.IdDetalleCompra.set>
-IdCompra.get.ProyectoTest.Models.DetalleCompra.IdCompra.get>
-IdCompra.set.ProyectoTest.Models.DetalleCompra.IdCompra.setB
-IdProducto.get0ProyectoTest.Models.DetalleCompra.IdProducto.getB
-IdProducto.set0ProyectoTest.Models.DetalleCompra.IdProducto.set@
-oProducto.get/ProyectoTest.Models.DetalleCompra.oProducto.get@
-oProducto.set/ProyectoTest.Models.DetalleCompra.oProducto.set>
-Cantidad.get.ProyectoTest.Models.DetalleCompra.Cantidad.get>
-Cantidad.set.ProyectoTest.Models.DetalleCompra.Cantidad.set8
-	Total.get+ProyectoTest.Models.DetalleCompra.Total.get8
-	Total.set+ProyectoTest.Models.DetalleCompra.Total.setD
-PrecioExtra.get1ProyectoTest.Models.DetalleCompra.PrecioExtra.getD
-PrecioExtra.set1ProyectoTest.Models.DetalleCompra.PrecioExtra.set:
-
-Nombre.get,ProyectoTest.Models.DetalleCompra.Nombre.get:
-
-Nombre.set,ProyectoTest.Models.DetalleCompra.Nombre.setD
-Adicionales.get1ProyectoTest.Models.DetalleCompra.Adicionales.getD
-Adicionales.set1ProyectoTest.Models.DetalleCompra.Adicionales.setL
-ObservacionesDC.get5ProyectoTest.Models.DetalleCompra.ObservacionesDC.getL
-ObservacionesDC.set5ProyectoTest.Models.DetalleCompra.ObservacionesDC.set
+Ÿ
+ProyectoTest.Models.FechaModelobject;
+FechaModel()+ProyectoTest.Models.FechaModel.FechaModel()G
+IdReservaLocal.get1ProyectoTest.Models.FechaModel.IdReservaLocal.getG
+IdReservaLocal.set1ProyectoTest.Models.FechaModel.IdReservaLocal.set3
+Anio.get'ProyectoTest.Models.FechaModel.Anio.get3
+Anio.set'ProyectoTest.Models.FechaModel.Anio.set1
+Mes.get&ProyectoTest.Models.FechaModel.Mes.get1
+Mes.set&ProyectoTest.Models.FechaModel.Mes.set3
+Dias.get'ProyectoTest.Models.FechaModel.Dias.get3
+Dias.set'ProyectoTest.Models.FechaModel.Dias.set5
+	Horas.get(ProyectoTest.Models.FechaModel.Horas.get5
+	Horas.set(ProyectoTest.Models.FechaModel.Horas.set

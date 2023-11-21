@@ -1,21 +1,18 @@
 
-CardHolder.documentType.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csˆ' ˆ(*"0*š
+Order.tokenId.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csŽ! Ž($"0*†
 0
-ˆ+ ˆ(+Q
-O
+Ž% Ž(%G
+E
 
-ˆ' ˆ(+&
-
-CardHolder"
-documentTypestring"__id*
+Ž! Ž(%
+Order"
+tokenIdstring"__id*
 
-valuestring"6
+valuestring",
 
-ˆ' ˆ(+(*&
-
-CardHolder"
-documentTypestring:
-valuestringB
-
-CardHolder
+Ž! Ž(%*
+Order"
+tokenIdstring:
+valuestringB	
+Order

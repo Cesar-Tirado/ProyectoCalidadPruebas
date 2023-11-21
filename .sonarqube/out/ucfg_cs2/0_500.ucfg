@@ -1,163 +1,52 @@
 
-LProyectoTest.Logica.CategoriaLogica.Registrar(ProyectoTest.Models.Categoria)p
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CategoriaLogica.csD D("0*Ñ
-0F G(J/
--
-F F(!
-	respuestabool"__id*
-""T
-R
-G? G(J
-%0string"__id*20*.
-ProyectoTest.Logica.Conexion"
-CNstring\Z
-G- G(K)
-%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
-í
-G1 G(>
+7ProyectoTest.Logica.UbicacionTiendaLogica.Instancia.getv
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbicacionTiendaLogica.cs ("0*’
+0 (&∞
+≠
+ (/
+%0)ProyectoTest.Logica.UbicacionTiendaLogica"__id*jh*f+
+)ProyectoTest.Logica.UbicacionTiendaLogica"7
 
-%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
-)
-%1#System.Data.SqlClient.SqlConnection*
-
-%0strings
-q
-G! G(K0
-	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
-)
-%1#System.Data.SqlClient.SqlConnection*
-1*Â
-1K T(LVT
-K% K(W&
-%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÚ
-Ô
-K) K(3
+_instancia)ProyectoTest.Logica.UbicacionTiendaLogicaä
+á
+ (&
 
-%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
-&
-%3 System.Data.SqlClient.SqlCommand*
-sp_RegistrarCategoria*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectiong
-e
-K K(W'
-cmd System.Data.SqlClient.SqlCommand"__id**(
-&
-%3 System.Data.SqlClient.SqlCommandü
-ú
-L L("2
-%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommandz
-x
-L? L(U
-%6string"-ProyectoTest.Models.Categoria.Descripcion.get*/-
-+
+%1bool""object.operator ==(object, object)*
+"
+object*31
+/
+%0)ProyectoTest.Logica.UbicacionTiendaLogica*
+""*
+1
+2*√
+1 (<hf
+! (</
+%2)ProyectoTest.Logica.UbicacionTiendaLogica")ProyectoTest.Logica.UbicacionTiendaLogicaë
+é
+% (:
 
-oCategoriaProyectoTest.Models.Categoria‹
-Ÿ
-L L(V(
-%7"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
-2
-%5,System.Data.SqlClient.SqlParameterCollection*
-Descripcion*
-
-%6stringü
-ú
-M M("2
-%8,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommand"
- 
-M4 M(A
-%9"__id*
-""Ÿ
-÷
-M M(B)
-%10"System.Data.SqlClient.SqlParameter"LSystem.Collections.Generic.ICollection<T>.Add(string, System.Data.SqlDbType)*64
-2
-%8,System.Data.SqlClient.SqlParameterCollection*
-	Resultado*
-
-%9#
-!
-MO M(h
-%11"__id*
-""†
-ù
-M M(h%
-%12System.Data.ParameterDirection"0System.Data.SqlClient.SqlParameter.Direction.set*-+
-)
-%10"System.Data.SqlClient.SqlParameter*	
-
-%11#
-!
-N& N(A
-%13"__id*
-""ó
-î
-N N(A
-%14System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
-'
-cmd System.Data.SqlClient.SqlCommand*	
-
-%13{
-y
-P P($
-%15void"*System.Data.SqlClient.SqlConnection.Open()*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectiony
-w
-R R()
+%3void"AProyectoTest.Logica.UbicacionTiendaLogica.UbicacionTiendaLogica()*31
+/
+%2)ProyectoTest.Logica.UbicacionTiendaLogica∞
+≠
+ (<f+
+)ProyectoTest.Logica.UbicacionTiendaLogica"7
 
-%16int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
-'
-cmd System.Data.SqlClient.SqlCommand†
-ù
-T2 T(@3
-%17,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommandæ
-ª
-T2 T(M)
-%18"System.Data.SqlClient.SqlParameter":System.Collections.Generic.ICollection<T>.this[string].get*75
-3
-%17,System.Data.SqlClient.SqlParameterCollection*
-	Resultadox
-v
-T2 T(S
-%19object",System.Data.SqlClient.SqlParameter.Value.get*-+
-)
-%18"System.Data.SqlClient.SqlParameterd
-b
-T  T(T
-%20bool" System.Convert.ToBoolean(object)*"
-System.Convert*
+_instancia)ProyectoTest.Logica.UbicacionTiendaLogica"__id*31
+/
+%2)ProyectoTest.Logica.UbicacionTiendaLogica*
+2*ˇ
+2   (!∞
+≠
+   (!/
+%4)ProyectoTest.Logica.UbicacionTiendaLogica"__id*jh*f+
+)ProyectoTest.Logica.UbicacionTiendaLogica"7
 
-%19object6
-4
-T T(T
-	respuestabool"__id*
-
-%20bool*
-2
-3*C
-2Y Y(%/
--
-Y Y(%
-	respuestabool"__id*
-""*
-3*
-3]	 ](	*
-4*.
-4\ \("
-\ \(
-
-	respuestabool*.
-5]	 ](	"
-] ](	
-implicit return:7
-D D(2+
-
-oCategoriaProyectoTest.Models.CategoriaB'%
-#ProyectoTest.Logica.CategoriaLogica
+_instancia)ProyectoTest.Logica.UbicacionTiendaLogica"=
+   ("1
+/
+%4)ProyectoTest.Logica.UbicacionTiendaLogica*.
+3! !("
+! !(
+implicit returnB-"+
+)ProyectoTest.Logica.UbicacionTiendaLogica

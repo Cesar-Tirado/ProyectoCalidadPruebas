@@ -1,25 +1,25 @@
 
-:ProyectoTest.Logica.CarritoLogica.Eliminar(string, string)p
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CarritoLogica.csä ä("0*ê
+1ProyectoTest.Logica.CategoriaLogica.Eliminar(int)r
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CategoriaLogica.csÄ Ä("0*ê
 0
-å ç(J1
+Ç É(J1
 /
 
-å å(!
+Ç Ç(!
 	respuestabool"__id*
 ""V
 T
 
-ç? ç(J
+É? É(J
 %0string"__id*20*.
 ProyectoTest.Logica.Conexion"
 CNstring^\
 
-ç- ç(K)
+É- É(K)
 %1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
 î
 
-ç1 ç(>
+É1 É(>
 
 %2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
 )
@@ -28,149 +28,104 @@ T
 %0stringu
 s
 
-ç! ç(K0
+É! É(K0
 	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
 )
 %1#System.Data.SqlClient.SqlConnection*
-1*Á
+1*Œ
+
 1
-ë" ò()JH
+á è($XV
 
-ë* ë(=
-%3System.Text.StringBuilder"System.Text.StringBuilderj
-h
+á% á(o&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandå
+â
 
-ë. ë(;
+á) á(3
 
-%4void")System.Text.StringBuilder.StringBuilder()*#!
-
-%3System.Text.StringBuilder]
-[
-
-ë" ë(="
-querySystem.Text.StringBuilder"__id*#!
-
-%3System.Text.StringBuilderæ
-ª
-
-í í(X
-%5System.Text.StringBuilder",System.Text.StringBuilder.AppendLine(string)*&$
-"
-querySystem.Text.StringBuilder*642
-0delete from carrito where idcarrito = @idcarritoj
-h
-
-ì4 ì(D
-%6string"$System.Text.StringBuilder.ToString()*&$
-"
-querySystem.Text.StringBuilderXV
-
-ì% ì(P&
-%7 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÈ
-Ê
-
-ì) ì(3
-
-%8void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
 &
-%7 System.Data.SqlClient.SqlCommand*
-
-%6string*42
+%3 System.Data.SqlClient.SqlCommand*31/
+-delete from CATEGORIA where idcategoria = @id*42
 0
 	oConexion#System.Data.SqlClient.SqlConnectioni
 g
 
-ì ì(P'
+á á(o'
 cmd System.Data.SqlClient.SqlCommand"__id**(
 &
-%7 System.Data.SqlClient.SqlCommand°
+%3 System.Data.SqlClient.SqlCommand°
 û
 
-î î("2
-%9,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+à à("2
+%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
 '
-cmd System.Data.SqlClient.SqlCommandÂ
-‚
+cmd System.Data.SqlClient.SqlCommandŒ
+À
 
-î î(H)
-%10"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+à à(:(
+%6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
 2
-%9,System.Data.SqlClient.SqlParameterCollection*
+%5,System.Data.SqlClient.SqlParameterCollection*	
+@id*
+""$
+"
 
-@idcarrito*
-
-	IdCarritostring¢
-ü
+â& â(6
+%7"__id*
+""ó
+î
 
-ï ï("3
-%11,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+â â(6
+%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
 '
-cmd System.Data.SqlClient.SqlCommandË
-Â
+cmd System.Data.SqlClient.SqlCommand*
+
+%7|
+z
 
-ï ï(J)
-%12"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*75
-3
-%11,System.Data.SqlClient.SqlParameterCollection*
-@idproducto*
-
+ã ã($
 
-IdProductostring%
-#
-
-ñ& ñ(6
-%13"__id*
-""ô
-ñ
-
-ñ ñ(6
-%14System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
-'
-cmd System.Data.SqlClient.SqlCommand*	
-
-%13}
-{
-
-ó ó($
-%15void"*System.Data.SqlClient.SqlConnection.Open()*42
+%9void"*System.Data.SqlClient.SqlConnection.Open()*42
 0
 	oConexion#System.Data.SqlClient.SqlConnection{
 y
 
-ò ò()
+ç ç()
 
-%16int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+%10int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
 '
-cmd System.Data.SqlClient.SqlCommand*
+cmd System.Data.SqlClient.SqlCommand1
+/
+
+è è($
+	respuestabool"__id*
+""*
 2
 3*G
 2
-ú ú(%1
+î î(%1
 /
 
-ú ú(%
+î î(%
 	respuestabool"__id*
 ""*
 3*
 3
-†	 †(	*
+õ	 õ(	*
 4*2
 4
-ü ü("!
+ô ô("!
 
-ü ü(
+ô ô(
 
 	respuestabool*2
 5
-†	 †(	"!
+õ	 õ(	"!
 
-† †(	
-implicit return:!
+õ õ(	
+implicit return:
 
-ä ä(-
-	IdCarritostring:"
-
-ä/ ä(@
-
-IdProductostringB%#
-!ProyectoTest.Logica.CarritoLogica
+Ä Ä(#	
+idintB'%
+#ProyectoTest.Logica.CategoriaLogica

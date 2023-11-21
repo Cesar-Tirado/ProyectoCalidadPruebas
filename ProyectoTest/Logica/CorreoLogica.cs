@@ -50,7 +50,7 @@ namespace ProyectoTest.Logica
 
                 string mail = DatosConexion.GetValue("mail", typeof(string)).ToString();
                 string pass = DatosConexion.GetValue("pass", typeof(string)).ToString();
-                string mailCopy = DatosConexion.GetValue("mailCopy", typeof(string)).ToString();
+                //string mailCopy = DatosConexion.GetValue("mailCopy", typeof(string)).ToString();
                 string idCompraFormateado = oCompra.IdCompra.ToString("D8");
 
                 decimal precioTotal = oCompra.Total;
@@ -93,8 +93,8 @@ namespace ProyectoTest.Logica
 
                 Correos.To.Clear();
                 Correos.Attachments.Clear();
-                Correos.Bcc.Add(mailCopy);
-                Correos.Subject = "Pedido LongHorn";
+                //Correos.Bcc.Add(mailCopy);
+                Correos.Subject = "Pedido";
                 Correos.Body = @"
                     <html>
                     <head>
@@ -169,7 +169,7 @@ namespace ProyectoTest.Logica
                                         <th class='columna-derecha'>Datos del Cliente</td>
                                     </tr>
                                     <tr>
-                                        <td class='columna-izquierda'>LongHorn Grill</td>
+                                      
                                         <td class='columna-derecha'> " + oCompra.Nombre + @"</td>
                                     </tr>
                                     <tr>
@@ -177,15 +177,15 @@ namespace ProyectoTest.Logica
                                         <td class='columna-derecha'>" + DireccionCliente + @"</td>
                                     </tr>   
                                     <tr>
-                                        <td class='columna-izquierda'>Lima - Perú</td>
+                        
                                         <td class='columna-derecha'> " + oCompra.DocumentoFacturacion + @"</td>
                                     </tr>  
                                     <tr>
-                                        <td class='columna-izquierda'>014213916</td>
+                        
                                         <td class='columna-derecha'> " + oCompra.Telefono + @"</td>
                                     </tr> 
                                     <tr>
-                                        <td class='columna-izquierda'> " + mail + @"</td>
+    
                                         <td class='columna-derecha'> " + oCompra.Correo + @" </td>
                                     </tr>                            
                                 </table>

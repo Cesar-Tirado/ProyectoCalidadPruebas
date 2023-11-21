@@ -1,18 +1,15 @@
 
-MerchantDefineData.MDD32.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csõ õ(""0*œ
-0
-õ# õ(#R
-P
+/ProyectoTest.Models.Usuario.EsAdministrador.seth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Usuario.cs+ (."0*¶
+0/ (/_
+]
++ (/8
+ProyectoTest.Models.Usuario"
+EsAdministradorbool"__id*
 
-õ õ(#'
-MerchantDefineData"
-MDD32string"__id*
-
-valuestring"7
-
-õ õ(#)*'
-MerchantDefineData"
-MDD32string:
-valuestringB
-MerchantDefineData
+valuebool"F
++ (/:*8
+ProyectoTest.Models.Usuario"
+EsAdministradorbool:
+valueboolB
+ProyectoTest.Models.Usuario

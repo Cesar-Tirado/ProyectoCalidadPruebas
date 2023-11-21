@@ -1,15 +1,15 @@
 
-@ProyectoTest.Models.Niubiz.Consultas.CardHolder.documentType.set“
-ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs* (-"0*Þ
-0. (.t
-r
-* (.K1
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder"
-documentTypestring"__id*
+3ProyectoTest.Models.Compra.DocumentoFacturacion.setg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs2 (5"0*Ä
+06 (6g
+e
+2 (6>
+ProyectoTest.Models.Compra"
+DocumentoFacturacionstring"__id*
 
-valuestring"Y
-* (.M*K1
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder"
-documentTypestring:
-valuestringB31
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder
+valuestring"L
+2 (6@*>
+ProyectoTest.Models.Compra"
+DocumentoFacturacionstring:
+valuestringB
+ProyectoTest.Models.Compra

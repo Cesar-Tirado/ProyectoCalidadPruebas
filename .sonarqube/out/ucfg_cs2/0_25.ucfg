@@ -1,11 +1,11 @@
 
-:ProyectoTest.Controllers.LoginController.LoginController()u
-kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs ( "0*‡
-0{ {(W
+<ProyectoTest.Controllers.PublicController.PublicController()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\PublicController.cs (!"0*‡
+0   (W
 U
 
 %0void"&System.Web.Mvc.Controller.Controller()*
 System.Web.Mvc.Controller"
- {(
-implicit returnB,*
-(ProyectoTest.Controllers.LoginController
+  (
+implicit returnB-+
+)ProyectoTest.Controllers.PublicController

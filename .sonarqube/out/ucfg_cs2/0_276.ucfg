@@ -1,17 +1,13 @@
 
-)ProyectoTest.Models.Compra.FechaTexto.setg
-]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs( (+"0*°
-0, (,]
-[
-( (,4
-ProyectoTest.Models.Compra"
-
-FechaTextostring"__id*
-
-valuestring"B
-( (,6*4
-ProyectoTest.Models.Compra"
-
-FechaTextostring:
-valuestringB
-ProyectoTest.Models.Compra
+@ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_ID.get—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs' (*"0*œ
+0+ (+q
+o
+' (+
+%0string"__id*OM*K/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+TRANSACTION_IDstring"
+' (+
+
+%0stringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

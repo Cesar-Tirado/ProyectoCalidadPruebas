@@ -1,16 +1,16 @@
 
-MerchantDefineData.MDD21.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csô ô("0*u
+PAY.captureType.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¤  ¤(#"0*u
 0
-ô ô(I
-G
+¤$ ¤($F
+D
 
-ô ô(	
-%0int"__id*(&*$
-MerchantDefineData"
-MDD21int"
+¤  ¤($
+%0string"__id*" *
+PAY"
+captureTypestring"
 
-ô ô(
-	
-%0intB
-MerchantDefineData
+¤  ¤($
+
+%0stringB
+PAY

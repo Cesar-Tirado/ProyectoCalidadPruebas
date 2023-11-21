@@ -1,13 +1,17 @@
-‡
-MerchantDefineDataobject?
-MerchantDefineData()'MerchantDefineData.MerchantDefineData()'
-MDD4.getMerchantDefineData.MDD4.get'
-MDD4.setMerchantDefineData.MDD4.set)
-	MDD21.getMerchantDefineData.MDD21.get)
-	MDD21.setMerchantDefineData.MDD21.set)
-	MDD32.getMerchantDefineData.MDD32.get)
-	MDD32.setMerchantDefineData.MDD32.set)
-	MDD75.getMerchantDefineData.MDD75.get)
-	MDD75.setMerchantDefineData.MDD75.set)
-	MDD77.getMerchantDefineData.MDD77.get)
-	MDD77.setMerchantDefineData.MDD77.set
+õ
+Orderobject
+Order()Order.Order() 
+tokenId.getOrder.tokenId.get 
+tokenId.setOrder.tokenId.set.
+purchaseNumber.getOrder.purchaseNumber.get.
+purchaseNumber.setOrder.purchaseNumber.set
+
+amount.getOrder.amount.get
+
+amount.setOrder.amount.set"
+currency.getOrder.currency.get"
+currency.setOrder.currency.set$
+productId.getOrder.productId.get$
+productId.setOrder.productId.set(
+installment.getOrder.installment.get(
+installment.setOrder.installment.set

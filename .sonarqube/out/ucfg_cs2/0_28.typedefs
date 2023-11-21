@@ -1,43 +1,28 @@
-»
-ProyectoTest.Models.Compraobject/
-Compra()#ProyectoTest.Models.Compra.Compra()7
-IdCompra.get'ProyectoTest.Models.Compra.IdCompra.get7
-IdCompra.set'ProyectoTest.Models.Compra.IdCompra.set9
-IdUsuario.get(ProyectoTest.Models.Compra.IdUsuario.get9
-IdUsuario.set(ProyectoTest.Models.Compra.IdUsuario.setA
-TotalProducto.get,ProyectoTest.Models.Compra.TotalProducto.getA
-TotalProducto.set,ProyectoTest.Models.Compra.TotalProducto.set1
-	Total.get$ProyectoTest.Models.Compra.Total.get1
-	Total.set$ProyectoTest.Models.Compra.Total.set3
-
-Nombre.get%ProyectoTest.Models.Compra.Nombre.get3
-
-Nombre.set%ProyectoTest.Models.Compra.Nombre.set7
-Telefono.get'ProyectoTest.Models.Compra.Telefono.get7
-Telefono.set'ProyectoTest.Models.Compra.Telefono.set3
-
-Correo.get%ProyectoTest.Models.Compra.Correo.get3
-
-Correo.set%ProyectoTest.Models.Compra.Correo.set9
-Direccion.get(ProyectoTest.Models.Compra.Direccion.get9
-Direccion.set(ProyectoTest.Models.Compra.Direccion.set;
-Referencia.get)ProyectoTest.Models.Compra.Referencia.get;
-Referencia.set)ProyectoTest.Models.Compra.Referencia.setO
-DocumentoFacturacion.get3ProyectoTest.Models.Compra.DocumentoFacturacion.getO
-DocumentoFacturacion.set3ProyectoTest.Models.Compra.DocumentoFacturacion.set9
-FormaPago.get(ProyectoTest.Models.Compra.FormaPago.get9
-FormaPago.set(ProyectoTest.Models.Compra.FormaPago.set3
-
-Estado.get%ProyectoTest.Models.Compra.Estado.get3
-
-Estado.set%ProyectoTest.Models.Compra.Estado.set;
-FechaTexto.get)ProyectoTest.Models.Compra.FechaTexto.get;
-FechaTexto.set)ProyectoTest.Models.Compra.FechaTexto.set;
-FormaEnvio.get)ProyectoTest.Models.Compra.FormaEnvio.get;
-FormaEnvio.set)ProyectoTest.Models.Compra.FormaEnvio.set;
-HoraRecojo.get)ProyectoTest.Models.Compra.HoraRecojo.get;
-HoraRecojo.set)ProyectoTest.Models.Compra.HoraRecojo.set/
-Tipo.get#ProyectoTest.Models.Compra.Tipo.get/
-Tipo.set#ProyectoTest.Models.Compra.Tipo.setC
-oDetalleCompra.get-ProyectoTest.Models.Compra.oDetalleCompra.getC
-oDetalleCompra.set-ProyectoTest.Models.Compra.oDetalleCompra.set
+à
+)ProyectoTest.Controllers.TiendaControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject<
+Index()1ProyectoTest.Controllers.TiendaController.Index()H
+Producto(int)7ProyectoTest.Controllers.TiendaController.Producto(int)@
+	Carrito()3ProyectoTest.Controllers.TiendaController.Carrito()@
+	Compras()3ProyectoTest.Controllers.TiendaController.Compras()d
+ListarProducto(int, string)EProyectoTest.Controllers.TiendaController.ListarProducto(int, string)P
+ListarCategoria();ProyectoTest.Controllers.TiendaController.ListarCategoria()L
+ListarTiendas()9ProyectoTest.Controllers.TiendaController.ListarTiendas()X
+ListarTiendasActivo()?ProyectoTest.Controllers.TiendaController.ListarTiendasActivo()œ
+7InsertarCarrito(int, int, int, string, decimal, string)aProyectoTest.Controllers.TiendaController.InsertarCarrito(int, int, int, string, decimal, string)P
+CantidadCarrito();ProyectoTest.Controllers.TiendaController.CantidadCarrito()N
+ObtenerCarrito():ProyectoTest.Controllers.TiendaController.ObtenerCarrito()l
+EliminarCarrito(string, string)IProyectoTest.Controllers.TiendaController.EliminarCarrito(string, string)J
+CerrarSesion()8ProyectoTest.Controllers.TiendaController.CerrarSesion()X
+ObtenerDepartamento()?ProyectoTest.Controllers.TiendaController.ObtenerDepartamento()^
+ObtenerProvincia(string)BProyectoTest.Controllers.TiendaController.ObtenerProvincia(string)l
+ObtenerDistrito(string, string)IProyectoTest.Controllers.TiendaController.ObtenerDistrito(string, string)„
++RegistrarCompra(ProyectoTest.Models.Compra)UProyectoTest.Controllers.TiendaController.RegistrarCompra(ProyectoTest.Models.Compra)n
+ CambiarEstadoCompra(int, string)JProyectoTest.Controllers.TiendaController.CambiarEstadoCompra(int, string)R
+ObtenerCompraUsr()<ProyectoTest.Controllers.TiendaController.ObtenerCompraUsr()L
+ObtenerCompra()9ProyectoTest.Controllers.TiendaController.ObtenerCompra()^
+ObtenerProximoIdCompra()BProyectoTest.Controllers.TiendaController.ObtenerProximoIdCompra()ž
+8apiswebhook(string, ProyectoTest.Models.tarjetaResponse)bProyectoTest.Controllers.TiendaController.apiswebhook(string, ProyectoTest.Models.tarjetaResponse)<
+Login()1ProyectoTest.Controllers.TiendaController.Login()f
+Autorize(NiubizData, string)FProyectoTest.Controllers.TiendaController.Autorize(NiubizData, string)N
+Pay(PAY, string):ProyectoTest.Controllers.TiendaController.Pay(PAY, string)R
+TiendaController()<ProyectoTest.Controllers.TiendaController.TiendaController()

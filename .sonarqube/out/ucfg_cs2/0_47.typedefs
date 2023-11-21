@@ -1,11 +1,17 @@
-“
-,ProyectoTest.Models.Niubiz.Respuestas.HeaderobjectA
-Header()5ProyectoTest.Models.Niubiz.Respuestas.Header.Header()a
-ecoreTransactionUUID.getEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionUUID.geta
-ecoreTransactionUUID.setEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionUUID.seta
-ecoreTransactionDate.getEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionDate.geta
-ecoreTransactionDate.setEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionDate.setE
-
-millis.get7ProyectoTest.Models.Niubiz.Respuestas.Header.millis.getE
-
-millis.set7ProyectoTest.Models.Niubiz.Respuestas.Header.millis.set
+è
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1objectŽ
+"AutorizacionDetransaccionNiubiz1()hProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.AutorizacionDetransaccionNiubiz1()d
+antifraud.getSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.antifraud.getd
+antifraud.setSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.antifraud.seth
+captureType.getUProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.captureType.geth
+captureType.setUProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.captureType.set`
+channel.getQProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.channel.get`
+channel.setQProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.channel.setd
+countable.getSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.countable.getd
+countable.setSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.countable.set\
+	order.getOProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.order.get\
+	order.setOProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.order.setf
+recurrence.getTProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.recurrence.getf
+recurrence.setTProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.recurrence.setd
+sponsored.getSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.sponsored.getd
+sponsored.setSProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.sponsored.set

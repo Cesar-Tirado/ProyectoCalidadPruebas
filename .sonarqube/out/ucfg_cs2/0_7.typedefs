@@ -1,14 +1,7 @@
-©
-
-NiubizDataobject'
-NiubizData()NiubizData.NiubizData()%
-channel.getNiubizData.channel.get%
-channel.setNiubizData.channel.set#
-
-amount.getNiubizData.amount.get#
-
-amount.setNiubizData.amount.set=
-recurrenceMaxAmount.get"NiubizData.recurrenceMaxAmount.get=
-recurrenceMaxAmount.set"NiubizData.recurrenceMaxAmount.set)
-antifraud.getNiubizData.antifraud.get)
-antifraud.setNiubizData.antifraud.set
+ù
+dataEnviadaDesdeFrontobjectH
+dataEnviadaDesdeFront()-dataEnviadaDesdeFront.dataEnviadaDesdeFront(),
+	Token.getdataEnviadaDesdeFront.Token.get,
+	Token.setdataEnviadaDesdeFront.Token.set*
+Data.getdataEnviadaDesdeFront.Data.get*
+Data.setdataEnviadaDesdeFront.Data.set

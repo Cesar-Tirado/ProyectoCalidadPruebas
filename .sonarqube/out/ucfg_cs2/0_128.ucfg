@@ -1,16 +1,24 @@
 
-Order.installment.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs“ “( "0*n
+PAY.recurrence.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¨( ¨(+"0*”
 0
-“! “(!B
-@
+¨, ¨(,P
+N
 
-“ “(!	
-%0int"__id*!*
-Order"
-installmentint"
+¨( ¨(,!
+PAY"
 
-“ “(!
-	
-%0intB	
-Order
+recurrence
+Recurrence"__id*
+
+value
+Recurrence"1
+
+¨( ¨(,#*!
+PAY"
+
+recurrence
+Recurrence:
+value
+RecurrenceB
+PAY

@@ -16,9 +16,9 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand">
+    <nav class="aria-label sb-topnav navbar navbar-expand">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3 text-light" href="#">Pedidos</a>
+        <a id="tituloLogin" class="navbar-brand ps-3 text-light" href="#">Pedidos</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 bg-light" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
@@ -33,7 +33,7 @@
 
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion " id="sidenavAccordion">
+            <nav class="aria-label sb-sidenav accordion " id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading text-light fs-5">Resumen</div>
@@ -46,7 +46,7 @@
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse text-light" id="collapseMantenedores">
-                            <nav class="sb-sidenav-menu-nested nav text-light">
+                            <nav class="aria-label sb-sidenav-menu-nested nav text-light">
                                 <a class="nav-link text-light" href="@Url.Action("Categoria","Home")">Categorias</a>
                                 <a class="nav-link text-light" href="@Url.Action("Marca","Home")">Marcas</a>
                                 <a class="nav-link text-light" href="@Url.Action("Producto","Home")">Productos</a>

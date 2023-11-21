@@ -953,7 +953,7 @@ eC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Lo
 ÕÕ "
 ÖÖ 
 ×× 
-ÛÛ æ
+ÛÛ °
 cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CorreoLogica.cs
   # "(
 $ .   "" %% !
@@ -976,15 +976,13 @@ cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Lo
 àà &"
 -- 
 éé 
-ðð (
-11" /33 +44 +55" /.
+ðð 
+11" /33 +44 +"
 33 
-¼¼K O
 ââ/ 3
 ãã: >
 44 
-ãã@ D
-55 ``  (
+ãã@ D
 66 )
 ¡¡= O
 
@@ -999,8 +997,8 @@ cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Lo
 HH #z
 II  OO PP QQ RR SS TT UU VV WW YY 
 ÄÄ# ,
-MM ,QQc tl
-[[ #^^ __ `` aa bb 
+MM ,QQc tb
+[[ #^^ __ aa bb 
 ßß 
 àà 
 ââ 

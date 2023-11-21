@@ -1,35 +1,13 @@
 
-VProyectoTest.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)p
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\App_Start\FilterConfig.cs (0"0*´
-0
- 
-(2\Z
-
- 
-(2)
-%0#System.Web.Mvc.HandleErrorAttribute"#System.Web.Mvc.HandleErrorAttributeÑ
-Å
-
- 
-(0
-
-%1void":System.Web.Mvc.HandleErrorAttribute.HandleErrorAttribute()*-+
-)
-%0#System.Web.Mvc.HandleErrorAttribute±
-Æ
-
- 
-(3
-
-%2void"1System.Web.Mvc.GlobalFilterCollection.Add(object)*42
-0
-filters%System.Web.Mvc.GlobalFilterCollection*-+
-)
-%0#System.Web.Mvc.HandleErrorAttribute*
-1*.
-1	 (	"
- (	
-implicit return:<
-1 (O0
-filters%System.Web.Mvc.GlobalFilterCollectionB"
-ProyectoTest.FilterConfig
+(ProyectoTest.Models.Cliente.Distrito.geth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs! ($"0*Ñ
+0% (%Y
+W
+! (%
+%0string"__id*75*3
+ProyectoTest.Models.Cliente"
+Distritostring"
+! (%
+
+%0stringB
+ProyectoTest.Models.Cliente

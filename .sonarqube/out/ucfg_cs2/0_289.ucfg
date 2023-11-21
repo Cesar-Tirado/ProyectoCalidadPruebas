@@ -1,15 +1,15 @@
 
-,ProyectoTest.Models.DetalleCompra.Nombre.setn
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs$ ('"0*¶
-0( ((`
-^
-$ ((7#
-!ProyectoTest.Models.DetalleCompra"
-Nombrestring"__id*
-
-valuestring"E
-$ ((9*7#
-!ProyectoTest.Models.DetalleCompra"
-Nombrestring:
-valuestringB%#
-!ProyectoTest.Models.DetalleCompra
+>ProyectoTest.Models.Niubiz.Consultas.PaymentRequest.amount.set€
+vC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs% (("0*Ý
+0) ()t
+r
+% ()J5
+3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest"
+amountdecimal"__id*
+
+valuedecimal"X
+% ()L*J5
+3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest"
+amountdecimal:
+valuedecimalB75
+3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest

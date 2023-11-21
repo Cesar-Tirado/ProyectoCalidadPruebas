@@ -1,29 +1,29 @@
 
-2ProyectoTest.Logica.UsuarioLogica.ListarClientes()n
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UsuarioLogica.csg g(+"0*õ
-0i j(JZX
-i, i(?(
+9ProyectoTest.Logica.UbigeoLogica.ObtenerProvincia(string)m
+cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbigeoLogica.cs? ?(/"0*è
+0A B(JZX
+A" A(7(
 %0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
 o
-i0 i(=
+A& A(5
 
 %1void")System.Collections.Generic.List<T>.List()*,*
 (
-%0"System.Collections.Generic.List<T>w
-u
-i i(?5
-rptListaTiendas"System.Collections.Generic.List<T>"__id*,*
+%0"System.Collections.Generic.List<T>k
+i
+A A(7)
+lst"System.Collections.Generic.List<T>"__id*,*
 (
 %0"System.Collections.Generic.List<T>T
 R
-j? j(J
+B? B(J
 %2string"__id*20*.
 ProyectoTest.Logica.Conexion"
 CNstring\Z
-j- j(K)
+B- B(K)
 %3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
 í
-j1 j(>
+B1 B(>
 
 %4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
 )
@@ -31,294 +31,170 @@ R
 
 %2strings
 q
-j! j(K0
+B! B(K0
 	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
 )
 %3#System.Data.SqlClient.SqlConnection*
-1*Ö
-1l m(2VT
-l! l(T&
-%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÛ
-
-l% l(/
+1*…
+1F J(AWU
+	F% F(Ä&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandõ
+ò
+F) F(3
 
 %6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
 &
-%5 System.Data.SqlClient.SqlCommand*
-SELECT * FROM Clientes*42
+%5 System.Data.SqlClient.SqlCommand*DB@
+>select * from provincia where IdDepartamento = @iddepartamento*42
 0
-	oConexion#System.Data.SqlClient.SqlConnectiong
-e
-l l(T'
+	oConexion#System.Data.SqlClient.SqlConnectionh
+f
+	F F(Ä'
 cmd System.Data.SqlClient.SqlCommand"__id**(
 &
-%5 System.Data.SqlClient.SqlCommand"
+%5 System.Data.SqlClient.SqlCommandü
+ú
+G G("2
+%7,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
+'
+cmd System.Data.SqlClient.SqlCommandÌ
+Í
+G G(S(
+%8"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
+2
+%7,System.Data.SqlClient.SqlParameterCollection*
+@iddepartamento*
+
+_iddepartamentostring"
  
-m" m(2
-%7"__id*
-""ï
-í
-m m(2
-%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+H& H(6
+%9"__id*
+""ñ
+ì
+H H(6
+%10System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
 '
 cmd System.Data.SqlClient.SqlCommand*
 
-%7*
-2*
-2
-ã	 ã(	*
-3
-4*ò
-3p q(:z
-x
-p p($
-
-%9void"*System.Data.SqlClient.SqlConnection.Open()*42
+%9{
+y
+I I($
+%11void"*System.Data.SqlClient.SqlConnection.Open()*42
 0
 	oConexion#System.Data.SqlClient.SqlConnectionò
 ï
-q' q(:*
-%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
+J. J(A*
+%12#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
 '
 cmd System.Data.SqlClient.SqlCommandm
 k
-q" q(:)
+J) J(A)
 dr#System.Data.SqlClient.SqlDataReader"__id*.,
 *
-%10#System.Data.SqlClient.SqlDataReader*
-5*ì
-5s s($|z
-s s($
-%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+%12#System.Data.SqlClient.SqlDataReader*
+2*ì
+2L L((|z
+L L((
+%13bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
 )
 dr#System.Data.SqlClient.SqlDataReader2Read()*
+3
+4*å
+3N R(DQO
+N$ S($
+%14ProyectoTest.Models.Provincia"ProyectoTest.Models.Provincian
+l
+N( N(1
+%15void")ProyectoTest.Models.Provincia.Provincia()*(&
+$
+%14ProyectoTest.Models.Provincia¶£
+P. P(?
+%16object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdProvincia2this[string].getMK
+P. P(J
+%17string"object.ToString()*
+
+%16object2
+ToString()à
+Ö
+P  P(J
+%18string"-ProyectoTest.Models.Provincia.IdProvincia.set*(&
+$
+%14ProyectoTest.Models.Provincia*
+
+%17string¶£
+Q. Q(?
+%19object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+Q. Q(J
+%20string"object.ToString()*
+
+%19object2
+ToString()à
+Ö
+Q  Q(J
+%21string"-ProyectoTest.Models.Provincia.Descripcion.set*(&
+$
+%14ProyectoTest.Models.Provincia*
+
+%20string©¶
+R1 R(E
+%22object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdDepartamento2this[string].getMK
+R1 R(P
+%23string"object.ToString()*
+
+%22object2
+ToString()ã
+à
+R  R(P
+%24string"0ProyectoTest.Models.Provincia.IdDepartamento.set*(&
+$
+%14ProyectoTest.Models.Provincia*
+
+%23string•
+¢
+N S(
+%25void"0System.Collections.Generic.ICollection<T>.Add(T)*-+
+)
+lst"System.Collections.Generic.List<T>*(&
+$
+%14ProyectoTest.Models.Provincia*
+2*
+4^	 ^(	*
+5*
+5^	 ^(	*
 6
-7*Î
-6u (ZNL
-	u, Ä("
-%12ProyectoTest.Models.Cliente"ProyectoTest.Models.Clienteh
-f
-u0 u(7
-%13void"%ProyectoTest.Models.Cliente.Cliente()*&$
-"
-%12ProyectoTest.Models.Cliente§°
-w8 w(G
-%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+7*“
+6Z Z(/[Y
+Z Z(/)
+%26"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+Z Z(-
+%27void")System.Collections.Generic.List<T>.List()*-+
 )
-dr#System.Data.SqlClient.SqlDataReader*
-	IdCliente2this[string].getMK
-w8 w(R
-%15string"object.ToString()*
-
-%14object2
-ToString()a
-_
-w( w(S
-
-%16int"System.Convert.ToInt32(string)*"
-System.Convert*
-
-%15string{
-y
-w w(S
-
-%17int")ProyectoTest.Models.Cliente.IdCliente.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-
-%16int°û
-x% x(1
-%18object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+%26"System.Collections.Generic.List<T>l
+j
+Z Z(/)
+lst"System.Collections.Generic.List<T>"__id*-+
 )
-dr#System.Data.SqlClient.SqlDataReader*
-
-Nombre2this[string].getMK
-x% x(<
-%19string"object.ToString()*
-
-%18object2
-ToString()~
-|
-x x(<
-%20string"&ProyectoTest.Models.Cliente.Nombre.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%19string§°
-y( y(7
-%21object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+%26"System.Collections.Generic.List<T>*
+7*
+7^	 ^(	*
+8*F
+8] ]("7
+] ](+
 )
-dr#System.Data.SqlClient.SqlDataReader*
-	Apellidos2this[string].getMK
-y( y(B
-%22string"object.ToString()*
-
-%21object2
-ToString()Å
-
-y y(B
-%23string")ProyectoTest.Models.Cliente.Apellidos.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%22string†ù
-z$ z(/
-%24object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*	
-Email2this[string].getMK
-z$ z(:
-%25string"object.ToString()*
-
-%24object2
-ToString()}
-{
-z z(:
-%26string"%ProyectoTest.Models.Cliente.Email.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%25string£†
-{' {(5
-%27object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-
-Telefono2this[string].getMK
-{' {(@
-%28string"object.ToString()*
-
-%27object2
-ToString()Ä
-~
-{ {(@
-%29string"(ProyectoTest.Models.Cliente.Telefono.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%28string•¢
-|) |(9
-%30object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-
-Cumpleanos2this[string].getMK
-|) |(D
-%31string"object.ToString()*
-
-%30object2
-ToString()É
-Ä
-| |(D
-%32string"*ProyectoTest.Models.Cliente.Cumpleanos.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%31string£†
-}' }(5
-%33object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-
-Distrito2this[string].getMK
-}' }(@
-%34string"object.ToString()*
-
-%33object2
-ToString()Ä
-~
-} }(@
-%35string"(ProyectoTest.Models.Cliente.Distrito.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%34stringß§
-~; ~(M
-%36object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-Calificacion2this[string].getMK
-~; ~(X
-%37string"object.ToString()*
-
-%36object2
-ToString()a
-_
-~+ ~(Y
-
-%38int"System.Convert.ToInt32(string)*"
-System.Convert*
-
-%37string~
-|
-~ ~(Y
-
-%39int",ProyectoTest.Models.Cliente.Calificacion.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-
-%38int≠™
-C ([
-%40object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-RecibirPromociones2this[string].getMK
-C (f
-%41string"object.ToString()*
-
-%40object2
-ToString()d
-b
-1 (g
-%42bool" System.Convert.ToBoolean(string)*"
-System.Convert*
-
-%41stringá
-Ñ
- (g
-%43bool"2ProyectoTest.Models.Cliente.RecibirPromociones.set*&$
-"
-%12ProyectoTest.Models.Cliente*
-
-%42bool∞
-≠
-	u Ä(
-%44void"0System.Collections.Generic.ICollection<T>.Add(T)*97
-5
-rptListaTiendas"System.Collections.Generic.List<T>*&$
-"
-%12ProyectoTest.Models.Cliente*
-5*Ÿ
-7
-Ç É(*Ä~
-
-Ç Ç(
-%45void"+System.Data.SqlClient.SqlDataReader.Close()*-+
-)
-dr#System.Data.SqlClient.SqlDataReader2Close()"E
-
-É É(+7
-5
-rptListaTiendas"System.Collections.Generic.List<T>*≠
-4
-á à(*U
-S
-
-á á(*5
-rptListaTiendas"System.Collections.Generic.List<T>"__id*
-"""E
-
-à à(+7
-5
-rptListaTiendas"System.Collections.Generic.List<T>*
-8
-ã	 ã(	*
-9*2
-9
-ã	 ã(	"!
-
-ã ã(	
-implicit returnB%#
-!ProyectoTest.Logica.UsuarioLogica
+lst"System.Collections.Generic.List<T>*.
+9^	 ^(	"
+^ ^(	
+implicit return:%
+?0 ?(F
+_iddepartamentostringB$"
+ ProyectoTest.Logica.UbigeoLogica

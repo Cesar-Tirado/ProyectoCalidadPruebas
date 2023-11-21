@@ -1,20 +1,21 @@
 
-PAY.recurrence.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs®# ®(&"0*Ä
+NiubizData.amount.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÅ  Å(#"0*é
 0
-®' ®('M
-K
+Å$ Å($K
+I
 
-®# ®('
-%0
-Recurrence"__id*%#*!
-PAY"
+Å  Å($ 
 
-recurrence
-Recurrence" 
+NiubizData"
+amountdouble"__id*
+
+valuedouble"0
 
-®# ®('
-
-%0
-RecurrenceB
-PAY
+Å  Å($"* 
+
+NiubizData"
+amountdouble:
+valuedoubleB
+
+NiubizData

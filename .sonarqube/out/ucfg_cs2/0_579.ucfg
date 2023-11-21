@@ -1,44 +1,13 @@
 
-/ProyectoTest.Controllers.HomeController.Index()t
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.cs (!"4* 
-0 (*{
-y
- (%
-%0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
-System.Web.Mvc.Controller£ 
- ("
-%1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
-%
-%0System.Web.HttpSessionStateBase*	
-Usuario2this[string].getf
-d
- (*
+0ProyectoTest.Controllers.LoginController.Index()u
+kC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\LoginController.cs (!"2*ñ
+0 (•
+’
+ (
 
-%2bool""object.operator ==(object, object)*
-"
-object*
-
-%1object*
-""*
-1
-2*ú
-1 (8°
-­
- (9*
-%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
-System.Web.Mvc.Controller*	
-Index*	
-Login"8
- (:,
-*
-%3$System.Web.Mvc.RedirectToRouteResult*ð
-2 (”
-‘
- (
-
-%4void"proyectotest/views/home/index*
+%0void"proyectotest/views/login/index*
 
-%5*
+%1*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -53,11 +22,11 @@ d
 
 %HttpContextItemsHtmlobject”
 ‘
- (
+ (
 
-%6void"proyectotest/views/_viewstart*
+%2void"proyectotest/views/_viewstart*
 
-%7*
+%3*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -72,11 +41,11 @@ d
 
 %HttpContextItemsHtmlobject˜
 •
- (
+ (
 
-%8void"!proyectotest/views/shared/_layout*
+%4void"!proyectotest/views/shared/_layout*
 
-%9*
+%5*
 	{unknown}*
 
 %ViewBagDataAllobject*
@@ -90,16 +59,16 @@ d
 %HttpContextItemsAllobject*#!
 
 %HttpContextItemsHtmlobject"
- (
+ (
 
 
-%8void*.
-3	 (	"
- (	
-implicit return*5
-4# (#!
-
- (!
-%10"__entrypoint*
-0B+)
-'ProyectoTest.Controllers.HomeController
+%4void*.
+1	 (	"
+ (	
+implicit return*4
+2# (# 
+
+ (!
+%6"__entrypoint*
+0B,*
+(ProyectoTest.Controllers.LoginController

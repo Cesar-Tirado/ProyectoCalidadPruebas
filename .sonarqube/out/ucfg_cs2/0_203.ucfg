@@ -1,15 +1,15 @@
 
-&ProyectoTest.Models.Cliente.Nombre.seth
-^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs$ ('"0*ª
-0( ((Z
-X
-$ ((1
-ProyectoTest.Models.Cliente"
-Nombrestring"__id*
+-ProyectoTest.Models.Carrito.Observaciones.seth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Carrito.cs+ (."0*¸
+0/ (/a
+_
++ (/8
+ProyectoTest.Models.Carrito"
+Observacionesstring"__id*
 
-valuestring"?
-$ ((3*1
-ProyectoTest.Models.Cliente"
-Nombrestring:
+valuestring"F
++ (/:*8
+ProyectoTest.Models.Carrito"
+Observacionesstring:
 valuestringB
-ProyectoTest.Models.Cliente
+ProyectoTest.Models.Carrito

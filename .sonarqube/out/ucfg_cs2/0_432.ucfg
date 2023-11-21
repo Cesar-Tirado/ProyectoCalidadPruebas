@@ -1,15 +1,17 @@
 
-5ProyectoTest.Models.Niubiz.Consultas.Order.amount.set“
-ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs% (("0*Ë
-0) ()k
-i
-% ()A,
-*ProyectoTest.Models.Niubiz.Consultas.Order"
-amountdecimal"__id*
-
-valuedecimal"O
-% ()C*A,
-*ProyectoTest.Models.Niubiz.Consultas.Order"
-amountdecimal:
-valuedecimalB.,
-*ProyectoTest.Models.Niubiz.Consultas.Order
+)ProyectoTest.Models.Compra.FormaEnvio.setg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs( (+"0*°
+0, (,]
+[
+( (,4
+ProyectoTest.Models.Compra"
+
+FormaEnviostring"__id*
+
+valuestring"B
+( (,6*4
+ProyectoTest.Models.Compra"
+
+FormaEnviostring:
+valuestringB
+ProyectoTest.Models.Compra

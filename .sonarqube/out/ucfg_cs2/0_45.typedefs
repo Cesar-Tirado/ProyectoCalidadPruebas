@@ -1,45 +1,11 @@
-
--ProyectoTest.Models.Niubiz.Respuestas.DataMapobjectD
-	DataMap()7ProyectoTest.Models.Niubiz.Respuestas.DataMap.DataMap()J
-CURRENCY.get:ProyectoTest.Models.Niubiz.Respuestas.DataMap.CURRENCY.getJ
-CURRENCY.set:ProyectoTest.Models.Niubiz.Respuestas.DataMap.CURRENCY.setZ
-TRANSACTION_DATE.getBProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_DATE.getZ
-TRANSACTION_DATE.setBProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_DATE.setJ
-TERMINAL.get:ProyectoTest.Models.Niubiz.Respuestas.DataMap.TERMINAL.getJ
-TERMINAL.set:ProyectoTest.Models.Niubiz.Respuestas.DataMap.TERMINAL.setP
-ACTION_CODE.get=ProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_CODE.getP
-ACTION_CODE.set=ProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_CODE.setR
-TRACE_NUMBER.get>ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRACE_NUMBER.getR
-TRACE_NUMBER.set>ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRACE_NUMBER.setX
-ECI_DESCRIPTION.getAProyectoTest.Models.Niubiz.Respuestas.DataMap.ECI_DESCRIPTION.getX
-ECI_DESCRIPTION.setAProyectoTest.Models.Niubiz.Respuestas.DataMap.ECI_DESCRIPTION.set@
-ECI.get5ProyectoTest.Models.Niubiz.Respuestas.DataMap.ECI.get@
-ECI.set5ProyectoTest.Models.Niubiz.Respuestas.DataMap.ECI.setD
-	BRAND.get7ProyectoTest.Models.Niubiz.Respuestas.DataMap.BRAND.getD
-	BRAND.set7ProyectoTest.Models.Niubiz.Respuestas.DataMap.BRAND.setB
-CARD.get6ProyectoTest.Models.Niubiz.Respuestas.DataMap.CARD.getB
-CARD.set6ProyectoTest.Models.Niubiz.Respuestas.DataMap.CARD.setJ
-MERCHANT.get:ProyectoTest.Models.Niubiz.Respuestas.DataMap.MERCHANT.getJ
-MERCHANT.set:ProyectoTest.Models.Niubiz.Respuestas.DataMap.MERCHANT.setF
+“
+,ProyectoTest.Models.Niubiz.Respuestas.HeaderobjectA
+Header()5ProyectoTest.Models.Niubiz.Respuestas.Header.Header()a
+ecoreTransactionUUID.getEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionUUID.geta
+ecoreTransactionUUID.setEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionUUID.seta
+ecoreTransactionDate.getEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionDate.geta
+ecoreTransactionDate.setEProyectoTest.Models.Niubiz.Respuestas.Header.ecoreTransactionDate.setE
 
-STATUS.get8ProyectoTest.Models.Niubiz.Respuestas.DataMap.STATUS.getF
+millis.get7ProyectoTest.Models.Niubiz.Respuestas.Header.millis.getE
 
-STATUS.set8ProyectoTest.Models.Niubiz.Respuestas.DataMap.STATUS.setN
-ADQUIRENTE.get<ProyectoTest.Models.Niubiz.Respuestas.DataMap.ADQUIRENTE.getN
-ADQUIRENTE.set<ProyectoTest.Models.Niubiz.Respuestas.DataMap.ADQUIRENTE.set^
-ACTION_DESCRIPTION.getDProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_DESCRIPTION.get^
-ACTION_DESCRIPTION.setDProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_DESCRIPTION.setJ
-ID_UNICO.get:ProyectoTest.Models.Niubiz.Respuestas.DataMap.ID_UNICO.getJ
-ID_UNICO.set:ProyectoTest.Models.Niubiz.Respuestas.DataMap.ID_UNICO.setF
-
-AMOUNT.get8ProyectoTest.Models.Niubiz.Respuestas.DataMap.AMOUNT.getF
-
-AMOUNT.set8ProyectoTest.Models.Niubiz.Respuestas.DataMap.AMOUNT.setR
-PROCESS_CODE.get>ProyectoTest.Models.Niubiz.Respuestas.DataMap.PROCESS_CODE.getR
-PROCESS_CODE.set>ProyectoTest.Models.Niubiz.Respuestas.DataMap.PROCESS_CODE.set\
-RECURRENCE_STATUS.getCProyectoTest.Models.Niubiz.Respuestas.DataMap.RECURRENCE_STATUS.get\
-RECURRENCE_STATUS.setCProyectoTest.Models.Niubiz.Respuestas.DataMap.RECURRENCE_STATUS.setV
-TRANSACTION_ID.get@ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_ID.getV
-TRANSACTION_ID.set@ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_ID.set^
-AUTHORIZATION_CODE.getDProyectoTest.Models.Niubiz.Respuestas.DataMap.AUTHORIZATION_CODE.get^
-AUTHORIZATION_CODE.setDProyectoTest.Models.Niubiz.Respuestas.DataMap.AUTHORIZATION_CODE.set
+millis.set7ProyectoTest.Models.Niubiz.Respuestas.Header.millis.set

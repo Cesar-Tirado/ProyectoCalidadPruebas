@@ -1,7 +1,7 @@
-…
-)ProyectoTest.Controllers.AcercaControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject<
-Index()1ProyectoTest.Controllers.AcercaController.Index()@
-	Termino()3ProyectoTest.Controllers.AcercaController.Termino()B
-
-Politica()4ProyectoTest.Controllers.AcercaController.Politica()R
-AcercaController()<ProyectoTest.Controllers.AcercaController.AcercaController()
+»
+ProyectoTest.Logica.MarcaLogicaobject>
+MarcaLogica()-ProyectoTest.Logica.MarcaLogica.MarcaLogica()4
+Listar()(ProyectoTest.Logica.MarcaLogica.Listar()l
+$Registrar(ProyectoTest.Models.Marca)DProyectoTest.Logica.MarcaLogica.Registrar(ProyectoTest.Models.Marca)l
+$Modificar(ProyectoTest.Models.Marca)DProyectoTest.Logica.MarcaLogica.Modificar(ProyectoTest.Models.Marca)>
+Eliminar(int)-ProyectoTest.Logica.MarcaLogica.Eliminar(int)

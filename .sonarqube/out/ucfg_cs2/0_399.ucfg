@@ -1,15 +1,23 @@
 
-@ProyectoTest.Models.Niubiz.Consultas.MerchantDefineData.MDD4.set€
-vC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs" (%"0*Þ
-0& (&t
-r
-" (&K9
-7ProyectoTest.Models.Niubiz.Consultas.MerchantDefineData"
-MDD4string"__id*
-
-valuestring"Y
-" (&M*K9
-7ProyectoTest.Models.Niubiz.Consultas.MerchantDefineData"
-MDD4string:
-valuestringB;9
-7ProyectoTest.Models.Niubiz.Consultas.MerchantDefineData
+'ProyectoTest.Models.Compra.IdCompra.setg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs
+# 
+(&"0*£
+0
+' 
+('U
+S
+
+# 
+('/
+ProyectoTest.Models.Compra"
+IdCompraint"__id*
+
+valueint"=
+
+# 
+('1*/
+ProyectoTest.Models.Compra"
+IdCompraint:
+valueintB
+ProyectoTest.Models.Compra

@@ -1,15 +1,15 @@
 
-7ProyectoTest.Models.Niubiz.Respuestas.Order.tokenId.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs)% )(("0*Ì
-0)) )()k
-i
-)% )()B-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-tokenIdstring"__id*
+@ProyectoTest.Models.Niubiz.Respuestas.DataMap.TRANSACTION_ID.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs, (/"0*Þ
+00 (0t
+r
+, (0K/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+TRANSACTION_IDstring"__id*
 
-valuestring"P
-)% )()D*B-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-tokenIdstring:
-valuestringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+valuestring"Y
+, (0M*K/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+TRANSACTION_IDstring:
+valuestringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

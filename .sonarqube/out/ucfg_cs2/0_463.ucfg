@@ -1,35 +1,15 @@
 
-6ProyectoTest.Logica.utilidades.convertirBase64(string)k
-aC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\utilidades.cs (,"0*ñ
-0 (i
-g
- (2
-%0byte[]"#System.IO.File.ReadAllBytes(string)*"
-System.IO.File*
-
-rutastring5
-3
- (2
-bytesbyte[]"__id*
-
-%0byte[]l
-j
- (7
-%1string"%System.Convert.ToBase64String(byte[])*"
-System.Convert*
+(ProyectoTest.Models.Cliente.Telefono.seth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs& ()"0*®
+0* (*\
+Z
+& (*3
+ProyectoTest.Models.Cliente"
+Telefonostring"__id*
 
-bytesbyte[]4
-2
- (7
-filestring"__id*
-
-%1string"
- (
-
-filestring*.
-1	 (	"
- (	
-implicit return:
-- (8
-rutastringB"" 
-ProyectoTest.Logica.utilidades
+valuestring"A
+& (*5*3
+ProyectoTest.Models.Cliente"
+Telefonostring:
+valuestringB
+ProyectoTest.Models.Cliente

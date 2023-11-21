@@ -1,16 +1,18 @@
 
-PAY.channel.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs£ £("0*q
+Recurrence.maxAmount.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csù ù(!"0*z
 0
-£  £( B
-@
+ù" ù("K
+I
 
-£ £( 
-%0string"__id**
-PAY"
-channelstring"
+ù ù("
+%0double"__id*'%*#
 
-£ £( 
+Recurrence"
+	maxAmountdouble"
+
+ù ù("
 
-%0stringB
-PAY
+%0doubleB
+
+Recurrence

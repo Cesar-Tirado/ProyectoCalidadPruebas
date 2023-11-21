@@ -1,17 +1,13 @@
 
-:ProyectoTest.Models.Niubiz.Respuestas.Order.actionCode.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs0( 0(+"0*Ò
-00, 0(,n
-l
-0( 0(,E-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
+5ProyectoTest.Models.Niubiz.Consultas.Order.amount.get“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs  (#"0*”
+0$ ($h
+f
+  ($
+%0decimal"__id*EC*A,
+*ProyectoTest.Models.Niubiz.Consultas.Order"
+amountdecimal"
+  ($
 
-actionCodestring"__id*
-
-valuestring"S
-0( 0(,G*E-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-
-actionCodestring:
-valuestringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+%0decimalB.,
+*ProyectoTest.Models.Niubiz.Consultas.Order

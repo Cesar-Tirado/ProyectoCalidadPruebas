@@ -1,8 +1,9 @@
-ç
-!ProyectoTest.Controllers.Responseobject:
-
-Response(),ProyectoTest.Controllers.Response.Response()@
-resultado.get/ProyectoTest.Controllers.Response.resultado.get@
-resultado.set/ProyectoTest.Controllers.Response.resultado.set<
-mensaje.get-ProyectoTest.Controllers.Response.mensaje.get<
-mensaje.set-ProyectoTest.Controllers.Response.mensaje.set
+ß
+!ProyectoTest.Logica.CarritoLogicaobjectD
+CarritoLogica()1ProyectoTest.Logica.CarritoLogica.CarritoLogica()r
+&Registrar(ProyectoTest.Models.Carrito)HProyectoTest.Logica.CarritoLogica.Registrar(ProyectoTest.Models.Carrito)@
+Cantidad(int)/ProyectoTest.Logica.CarritoLogica.Cantidad(int)>
+Obtener(int).ProyectoTest.Logica.CarritoLogica.Obtener(int)V
+Eliminar(string, string):ProyectoTest.Logica.CarritoLogica.Eliminar(string, string)X
+ObtenerCompraUsuario(int);ProyectoTest.Logica.CarritoLogica.ObtenerCompraUsuario(int)D
+ObtenerCompra()1ProyectoTest.Logica.CarritoLogica.ObtenerCompra()

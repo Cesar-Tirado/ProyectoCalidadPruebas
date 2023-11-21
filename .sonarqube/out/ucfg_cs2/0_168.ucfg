@@ -1,13 +1,15 @@
 
-'ProyectoTest.Models.Producto.Nombre.geti
-_C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Producto.cs (""0*ƒ
-0# (#X
-V
- (#
-%0string"__id*64*2
-ProyectoTest.Models.Producto"
-Nombrestring"
- (#
-
-%0stringB 
+'ProyectoTest.Models.Producto.Precio.seti
+_C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Producto.cs% (("0*¯
+0) ()]
+[
+% ()3
+ProyectoTest.Models.Producto"
+Preciodecimal"__id*
+
+valuedecimal"A
+% ()5*3
+ProyectoTest.Models.Producto"
+Preciodecimal:
+valuedecimalB 
 ProyectoTest.Models.Producto

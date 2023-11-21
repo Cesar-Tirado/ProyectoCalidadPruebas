@@ -1,18 +1,21 @@
 
-PAY.order.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs¦ ¦(!"0*{
+Recurrence.amount.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csž  ž(#"0*Ž
 0
-¦" ¦("A
-?
+ž$ ž($K
+I
 
-¦ ¦("
-PAY"
-orderOrder"__id*
-
-valueOrder"'
+ž  ž($ 
 
-¦ ¦("*
-PAY"
-orderOrder:
-valueOrderB
-PAY
+Recurrence"
+amountdouble"__id*
+
+valuedouble"0
+
+ž  ž($"* 
+
+Recurrence"
+amountdouble:
+valuedoubleB
+
+Recurrence

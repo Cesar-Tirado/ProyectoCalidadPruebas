@@ -1,13 +1,15 @@
 
-7ProyectoTest.Models.Niubiz.Respuestas.Order.tokenId.get—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs)  )(#"0*“
-0)$ )($h
-f
-)  )($
-%0string"__id*FD*B-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-tokenIdstring"
-)  )($
-
-%0stringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+CProyectoTest.Models.Niubiz.Respuestas.DataMap.RECURRENCE_STATUS.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs/ (2"0*ä
+03 (3w
+u
+/ (3N/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+RECURRENCE_STATUSstring"__id*
+
+valuestring"\
+/ (3P*N/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+RECURRENCE_STATUSstring:
+valuestringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

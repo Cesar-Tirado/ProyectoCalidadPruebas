@@ -1,13 +1,13 @@
 
-)ProyectoTest.Models.Cliente.Apellidos.geth
-^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Cliente.cs" (%"0*…
-0& (&Z
-X
-" (&
-%0string"__id*86*4
-ProyectoTest.Models.Cliente"
-	Apellidosstring"
-" (&
-
-%0stringB
-ProyectoTest.Models.Cliente
++ProyectoTest.Models.Carrito.PrecioExtra.geth
+^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Carrito.cs% (("0*Š
+0) ()^
+\
+% ()
+%0decimal"__id*;9*7
+ProyectoTest.Models.Carrito"
+PrecioExtradecimal"
+% ()
+
+%0decimalB
+ProyectoTest.Models.Carrito

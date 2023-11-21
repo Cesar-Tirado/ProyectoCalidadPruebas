@@ -39,11 +39,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/TiendasLogica.cs",
                 "region": {
-                  "startLine": 83,
+                  "startLine": 56,
                   "startColumn": 34,
-                  "endLine": 83,
+                  "endLine": 56,
                   "endColumn": 36
                 }
               }
@@ -81,32 +81,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CategoriaLogica.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
                 "region": {
-                  "startLine": 59,
+                  "startLine": 83,
                   "startColumn": 34,
-                  "endLine": 59,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbicacionTiendaLogica.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 34,
-                  "endLine": 64,
+                  "endLine": 83,
                   "endColumn": 36
                 }
               }
@@ -144,11 +123,53 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CategoriaLogica.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 34,
+                  "endLine": 59,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/MarcaLogica.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 34,
+                  "endLine": 89,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/TiendasLogica.cs",
                 "region": {
-                  "startLine": 56,
+                  "startLine": 91,
                   "startColumn": 34,
-                  "endLine": 56,
+                  "endLine": 91,
                   "endColumn": 36
                 }
               }
@@ -188,111 +209,6 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/MarcaLogica.cs",
                 "region": {
-                  "startLine": 89,
-                  "startColumn": 34,
-                  "endLine": 89,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbigeoLogica.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 34,
-                  "endLine": 55,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CategoriaLogica.cs",
-                "region": {
-                  "startLine": 117,
-                  "startColumn": 34,
-                  "endLine": 117,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/TiendasLogica.cs",
-                "region": {
-                  "startLine": 91,
-                  "startColumn": 34,
-                  "endLine": 91,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
-                "region": {
-                  "startLine": 129,
-                  "startColumn": 34,
-                  "endLine": 129,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/MarcaLogica.cs",
-                "region": {
                   "startLine": 119,
                   "startColumn": 34,
                   "endLine": 119,
@@ -314,51 +230,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CategoriaLogica.cs",
                 "region": {
-                  "startLine": 146,
+                  "startLine": 117,
                   "startColumn": 34,
-                  "endLine": 146,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
-                "region": {
-                  "startLine": 154,
-                  "startColumn": 34,
-                  "endLine": 154,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "La variable 'ex' se ha declarado pero nunca se usa",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbigeoLogica.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 34,
-                  "endLine": 88,
+                  "endLine": 117,
                   "endColumn": 36
                 }
               }
@@ -417,11 +291,95 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbigeoLogica.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 34,
+                  "endLine": 55,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 34,
+                  "endLine": 129,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CategoriaLogica.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 34,
+                  "endLine": 146,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UsuarioLogica.cs",
                 "region": {
                   "startLine": 133,
                   "startColumn": 34,
                   "endLine": 133,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbicacionTiendaLogica.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 34,
+                  "endLine": 64,
                   "endColumn": 36
                 }
               }
@@ -459,11 +417,53 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 34,
+                  "endLine": 154,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/TiendasLogica.cs",
                 "region": {
                   "startLine": 172,
                   "startColumn": 34,
                   "endLine": 172,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbigeoLogica.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 34,
+                  "endLine": 88,
                   "endColumn": 36
                 }
               }
@@ -564,12 +564,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/App_Start/RouteConfig.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/App_Start/BundleConfig.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 6,
                   "startColumn": 18,
-                  "endLine": 10,
-                  "endColumn": 29
+                  "endLine": 6,
+                  "endColumn": 30
                 }
               }
             }
@@ -579,18 +579,18 @@
           }
         },
         {
-          "ruleId": "S1118",
+          "ruleId": "S125",
           "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/App_Start/BundleConfig.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
                 "region": {
-                  "startLine": 6,
-                  "startColumn": 18,
-                  "endLine": 6,
-                  "endColumn": 30
+                  "startLine": 74,
+                  "startColumn": 21,
+                  "endLine": 74,
+                  "endColumn": 127
                 }
               }
             }
@@ -621,9 +621,240 @@
           }
         },
         {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/ProductoLogica.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 29,
+                  "endLine": 114,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 17,
+                  "endLine": 53,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 17,
+                  "endLine": 96,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbicacionTiendaLogica.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 17,
+                  "endLine": 41,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 9,
+                  "endLine": 20,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 9,
+                  "endLine": 23,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 9,
+                  "endLine": 39,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S101",
           "level": "warning",
           "message": "Rename class 'dataEnviadaDesdeFront' to match pascal case naming rules, consider using 'DataEnviadaDesdeFront'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 505,
+                  "startColumn": 14,
+                  "endLine": 505,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'NiubizData' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 510,
+                  "startColumn": 14,
+                  "endLine": 510,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'Order' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 524,
+                  "startColumn": 14,
+                  "endLine": 524,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'Antifraud' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 14,
+                  "endLine": 491,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'dataEnviadaDesdeFront' into a named namespace.",
           "locations": [
             {
               "resultFile": {
@@ -665,58 +896,16 @@
         {
           "ruleId": "S3903",
           "level": "warning",
-          "message": "Move 'Antifraud' into a named namespace.",
+          "message": "Move 'Recurrence' into a named namespace.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 491,
+                  "startLine": 534,
                   "startColumn": 14,
-                  "endLine": 491,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'NiubizData' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 510,
-                  "startColumn": 14,
-                  "endLine": 510,
+                  "endLine": 534,
                   "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'dataEnviadaDesdeFront' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 505,
-                  "startColumn": 14,
-                  "endLine": 505,
-                  "endColumn": 35
                 }
               }
             }
@@ -738,6 +927,69 @@
                   "startColumn": 14,
                   "endLine": 519,
                   "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/App_Start/RouteConfig.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'PAY' to match pascal case naming rules, consider using 'Pay'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 14,
+                  "endLine": 545,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'PAY' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 14,
+                  "endLine": 545,
+                  "endColumn": 17
                 }
               }
             }
@@ -801,132 +1053,6 @@
                   "startColumn": 30,
                   "endLine": 11,
                   "endColumn": 152
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2223",
-          "level": "warning",
-          "message": "Change the visibility of 'CN' or make it 'const' or 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/Conexion.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 30,
-                  "endLine": 11,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'Order' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 524,
-                  "startColumn": 14,
-                  "endLine": 524,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'Recurrence' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 534,
-                  "startColumn": 14,
-                  "endLine": 534,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'PAY' to match pascal case naming rules, consider using 'Pay'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 545,
-                  "startColumn": 14,
-                  "endLine": 545,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'PAY' into a named namespace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 545,
-                  "startColumn": 14,
-                  "endLine": 545,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1450",
-          "level": "warning",
-          "message": "Remove the field 'oUsuario' and declare it as a local variable in the relevant methods.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/PublicController.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 32,
-                  "endLine": 15,
-                  "endColumn": 40
                 }
               }
             }
@@ -1174,6 +1300,27 @@
           }
         },
         {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'CN' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/Conexion.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 30,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S4487",
           "level": "warning",
           "message": "Remove this unread private field 'oUsuario' or refactor the code to use its value.",
@@ -1263,60 +1410,18 @@
           }
         },
         {
-          "ruleId": "S101",
+          "ruleId": "S1450",
           "level": "warning",
-          "message": "Rename class 'tarjetaResponse' to match pascal case naming rules, consider using 'TarjetaResponse'.",
+          "message": "Remove the field 'oUsuario' and declare it as a local variable in the relevant methods.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/tarjetaResponse.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/PublicController.cs",
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/utilidades.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'utilidades' to match pascal case naming rules, consider using 'Utilidades'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/utilidades.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 28
+                  "startLine": 15,
+                  "startColumn": 32,
+                  "endLine": 15,
+                  "endColumn": 40
                 }
               }
             }
@@ -1415,6 +1520,103 @@
           }
         },
         {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'tarjetaResponse' to match pascal case naming rules, consider using 'TarjetaResponse'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/tarjetaResponse.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/utilidades.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'utilidades' to match pascal case naming rules, consider using 'Utilidades'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/utilidades.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 17,
+                  "endLine": 36,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 32,
+                  "endLine": 28,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2696",
           "level": "warning",
           "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
@@ -1435,6 +1637,40 @@
             {
               "physicalLocation": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/PublicController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 32,
+                  "endLine": 15,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/AcercaController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 17,
+                  "endLine": 22,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/AcercaController.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 32,
@@ -1491,31 +1727,18 @@
           }
         },
         {
-          "ruleId": "S2696",
+          "ruleId": "S1854",
           "level": "warning",
-          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
+          "message": "Remove this useless assignment to local variable 'oLista'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 36,
-                  "startColumn": 17,
-                  "endLine": 36,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 32,
-                  "endLine": 28,
-                  "endColumn": 40
+                  "startLine": 82,
+                  "startColumn": 29,
+                  "endLine": 82,
+                  "endColumn": 59
                 }
               }
             }
@@ -1533,9 +1756,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/AcercaController.cs",
                 "region": {
-                  "startLine": 22,
+                  "startLine": 43,
                   "startColumn": 17,
-                  "endLine": 22,
+                  "endLine": 43,
                   "endColumn": 27
                 }
               }
@@ -1593,61 +1816,6 @@
           }
         },
         {
-          "ruleId": "S2696",
-          "level": "warning",
-          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/AcercaController.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 17,
-                  "endLine": 43,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/AcercaController.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 32,
-                  "endLine": 15,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1854",
-          "level": "warning",
-          "message": "Remove this useless assignment to local variable 'oLista'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 29,
-                  "endLine": 82,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1854",
           "level": "warning",
           "message": "Remove this useless assignment to local variable 'oLista'.",
@@ -1660,27 +1828,6 @@
                   "startColumn": 25,
                   "endLine": 107,
                   "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CarritoLogica.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 21,
-                  "endLine": 74,
-                  "endColumn": 127
                 }
               }
             }
@@ -1711,102 +1858,18 @@
           }
         },
         {
-          "ruleId": "S125",
+          "ruleId": "S1854",
           "level": "warning",
-          "message": "Remove this commented out code.",
+          "message": "Remove this useless assignment to local variable 'oLista'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/ProductoLogica.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 114,
-                  "startColumn": 29,
-                  "endLine": 114,
-                  "endColumn": 98
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/UbicacionTiendaLogica.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 17,
-                  "endLine": 41,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 9,
-                  "endLine": 20,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 9,
-                  "endLine": 23,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Models/Niubiz/Consultas/AutorizacionDetransaccionNiubiz1.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 9,
-                  "endLine": 39,
-                  "endColumn": 61
+                  "startLine": 131,
+                  "startColumn": 27,
+                  "endLine": 131,
+                  "endColumn": 55
                 }
               }
             }
@@ -2013,31 +2076,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 131,
+                  "startLine": 139,
                   "startColumn": 27,
-                  "endLine": 131,
+                  "endLine": 139,
                   "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3063",
-          "level": "warning",
-          "message": "Remove this \"StringBuilder\"; \".ToString()\" is never called.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 31,
-                  "endLine": 72,
-                  "endColumn": 58
                 }
               }
             }
@@ -2059,6 +2101,27 @@
                   "startColumn": 45,
                   "endLine": 91,
                   "endColumn": 188
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3063",
+          "level": "warning",
+          "message": "Remove this \"StringBuilder\"; \".ToString()\" is never called.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 31,
+                  "endLine": 72,
+                  "endColumn": 58
                 }
               }
             }
@@ -2110,39 +2173,18 @@
           }
         },
         {
-          "ruleId": "S1854",
+          "ruleId": "S1125",
           "level": "warning",
-          "message": "Remove this useless assignment to local variable 'oLista'.",
+          "message": "Remove the unnecessary Boolean literal(s).",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
                 "region": {
-                  "startLine": 139,
-                  "startColumn": 27,
-                  "endLine": 139,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1075",
-          "level": "warning",
-          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
-                "region": {
-                  "startLine": 262,
-                  "startColumn": 36,
-                  "endLine": 262,
-                  "endColumn": 173
+                  "startLine": 211,
+                  "startColumn": 71,
+                  "endLine": 211,
+                  "endColumn": 83
                 }
               }
             }
@@ -2215,69 +2257,6 @@
           }
         },
         {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'htmlBody'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
-                "region": {
-                  "startLine": 267,
-                  "startColumn": 24,
-                  "endLine": 267,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
-                "region": {
-                  "startLine": 211,
-                  "startColumn": 71,
-                  "endLine": 211,
-                  "endColumn": 83
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 49,
-                  "endLine": 111,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1854",
           "level": "warning",
           "message": "Remove this useless assignment to local variable 'oProducto'.",
@@ -2299,18 +2278,18 @@
           }
         },
         {
-          "ruleId": "S1854",
+          "ruleId": "S1125",
           "level": "warning",
-          "message": "Remove this useless assignment to local variable 'oLista'.",
+          "message": "Remove the unnecessary Boolean literal(s).",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 99,
-                  "startColumn": 28,
-                  "endLine": 99,
-                  "endColumn": 57
+                  "startLine": 111,
+                  "startColumn": 49,
+                  "endLine": 111,
+                  "endColumn": 56
                 }
               }
             }
@@ -2349,6 +2328,27 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
+                  "startLine": 99,
+                  "startColumn": 28,
+                  "endLine": 99,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'oLista'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
                   "startLine": 131,
                   "startColumn": 27,
                   "endLine": 131,
@@ -2362,31 +2362,18 @@
           }
         },
         {
-          "ruleId": "S2696",
+          "ruleId": "S1854",
           "level": "warning",
-          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
+          "message": "Remove this useless assignment to local variable 'oLista'.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 91,
-                  "startColumn": 17,
-                  "endLine": 91,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 32,
-                  "endLine": 28,
-                  "endColumn": 40
+                  "startLine": 140,
+                  "startColumn": 27,
+                  "endLine": 140,
+                  "endColumn": 55
                 }
               }
             }
@@ -2430,18 +2417,52 @@
           }
         },
         {
-          "ruleId": "S1854",
+          "ruleId": "S2696",
           "level": "warning",
-          "message": "Remove this useless assignment to local variable 'oLista'.",
+          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 140,
-                  "startColumn": 27,
-                  "endLine": 140,
-                  "endColumn": 55
+                  "startLine": 91,
+                  "startColumn": 17,
+                  "endLine": 91,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 32,
+                  "endLine": 28,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 36,
+                  "endLine": 262,
+                  "endColumn": 173
                 }
               }
             }
@@ -2453,16 +2474,16 @@
         {
           "ruleId": "S1481",
           "level": "warning",
-          "message": "Remove the unused local variable 'serializer'.",
+          "message": "Remove the unused local variable 'htmlBody'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Logica/CorreoLogica.cs",
                 "region": {
-                  "startLine": 185,
-                  "startColumn": 17,
-                  "endLine": 185,
-                  "endColumn": 27
+                  "startLine": 267,
+                  "startColumn": 24,
+                  "endLine": 267,
+                  "endColumn": 32
                 }
               }
             }
@@ -2497,6 +2518,27 @@
                   "startColumn": 32,
                   "endLine": 28,
                   "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'serializer'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 17,
+                  "endLine": 185,
+                  "endColumn": 27
                 }
               }
             }
@@ -2569,48 +2611,6 @@
           }
         },
         {
-          "ruleId": "S3445",
-          "level": "warning",
-          "message": "Consider using 'throw;' to preserve the stack trace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 432,
-                  "startColumn": 36,
-                  "endLine": 432,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'serializer'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
-                "region": {
-                  "startLine": 201,
-                  "startColumn": 17,
-                  "endLine": 201,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1854",
           "level": "warning",
           "message": "Remove this useless assignment to local variable 'oLista'.",
@@ -2632,6 +2632,27 @@
           }
         },
         {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 36,
+                  "endLine": 432,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1854",
           "level": "warning",
           "message": "Remove this useless assignment to local variable 'oLista'.",
@@ -2644,6 +2665,27 @@
                   "startColumn": 26,
                   "endLine": 346,
                   "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'serializer'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
+                "region": {
+                  "startLine": 201,
+                  "startColumn": 17,
+                  "endLine": 201,
+                  "endColumn": 27
                 }
               }
             }
@@ -2724,9 +2766,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 112,
+                  "startLine": 336,
                   "startColumn": 17,
-                  "endLine": 112,
+                  "endLine": 336,
                   "endColumn": 27
                 }
               }
@@ -2745,9 +2787,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cesar/OneDrive/Documentos/Trabajos/GIT_ProyectoCalidad/ProyectoTest/Controllers/TiendaController.cs",
                 "region": {
-                  "startLine": 336,
+                  "startLine": 112,
                   "startColumn": 17,
-                  "endLine": 336,
+                  "endLine": 112,
                   "endColumn": 27
                 }
               }

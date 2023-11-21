@@ -1,18 +1,16 @@
 
-MerchantDefineData.MDD4.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÛ Û(!"0*ö
+Order.purchaseNumber.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csè  è(#"0*q
 0
-Û" Û("Q
-O
+è$ è($E
+C
 
-Û Û("&
-MerchantDefineData"
-MDD4string"__id*
-
-valuestring"6
+è  è($	
+%0int"__id*$"* 
+Order"
+purchaseNumberint"
 
-Û Û("(*&
-MerchantDefineData"
-MDD4string:
-valuestringB
-MerchantDefineData
+è  è($
+	
+%0intB	
+Order

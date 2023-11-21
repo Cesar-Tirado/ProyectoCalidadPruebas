@@ -1,20 +1,18 @@
 
-PAY.cardHolder.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs§# §(&"0*€
+NiubizData.antifraud.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csƒ! ƒ($"0*ƒ
 0
-§' §('M
-K
+ƒ% ƒ(%Q
+O
 
-§# §('
-%0
-CardHolder"__id*%#*!
-PAY"
+ƒ! ƒ(%
+%0	Antifraud"__id**(*&
 
-cardHolder
-CardHolder" 
+NiubizData"
+	antifraud	Antifraud"
 
-§# §('
-
-%0
-CardHolderB
-PAY
+ƒ! ƒ(%
+
+%0	AntifraudB
+
+NiubizData

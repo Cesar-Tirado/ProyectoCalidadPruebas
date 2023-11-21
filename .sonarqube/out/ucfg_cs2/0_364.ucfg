@@ -1,15 +1,13 @@
 
-DProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_DESCRIPTION.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs0 (3"0*æ
-04 (4x
-v
-0 (4O/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ACTION_DESCRIPTIONstring"__id*
-
-valuestring"]
-0 (4Q*O/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ACTION_DESCRIPTIONstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+8ProyectoTest.Models.tarjetaResponse.transactionToken.getp
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\tarjetaResponse.cs) (,"0*”
+0- (-i
+g
+) (-
+%0string"__id*GE*C%
+#ProyectoTest.Models.tarjetaResponse"
+transactionTokenstring"
+) (-
+
+%0stringB'%
+#ProyectoTest.Models.tarjetaResponse

@@ -1,20 +1,8 @@
-Û
-
-Recurrenceobject'
-Recurrence()Recurrence.Recurrence()
-type.getRecurrence.type.get
-type.setRecurrence.type.set)
-frequency.getRecurrence.frequency.get)
-frequency.setRecurrence.frequency.set1
-beneficiaryId.getRecurrence.beneficiaryId.get1
-beneficiaryId.setRecurrence.beneficiaryId.set?
-beneficiaryFirstName.get#Recurrence.beneficiaryFirstName.get?
-beneficiaryFirstName.set#Recurrence.beneficiaryFirstName.set=
-beneficiaryLastName.get"Recurrence.beneficiaryLastName.get=
-beneficiaryLastName.set"Recurrence.beneficiaryLastName.set)
-maxAmount.getRecurrence.maxAmount.get)
-maxAmount.setRecurrence.maxAmount.set#
-
-amount.getRecurrence.amount.get#
-
-amount.setRecurrence.amount.set
+ø
+(ProyectoTest.Controllers.LoginControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject;
+Index()0ProyectoTest.Controllers.LoginController.Index()W
+Index(string, string)>ProyectoTest.Controllers.LoginController.Index(string, string)G
+Registrarse()6ProyectoTest.Controllers.LoginController.Registrarse()“
+3Registrarse(string, string, string, string, string)\ProyectoTest.Controllers.LoginController.Registrarse(string, string, string, string, string)Ã
+KRegistrarCliente(string, string, string, string, string, string, int, bool)tProyectoTest.Controllers.LoginController.RegistrarCliente(string, string, string, string, string, string, int, bool)O
+LoginController():ProyectoTest.Controllers.LoginController.LoginController()

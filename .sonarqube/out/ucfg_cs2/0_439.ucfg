@@ -1,13 +1,14 @@
 
-8ProyectoTest.Models.tarjetaResponse.transactionToken.getp
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\tarjetaResponse.cs) (,"0*”
-0- (-i
-g
-) (-
-%0string"__id*GE*C%
-#ProyectoTest.Models.tarjetaResponse"
-transactionTokenstring"
-) (-
+)ProyectoTest.Models.Compra.FormaEnvio.getg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs# (&"0*…
+0' ('Z
+X
+# ('
+%0string"__id*86*4
+ProyectoTest.Models.Compra"
+
+FormaEnviostring"
+# ('
 
-%0stringB'%
-#ProyectoTest.Models.tarjetaResponse
+%0stringB
+ProyectoTest.Models.Compra

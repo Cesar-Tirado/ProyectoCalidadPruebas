@@ -1,83 +1,68 @@
 
-OProyectoTest.Controllers.HomeController.GuardarMarca(ProyectoTest.Models.Marca)t
-jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csq q(&"5*Ø
-0s t(,/
--
-s s("
-	respuestabool"__id*
-""g
-e
-t t('	
-%0int"%ProyectoTest.Models.Marca.IdMarca.get*'%
-#
-objetoProyectoTest.Models.Marca*
-1
-2*’
-1t0 t(Vä
-á
-t0 t(E%
-%1ProyectoTest.Logica.MarcaLogica"-ProyectoTest.Logica.MarcaLogica.Instancia.get*%#"!
-ProyectoTest.Logica.MarcaLogica≥
-∞
-t0 t(W
+7ProyectoTest.Controllers.HomeController.ListarTiendas()v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csÅ Å('"2*˚
+0
+É Ö(K\Z
 
-%2bool"DProyectoTest.Logica.MarcaLogica.Registrar(ProyectoTest.Models.Marca)*)'
-%
-%1ProyectoTest.Logica.MarcaLogica*'%
-#
-objetoProyectoTest.Models.Marca*
-3*◊
-2	tZ t(Ää
-á
-tZ t(o%
-%3ProyectoTest.Logica.MarcaLogica"-ProyectoTest.Logica.MarcaLogica.Instancia.get*%#"!
-ProyectoTest.Logica.MarcaLogica¥
-±
-	tZ t(Å
+É# É(6(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
 
-%4bool"DProyectoTest.Logica.MarcaLogica.Modificar(ProyectoTest.Models.Marca)*)'
-%
-%3ProyectoTest.Logica.MarcaLogica*'%
-#
-objetoProyectoTest.Models.Marca*
-3*ƒ
-3t u(S0
-.
-	t t(Å
-	respuestabool"__id*
-"""
- 
-u7 u(S
-%5"__id*
-""Ø
-¨
-u u(T
-%6System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+É' É(4
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>p
+n
+
+É É(6,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>í
+è
+
+Ñ Ñ(,'
+%2!ProyectoTest.Logica.TiendasLogica"/ProyectoTest.Logica.TiendasLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.TiendasLogicaí
+è
+
+Ñ Ñ(5(
+%3"System.Collections.Generic.List<T>"*ProyectoTest.Logica.TiendasLogica.Listar()*+)
+'
+%2!ProyectoTest.Logica.TiendasLogicap
+n
+
+Ñ Ñ(5,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>$
+"
+
+Ö/ Ö(K
+%4"__id*
+""±
+Æ
+
+Ö Ö(L
+%5System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
 System.Web.Mvc.Controller*
 ""*
 
-%5"-
-u u(U!
+%4"/
+
+Ö Ö(M!
 
-%6System.Web.Mvc.JsonResult*.
-4v	 v(	"
-v v(	
-implicit return*˘
-5q4 q(4i
-g
-q q(&M
-#
-objetoProyectoTest.Models.Marca"&
-<Descripcion>k__BackingFieldstring"__entrypointX
-V
-q q(&<
-#
-objetoProyectoTest.Models.Marca"
-Descripcionstring"__entrypoint 
-
-q q(&
-%7"__entrypoint*
-0:/
-q' q(3#
-objetoProyectoTest.Models.MarcaB+)
+%5System.Web.Mvc.JsonResult*2
+1
+Ü	 Ü(	"!
+
+Ü Ü(	
+implicit return*8
+2
+Å) Å()"
+ 
+
+Å Å('
+%6"__entrypoint*
+0B+)
 'ProyectoTest.Controllers.HomeController

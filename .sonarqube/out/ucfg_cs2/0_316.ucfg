@@ -1,15 +1,15 @@
 
-@ProyectoTest.Models.Niubiz.Respuestas.Order.authorizedAmount.setó
-åC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs.. .(1"0*ﬁ
-0.2 .(2t
-r
-.. .(2K-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-authorizedAmountdouble"__id*
-
-valuedouble"Y
-.. .(2M*K-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-authorizedAmountdouble:
-valuedoubleB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+SProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.countable.setì
+àC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs)% )(("0*Ä
+0)) )()Ñ
+Å
+)% )()\G
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1"
+	countablebool"__id*
+
+valuebool"j
+)% )()^*\G
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1"
+	countablebool:
+valueboolBIG
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1

@@ -1,15 +1,15 @@
 
->ProyectoTest.Models.Niubiz.Respuestas.Order.purchaseNumber.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs*, *(/"0*Ú
-0*0 *(0r
-p
-*, *(0I-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-purchaseNumberstring"__id*
+;ProyectoTest.Models.Niubiz.Consultas.Antifraud.clientIp.set€
+vC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs& ()"0*Ô
+0* (*o
+m
+& (*F0
+.ProyectoTest.Models.Niubiz.Consultas.Antifraud"
+clientIpstring"__id*
 
-valuestring"W
-*, *(0K*I-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-purchaseNumberstring:
-valuestringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+valuestring"T
+& (*H*F0
+.ProyectoTest.Models.Niubiz.Consultas.Antifraud"
+clientIpstring:
+valuestringB20
+.ProyectoTest.Models.Niubiz.Consultas.Antifraud

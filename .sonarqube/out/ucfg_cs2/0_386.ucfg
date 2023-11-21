@@ -1,15 +1,13 @@
 
-:ProyectoTest.Models.Niubiz.Respuestas.DataMap.ID_UNICO.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs& ()"0*Ò
-0* (*n
-l
-& (*E/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ID_UNICOstring"__id*
-
-valuestring"S
-& (*G*E/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ID_UNICOstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+,ProyectoTest.Models.DetalleCompra.Nombre.getn
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs (""0*ˆ
+0# (#]
+[
+ (#
+%0string"__id*;9*7#
+!ProyectoTest.Models.DetalleCompra"
+Nombrestring"
+ (#
+
+%0stringB%#
+!ProyectoTest.Models.DetalleCompra

@@ -1,218 +1,138 @@
 
-1ProyectoTest.Logica.CarritoLogica.ObtenerCompra()p
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CarritoLogica.csË Ë()"0*¨
+FProyectoTest.Controllers.TiendaController.Autorize(NiubizData, string)x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csø" ø(*"2*‘
 0
-Í Î(J\Z
+¬ ƒ(Q;
+9
 
-Í, Í(>(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
-q
+¬ ¬(+
 
-Í0 Í(<
+merchantIdstring"__id*
+	522591303Ø
+¨
 
-%1void")System.Collections.Generic.List<T>.List()*,*
-(
-%0"System.Collections.Generic.List<T>z
-x
+√ √(v
+%0string"__concat*`
 
-Í Í(>6
-rptDetalleCompra"System.Collections.Generic.List<T>"__id*,*
-(
-%0"System.Collections.Generic.List<T>V
-T
+√ √(iRP
+Nhttps://apisandbox.vnforappstest.com/api.ecommerce/v2/ecommerce/token/session/*$
 
-Î? Î(J
-%2string"__id*20*.
-ProyectoTest.Logica.Conexion"
-CNstring^\
+√i √(u
+
 
-Î- Î(K)
-%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
-î
+merchantIdstring5
+3
 
-Î1 Î(>
-
-%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
-)
-%3#System.Data.SqlClient.SqlConnection*
+√ √(v
+urlstring"__id*
 
-%2stringu
-s
-
-Î! Î(K0
-	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
-)
-%3#System.Data.SqlClient.SqlConnection*
-1*ã
-1
-Ì Ó(=XV
-
-Ì! Ì(N&
-%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÔ
-Ï
-
-Ì% Ì(/
-
-%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
-&
-%5 System.Data.SqlClient.SqlCommand*
-sp_ObtenerCompra*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectioni
-g
-
-Ì Ì(N'
-cmd System.Data.SqlClient.SqlCommand"__id**(
-&
-%5 System.Data.SqlClient.SqlCommand$
-"
-
-Ó" Ó(=
-%7"__id*
-""ó
-î
-
-Ó Ó(=
-%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
-'
-cmd System.Data.SqlClient.SqlCommand*
-
-%7*
-2*
-2
-©	 ©(	*
-3
-4*ˆ
-3
-Ò Ú(@|
-z
-
-Ò Ò($
-
-%9void"*System.Data.SqlClient.SqlConnection.Open()*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectioné
+%0stringé
 ã
 
-Ú* Ú(@
-%10System.Xml.XmlReader"3System.Data.SqlClient.SqlCommand.ExecuteXmlReader()*+)
-'
-cmd System.Data.SqlClient.SqlCommandQ
-O
+ƒ1 ƒ(R
+%1string"4Newtonsoft.Json.JsonConvert.SerializeObject(object?)*!"
+Newtonsoft.Json.JsonConvert*
+
+data
+NiubizDataı
+Ú
 
-Ú% Ú(@
-drSystem.Xml.XmlReader"__id*
-
-%10System.Xml.XmlReader*
-5*q
-5
-Ù Ù((X
-V
+ƒ ƒ(S*
+%2$System.Threading.Tasks.Task<TResult>"OProyectoTest.Controllers.TiendaController.PostDataAsync(string, string, string)*/-"+
+)ProyectoTest.Controllers.TiendaController*
 
-Ù Ù((
-%11bool"System.Xml.XmlReader.Read()*
-
-drSystem.Xml.XmlReader*
-6
-7*æ
-6
-ˆ& ˜(;®
-•
+urlstring*
 
-ˆ, ˆ(> 
-%12System.Xml.Linq.XDocument"4System.Xml.Linq.XDocument.Load(System.Xml.XmlReader)*"
-System.Xml.Linq.XDocument*
-
-drSystem.Xml.XmlReader\
-Z
+keystring*
+
+%1string"
 
-ˆ& ˆ(> 
-docSystem.Xml.Linq.XDocument"__id*$"
- 
-%12System.Xml.Linq.XDocumentù
-ö
+ƒ ƒ(T
+""*2
+1
+≈	 ≈(	"!
 
-˜  ˜(3
-%13System.Xml.Linq.XElement"9System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)*$"
- 
-docSystem.Xml.Linq.XDocument*
-
-DATA|
-z
+≈ ≈(	
+implicit return*“
+2
+øb ø(bM
+K
 
-˜  ˜(;
-%14bool""object.operator !=(object, object)*
-"
-object*#!
-
-%13System.Xml.Linq.XElement*
-""*
-8
-9*œ
-8
-˘  ò(5ª
-∏
+ø" ø(*
+%3"__entrypoint*
+
+data
+NiubizData*
 
-˘3 ò(?)
-%15"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*
-""{
-y
-
-˘  ò(?6
-rptDetalleCompra"System.Collections.Generic.List<T>"__id*-+
-)
-%15"System.Collections.Generic.List<T>*
-5*Á
-9
-ú  ú(E][
-
-ú3 ú(E)
-%16"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>u
+keystringu
 s
 
-ú7 ú(C
-%17void")System.Collections.Generic.List<T>.List()*-+
-)
-%16"System.Collections.Generic.List<T>{
+ø, ø(D
+%4"
+__annotate*;97
+5System.Web.Http.FromBodyAttribute.FromBodyAttribute()*
+
+data
+NiubizDatat
+r
+
+Ω	 Ω(
+%5"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+data
+NiubizDataÄ
+~
+
+æ	 æ(
+%6"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+data
+NiubizDataN
+L
+
+ø+ ø(U
+data
+NiubizData"__annotation*
+
+%4*
+
+%5*
+
+%6o
+m
+
+Ω	 Ω(
+%7"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+keystring{
 y
 
-ú  ú(E6
-rptDetalleCompra"System.Collections.Generic.List<T>"__id*-+
-)
-%16"System.Collections.Generic.List<T>*
-5*y
-7
-ü ü("b`
+æ	 æ(
+%8"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
 
-ü ü("
-%18void"System.Xml.XmlReader.Close()*
-
-drSystem.Xml.XmlReader2Close()*
-10*X
-10
-° °(+"F
+keystring?
+=
 
-° °(,8
-6
-rptDetalleCompra"System.Collections.Generic.List<T>*Ø
-4
-• ¶(+V
-T
+øW ø(a
+keystring"__annotation*
+
+%7*
+
+%8*
+0: 
 
-• •(+6
-rptDetalleCompra"System.Collections.Generic.List<T>"__id*
-"""F
+ø+ ø(U
+data
+NiubizData:
 
-¶ ¶(,8
-6
-rptDetalleCompra"System.Collections.Generic.List<T>*
-11
-©	 ©(	*
-12*3
-12
-©	 ©(	"!
-
-© ©(	
-implicit returnB%#
-!ProyectoTest.Logica.CarritoLogica
+øW ø(a
+keystringB-+
+)ProyectoTest.Controllers.TiendaController

@@ -1,16 +1,18 @@
 
-MerchantDefineData.MDD32.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csõ õ("0*~
+Order.installment.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs“" “(%"0*…
 0
-õ õ(O
-M
+“& “(&E
+C
 
-õ õ(
-%0string"__id*+)*'
-MerchantDefineData"
-MDD32string"
-
-õ õ(
+“" “(&
+Order"
+installmentint"__id*
 
-%0stringB
-MerchantDefineData
+valueint"-
+
+“" “(&*
+Order"
+installmentint:
+valueintB	
+Order

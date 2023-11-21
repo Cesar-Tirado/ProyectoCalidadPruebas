@@ -1,16 +1,18 @@
 
-Order.tokenId.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csŽ Ž("0*s
+CardHolder.documentType.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csˆ" ˆ(%"0*}
 0
-Ž  Ž( D
-B
+ˆ& ˆ(&N
+L
 
-Ž Ž( 
-%0string"__id* *
-Order"
-tokenIdstring"
+ˆ" ˆ(&
+%0string"__id**(*&
 
-Ž Ž( 
+CardHolder"
+documentTypestring"
+
+ˆ" ˆ(&
 
-%0stringB	
-Order
+%0stringB
+
+CardHolder

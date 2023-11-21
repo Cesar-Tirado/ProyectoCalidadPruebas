@@ -1,15 +1,21 @@
 
-.ProyectoTest.Models.UbicacionTienda.Nombre.setp
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\UbicacionTienda.cs$ ('"0*∫
-0( ((b
-`
-$ ((9%
-#ProyectoTest.Models.UbicacionTienda"
-Nombrestring"__id*
-
-valuestring"G
-$ ((;*9%
-#ProyectoTest.Models.UbicacionTienda"
-Nombrestring:
-valuestringB'%
-#ProyectoTest.Models.UbicacionTienda
+NiubizData.antifraud.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÉ& É()"0*ù
+0
+É* É(*T
+R
+
+É& É(*&
+
+NiubizData"
+	antifraud	Antifraud"__id*
+
+value	Antifraud"6
+
+É& É(*(*&
+
+NiubizData"
+	antifraud	Antifraud:
+value	AntifraudB
+
+NiubizData

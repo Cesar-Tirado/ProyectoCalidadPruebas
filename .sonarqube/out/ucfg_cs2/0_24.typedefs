@@ -1,8 +1,5 @@
-ø
-(ProyectoTest.Controllers.LoginControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject;
-Index()0ProyectoTest.Controllers.LoginController.Index()W
-Index(string, string)>ProyectoTest.Controllers.LoginController.Index(string, string)G
-Registrarse()6ProyectoTest.Controllers.LoginController.Registrarse()“
-3Registrarse(string, string, string, string, string)\ProyectoTest.Controllers.LoginController.Registrarse(string, string, string, string, string)Ã
-KRegistrarCliente(string, string, string, string, string, string, int, bool)tProyectoTest.Controllers.LoginController.RegistrarCliente(string, string, string, string, string, string, int, bool)O
-LoginController():ProyectoTest.Controllers.LoginController.LoginController()
+Ë
+ ProyectoTest.Logica.CompraLogicaobjectA
+CompraLogica()/ProyectoTest.Logica.CompraLogica.CompraLogica()o
+%Registrar(ProyectoTest.Models.Compra)FProyectoTest.Logica.CompraLogica.Registrar(ProyectoTest.Models.Compra)k
+#ActualizarEstadoCompra(int, string)DProyectoTest.Logica.CompraLogica.ActualizarEstadoCompra(int, string)

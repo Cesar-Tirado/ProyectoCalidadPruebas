@@ -1,13 +1,15 @@
 
-DProyectoTest.Models.Niubiz.Respuestas.DataMap.AUTHORIZATION_CODE.get—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs+ (."0* 
-0/ (/u
-s
-+ (/
-%0string"__id*SQ*O/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-AUTHORIZATION_CODEstring"
-+ (/
-
-%0stringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+$ProyectoTest.Models.Marca.Activo.setf
+\C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Marca.cs" (%"0* 
+0& (&T
+R
+" (&-
+ProyectoTest.Models.Marca"
+Activobool"__id*
+
+valuebool";
+" (&/*-
+ProyectoTest.Models.Marca"
+Activobool:
+valueboolB
+ProyectoTest.Models.Marca

@@ -1,52 +1,52 @@
 
-/ProyectoTest.Logica.TiendasLogica.Instancia.getn
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\TiendasLogica.cs ("0*¥
-0 (&ò
-ï
- ('
-%0!ProyectoTest.Logica.TiendasLogica"__id*ZX*V#
-!ProyectoTest.Logica.TiendasLogica"/
+-ProyectoTest.Logica.MarcaLogica.Instancia.getl
+bC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\MarcaLogica.cs ("0*´
+0 (&í
+è
+ (%
+%0ProyectoTest.Logica.MarcaLogica"__id*VT*R!
+ProyectoTest.Logica.MarcaLogica"-
 
-_instancia!ProyectoTest.Logica.TiendasLogicaÅ
-
- (&
+_instanciaProyectoTest.Logica.MarcaLogica
+}
+ (&
 
 %1bool""object.operator ==(object, object)*
 "
-object*+)
-'
-%0!ProyectoTest.Logica.TiendasLogica*
+object*)'
+%
+%0ProyectoTest.Logica.MarcaLogica*
 ""*
 1
-2*Å
-1 (4XV
-! (4'
-%2!ProyectoTest.Logica.TiendasLogica"!ProyectoTest.Logica.TiendasLogicax
-v
-% (2
+2*Ò
+1 (2TR
+! (2%
+%2ProyectoTest.Logica.MarcaLogica"ProyectoTest.Logica.MarcaLogicar
+p
+% (0
 
-%3void"1ProyectoTest.Logica.TiendasLogica.TiendasLogica()*+)
-'
-%2!ProyectoTest.Logica.TiendasLogicaò
-ï
- (4V#
-!ProyectoTest.Logica.TiendasLogica"/
+%3void"-ProyectoTest.Logica.MarcaLogica.MarcaLogica()*)'
+%
+%2ProyectoTest.Logica.MarcaLogicaí
+è
+ (2R!
+ProyectoTest.Logica.MarcaLogica"-
 
-_instancia!ProyectoTest.Logica.TiendasLogica"__id*+)
-'
-%2!ProyectoTest.Logica.TiendasLogica*
-2*ﬂ
-2 (!ò
-ï
- (!'
-%4!ProyectoTest.Logica.TiendasLogica"__id*ZX*V#
-!ProyectoTest.Logica.TiendasLogica"/
+_instanciaProyectoTest.Logica.MarcaLogica"__id*)'
+%
+%2ProyectoTest.Logica.MarcaLogica*
+2*◊
+2 (!í
+è
+ (!%
+%4ProyectoTest.Logica.MarcaLogica"__id*VT*R!
+ProyectoTest.Logica.MarcaLogica"-
 
-_instancia!ProyectoTest.Logica.TiendasLogica"5
- (")
-'
-%4!ProyectoTest.Logica.TiendasLogica*.
-3 ("
- (
-implicit returnB%"#
-!ProyectoTest.Logica.TiendasLogica
+_instanciaProyectoTest.Logica.MarcaLogica"3
+ ("'
+%
+%4ProyectoTest.Logica.MarcaLogica*.
+3 ("
+ (
+implicit returnB#"!
+ProyectoTest.Logica.MarcaLogica

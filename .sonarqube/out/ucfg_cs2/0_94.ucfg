@@ -1,15 +1,16 @@
 
-&ProyectoTest.Models.Usuario.Activo.geth
-^C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Usuario.cs ( "0*|
-0! (!S
-Q
- (!
+Order.installment.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs“ “( "0*n
+0
+“! “(!B
+@
 
-%0bool"__id*31*/
-ProyectoTest.Models.Usuario"
-Activobool"
- (!
+“ “(!	
+%0int"__id*!*
+Order"
+installmentint"
 
-
-%0boolB
-ProyectoTest.Models.Usuario
+“ “(!
+	
+%0intB	
+Order

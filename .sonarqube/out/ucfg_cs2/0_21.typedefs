@@ -1,15 +1,5 @@
-É
-PAYobject
-PAY()	PAY.PAY()
-channel.getPAY.channel.get
-channel.setPAY.channel.set&
-captureType.getPAY.captureType.get&
-captureType.setPAY.captureType.set"
-countable.getPAY.countable.get"
-countable.setPAY.countable.set
-	order.getPAY.order.get
-	order.setPAY.order.set$
-cardHolder.getPAY.cardHolder.get$
-cardHolder.setPAY.cardHolder.set$
-recurrence.getPAY.recurrence.get$
-recurrence.setPAY.recurrence.set
+¿
+)ProyectoTest.Controllers.PublicControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobject<
+Index()1ProyectoTest.Controllers.PublicController.Index()>
+Index2()2ProyectoTest.Controllers.PublicController.Index2()R
+PublicController()<ProyectoTest.Controllers.PublicController.PublicController()

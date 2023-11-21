@@ -1,15 +1,15 @@
 
-%ProyectoTest.Models.Compra.Correo.setg
-]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs$ ('"0*¨
-0( ((Y
-W
-$ ((0
-ProyectoTest.Models.Compra"
-Correostring"__id*
+=ProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_CODE.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs) (,"0*Ø
+0- (-q
+o
+) (-H/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+ACTION_CODEstring"__id*
 
-valuestring">
-$ ((2*0
-ProyectoTest.Models.Compra"
-Correostring:
-valuestringB
-ProyectoTest.Models.Compra
+valuestring"V
+) (-J*H/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+ACTION_CODEstring:
+valuestringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

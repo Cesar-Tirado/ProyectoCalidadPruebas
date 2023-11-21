@@ -1,15 +1,22 @@
 
->ProyectoTest.Models.Niubiz.Respuestas.DataMap.PROCESS_CODE.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs* (-"0*Ú
-0. (.r
-p
-* (.I/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-PROCESS_CODEstring"__id*
-
-valuestring"W
-* (.K*I/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-PROCESS_CODEstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
++ProyectoTest.Models.Distrito.IdDistrito.geti
+_C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Distrito.cs
+# 
+(&"0*‡
+0
+' 
+('\
+Z
+
+# 
+('
+%0string"__id*:8*6
+ProyectoTest.Models.Distrito"
+
+IdDistritostring"
+
+# 
+('
+
+%0stringB 
+ProyectoTest.Models.Distrito

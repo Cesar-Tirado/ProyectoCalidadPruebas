@@ -1,106 +1,121 @@
 
-IProyectoTest.Controllers.TiendaController.EliminarCarrito(string, string)x
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csั ั()"2*ี
+:ProyectoTest.Controllers.TiendaController.ObtenerCarrito()x
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csฎ ฎ(("4*อ
 0
-ำ ี(S1
-/
-
-ำ ำ("
-	respuestabool"__id*
-""’
+ฐ ฒ(!’
 
 
-ิ ิ(/'
+ฐ# ฐ(:'
 %0!ProyectoTest.Logica.CarritoLogica"/ProyectoTest.Logica.CarritoLogica.Instancia.get*'%"#
-!ProyectoTest.Logica.CarritoLogicaท
-ด
+!ProyectoTest.Logica.CarritoLogica”
+‘
 
-ิ ิ(O
+ฐC ฐ(K!
+%1ProyectoTest.Models.Usuario"__id*ZX*V+
+)ProyectoTest.Controllers.TiendaController"'
+oUsuarioProyectoTest.Models.Usuariok
+i
 
-%1bool":ProyectoTest.Logica.CarritoLogica.Eliminar(string, string)*+)
+ฐC ฐ(U	
+%2int")ProyectoTest.Models.Usuario.IdUsuario.get*%#
+!
+%1ProyectoTest.Models.Usuarioฅ
+ข
+
+ฐ# ฐ(V(
+%3"System.Collections.Generic.List<T>".ProyectoTest.Logica.CarritoLogica.Obtener(int)*+)
 '
-%0!ProyectoTest.Logica.CarritoLogica*
-
-	IdCarritostring*
-
+%0!ProyectoTest.Logica.CarritoLogica*
+	
+%2intp
+n
 
-IdProductostring7
-5
+ฐ ฐ(V,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%3"System.Collections.Generic.List<T>€
+~
 
-ิ ิ(O
-	respuestabool"__id*
+ฒ ฒ(	
+%4int"3System.Collections.Generic.ICollection<T>.Count.get*0.
+,
+oLista"System.Collections.Generic.List<T>*
+1
+2*ร
+1
+ด ว(บ
+ท
 
+ด ว(%(
+%5"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*
+""p
+n
 
-%1bool$
+ด ว(%,
+oLista"System.Collections.Generic.List<T>"__id*,*
+(
+%5"System.Collections.Generic.List<T>*
+2*ั
+2
+ษ ฬ(€~
+
+ษ ษ(W:
+%64System.Web.Script.Serialization.JavaScriptSerializer"4System.Web.Script.Serialization.JavaScriptSerializerจ
+ฅ
+
+ษ! ษ(U
+
+%7void"KSystem.Web.Script.Serialization.JavaScriptSerializer.JavaScriptSerializer()*><
+:
+%64System.Web.Script.Serialization.JavaScriptSerializer
+–
+
+ษ ษ(WB
+
+serializer4System.Web.Script.Serialization.JavaScriptSerializer"__id*><
+:
+%64System.Web.Script.Serialization.JavaScriptSerializer$
 "
 
-ี7 ี(S
-%2"__id*
+ส4 ส(P
+%8"__id*
 ""ฑ
 ฎ
 
-ี ี(T
-%3System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+ส ส(Q
+%9System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
 System.Web.Mvc.Controller*
 ""*
 
-%2"/
+%8\
+Z
 
-ี ี(U!
+ส ส(Q!
+jsonSystem.Web.Mvc.JsonResult"__id*#!
 
-%3System.Web.Mvc.JsonResult*2
-1
-ึ	 ึ(	"!
+%9System.Web.Mvc.JsonResult
+
 
-ึ ึ(	
-implicit return*ี
-2
-ัN ั(NU
-S
+ห ห(*
+%10System.Nullable<T>"+System.Web.Mvc.JsonResult.MaxJsonLength.set*%#
+!
+jsonSystem.Web.Mvc.JsonResult*
+2€สต๎"1
 
-ั ั()
-%4"__entrypoint*
-
-	IdCarritostring*
-
+ฬ ฬ(#
+!
+jsonSystem.Web.Mvc.JsonResult*2
+3
+อ	 อ(	"!
 
-IdProductostringu
-s
+อ อ(	
+implicit return*9
+4
+ฎ* ฎ(*#
+!
 
-ะ	 ะ(
-%5"
-__annotate*:86
-4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
-
-	IdCarritostring;
-9
-
-ั* ั(:
-	IdCarritostring"__annotation*
-
-%5v
-t
-
-ะ	 ะ(
-%6"
-__annotate*:86
-4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
-
-
-IdProductostring<
-:
-
-ั< ั(M
-
-IdProductostring"__annotation*
-
-%6*
-0:!
-
-ั* ั(:
-	IdCarritostring:"
-
-ั< ั(M
-
-IdProductostringB-+
+ฎ ฎ((
+%11"__entrypoint*
+0B-+
 )ProyectoTest.Controllers.TiendaController

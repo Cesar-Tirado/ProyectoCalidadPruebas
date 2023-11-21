@@ -1,18 +1,16 @@
 
-CardHolder.documentNumber.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs‰# ‰(&"0*
+ Antifraud.merchantDefineData.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csî3 î(6"0*¦
 0
-‰' ‰('P
-N
+î7 î(7k
+i
 
-‰# ‰('
-%0string"__id*,**(
+î3 î(7
+%0MerchantDefineData"__id*;9*7
+	Antifraud"(
+merchantDefineDataMerchantDefineData"(
 
-CardHolder"
-documentNumberstring"
-
-‰# ‰('
-
-%0stringB
-
-CardHolder
+î3 î(7
+
+%0MerchantDefineDataB
+	Antifraud

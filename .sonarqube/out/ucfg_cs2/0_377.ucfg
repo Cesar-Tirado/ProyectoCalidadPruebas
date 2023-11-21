@@ -1,15 +1,23 @@
 
-AProyectoTest.Models.Niubiz.Consultas.PaymentRequest.antifraud.set€
-vC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs* (-"0*Û
-0. (.Æ
-Ã
-* (.t5
-3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest";
-	antifraud.ProyectoTest.Models.Niubiz.Consultas.Antifraud"__id*;9
-7
-value.ProyectoTest.Models.Niubiz.Consultas.Antifraud"‚
-* (.v*t5
-3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest";
-	antifraud.ProyectoTest.Models.Niubiz.Consultas.Antifraud:97
-value.ProyectoTest.Models.Niubiz.Consultas.AntifraudB75
-3ProyectoTest.Models.Niubiz.Consultas.PaymentRequest
+5ProyectoTest.Models.DetalleCompra.IdDetalleCompra.setn
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs
+* 
+(-"0*¿
+0
+. 
+(.c
+a
+
+* 
+(.=#
+!ProyectoTest.Models.DetalleCompra"
+IdDetalleCompraint"__id*
+
+valueint"K
+
+* 
+(.?*=#
+!ProyectoTest.Models.DetalleCompra"
+IdDetalleCompraint:
+valueintB%#
+!ProyectoTest.Models.DetalleCompra

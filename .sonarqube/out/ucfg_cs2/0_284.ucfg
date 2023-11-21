@@ -1,17 +1,15 @@
 
-)ProyectoTest.Models.Compra.FormaEnvio.setg
-]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs( (+"0*°
-0, (,]
-[
-( (,4
-ProyectoTest.Models.Compra"
-
-FormaEnviostring"__id*
+GProyectoTest.Models.Niubiz.Consultas.PaymentResponse.expirationTime.set€
+vC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\PaymentRequest.cs%+ %(."0*ì
+0%/ %(/{
+y
+%+ %(/R6
+4ProyectoTest.Models.Niubiz.Consultas.PaymentResponse"
+expirationTimestring"__id*
 
-valuestring"B
-( (,6*4
-ProyectoTest.Models.Compra"
-
-FormaEnviostring:
-valuestringB
-ProyectoTest.Models.Compra
+valuestring"`
+%+ %(/T*R6
+4ProyectoTest.Models.Niubiz.Consultas.PaymentResponse"
+expirationTimestring:
+valuestringB86
+4ProyectoTest.Models.Niubiz.Consultas.PaymentResponse

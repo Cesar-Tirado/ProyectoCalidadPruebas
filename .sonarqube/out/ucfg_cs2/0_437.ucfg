@@ -1,15 +1,15 @@
 
-6ProyectoTest.Models.Niubiz.Consultas.Order.tokenId.set“
-ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs% (("0*Ê
-0) ()j
-h
-% ()A,
-*ProyectoTest.Models.Niubiz.Consultas.Order"
-tokenIdstring"__id*
+#ProyectoTest.Models.Compra.Tipo.setg
+]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs" (%"0*¤
+0& (&W
+U
+" (&.
+ProyectoTest.Models.Compra"
+Tipostring"__id*
 
-valuestring"O
-% ()C*A,
-*ProyectoTest.Models.Niubiz.Consultas.Order"
-tokenIdstring:
-valuestringB.,
-*ProyectoTest.Models.Niubiz.Consultas.Order
+valuestring"<
+" (&0*.
+ProyectoTest.Models.Compra"
+Tipostring:
+valuestringB
+ProyectoTest.Models.Compra

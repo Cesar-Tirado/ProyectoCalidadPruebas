@@ -1,24 +1,16 @@
 
-PAY.cardHolder.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs§( §(+"0*”
+Order.currency.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs‘ ‘( "0*t
 0
-§, §(,P
-N
+‘! ‘(!E
+C
 
-§( §(,!
-PAY"
+‘ ‘(!
+%0string"__id*!*
+Order"
+currencystring"
 
-cardHolder
-CardHolder"__id*
-
-value
-CardHolder"1
-
-§( §(,#*!
-PAY"
-
-cardHolder
-CardHolder:
-value
-CardHolderB
-PAY
+‘ ‘(!
+
+%0stringB	
+Order

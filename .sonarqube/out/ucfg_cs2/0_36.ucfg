@@ -1,20 +1,7 @@
 
-<ProyectoTest.Models.Niubiz.Consultas.CardHolder.CardHolder()“
-ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs
- 
-("0*ò
-0 ( 
-
- (:
-%0string"BProyectoTest.Models.Niubiz.Consultas.CardHolder.documentNumber.set*531
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder*
-""ž
-›
- (8
-%1string"@ProyectoTest.Models.Niubiz.Consultas.CardHolder.documentType.set*531
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder*
-"""
-
- (
-implicit returnB31
-/ProyectoTest.Models.Niubiz.Consultas.CardHolder
+)ProyectoTest.Models.Provincia.Provincia()j
+`C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Provincia.cs ("0*.
+0 ("
+ (
+implicit returnB!
+ProyectoTest.Models.Provincia

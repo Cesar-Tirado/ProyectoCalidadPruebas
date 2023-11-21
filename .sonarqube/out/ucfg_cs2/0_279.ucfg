@@ -1,17 +1,15 @@
 
-)ProyectoTest.Models.Compra.Referencia.setg
-]C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Compra.cs( (+"0*°
-0, (,]
-[
-( (,4
-ProyectoTest.Models.Compra"
-
-Referenciastring"__id*
+DProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_DESCRIPTION.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs0 (3"0*æ
+04 (4x
+v
+0 (4O/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+ACTION_DESCRIPTIONstring"__id*
 
-valuestring"B
-( (,6*4
-ProyectoTest.Models.Compra"
-
-Referenciastring:
-valuestringB
-ProyectoTest.Models.Compra
+valuestring"]
+0 (4Q*O/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap"
+ACTION_DESCRIPTIONstring:
+valuestringB1/
+-ProyectoTest.Models.Niubiz.Respuestas.DataMap

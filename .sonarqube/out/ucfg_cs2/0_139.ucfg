@@ -1,18 +1,13 @@
 
-Order.installment.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs“" “(%"0*…
-0
-“& “(&E
-C
-
-“" “(&
-Order"
-installmentint"__id*
+.ProyectoTest.Models.UbicacionTienda.Nombre.getp
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\UbicacionTienda.cs (""0*Š
+0# (#_
+]
+ (#
+%0string"__id*=;*9%
+#ProyectoTest.Models.UbicacionTienda"
+Nombrestring"
+ (#
 
-valueint"-
-
-“" “(&*
-Order"
-installmentint:
-valueintB	
-Order
+%0stringB'%
+#ProyectoTest.Models.UbicacionTienda

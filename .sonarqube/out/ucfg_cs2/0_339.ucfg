@@ -1,13 +1,13 @@
 
-=ProyectoTest.Models.Niubiz.Respuestas.DataMap.ACTION_CODE.get—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs$ ('"0*™
-0( ((n
-l
-$ ((
-%0string"__id*LJ*H/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-ACTION_CODEstring"
-$ ((
+SProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1.sponsored.get“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs," ,(%"0*±
+0,& ,(&…
+‚
+," ,(&
+%0object"__id*b`*^G
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1"
+	sponsoredobject"
+," ,(&
 
-%0stringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+%0objectBIG
+EProyectoTest.Models.Niubiz.Consultas.AutorizacionDetransaccionNiubiz1

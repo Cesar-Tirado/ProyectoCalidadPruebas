@@ -1,18 +1,18 @@
 
-3ProyectoTest.Controllers.TiendaController.Compras()v
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csV V(#"5* 
-0X X(*{
+3ProyectoTest.Controllers.TiendaController.Carrito()v
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csL L(#"5* 
+0N N(*{
 y
-X X(%
+N N(%
 %0System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
 System.Web.Mvc.Controller£ 
-X X("
+N N("
 %1object":System.Collections.Generic.ICollection<T>.this[string].get*)'
 %
 %0System.Web.HttpSessionStateBase*	
 Usuario2this[string].getf
 d
-X X(*
+N N(*
 
 %2bool""object.operator ==(object, object)*
 "
@@ -22,43 +22,43 @@ d
 ""*
 1
 2*ú
-1Y Y(8°
+1O O(8°
 ­
-Y Y(9*
+O O(9*
 %3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
 System.Web.Mvc.Controller*	
 Index*	
 Login"8
-Y Y(:,
+O O(:,
 *
 %3$System.Web.Mvc.RedirectToRouteResult*×
-2[ [(5{
+2Q Q(5{
 y
-[$ [(+%
+Q$ Q(+%
 %4System.Web.HttpSessionStateBase"%System.Web.Mvc.Controller.Session.get*
 System.Web.Mvc.Controller£ 
-[$ [(6
+Q$ Q(6
 %5object":System.Collections.Generic.ICollection<T>.this[string].get*)'
 %
 %4System.Web.HttpSessionStateBase*	
 Usuario2this[string].get*
 (
-[ [(6
+Q Q(6
 %6"__id*
 
 %5objectt
 r
-[ [(6V+
+Q Q(6V+
 )ProyectoTest.Controllers.TiendaController"'
 oUsuarioProyectoTest.Models.Usuario"__id*
 
 %6*
 3*ÿ
-3\ \(˜
+3R R(˜
 •
-\ \(
+R R(
 
-%7void"!proyectotest/views/tienda/compras*
+%7void"!proyectotest/views/tienda/carrito*
 
 %8*
 	{unknown}*
@@ -75,7 +75,7 @@ r
 
 %HttpContextItemsHtmlobject•
 ’
-\ \(
+R R(
 
 %9void"proyectotest/views/_viewstart*	
 
@@ -94,7 +94,7 @@ r
 
 %HttpContextItemsHtmlobject¡
 ž
-\ \(
+R R(
 %11void"(proyectotest/views/shared/_layout_tienda*	
 
 %12*
@@ -111,15 +111,15 @@ r
 %HttpContextItemsAllobject*#!
 
 %HttpContextItemsHtmlobject"
-\ \(
+R R(
 
 %11void*.
-4]	 ](	"
-] ](	
+4S	 S(	"
+S S(	
 implicit return*5
-5V% V(%!
+5L% L(%!
 
-V V(#
+L L(#
 %13"__entrypoint*
 0B-+
 )ProyectoTest.Controllers.TiendaController

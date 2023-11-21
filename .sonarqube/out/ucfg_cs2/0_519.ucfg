@@ -1,25 +1,25 @@
 
--ProyectoTest.Logica.MarcaLogica.Eliminar(int)n
-bC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\MarcaLogica.csÇ Ç("0*ê
+/ProyectoTest.Logica.TiendasLogica.Eliminar(int)p
+dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\TiendasLogica.csû û("0*ê
 0
-Ñ Ö(J1
+† °(J1
 /
 
-Ñ Ñ(!
+† †(!
 	respuestabool"__id*
 ""V
 T
 
-Ö? Ö(J
+°? °(J
 %0string"__id*20*.
 ProyectoTest.Logica.Conexion"
 CNstring^\
 
-Ö- Ö(K)
+°- °(K)
 %1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
 î
 
-Ö1 Ö(>
+°1 °(>
 
 %2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
 )
@@ -28,42 +28,42 @@ T
 %0stringu
 s
 
-Ö! Ö(K0
+°! °(K0
 	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
 )
 %1#System.Data.SqlClient.SqlConnection*
-1*∆
+1* 
 
 1
-â ë($XV
+• ™($XV
 
-â% â(g&
-%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandÑ
-Å
+•% •(k&
+%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandà
+Ö
 
-â) â(3
+•) •(3
 
 %4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
 &
-%3 System.Data.SqlClient.SqlCommand*+)'
-%delete from Marca where idMarca = @id*42
+%3 System.Data.SqlClient.SqlCommand*/-+
+)DELETE FROM Tiendas WHERE idTiendas = @id*42
 0
 	oConexion#System.Data.SqlClient.SqlConnectioni
 g
 
-â â(g'
+• •(k'
 cmd System.Data.SqlClient.SqlCommand"__id**(
 &
 %3 System.Data.SqlClient.SqlCommand°
 û
 
-ä ä("2
+¶ ¶("2
 %5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
 '
 cmd System.Data.SqlClient.SqlCommandŒ
 À
 
-ä ä(:(
+¶ ¶(:(
 %6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
 2
 %5,System.Data.SqlClient.SqlParameterCollection*	
@@ -71,12 +71,12 @@ g
 ""$
 "
 
-ã& ã(6
+ß& ß(6
 %7"__id*
 ""ó
 î
 
-ã ã(6
+ß ß(6
 %8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
 '
 cmd System.Data.SqlClient.SqlCommand*
@@ -84,48 +84,48 @@ g
 %7|
 z
 
-ç ç($
+® ®($
 
 %9void"*System.Data.SqlClient.SqlConnection.Open()*42
 0
 	oConexion#System.Data.SqlClient.SqlConnection{
 y
 
-è è()
+© ©()
 
 %10int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
 '
 cmd System.Data.SqlClient.SqlCommand1
 /
 
-ë ë($
+™ ™($
 	respuestabool"__id*
 ""*
 2
 3*G
 2
-ñ ñ(%1
+Æ Æ(%1
 /
 
-ñ ñ(%
+Æ Æ(%
 	respuestabool"__id*
 ""*
 3*
 3
-ù	 ù(	*
+≤	 ≤(	*
 4*2
 4
-õ õ("!
+± ±("!
 
-õ õ(
+± ±(
 
 	respuestabool*2
 5
-ù	 ù(	"!
+≤	 ≤(	"!
 
-ù ù(	
+≤ ≤(	
 implicit return:
 
-Ç Ç(#	
-idintB#!
-ProyectoTest.Logica.MarcaLogica
+û û(#	
+idintB%#
+!ProyectoTest.Logica.TiendasLogica

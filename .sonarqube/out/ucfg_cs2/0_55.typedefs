@@ -1,7 +1,11 @@
-‡
-4ProyectoTest.Models.Niubiz.Consultas.PaymentResponseobject[
-PaymentResponse()FProyectoTest.Models.Niubiz.Consultas.PaymentResponse.PaymentResponse()U
-sessionKey.getCProyectoTest.Models.Niubiz.Consultas.PaymentResponse.sessionKey.getU
-sessionKey.setCProyectoTest.Models.Niubiz.Consultas.PaymentResponse.sessionKey.set]
-expirationTime.getGProyectoTest.Models.Niubiz.Consultas.PaymentResponse.expirationTime.get]
-expirationTime.setGProyectoTest.Models.Niubiz.Consultas.PaymentResponse.expirationTime.set
+Æ
+IProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccionobject˜
+%RespuestaAAutorizacionDeTransaccion()oProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.RespuestaAAutorizacionDeTransaccion()b
+
+header.getTProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.header.getb
+
+header.setTProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.header.set`
+	order.getSProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.order.get`
+	order.setSProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.order.setd
+dataMap.getUProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.dataMap.getd
+dataMap.setUProyectoTest.Models.Niubiz.Respuestas.RespuestaAAutorizacionDeTransaccion.dataMap.set

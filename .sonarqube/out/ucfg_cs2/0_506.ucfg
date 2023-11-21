@@ -1,169 +1,113 @@
 
-6ProyectoTest.Logica.UbigeoLogica.ObtenerDepartamento()m
-cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbigeoLogica.cs!" !(5"0*è
-0" #(JZX
-"% "(=(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
-o
-") "(;
+SProyectoTest.Controllers.HomeController.GuardarTiendas(ProyectoTest.Models.Tiendas)v
+jC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\HomeController.csí í(("5*ª
+0
+î ï(.1
+/
 
-%1void")System.Collections.Generic.List<T>.List()*,*
-(
-%0"System.Collections.Generic.List<T>k
-i
-" "(=)
-lst"System.Collections.Generic.List<T>"__id*,*
-(
-%0"System.Collections.Generic.List<T>T
-R
-#? #(J
-%2string"__id*20*.
-ProyectoTest.Logica.Conexion"
-CNstring\Z
-#- #(K)
-%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
-í
-#1 #(>
+î î("
+	respuestabool"__id*
+""o
+m
 
-%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
-)
-%3#System.Data.SqlClient.SqlConnection*
-
-%2strings
-q
-#! #(K0
-	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
-)
-%3#System.Data.SqlClient.SqlConnection*
-1*è
-1' *(AVT
-'% '(\&
-%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand˜
-Ù
-') '(3
+ï ï()	
+%0int")ProyectoTest.Models.Tiendas.IdTiendas.get*)'
+%
+objetoProyectoTest.Models.Tiendas*
+1
+2*È
+1
+ï2 ï(Zí
+è
 
-%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
-&
-%5 System.Data.SqlClient.SqlCommand* 
-select * from departamento*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectiong
-e
-' '(\'
-cmd System.Data.SqlClient.SqlCommand"__id**(
-&
-%5 System.Data.SqlClient.SqlCommand"
- 
-(& ((6
-%7"__id*
-""ï
-í
-( ((6
-%8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
+ï2 ï(I'
+%1!ProyectoTest.Logica.TiendasLogica"/ProyectoTest.Logica.TiendasLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.TiendasLogicaΩ
+∫
+
+ï2 ï([
+
+%2bool"HProyectoTest.Logica.TiendasLogica.Registrar(ProyectoTest.Models.Tiendas)*+)
 '
-cmd System.Data.SqlClient.SqlCommand*
+%1!ProyectoTest.Logica.TiendasLogica*)'
+%
+objetoProyectoTest.Models.Tiendas*
+3*Î
+2ï^ ï(Üí
+è
+
+ï^ ï(u'
+%3!ProyectoTest.Logica.TiendasLogica"/ProyectoTest.Logica.TiendasLogica.Instancia.get*'%"#
+!ProyectoTest.Logica.TiendasLogicaæ
+ª
+ï^ ï(á
+
+%4bool"HProyectoTest.Logica.TiendasLogica.Modificar(ProyectoTest.Models.Tiendas)*+)
+'
+%3!ProyectoTest.Logica.TiendasLogica*)'
+%
+objetoProyectoTest.Models.Tiendas*
+3*Œ
+3
+ï ñ(S2
+0
+ï ï(á
+	respuestabool"__id*
+""$
+"
+
+ñ7 ñ(S
+%5"__id*
+""±
+Æ
+
+ñ ñ(T
+%6System.Web.Mvc.JsonResult"JSystem.Web.Mvc.Controller.Json(object, System.Web.Mvc.JsonRequestBehavior)*
+System.Web.Mvc.Controller*
+""*
 
-%7z
-x
-) )($
+%5"/
 
-%9void"*System.Data.SqlClient.SqlConnection.Open()*42
-0
-	oConexion#System.Data.SqlClient.SqlConnectionò
-ï
-*. *(A*
-%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
-'
-cmd System.Data.SqlClient.SqlCommandm
+ñ ñ(U!
+
+%6System.Web.Mvc.JsonResult*2
+4
+ó	 ó(	"!
+
+ó ó(	
+implicit return*Œ
+5
+í8 í(8m
 k
-*) *(A)
-dr#System.Data.SqlClient.SqlDataReader"__id*.,
-*
-%10#System.Data.SqlClient.SqlDataReader*
-2*ì
-2, ,((|z
-, ,((
-%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
-)
-dr#System.Data.SqlClient.SqlDataReader2Read()*
-3
-4*ß	
-3. 1(>WU
-.$ 2('
-%12 ProyectoTest.Models.Departamento" ProyectoTest.Models.Departamentow
-u
-.( .(4
-%13void"/ProyectoTest.Models.Departamento.Departamento()*+)
-'
-%12 ProyectoTest.Models.Departamento©¶
-01 0(E
-%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-IdDepartamento2this[string].getMK
-01 0(P
-%15string"object.ToString()*
 
-%14object2
-ToString()ë
-é
-0  0(P
-%16string"3ProyectoTest.Models.Departamento.IdDepartamento.set*+)
-'
-%12 ProyectoTest.Models.Departamento*
+í í((O
+%
+objetoProyectoTest.Models.Tiendas"&
+<Descripcion>k__BackingFieldstring"__entrypoint\
+Z
 
-%15string¶£
-1. 1(?
-%17object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
-)
-dr#System.Data.SqlClient.SqlDataReader*
-Descripcion2this[string].getMK
-1. 1(J
-%18string"object.ToString()*
+í í((>
+%
+objetoProyectoTest.Models.Tiendas"
+Descripcionstring"__entrypointk
+i
 
-%17object2
-ToString()é
-ã
-1  1(J
-%19string"0ProyectoTest.Models.Departamento.Descripcion.set*+)
-'
-%12 ProyectoTest.Models.Departamento*
+í í((M
+%
+objetoProyectoTest.Models.Tiendas"$
+<Direccion>k__BackingFieldstring"__entrypointZ
+X
 
-%18string®
-•
-. 2(
-%20void"0System.Collections.Generic.ICollection<T>.Add(T)*-+
-)
-lst"System.Collections.Generic.List<T>*+)
-'
-%12 ProyectoTest.Models.Departamento*
-2*
-4=	 =(	*
-5*
-5=	 =(	*
-6
-7*“
-69 9(2[Y
-9 9(2)
-%21"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
-q
-9 9(0
-%22void")System.Collections.Generic.List<T>.List()*-+
-)
-%21"System.Collections.Generic.List<T>l
-j
-9 9(2)
-lst"System.Collections.Generic.List<T>"__id*-+
-)
-%21"System.Collections.Generic.List<T>*
-7*
-7=	 =(	*
-8*F
-8< <("7
-< <(+
-)
-lst"System.Collections.Generic.List<T>*.
-9=	 =(	"
-= =(	
-implicit returnB$"
- ProyectoTest.Logica.UbigeoLogica
+í í((<
+%
+objetoProyectoTest.Models.Tiendas"
+	Direccionstring"__entrypoint"
+ 
+
+í í((
+%7"__entrypoint*
+0:3
+
+í) í(7%
+objetoProyectoTest.Models.TiendasB+)
+'ProyectoTest.Controllers.HomeController

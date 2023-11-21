@@ -1,17 +1,13 @@
 
-<ProyectoTest.Models.Niubiz.Respuestas.DataMap.ADQUIRENTE.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs( (+"0*Ö
-0, (,p
-n
-( (,G/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-
-ADQUIRENTEstring"__id*
-
-valuestring"U
-( (,I*G/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap"
-
-ADQUIRENTEstring:
-valuestringB1/
--ProyectoTest.Models.Niubiz.Respuestas.DataMap
+1ProyectoTest.Models.FechaModel.IdReservaLocal.getk
+aC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\FechaModel.cs$ ('"0*„
+0( ((\
+Z
+$ ((	
+%0int"__id*=;*9 
+ProyectoTest.Models.FechaModel"
+IdReservaLocalint"
+$ ((
+	
+%0intB" 
+ProyectoTest.Models.FechaModel

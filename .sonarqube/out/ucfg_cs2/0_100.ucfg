@@ -1,21 +1,18 @@
 
-NiubizData.amount.setx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csÅ  Å(#"0*é
+PAY.captureType.setx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs§% §(("0*ä
 0
-Å$ Å($K
-I
+§) §()I
+G
 
-Å  Å($ 
-
-NiubizData"
-amountdouble"__id*
+§% §()
+PAY"
+captureTypestring"__id*
 
-valuedouble"0
+valuestring".
 
-Å  Å($"* 
-
-NiubizData"
-amountdouble:
-valuedoubleB
-
-NiubizData
+§% §() *
+PAY"
+captureTypestring:
+valuestringB
+PAY

@@ -1,15 +1,15 @@
 
-=ProyectoTest.Models.Niubiz.Respuestas.Order.transactionId.set—
-ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs3+ 3(."0*Ø
-03/ 3(/q
-o
-3+ 3(/H-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-transactionIdstring"__id*
+AProyectoTest.Models.Niubiz.Consultas.Recurrence.beneficiaryId.set“
+ˆC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Consultas\AutorizacionDetransaccionNiubiz1.cs+ (."0*à
+0/ (/u
+s
++ (/L1
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence"
+beneficiaryIdstring"__id*
 
-valuestring"V
-3+ 3(/J*H-
-+ProyectoTest.Models.Niubiz.Respuestas.Order"
-transactionIdstring:
-valuestringB/-
-+ProyectoTest.Models.Niubiz.Respuestas.Order
+valuestring"Z
++ (/N*L1
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence"
+beneficiaryIdstring:
+valuestringB31
+/ProyectoTest.Models.Niubiz.Consultas.Recurrence

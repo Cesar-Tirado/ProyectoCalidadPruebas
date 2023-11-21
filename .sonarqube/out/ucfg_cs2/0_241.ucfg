@@ -1,17 +1,15 @@
 
-0ProyectoTest.Models.DetalleCompra.IdProducto.setn
-dC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\DetalleCompra.cs% (("0*µ
-0) ()^
-\
-% ()8#
-!ProyectoTest.Models.DetalleCompra"
-
-IdProductoint"__id*
-
-valueint"F
-% ():*8#
-!ProyectoTest.Models.DetalleCompra"
-
-IdProductoint:
-valueintB%#
-!ProyectoTest.Models.DetalleCompra
+8ProyectoTest.Models.Niubiz.Respuestas.Order.currency.set—
+ŒC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Niubiz\Respuestas\RespuestaAAutorizacionDeTransaccion.cs-& -()"0*Î
+0-* -(*l
+j
+-& -(*C-
++ProyectoTest.Models.Niubiz.Respuestas.Order"
+currencystring"__id*
+
+valuestring"Q
+-& -(*E*C-
++ProyectoTest.Models.Niubiz.Respuestas.Order"
+currencystring:
+valuestringB/-
++ProyectoTest.Models.Niubiz.Respuestas.Order

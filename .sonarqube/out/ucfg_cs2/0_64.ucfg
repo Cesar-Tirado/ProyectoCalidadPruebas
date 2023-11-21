@@ -1,18 +1,16 @@
 
-NiubizData.channel.getx
-lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.cs€ €("0*x
+Order.tokenId.getx
+lC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Controllers\TiendaController.csŽ Ž("0*s
 0
-€  €( I
-G
+Ž  Ž( D
+B
 
-€ €( 
-%0string"__id*%#*!
+Ž Ž( 
+%0string"__id* *
+Order"
+tokenIdstring"
 
-NiubizData"
-channelstring"
-
-€ €( 
+Ž Ž( 
 
-%0stringB
-
-NiubizData
+%0stringB	
+Order

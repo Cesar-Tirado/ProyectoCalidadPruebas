@@ -1,21 +1,21 @@
 
--ProyectoTest.Models.Provincia.IdProvincia.getj
-`C:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\Provincia.cs
-$ 
-('"0*‰
+9ProyectoTest.Models.UbicacionTienda.IdUbicacionTienda.getp
+fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Models\UbicacionTienda.cs
+' 
+(*"0*Œ
 0
-( 
-((^
-\
++ 
+(+d
+b
 
-$ 
-((
-%0string"__id*<:*8
-ProyectoTest.Models.Provincia"
-IdProvinciastring"
+' 
+(+	
+%0int"__id*EC*A%
+#ProyectoTest.Models.UbicacionTienda"
+IdUbicacionTiendaint"
 
-$ 
-((
-
-%0stringB!
-ProyectoTest.Models.Provincia
+' 
+(+
+	
+%0intB'%
+#ProyectoTest.Models.UbicacionTienda

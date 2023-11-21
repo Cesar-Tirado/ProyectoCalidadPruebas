@@ -1,131 +1,169 @@
 
-1ProyectoTest.Logica.CategoriaLogica.Eliminar(int)r
-fC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\CategoriaLogica.csÄ Ä("0*ê
-0
-Ç É(J1
-/
+6ProyectoTest.Logica.UbigeoLogica.ObtenerDepartamento()m
+cC:\Users\cesar\OneDrive\Documentos\Trabajos\GIT_ProyectoCalidad\ProyectoTest\Logica\UbigeoLogica.cs!" !(5"0*è
+0" #(JZX
+"% "(=(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+") "(;
 
-Ç Ç(!
-	respuestabool"__id*
-""V
-T
-
-É? É(J
-%0string"__id*20*.
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>k
+i
+" "(=)
+lst"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>T
+R
+#? #(J
+%2string"__id*20*.
 ProyectoTest.Logica.Conexion"
-CNstring^\
+CNstring\Z
+#- #(K)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+#1 #(>
 
-É- É(K)
-%1#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionó
-î
-
-É1 É(>
-
-%2void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
 )
-%1#System.Data.SqlClient.SqlConnection*
+%3#System.Data.SqlClient.SqlConnection*
 
-%0stringu
-s
-
-É! É(K0
+%2strings
+q
+#! #(K0
 	oConexion#System.Data.SqlClient.SqlConnection"__id*-+
 )
-%1#System.Data.SqlClient.SqlConnection*
-1*Œ
+%3#System.Data.SqlClient.SqlConnection*
+1*è
+1' *(AVT
+'% '(\&
+%5 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand˜
+Ù
+') '(3
 
-1
-á è($XV
-
-á% á(o&
-%3 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommandå
-â
-
-á) á(3
-
-%4void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
+%6void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)**(
 &
-%3 System.Data.SqlClient.SqlCommand*31/
--delete from CATEGORIA where idcategoria = @id*42
+%5 System.Data.SqlClient.SqlCommand* 
+select * from departamento*42
 0
-	oConexion#System.Data.SqlClient.SqlConnectioni
-g
-
-á á(o'
+	oConexion#System.Data.SqlClient.SqlConnectiong
+e
+' '(\'
 cmd System.Data.SqlClient.SqlCommand"__id**(
 &
-%3 System.Data.SqlClient.SqlCommand°
-û
-
-à à("2
-%5,System.Data.SqlClient.SqlParameterCollection"/System.Data.SqlClient.SqlCommand.Parameters.get*+)
-'
-cmd System.Data.SqlClient.SqlCommandŒ
-À
-
-à à(:(
-%6"System.Data.SqlClient.SqlParameter"FSystem.Collections.Generic.ICollection<T>.AddWithValue(string, object)*64
-2
-%5,System.Data.SqlClient.SqlParameterCollection*	
-@id*
-""$
-"
-
-â& â(6
+%5 System.Data.SqlClient.SqlCommand"
+ 
+(& ((6
 %7"__id*
-""ó
-î
-
-â â(6
+""ï
+í
+( ((6
 %8System.Data.CommandType"0System.Data.SqlClient.SqlCommand.CommandType.set*+)
 '
 cmd System.Data.SqlClient.SqlCommand*
 
-%7|
-z
-
-ã ã($
+%7z
+x
+) )($
 
 %9void"*System.Data.SqlClient.SqlConnection.Open()*42
 0
-	oConexion#System.Data.SqlClient.SqlConnection{
-y
-
-ç ç()
-
-%10int"2System.Data.SqlClient.SqlCommand.ExecuteNonQuery()*+)
+	oConexion#System.Data.SqlClient.SqlConnectionò
+ï
+*. *(A*
+%10#System.Data.SqlClient.SqlDataReader"0System.Data.SqlClient.SqlCommand.ExecuteReader()*+)
 '
-cmd System.Data.SqlClient.SqlCommand1
-/
+cmd System.Data.SqlClient.SqlCommandm
+k
+*) *(A)
+dr#System.Data.SqlClient.SqlDataReader"__id*.,
+*
+%10#System.Data.SqlClient.SqlDataReader*
+2*ì
+2, ,((|z
+, ,((
+%11bool"*System.Data.SqlClient.SqlDataReader.Read()*-+
+)
+dr#System.Data.SqlClient.SqlDataReader2Read()*
+3
+4*ß	
+3. 1(>WU
+.$ 2('
+%12 ProyectoTest.Models.Departamento" ProyectoTest.Models.Departamentow
+u
+.( .(4
+%13void"/ProyectoTest.Models.Departamento.Departamento()*+)
+'
+%12 ProyectoTest.Models.Departamento©¶
+01 0(E
+%14object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+IdDepartamento2this[string].getMK
+01 0(P
+%15string"object.ToString()*
 
-è è($
-	respuestabool"__id*
-""*
-2
-3*G
-2
-î î(%1
-/
+%14object2
+ToString()ë
+é
+0  0(P
+%16string"3ProyectoTest.Models.Departamento.IdDepartamento.set*+)
+'
+%12 ProyectoTest.Models.Departamento*
 
-î î(%
-	respuestabool"__id*
-""*
-3*
-3
-õ	 õ(	*
-4*2
-4
-ô ô("!
+%15string¶£
+1. 1(?
+%17object"4System.Data.SqlClient.SqlDataReader.this[string].get*-+
+)
+dr#System.Data.SqlClient.SqlDataReader*
+Descripcion2this[string].getMK
+1. 1(J
+%18string"object.ToString()*
 
-ô ô(
-
-	respuestabool*2
-5
-õ	 õ(	"!
+%17object2
+ToString()é
+ã
+1  1(J
+%19string"0ProyectoTest.Models.Departamento.Descripcion.set*+)
+'
+%12 ProyectoTest.Models.Departamento*
 
-õ õ(	
-implicit return:
-
-Ä Ä(#	
-idintB'%
-#ProyectoTest.Logica.CategoriaLogica
+%18string®
+•
+. 2(
+%20void"0System.Collections.Generic.ICollection<T>.Add(T)*-+
+)
+lst"System.Collections.Generic.List<T>*+)
+'
+%12 ProyectoTest.Models.Departamento*
+2*
+4=	 =(	*
+5*
+5=	 =(	*
+6
+7*“
+69 9(2[Y
+9 9(2)
+%21"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+9 9(0
+%22void")System.Collections.Generic.List<T>.List()*-+
+)
+%21"System.Collections.Generic.List<T>l
+j
+9 9(2)
+lst"System.Collections.Generic.List<T>"__id*-+
+)
+%21"System.Collections.Generic.List<T>*
+7*
+7=	 =(	*
+8*F
+8< <("7
+< <(+
+)
+lst"System.Collections.Generic.List<T>*.
+9=	 =(	"
+= =(	
+implicit returnB$"
+ ProyectoTest.Logica.UbigeoLogica
