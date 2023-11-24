@@ -72,12 +72,14 @@
                             var backgroundColor;
 
                             if (estado === "aceptado") {
-                                backgroundColor = "#2ECC71";
-                            } else if (estado === "rechazado")
-                            {
+                                backgroundColor = "#0b5ed7";
+                            } else if (estado === "rechazado") {
                                 backgroundColor = "#E74C3C";
-                            } else
-                            {
+                            } else if (estado === "en camino") {
+                                backgroundColor = "#ffca2c";
+                            } else if (estado === "entregado") {
+                                backgroundColor = "#2ECC71";
+                            } else {
                                 backgroundColor = "initial"; // Color de fondo por defecto
                             }
 

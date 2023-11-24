@@ -28,11 +28,11 @@ namespace PruebasUnitarias
             //cambiar los datos para cuando presente
             var modelo = new Usuario()
             {
-                Nombres = "Examen2",
-                Apellidos = "Calidad2",
-                Correo = "examen2@calidad.com",
-                Contrasena = "password2",
-                ConfirmarContrasena = "password2"
+                Nombres = "Examen3",
+                Apellidos = "Calidad3",
+                Correo = "examen3@calidad.com",
+                Contrasena = "password3",
+                ConfirmarContrasena = "password3"
             };
 
             // Act
